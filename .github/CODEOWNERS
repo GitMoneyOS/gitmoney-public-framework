@@ -1,0 +1,9 @@
+# Default chain of command
+* @GitMoneyOS/owners
+
+# Governance and automation
+/.github/ @GitMoneyOS/owners
+/AGENTS.md @GitMoneyOS/owners
+/agent-rules/ @GitMoneyOS/owners
+/prompts/ @GitMoneyOS/owners
+/docs/ @GitMoneyOS/owners
