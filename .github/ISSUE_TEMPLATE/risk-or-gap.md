@@ -1,0 +1,24 @@
+---
+name: Risk or Gap
+about: Track an IP, access, security, docs, agent, or delivery risk
+title: "[Risk] "
+labels: risk:ip
+---
+
+## Summary
+
+## Risk Type
+
+IP / access / security / docs / agent / delivery
+
+## Impact
+
+## Current Evidence
+
+## Recommended Next Action
+
+## Owner
+
+## Done When
+
+- [ ] 
