@@ -1,12 +1,18 @@
-# GitMoney Public Framework
+# GitMoneyOS Public Framework
+
+GitMoneyOS is a KnowTheLedge project built by Red Pillar and Hitsuyo Aku.
+
+It helps founders turn GitHub into a plain-English AI Office: a place to organize operational IP, govern AI-assisted work, track decisions, and create a business-ready history of what changed, who approved it, and why it matters.
+
+This is not GitHub for developers. It is GitHub as business infrastructure for founders, operators, creators, agencies, and small teams using AI without a clear chain of command.
 
 ## Purpose
 
-Public framework for plain-English GitHub, AI Office infrastructure, IP Vault thinking, and founder-facing GitOps.
+Publish the public framework for plain-English GitHub, AI Office infrastructure, IP Vault thinking, and founder-facing GitOps under the KnowTheLedge brand.
 
 ## Owner
 
-GitMoneyOS owners.
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
 
 ## What Belongs Here
 
@@ -14,6 +20,8 @@ GitMoneyOS owners.
 - Plain-English GitHub explanations
 - Consulting and audit entry points
 - Founder education assets
+- KnowTheLedge-approved public positioning
+- Case files and examples that contain no private client data
 
 ## What Does Not Belong Here
 
@@ -21,12 +29,32 @@ GitMoneyOS owners.
 - Client data
 - Unapproved internal pricing notes
 - Secrets or credentials
+- Public claims that Red Pillar and Hitsuyo Aku have not approved together
+
+## Plain-English GitHub
+
+- A repository is a business vault for one category of company knowledge.
+- A commit is a timestamped receipt proving what changed.
+- A pull request is an approval lane before work becomes official.
+- CODEOWNERS is the chain of command.
+- Branch protection is a rule that prevents accidental or unauthorized changes to critical assets.
+
+## Framework Pillars
+
+- AI Office Infrastructure
+- IP Vaults
+- Agent Chain of Command
+- Founder GitHub Literacy
+- Exit-Ready Score
+- Plain-English GitOps
 
 ## Approval Path
 
 Changes should move through an issue or pull request when they affect strategy, public positioning, client delivery, agent behavior, permissions, or product direction.
 
 Plain-English GitHub translation: a pull request is the review packet before a change becomes official.
+
+Public positioning changes should be approved by both Red Pillar and Hitsuyo Aku before merge.
 
 ## Update Cadence
 
