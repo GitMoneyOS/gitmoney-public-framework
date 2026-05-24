@@ -48,6 +48,16 @@ Red Pillar and Hitsuyo Aku, under KnowTheLedge.
 - Exit-Ready Score
 - Plain-English GitOps
 
+## Three-Layer AI Office
+
+GitMoneyOS treats the AI Office as three connected layers:
+
+- Private memory captures founder and builder thinking before it is ready for approval.
+- Agent platforms turn that thinking into reviewable tasks, documents, audits, and decisions.
+- GitHub stores the governed business record with owners, approvals, history, and evidence.
+
+Plain-English rule: thinking becomes work, and work becomes evidence.
+
 ## Approval Path
 
 Changes should move through an issue or pull request when they affect strategy, public positioning, client delivery, agent behavior, permissions, or product direction.

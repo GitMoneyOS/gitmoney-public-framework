@@ -24,6 +24,7 @@ Define how AI agents may contribute to this repository.
 - Name the owner.
 - Include evidence or a checkpoint.
 - Keep GitHub language plain enough for a non-technical founder.
+- Follow `../gitmoney-os/docs/architecture/three-layer-ai-office-stack.md` for Obsidian, agent, and GitHub promotion decisions.
 
 ## Escalation
 

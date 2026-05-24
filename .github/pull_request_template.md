@@ -10,6 +10,14 @@
 
 - 
 
+## Promotion Check
+
+- [ ] Source layer named: Obsidian / agent platform / GitHub / client request / owner decision
+- [ ] Owner named
+- [ ] Approval path clear
+- [ ] Sensitive data removed
+- [ ] Evidence attached or described
+
 ## Proof
 
 - [ ] Files updated
