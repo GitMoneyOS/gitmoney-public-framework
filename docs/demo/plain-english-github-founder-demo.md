@@ -33,10 +33,15 @@ Most AI-enabled businesses create work faster than they create proof. GitMoneyOS
 ## What To Show First
 
 1. Open the public framework repo.
+   - Visible checkpoint: the founder can see the `GitMoneyOS/gitmoney-public-framework` repository name and README.
 2. Read the first paragraph of the README.
+   - Visible checkpoint: the founder can repeat that GitMoneyOS is GitHub as business infrastructure, not GitHub for developers.
 3. Open the merged public positioning PR.
+   - Visible checkpoint: the PR page shows a closed or merged state and explains what changed.
 4. Explain that the PR is the approval packet.
+   - Visible checkpoint: the founder can point to the PR body sections: business change, proof, and decision.
 5. Open a public issue and explain that it is a business task, not just a bug.
+   - Visible checkpoint: the issue shows a task, reason, done-when checklist, and evidence field.
 
 ## Public Proof
 
