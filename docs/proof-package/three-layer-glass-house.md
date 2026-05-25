@@ -8,6 +8,8 @@ Plain-English translation: GitMoneyOS is a glass house around the workflow, not 
 
 The public should be able to see the architecture of trust: how an idea enters the system, how AI-assisted work is bounded, how approval happens, and where the receipt lives. The public does not need the raw private doctrine to understand that the system has discipline.
 
+This is the future-facing claim: serious small teams are not positioned to scale by turning every founder into a manager of invisible AI sprawl. They are positioned to scale by giving memory, agents, and approvals a governed architecture.
+
 ## The Three Layers
 
 | Layer | Founder Name | Public Visibility | Private Boundary | Proof |
@@ -25,6 +27,8 @@ The public should be able to see the architecture of trust: how an idea enters t
 The system works when the founder can tell which layer something belongs to and what proof moves it forward.
 
 Short version: Source Memory is the private workshop. Agent Workbench is the operating desk. GitHub Record is the company record.
+
+9-figure ease depends on that separation. If the founder's head is the memory layer, scale breaks. If agents are the approval layer, trust breaks. If GitHub receives work without context, the record breaks.
 
 ## What We Show Publicly
 
@@ -82,6 +86,8 @@ If the work skips a layer, risk increases.
 
 That is the governance lesson hiding inside the simple model. An idea that never leaves private memory is hard to delegate. Agent work that never gets reviewed is hard to trust. A GitHub record with no source or approval context is hard to explain later.
 
+The three-layer model gives a small team enterprise-grade discipline without asking it to become an enterprise bureaucracy.
+
 ## Presentation Checkpoint
 
 A founder should be able to say:
@@ -114,3 +120,5 @@ A founder does not need blind trust or total exposure.
 They need inspectable evidence that the operating system can protect knowledge, govern AI-assisted work, and improve itself.
 
 GitMoneyOS is most credible when it shows both sides: enough glass to inspect the method, enough boundary to prove the system understands ownership.
+
+That is what makes the model feel different from ordinary documentation. It is not a library of files. It is a way for the business to know itself while it moves faster.

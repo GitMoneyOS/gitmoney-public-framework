@@ -18,6 +18,7 @@ This package publicly teaches:
 - Audit before setup.
 - Diagnosis before conversion.
 - Evidence before claims.
+- 9-figure scale as an operating standard that requires memory, agent governance, approval evidence, and handoff discipline.
 
 ## Private Doctrine Boundary
 
@@ -56,3 +57,5 @@ Private source doctrine can become public only when it passes all four checks:
 GitMoneyOS has demonstrated a live, inspectable AI Office proof of concept.
 
 It has not yet demonstrated production-grade SaaS, client outcomes, or regulated readiness.
+
+It also has not yet demonstrated completed 9-figure outcomes. The public-safe 9-figure claim is an infrastructure thesis: systems like GitMoneyOS are designed to help solo operators and small teams pursue that scale with clearer ownership, record-speed learning loops, and less operational drag.
