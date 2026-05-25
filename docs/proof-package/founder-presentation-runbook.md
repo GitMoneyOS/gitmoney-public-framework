@@ -38,15 +38,15 @@ Visible checkpoint:
 
 ### Minute 2: The Translation
 
-Open: [Proof of Concept](proof-of-concept.md)
+Open: [Three-Layer Glass House](three-layer-glass-house.md)
 
 Say:
 
-GitHub words become business controls.
+GitMoneyOS has three layers: Source Memory, Agent Workbench, and GitHub Record. The public proof package shows the workflow without exposing the private vault.
 
 Visible checkpoint:
 
-- Founder can explain one translation, such as "a PR is an approval packet."
+- Founder can explain why some proof is public and some doctrine stays private.
 
 ### Minute 3: The Work Trail
 

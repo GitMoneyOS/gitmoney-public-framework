@@ -17,17 +17,24 @@ Plain-English translation: this package shows that GitMoneyOS is not just an ide
 1. [Brand Narrative](brand-narrative.md)
 2. [Founder Presentation Runbook](founder-presentation-runbook.md)
 3. [Proof of Concept](proof-of-concept.md)
-4. [Proof of Work](proof-of-work.md)
-5. [Proof of Quality](proof-of-quality.md)
-6. [Public-Safe Self-Audit Summary](self-audit-summary.md)
-7. [Coherence Map](coherence-map.md)
-8. [Onboarding Curriculum Path](onboarding-curriculum-path.md)
-9. [Founder Verification Checklist](founder-verification-checklist.md)
-10. [Source Doctrine Alignment](source-doctrine-alignment.md)
+4. [Three-Layer Glass House](three-layer-glass-house.md)
+5. [Proof of Work](proof-of-work.md)
+6. [Proof of Quality](proof-of-quality.md)
+7. [Public-Safe Self-Audit Summary](self-audit-summary.md)
+8. [Coherence Map](coherence-map.md)
+9. [Onboarding Curriculum Path](onboarding-curriculum-path.md)
+10. [Founder Verification Checklist](founder-verification-checklist.md)
+11. [Source Doctrine Alignment](source-doctrine-alignment.md)
 
 ## Coherence Rule
 
 The public package is a doorway, not a duplicate of the private operating system. It points to proof, summarizes private work safely, and keeps each artifact in the repo that owns its business job.
+
+## Glass House Rule
+
+Show the workflow. Protect the source.
+
+The public can inspect the method, evidence trail, and quality bar without seeing private doctrine, client context, credentials, or internal strategy.
 
 ## Evidence Boundary
 

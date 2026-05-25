@@ -6,11 +6,21 @@ GitMoneyOS proves that GitHub can be used as plain-English business infrastructu
 
 The concept:
 
-- Founder thinking starts in private memory.
-- Agent platforms turn that thinking into bounded work.
-- GitHub becomes the official business record.
+- Founder thinking starts in Source Memory.
+- Agent platforms become the Agent Workbench.
+- GitHub becomes the official GitHub Record.
 
 Plain-English rule: thinking becomes work, and work becomes evidence.
+
+Glass house rule: the public can inspect the workflow without entering the private vault.
+
+## The Three-Layer Model
+
+| Layer | What Happens There | What A Founder Sees |
+| --- | --- | --- |
+| Source Memory | messy thinking becomes source doctrine | owner, status, and promotion target |
+| Agent Workbench | goals become bounded artifacts | brief, scope, forbidden actions, evidence |
+| GitHub Record | approved work becomes official | issue, PR, commit, review, setting, or doc |
 
 ## What The Concept Looks Like
 

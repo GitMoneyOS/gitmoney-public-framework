@@ -47,13 +47,17 @@ GitHub is the company record.
 
 ## Three-Layer Story
 
-| Layer | Founder Translation | Job |
-| --- | --- | --- |
-| Private memory | builder notebook | capture and refine doctrine before approval |
-| Agent platforms | workbenches | turn goals into bounded work |
-| GitHub | company record | store approved work with evidence |
+GitMoneyOS is a three-layer AI Office:
+
+| Layer | Founder Name | Job | Public/Private Rule |
+| --- | --- | --- | --- |
+| 1 | Source Memory | capture and refine doctrine before approval | show the promotion rules, protect the raw doctrine |
+| 2 | Agent Workbench | turn goals into bounded work | show the brief and evidence, protect private prompts/context |
+| 3 | GitHub Record | store approved work with evidence | show public proof, keep sensitive repos private |
 
 Plain-English rule: thinking becomes work, and work becomes evidence.
+
+Glass house rule: show the workflow, protect the source.
 
 ## Proof Story
 

@@ -8,6 +8,7 @@ Explain how the public proof package aligns with GitMoneyOS source doctrine with
 
 This package publicly teaches:
 
+- the three-layer glass house: Source Memory, Agent Workbench, GitHub Record
 - GitHub as the official company record.
 - Repos as business vaults.
 - Issues as trackable tasks, risks, or decisions.
@@ -33,6 +34,7 @@ This package does not publish:
 
 - [x] Uses founder language before GitHub jargon.
 - [x] Separates private memory, agent workbench, and GitHub record.
+- [x] Explains what the public can inspect without exposing the private vault.
 - [x] Names public-safe evidence.
 - [x] Names claim boundaries.
 - [x] Turns self-audit into a public-safe case study.
