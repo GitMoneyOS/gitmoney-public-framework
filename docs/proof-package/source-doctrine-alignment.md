@@ -36,6 +36,8 @@ This package does not publish:
 - [x] Names public-safe evidence.
 - [x] Names claim boundaries.
 - [x] Turns self-audit into a public-safe case study.
+- [x] Folds owner evidence, labels, topics, demo issue, PRs, SaaS brief, readiness packet, and self-audit into one presentation surface.
+- [x] Avoids creating another public repo for proof material.
 - [x] Avoids legal, investor, acquisition, or security overclaims.
 
 ## Promotion Rule

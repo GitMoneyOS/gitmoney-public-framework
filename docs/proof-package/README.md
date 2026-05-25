@@ -20,9 +20,14 @@ Plain-English translation: this package shows that GitMoneyOS is not just an ide
 4. [Proof of Work](proof-of-work.md)
 5. [Proof of Quality](proof-of-quality.md)
 6. [Public-Safe Self-Audit Summary](self-audit-summary.md)
-7. [Onboarding Curriculum Path](onboarding-curriculum-path.md)
-8. [Founder Verification Checklist](founder-verification-checklist.md)
-9. [Source Doctrine Alignment](source-doctrine-alignment.md)
+7. [Coherence Map](coherence-map.md)
+8. [Onboarding Curriculum Path](onboarding-curriculum-path.md)
+9. [Founder Verification Checklist](founder-verification-checklist.md)
+10. [Source Doctrine Alignment](source-doctrine-alignment.md)
+
+## Coherence Rule
+
+The public package is a doorway, not a duplicate of the private operating system. It points to proof, summarizes private work safely, and keeps each artifact in the repo that owns its business job.
 
 ## Evidence Boundary
 
