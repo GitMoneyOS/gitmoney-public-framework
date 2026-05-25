@@ -48,6 +48,10 @@ Red Pillar and Hitsuyo Aku, under KnowTheLedge.
 - Exit-Ready Score
 - Plain-English GitOps
 
+## Founder Demo
+
+- [Plain-English GitHub Founder Demo](docs/demo/plain-english-github-founder-demo.md)
+
 ## Three-Layer AI Office
 
 GitMoneyOS treats the AI Office as three connected layers:
