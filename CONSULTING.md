@@ -18,6 +18,16 @@ AI makes work faster, but it also makes company knowledge easier to scatter.
 
 When prompts, SOPs, automations, client workflows, and decisions live everywhere, the founder loses visibility. GitMoneyOS treats GitHub as the company control room: one place to see what changed, who approved it, what belongs where, and what still creates risk.
 
+## How The AI Office Works
+
+GitMoneyOS connects three layers:
+
+- Private memory for founder and builder thinking.
+- Agent platforms for turning that thinking into structured work.
+- GitHub for the governed business record.
+
+The goal is simple: do not leave valuable business knowledge trapped in notes, chats, or unapproved drafts. Move the right work into issues, pull requests, docs, reviews, and evidence.
+
 ## Offers
 
 ### AI Office Audit

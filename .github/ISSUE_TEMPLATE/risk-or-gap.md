@@ -15,6 +15,14 @@ IP / access / security / docs / agent / delivery
 
 ## Current Evidence
 
+## Source Layer
+
+Obsidian / agent platform / GitHub / client request / owner decision
+
+## Evidence Boundary
+
+What is observed, and what is inferred?
+
 ## Recommended Next Action
 
 ## Owner
