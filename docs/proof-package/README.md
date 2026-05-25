@@ -15,10 +15,41 @@ The larger thesis is that the next generation of elite businesses will not look 
 GitMoneyOS uses tool names, but the model is plain:
 
 - **Obsidian.md means private notebook.** It is where the founder's rough thinking can live before it is ready to become official. Public readers can research the software at [obsidian.md](https://obsidian.md).
-- **Agent platform means work desk.** It is where AI-assisted work gets shaped into something a human can review.
+- **Agent platform means work desk.** GitMoneyOS is optimized for Codex, Antigravity 2, and Claude Code. This is where AI-assisted work gets shaped into something a human can review.
 - **GitHub means company record.** It is where approved work gets stored with history, ownership, and proof.
 
 The point is not to make a founder technical. The point is to stop important business knowledge from living only in memory, chat history, contractor handoffs, or scattered files.
+
+## What You Should Understand In 3 Minutes
+
+If you are brand new to these tools, leave with this:
+
+- Business knowledge usually starts messy.
+- Obsidian.md is where the messy thinking can be captured privately.
+- Codex, Antigravity 2, and Claude Code are work desks where AI-assisted work becomes reviewable.
+- GitHub is where approved work becomes the company record.
+- The founder does not need to code to inspect the system.
+- The business should be able to prove what changed, who approved it, and where the knowledge lives.
+
+Visual version:
+
+```text
+Private Notebook -> Work Desk                  -> Company Record
+Obsidian.md      -> Codex / Antigravity 2 / Claude Code -> GitHub
+Idea             -> Draft or task              -> Approved proof
+```
+
+## Tiny Glossary
+
+- **Obsidian.md:** private notebook for rough thinking and source doctrine.
+- **Codex:** AI workbench for making repo-aware changes, docs, checks, and approval packets.
+- **Antigravity 2:** AI workbench for agentic build and operating workflows.
+- **Claude Code:** AI workbench for code, documentation, analysis, and implementation tasks.
+- **GitHub:** official company record for approved work.
+- **Issue:** trackable task, risk, or decision.
+- **Pull request:** approval packet before work becomes official.
+- **Commit:** receipt showing what changed.
+- **Branch protection:** lock on important records.
 
 ## What This Package Proves
 

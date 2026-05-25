@@ -18,16 +18,24 @@ Imagine three rooms:
 2. **The work desk:** AI or human work turns the rough thinking into something reviewable.
 3. **The company record:** approved work gets stored with history, ownership, and proof.
 
-Obsidian.md is often the private notebook. Agent platforms are the work desk. GitHub is the company record.
+Obsidian.md is often the private notebook. Codex, Antigravity 2, and Claude Code are the optimized work desks. GitHub is the company record.
 
 That is the whole model. The rest of GitMoneyOS is about making sure work moves between those rooms cleanly.
+
+Visual map:
+
+```text
+Private Notebook -> Work Desk                  -> Company Record
+Obsidian.md      -> Codex / Antigravity 2 / Claude Code -> GitHub
+Idea             -> Draft or task              -> Approved proof
+```
 
 ## The Three Layers
 
 | Layer | Founder Name | Public Visibility | Private Boundary | Proof |
 | --- | --- | --- | --- | --- |
 | Layer 1 | Source Memory | We can show the rules for how memory gets promoted. | We do not publish raw founder doctrine, private strategy, or unapproved notes. | A note or source signal has owner, status, and promotion target. |
-| Layer 2 | Agent Workbench | We can show the brief, boundaries, and expected evidence. | We do not expose private prompts, credentials, client context, or hidden decisions. | An agent task has scope, forbidden actions, output, approval path, and evidence. |
+| Layer 2 | Agent Workbench | We can show the brief, boundaries, expected evidence, and optimized workbenches: Codex, Antigravity 2, and Claude Code. | We do not expose private prompts, credentials, client context, or hidden decisions. | An agent task has scope, forbidden actions, output, approval path, and evidence. |
 | Layer 3 | GitHub Record | We can show issues, PRs, commits, labels, docs, and public proof. | Private repos stay private when they hold source doctrine, client delivery, or internal operations. | A GitHub issue, PR, commit, review, setting, or governance record exists. |
 
 ## Founder Translation

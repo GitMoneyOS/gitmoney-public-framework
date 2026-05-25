@@ -17,7 +17,7 @@ GitMoneyOS is built for that future. It is the infrastructure pattern for solo o
 Read GitMoneyOS like a business building, not a software project.
 
 - **Obsidian.md** is the private notebook. It is where messy thinking, founder doctrine, drafts, research, prompts, and ideas can be captured before they are ready for the company record. Public readers can research the software at [obsidian.md](https://obsidian.md).
-- **Agent platforms** are the work desk. This is where AI or humans turn the notebook into a document, task, audit, checklist, or proposal.
+- **Agent platforms** are the work desk. GitMoneyOS is optimized for Codex, Antigravity 2, and Claude Code. This is where AI or humans turn the notebook into a document, task, audit, checklist, or proposal.
 - **GitHub** is the official company record. It keeps the approved version, the change history, the owner, the review, and the receipt.
 
 You do not need to know how to code to understand the control. GitMoneyOS is asking one plain question: when important work happens, can the business prove what changed, who approved it, and where the knowledge lives?

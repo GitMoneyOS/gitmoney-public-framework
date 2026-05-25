@@ -22,7 +22,7 @@ Say:
 
 If the founder is new to the tools, add:
 
-> Think of it as three rooms. Obsidian.md is the private notebook, AI tools are the work desk, and GitHub is the official company record. GitMoneyOS teaches what belongs in each room and how work moves between them.
+> Think of it as three rooms. Obsidian.md is the private notebook. Codex, Antigravity 2, and Claude Code are the optimized AI work desks. GitHub is the official company record. GitMoneyOS teaches what belongs in each room and how work moves between them.
 
 Then say:
 
@@ -50,7 +50,7 @@ GitMoneyOS tested that thesis on itself first: live GitHub organization, public/
 
 **Mechanism**
 
-The mechanism is the Three-Layer Glass House: Source Memory, Agent Workbench, GitHub Record. Thinking becomes bounded work. Bounded work becomes evidence.
+The mechanism is the Three-Layer Glass House: Source Memory, Agent Workbench, GitHub Record. Obsidian.md captures the source. Codex, Antigravity 2, and Claude Code shape the work. GitHub stores the approved evidence.
 
 **Filter**
 
@@ -88,7 +88,7 @@ This is the leverage model: memory captures the doctrine, agents do bounded work
 
 For a beginner, say:
 
-The private notebook is for thinking. The work desk is for drafting. The company record is for approved truth.
+The private notebook is for thinking. Codex, Antigravity 2, and Claude Code are for drafting and implementation. The company record is for approved truth.
 
 Visible checkpoint:
 
