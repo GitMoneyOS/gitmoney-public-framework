@@ -16,6 +16,8 @@ GitMoneyOS helps you see:
 - what still creates risk
 - what should happen next
 
+The promise is not more dashboards for their own sake. The promise is founder control: fewer invisible decisions, fewer orphaned assets, fewer AI outputs with no owner, and a cleaner path from idea to approved business record.
+
 ## Category
 
 Plain-English GitOps for founder-led AI businesses.
@@ -28,11 +30,15 @@ Not AI. Not speed. Not tools.
 
 The enemy is valuable operating knowledge trapped across chats, docs, prompts, contractors, automations, and memory without ownership, approval, or evidence.
 
+GitMoneyOS calls this out because AI has made the mess faster. A small team can now create the surface area of a much larger company before it has the governance habits of one.
+
 ## Point Of View
 
 AI makes work faster. GitMoneyOS makes the work inspectable.
 
 Founders do not only need more output. They need a control layer that turns output into owned business infrastructure.
+
+That control layer does not need to feel like developer ceremony. It needs to feel like a business can finally answer: where is the asset, who owns it, what approved it, and can someone else continue the work without guessing?
 
 ## Signature Translation
 
@@ -58,6 +64,8 @@ GitMoneyOS is a three-layer AI Office:
 Plain-English rule: thinking becomes work, and work becomes evidence.
 
 Glass house rule: show the workflow, protect the source.
+
+Source Memory is the private workshop. Agent Workbench is the operating desk. GitHub Record is the company record. GitMoneyOS becomes valuable when those rooms stop bleeding into each other.
 
 ## Proof Story
 

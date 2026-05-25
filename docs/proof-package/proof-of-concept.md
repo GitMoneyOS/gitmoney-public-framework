@@ -14,6 +14,8 @@ Plain-English rule: thinking becomes work, and work becomes evidence.
 
 Glass house rule: the public can inspect the workflow without entering the private vault.
 
+This matters because AI work often looks productive before it is governable. The proof of concept is not just that GitMoneyOS can produce docs. It is that the work can carry ownership, boundaries, approval, and evidence as it moves.
+
 ## The Three-Layer Model
 
 | Layer | What Happens There | What A Founder Sees |
@@ -46,6 +48,8 @@ GitMoneyOS gives founders a way to ask:
 - Where does the knowledge live?
 - What still creates risk?
 - Can another operator inspect and continue the work?
+
+Those are business questions, not developer questions. GitHub becomes useful here because it already has the primitives a founder needs once they are translated: rooms, tasks, approval packets, receipts, locks, owners, and alarms.
 
 ## Current Concept Proof
 

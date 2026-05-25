@@ -6,6 +6,8 @@ It helps founders turn GitHub into a plain-English AI Office: a place to organiz
 
 This is not GitHub for developers. It is GitHub as business infrastructure for founders, operators, creators, agencies, and small teams using AI without a clear chain of command.
 
+If your business is already running through prompts, docs, contractors, automations, Slack threads, Notion pages, Drive folders, and half-remembered decisions, GitMoneyOS gives that work a governed home. The goal is simple: make valuable knowledge easier to find, approve, protect, hand off, and improve.
+
 ## Purpose
 
 Publish the public framework for plain-English GitHub, AI Office infrastructure, IP Vault thinking, and founder-facing GitOps under the KnowTheLedge brand.
@@ -63,11 +65,13 @@ Supporting paths:
 
 GitMoneyOS treats the AI Office as three connected layers:
 
-- Private memory captures founder and builder thinking before it is ready for approval.
-- Agent platforms turn that thinking into reviewable tasks, documents, audits, and decisions.
-- GitHub stores the governed business record with owners, approvals, history, and evidence.
+- Source Memory captures founder and builder thinking before it is ready for approval.
+- Agent Workbench turns that thinking into reviewable tasks, documents, audits, and decisions.
+- GitHub Record stores the governed business record with owners, approvals, history, and evidence.
 
 Plain-English rule: thinking becomes work, and work becomes evidence.
+
+Glass house rule: show the workflow, protect the source.
 
 ## Approval Path
 

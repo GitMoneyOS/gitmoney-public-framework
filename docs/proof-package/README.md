@@ -6,11 +6,15 @@ Show proof of concept, proof of work, and proof of quality for GitMoneyOS withou
 
 Plain-English translation: this package shows that GitMoneyOS is not just an idea. It has a live GitHub operating shell, real approval packets, a self-audit, and a quality bar.
 
+The reading experience is meant to be inspectable, not exhaustive. A founder should be able to scroll this package and understand the business control: where knowledge starts, how AI-assisted work is bounded, where approvals live, what proof exists, and what claims are still off-limits.
+
 ## What This Package Proves
 
 - **Proof of concept:** GitHub can be translated into a plain-English AI Office for founders.
 - **Proof of work:** GitMoneyOS has live repos, issues, PRs, branch protection, labels, owner structure, and governance evidence.
 - **Proof of quality:** GitMoneyOS audited itself, found gaps, remediated them, and recorded the remediation trail.
+
+The deeper point: GitMoneyOS turns scattered output into a business record. Prompts, SOPs, decisions, and agent work stop floating around as private fragments and start moving through a visible path: source, workbench, approval, receipt.
 
 ## Start Here
 
@@ -35,6 +39,8 @@ The public package is a doorway, not a duplicate of the private operating system
 Show the workflow. Protect the source.
 
 The public can inspect the method, evidence trail, and quality bar without seeing private doctrine, client context, credentials, or internal strategy.
+
+That is the balance this package is designed to prove. It should feel open enough to trust and bounded enough to respect the proprietary system underneath.
 
 ## Evidence Boundary
 
