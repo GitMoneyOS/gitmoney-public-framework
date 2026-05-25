@@ -50,9 +50,14 @@ Red Pillar and Hitsuyo Aku, under KnowTheLedge.
 
 ## Founder Demo
 
-- [Plain-English GitHub Founder Demo](docs/demo/plain-english-github-founder-demo.md)
+Start here:
+
 - [Public Proof Package](docs/proof-package/README.md)
+
+Supporting paths:
+
 - [Founder Presentation Runbook](docs/proof-package/founder-presentation-runbook.md)
+- [Plain-English GitHub Founder Demo](docs/demo/plain-english-github-founder-demo.md)
 
 ## Three-Layer AI Office
 
