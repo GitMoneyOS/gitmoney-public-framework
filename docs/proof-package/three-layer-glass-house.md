@@ -18,7 +18,7 @@ Imagine three rooms:
 2. **The work desk:** AI or human work turns the rough thinking into something reviewable.
 3. **The company record:** approved work gets stored with history, ownership, and proof.
 
-Obsidian is often the private notebook. Agent platforms are the work desk. GitHub is the company record.
+Obsidian.md is often the private notebook. Agent platforms are the work desk. GitHub is the company record.
 
 That is the whole model. The rest of GitMoneyOS is about making sure work moves between those rooms cleanly.
 

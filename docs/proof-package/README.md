@@ -14,7 +14,7 @@ The larger thesis is that the next generation of elite businesses will not look 
 
 GitMoneyOS uses tool names, but the model is plain:
 
-- **Obsidian means private notebook.** It is where the founder's rough thinking can live before it is ready to become official.
+- **Obsidian.md means private notebook.** It is where the founder's rough thinking can live before it is ready to become official. Public readers can research the software at [obsidian.md](https://obsidian.md).
 - **Agent platform means work desk.** It is where AI-assisted work gets shaped into something a human can review.
 - **GitHub means company record.** It is where approved work gets stored with history, ownership, and proof.
 

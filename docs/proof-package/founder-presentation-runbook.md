@@ -22,7 +22,7 @@ Say:
 
 If the founder is new to the tools, add:
 
-> Think of it as three rooms. Obsidian is the private notebook, AI tools are the work desk, and GitHub is the official company record. GitMoneyOS teaches what belongs in each room and how work moves between them.
+> Think of it as three rooms. Obsidian.md is the private notebook, AI tools are the work desk, and GitHub is the official company record. GitMoneyOS teaches what belongs in each room and how work moves between them.
 
 Then say:
 

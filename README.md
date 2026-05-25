@@ -12,11 +12,11 @@ The old growth model assumed that scale required more people, more meetings, and
 
 GitMoneyOS is built for that future. It is the infrastructure pattern for solo operators and small teams who intend to scale without losing the chain of command.
 
-## If You Are New To GitHub Or Obsidian
+## If You Are New To GitHub Or Obsidian.md
 
 Read GitMoneyOS like a business building, not a software project.
 
-- **Obsidian** is the private notebook. It is where messy thinking, founder doctrine, drafts, research, prompts, and ideas can be captured before they are ready for the company record.
+- **Obsidian.md** is the private notebook. It is where messy thinking, founder doctrine, drafts, research, prompts, and ideas can be captured before they are ready for the company record. Public readers can research the software at [obsidian.md](https://obsidian.md).
 - **Agent platforms** are the work desk. This is where AI or humans turn the notebook into a document, task, audit, checklist, or proposal.
 - **GitHub** is the official company record. It keeps the approved version, the change history, the owner, the review, and the receipt.
 
