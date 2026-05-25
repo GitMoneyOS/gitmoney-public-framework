@@ -12,6 +12,16 @@ The old growth model assumed that scale required more people, more meetings, and
 
 GitMoneyOS is built for that future. It is the infrastructure pattern for solo operators and small teams who intend to scale without losing the chain of command.
 
+## If You Are New To GitHub Or Obsidian
+
+Read GitMoneyOS like a business building, not a software project.
+
+- **Obsidian** is the private notebook. It is where messy thinking, founder doctrine, drafts, research, prompts, and ideas can be captured before they are ready for the company record.
+- **Agent platforms** are the work desk. This is where AI or humans turn the notebook into a document, task, audit, checklist, or proposal.
+- **GitHub** is the official company record. It keeps the approved version, the change history, the owner, the review, and the receipt.
+
+You do not need to know how to code to understand the control. GitMoneyOS is asking one plain question: when important work happens, can the business prove what changed, who approved it, and where the knowledge lives?
+
 ## Purpose
 
 Publish the public framework for plain-English GitHub, AI Office infrastructure, IP Vault thinking, and founder-facing GitOps under the KnowTheLedge brand.
@@ -39,7 +49,9 @@ Red Pillar and Hitsuyo Aku, under KnowTheLedge.
 
 ## Plain-English GitHub
 
+- A GitHub organization is the company's AI Office building.
 - A repository is a business vault for one category of company knowledge.
+- An issue is a trackable task, risk, or decision.
 - A commit is a timestamped receipt proving what changed.
 - A pull request is an approval lane before work becomes official.
 - CODEOWNERS is the chain of command.

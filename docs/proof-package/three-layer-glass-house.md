@@ -10,6 +10,18 @@ The public should be able to see the architecture of trust: how an idea enters t
 
 This is the future-facing claim: serious small teams are not positioned to scale by turning every founder into a manager of invisible AI sprawl. They are positioned to scale by giving memory, agents, and approvals a governed architecture.
 
+## No-Jargon Version
+
+Imagine three rooms:
+
+1. **The private notebook:** ideas, strategy, drafts, research, prompts, and rough thinking.
+2. **The work desk:** AI or human work turns the rough thinking into something reviewable.
+3. **The company record:** approved work gets stored with history, ownership, and proof.
+
+Obsidian is often the private notebook. Agent platforms are the work desk. GitHub is the company record.
+
+That is the whole model. The rest of GitMoneyOS is about making sure work moves between those rooms cleanly.
+
 ## The Three Layers
 
 | Layer | Founder Name | Public Visibility | Private Boundary | Proof |
@@ -29,6 +41,18 @@ The system works when the founder can tell which layer something belongs to and 
 Short version: Source Memory is the private workshop. Agent Workbench is the operating desk. GitHub Record is the company record.
 
 9-figure ease depends on that separation. If the founder's head is the memory layer, scale breaks. If agents are the approval layer, trust breaks. If GitHub receives work without context, the record breaks.
+
+## One Simple Example
+
+A founder has a strong idea for a new client onboarding process.
+
+1. It starts in the private notebook as a messy note.
+2. An AI workbench turns it into a checklist and draft operating procedure.
+3. A human reviews it and opens a GitHub pull request.
+4. The pull request shows what changed, why it matters, and what proof exists.
+5. Once approved, the onboarding process becomes part of the company record.
+
+Nothing magical happened. The business just stopped treating an important idea like a loose thought.
 
 ## What We Show Publicly
 

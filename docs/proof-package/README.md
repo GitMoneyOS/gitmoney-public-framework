@@ -10,6 +10,16 @@ The reading experience is meant to be inspectable, not exhaustive. A founder sho
 
 The larger thesis is that the next generation of elite businesses will not look like bloated org charts. They will look like small teams with unusually clear memory, unusually disciplined AI delegation, and unusually inspectable records. GitMoneyOS is the operating pattern for that kind of company.
 
+## Read This First If The Tools Are New
+
+GitMoneyOS uses tool names, but the model is plain:
+
+- **Obsidian means private notebook.** It is where the founder's rough thinking can live before it is ready to become official.
+- **Agent platform means work desk.** It is where AI-assisted work gets shaped into something a human can review.
+- **GitHub means company record.** It is where approved work gets stored with history, ownership, and proof.
+
+The point is not to make a founder technical. The point is to stop important business knowledge from living only in memory, chat history, contractor handoffs, or scattered files.
+
 ## What This Package Proves
 
 - **Proof of concept:** GitHub can be translated into a plain-English AI Office for founders.
@@ -84,3 +94,7 @@ Public proof package changes should move through an issue and pull request. Publ
 ## Presentation Rule
 
 Start with the business problem, then the translation, then the evidence. Do not teach GitHub mechanics before the founder understands why the control matters.
+
+Beginner checkpoint:
+
+> I understand the three rooms: private notebook, work desk, company record.

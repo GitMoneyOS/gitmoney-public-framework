@@ -20,6 +20,10 @@ Say:
 
 > Most AI-powered businesses are creating output faster than they are creating control. GitMoneyOS is plain-English GitHub for founders using AI. It turns scattered prompts, SOPs, decisions, docs, and workflows into an AI Office: a governed place where you can see what changed, who approved it, where knowledge lives, and what still creates risk.
 
+If the founder is new to the tools, add:
+
+> Think of it as three rooms. Obsidian is the private notebook, AI tools are the work desk, and GitHub is the official company record. GitMoneyOS teaches what belongs in each room and how work moves between them.
+
 Then say:
 
 > The long-term thesis is simple: the companies that scale fastest will not just use AI. They will govern AI. Systems like this are how solo operators and small teams can pursue 9-figure scale with record-speed learning loops, without letting the business disappear into chat logs, contractor handoffs, and unapproved automation.
@@ -82,9 +86,13 @@ GitMoneyOS has three layers: Source Memory, Agent Workbench, and GitHub Record. 
 
 This is the leverage model: memory captures the doctrine, agents do bounded work, and GitHub turns approved work into receipts.
 
+For a beginner, say:
+
+The private notebook is for thinking. The work desk is for drafting. The company record is for approved truth.
+
 Visible checkpoint:
 
-- Founder can explain why some proof is public and some doctrine stays private.
+- Founder can explain the three rooms without using technical language.
 
 ### Minute 3: The Work Trail
 

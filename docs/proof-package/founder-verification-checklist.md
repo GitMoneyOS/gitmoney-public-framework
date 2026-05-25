@@ -7,7 +7,9 @@ Help a founder inspect GitMoneyOS as proof of concept, proof of work, and proof 
 ## Verify The Concept
 
 - [ ] Can you explain what an AI Office is in one sentence?
-- [ ] Can you explain why GitHub matters for AI-assisted businesses?
+- [ ] Can you explain the three rooms: private notebook, work desk, company record?
+- [ ] Can you explain that Obsidian is the private notebook and GitHub is the company record?
+- [ ] Can you explain why GitHub matters for AI-assisted businesses without using developer language?
 - [ ] Can you see how issues, PRs, commits, and protected branches map to business controls?
 
 ## Verify The Work
