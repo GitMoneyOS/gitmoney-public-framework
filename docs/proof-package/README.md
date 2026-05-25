@@ -14,11 +14,15 @@ Plain-English translation: this package shows that GitMoneyOS is not just an ide
 
 ## Start Here
 
-1. [Proof of Concept](proof-of-concept.md)
-2. [Proof of Work](proof-of-work.md)
-3. [Proof of Quality](proof-of-quality.md)
-4. [Public-Safe Self-Audit Summary](self-audit-summary.md)
-5. [Founder Verification Checklist](founder-verification-checklist.md)
+1. [Brand Narrative](brand-narrative.md)
+2. [Founder Presentation Runbook](founder-presentation-runbook.md)
+3. [Proof of Concept](proof-of-concept.md)
+4. [Proof of Work](proof-of-work.md)
+5. [Proof of Quality](proof-of-quality.md)
+6. [Public-Safe Self-Audit Summary](self-audit-summary.md)
+7. [Onboarding Curriculum Path](onboarding-curriculum-path.md)
+8. [Founder Verification Checklist](founder-verification-checklist.md)
+9. [Source Doctrine Alignment](source-doctrine-alignment.md)
 
 ## Evidence Boundary
 
@@ -50,3 +54,7 @@ Review monthly during the GitMoneyOS governor review.
 ## Approval Path
 
 Public proof package changes should move through an issue and pull request. Public positioning should be approved by both founders before merge.
+
+## Presentation Rule
+
+Start with the business problem, then the translation, then the evidence. Do not teach GitHub mechanics before the founder understands why the control matters.
