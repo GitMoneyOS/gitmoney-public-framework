@@ -33,6 +33,7 @@ Red Pillar and Hitsuyo Aku, under KnowTheLedge.
 ## What Belongs Here
 
 - Public GitMoney thesis
+- Owner-approved GitMoney source doctrine
 - Plain-English GitHub explanations
 - Consulting and audit entry points
 - Founder education assets
@@ -41,7 +42,7 @@ Red Pillar and Hitsuyo Aku, under KnowTheLedge.
 
 ## What Does Not Belong Here
 
-- Private source docs
+- Private source docs that have not been explicitly approved for publication
 - Client data
 - Unapproved internal pricing notes
 - Secrets or credentials
@@ -81,6 +82,7 @@ Start here:
 
 Supporting paths:
 
+- [GitMoney OS v1 Source Document](docs/source-doctrine/GitMoney_OS_v1.docx)
 - [Founder Presentation Runbook](docs/proof-package/founder-presentation-runbook.md)
 - [Plain-English GitHub Founder Demo](docs/demo/plain-english-github-founder-demo.md)
 

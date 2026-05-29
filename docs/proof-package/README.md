@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Show proof of concept, proof of work, and proof of quality for GitMoneyOS without exposing private source doctrine, client data, credentials, or internal operating material.
+Show proof of concept, proof of work, and proof of quality for GitMoneyOS while separating owner-approved public source doctrine from client data, credentials, and internal operating material.
 
 Plain-English translation: this package shows that GitMoneyOS is not just an idea. It has a live GitHub operating shell, real approval packets, a self-audit, and a quality bar.
 
@@ -74,6 +74,7 @@ That is why this matters for serious scale. A solo operator or small team can on
 9. [Onboarding Curriculum Path](onboarding-curriculum-path.md)
 10. [Founder Verification Checklist](founder-verification-checklist.md)
 11. [Source Doctrine Alignment](source-doctrine-alignment.md)
+12. [GitMoney OS v1 Source Document](../source-doctrine/GitMoney_OS_v1.docx)
 
 ## Coherence Rule
 
@@ -81,17 +82,17 @@ The public package is a doorway, not a duplicate of the private operating system
 
 ## Glass House Rule
 
-Show the workflow. Protect the source.
+Show the workflow. Protect the source boundary.
 
-The public can inspect the method, evidence trail, and quality bar without seeing private doctrine, client context, credentials, or internal strategy.
+The public can inspect the method, evidence trail, quality bar, and owner-approved source document without seeing client context, credentials, or internal operating material.
 
 That is the balance this package is designed to prove. It should feel open enough to trust and bounded enough to respect the proprietary system underneath.
 
 ## Evidence Boundary
 
-This package is public-safe. It does not include:
+This package is public-safe. It includes the owner-approved GitMoney OS v1 source document. It does not include:
 
-- private source documents
+- unapproved private source documents
 - client data
 - credentials or secrets
 - internal pricing notes
