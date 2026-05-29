@@ -2,7 +2,15 @@
 
 ## Purpose
 
-Explain how the public proof package aligns with GitMoneyOS source doctrine without publishing private source material.
+Explain how the public proof package aligns with GitMoneyOS source doctrine now that the owner has approved publishing the GitMoney OS v1 source document.
+
+## Published Source
+
+Owner-approved public source document:
+
+- [GitMoney OS v1 Source Document](../source-doctrine/GitMoney_OS_v1.docx)
+
+Publication approval: owner instruction on 2026-05-29 to push `GitMoney_OS_v1.docx` to the public repo.
 
 ## Public Doctrine
 
@@ -20,11 +28,10 @@ This package publicly teaches:
 - Evidence before claims.
 - 9-figure scale as an operating standard that requires memory, agent governance, approval evidence, and handoff discipline.
 
-## Private Doctrine Boundary
+## Remaining Private Doctrine Boundary
 
-This package does not publish:
+This package publishes the approved GitMoney OS v1 source document. It still does not publish:
 
-- the master source document
 - private strategy notes
 - private repo contents
 - client or partner-sensitive information
@@ -50,7 +57,7 @@ Private source doctrine can become public only when it passes all four checks:
 1. It is de-identified.
 2. It does not expose private strategy, clients, credentials, or internal access.
 3. It can be supported by public evidence.
-4. Both founders approve the public positioning.
+4. Both founders or the accountable owner approve the public positioning.
 
 ## Current Public Claim
 
