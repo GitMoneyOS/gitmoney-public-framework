@@ -85,6 +85,7 @@ Supporting paths:
 - [GitMoney OS v1 Source Document](docs/source-doctrine/GitMoney_OS_v1.docx)
 - [Founder Presentation Runbook](docs/proof-package/founder-presentation-runbook.md)
 - [Plain-English GitHub Founder Demo](docs/demo/plain-english-github-founder-demo.md)
+- [Class One GitHub Orientation Official Record](docs/students/class-one-github-orientation-official-record.md)
 
 ## Three-Layer AI Office
 
