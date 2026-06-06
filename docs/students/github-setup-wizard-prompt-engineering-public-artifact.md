@@ -22,6 +22,22 @@ Core idea:
 
 > A raw prompt asks for help. An engineered prompt creates a controlled operating path with rules, outputs, safety boundaries, and evidence.
 
+## Session Origin
+
+This artifact came out of the first GitMoney Vibe Session.
+
+In that session, students were walked through the first real setup actions:
+
+- Creating their first official GitHub Organization
+- Forking repositories
+- Cloning repositories
+- Understanding the difference between forking and cloning
+- Receiving the `gitmoney-ai-office` skill as the next operating layer
+
+That live walkthrough exposed the next friction point: after students created an organization and touched real repositories, they needed a guided follow-through path for admin controls, user settings, permissions, repo governance, and first proof artifacts.
+
+The setup wizard prompt exists so no student has an excuse to stall after the first steps. It turns the first Vibe Session into a repeatable follow-through asset: one question at a time, one safe action at a time, one evidence receipt at a time.
+
 ## Original Student-Facing Request
 
 The starting request was:
@@ -534,4 +550,3 @@ This is no longer just an AI output because it has:
 - Reuse path: class handout, onboarding wizard lesson, setup sprint prework, public framework artifact
 - Lifecycle: revisit after student testing and update with real completion/support/refund data
 - Evidence field: this file path inside the public framework repository
-
