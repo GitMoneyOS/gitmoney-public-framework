@@ -1,0 +1,23 @@
+# Notes waiting on an owner call. The queue file itself is
+# _agent-context/OWNER_DECISION_QUEUE.md; this base surfaces the notes.
+filters:
+  and:
+    - 'file.name != "README"'
+    - or:
+        - 'status == "ready-to-promote"'
+        - and:
+            - 'status == "asset-candidate"'
+            - 'promotion-target != "none"'
+properties:
+  status:
+    displayName: Stage
+  promotion-target:
+    displayName: Wants to become
+views:
+  - type: table
+    name: Waiting on owner
+    order:
+      - file.name
+      - status
+      - promotion-target
+      - created

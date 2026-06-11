@@ -1,0 +1,23 @@
+# Content ideas by status, spark to published.
+filters:
+  and:
+    - 'file.name != "README"'
+    - or:
+        - file.inFolder("40-content-and-media")
+        - 'promotion-target == "content"'
+properties:
+  status:
+    displayName: Stage
+  summary:
+    displayName: Idea
+views:
+  - type: table
+    name: Queue
+    filters:
+      and:
+        - 'status != "archived"'
+    order:
+      - file.name
+      - status
+      - summary
+      - created

@@ -1,0 +1,18 @@
+# The decision log, newest first. Append-only lane.
+filters:
+  and:
+    - file.inFolder("80-decisions")
+    - 'file.name != "README"'
+properties:
+  summary:
+    displayName: Decision
+  owner:
+    displayName: Decided by
+views:
+  - type: table
+    name: Decisions
+    order:
+      - file.name
+      - created
+      - summary
+      - owner

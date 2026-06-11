@@ -1,0 +1,27 @@
+# Reusable prompts and SOPs, ready to copy.
+filters:
+  and:
+    - file.inFolder("50-sops-and-prompts")
+    - 'file.name != "README"'
+properties:
+  summary:
+    displayName: What it does
+views:
+  - type: table
+    name: Prompts
+    filters:
+      and:
+        - file.name.contains("prompt")
+    order:
+      - file.name
+      - summary
+      - created
+  - type: table
+    name: SOPs
+    filters:
+      and:
+        - 'promotion-target == "sop"'
+    order:
+      - file.name
+      - status
+      - summary

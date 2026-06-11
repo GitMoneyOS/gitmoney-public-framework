@@ -1,0 +1,28 @@
+# Every agent brief and its state.
+filters:
+  and:
+    - file.inFolder("60-agent-briefs")
+    - 'file.name != "README"'
+properties:
+  status:
+    displayName: State
+  summary:
+    displayName: Job
+views:
+  - type: table
+    name: All briefs
+    order:
+      - file.name
+      - status
+      - summary
+      - created
+  - type: table
+    name: Open
+    filters:
+      and:
+        - 'status != "archived"'
+        - 'status != "promoted"'
+    order:
+      - file.name
+      - created
+      - summary

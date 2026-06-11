@@ -1,0 +1,30 @@
+# Inbox notes awaiting filing, oldest first.
+filters:
+  and:
+    - file.inFolder("00-inbox")
+    - 'status != "archived"'
+properties:
+  status:
+    displayName: Status
+  summary:
+    displayName: Summary
+  promotion-target:
+    displayName: Route to
+views:
+  - type: table
+    name: To process (oldest first)
+    order:
+      - file.name
+      - created
+      - status
+      - summary
+      - promotion-target
+  - type: table
+    name: Still seeds
+    filters:
+      and:
+        - 'status == "seed"'
+    order:
+      - file.name
+      - created
+      - summary

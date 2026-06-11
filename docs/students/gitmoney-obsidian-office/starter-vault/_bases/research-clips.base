@@ -1,0 +1,27 @@
+# Clips awaiting their weekly-review fate: file, route, or archive.
+filters:
+  and:
+    - file.inFolder("70-research-and-clips")
+    - 'file.name != "README"'
+properties:
+  source:
+    displayName: Source
+  summary:
+    displayName: Why it matters
+views:
+  - type: table
+    name: Unprocessed (oldest first)
+    filters:
+      and:
+        - 'status == "seed"'
+    order:
+      - file.name
+      - created
+      - summary
+      - source
+  - type: table
+    name: All clips
+    order:
+      - file.name
+      - status
+      - created
