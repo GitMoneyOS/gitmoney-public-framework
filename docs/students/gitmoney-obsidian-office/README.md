@@ -69,3 +69,7 @@ You do not need community plugins, MCP, API keys, local AI models, or any always
 ## Lifecycle
 
 This kit is reviewed after each cohort and at the Monthly Governor Review.
+
+## Related Student Source Pack
+
+Continue with the [GitMoney AI Office Source Pack](../ai-office-source-pack/README.md) to see how source material becomes Obsidian notes, agent briefs, student lessons, and GitHub official records.
