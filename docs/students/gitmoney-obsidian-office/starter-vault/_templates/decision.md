@@ -1,10 +1,10 @@
 ---
 owner: 
 source: 
-status: promoted
+status: sprout
 classification: private
 summary: 
-promotion-target: decision-log
+promotion_target: decision-log
 created: {{date}}
 ---
 

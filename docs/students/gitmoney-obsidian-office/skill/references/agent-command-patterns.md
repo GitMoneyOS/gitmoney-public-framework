@@ -6,7 +6,7 @@ Copyable commands for students, and the behavior the agent owes for each. When t
 
 > "Capture this: [idea]"
 
-Create an inbox note from the daily capture template, fill all six frontmatter fields, ask only for what cannot be inferred.
+Create an inbox note from the daily capture template, fill the six student-facing frontmatter fields plus `created`, ask only for what cannot be inferred.
 
 > "Process my inbox"
 

@@ -4,7 +4,7 @@ source: "[[example-pricing-objection-asset]]"
 status: promoted
 classification: student-safe
 summary: Stub - the pricing objection SOP was promoted to the official record (example).
-promotion-target: sop
+promotion_target: sop
 created: 2026-06-11
 ---
 

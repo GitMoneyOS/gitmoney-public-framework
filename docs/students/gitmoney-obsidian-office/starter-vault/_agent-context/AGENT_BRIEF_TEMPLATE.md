@@ -1,3 +1,13 @@
+---
+owner: GitMoneyOS
+source: GitMoney Obsidian Office starter kit
+status: sprout
+classification: public
+summary: Copyable template for scoped agent job briefs.
+promotion_target: agent-brief
+created: 2026-06-11
+---
+
 # AGENT BRIEF TEMPLATE
 
 Copy this into `60-agent-briefs/` as `brief-YYYY-MM-DD-short-job-name.md`. A brief missing any section is not ready for the board.
@@ -9,7 +19,7 @@ source: "[[link-to-source-note]]"
 status: sprout
 classification: private
 summary: One sentence: what job, what deliverable.
-promotion-target: agent-brief
+promotion_target: agent-brief
 created: YYYY-MM-DD
 ---
 

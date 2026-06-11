@@ -4,7 +4,7 @@ source: own sales calls
 status: sprout
 classification: private
 summary: Reusable prompt - rehearse pricing objections against my own playbook before a call.
-promotion-target: none
+promotion_target: none
 created: 2026-06-11
 ---
 

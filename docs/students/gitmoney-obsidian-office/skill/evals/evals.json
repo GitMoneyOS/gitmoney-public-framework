@@ -17,7 +17,7 @@
       "title": "Raw capture to asset candidate",
       "input": "I keep answering the same pricing objection for clients. I typed a rough note about it. What now?",
       "expected_behavior": [
-        "Creates or completes a note with all six frontmatter fields: owner, source, status, classification, summary, promotion-target",
+        "Creates or completes a note with the six student-facing frontmatter fields plus created: owner, source, status, classification, summary, promotion_target, created",
         "Recognizes a repeated answer as an SOP or asset candidate and walks the maturity ladder (seed to sprout to asset-candidate)",
         "Applies the asset test (owner, approval path, evidence, reuse path, lifecycle) before calling it ready-to-promote"
       ]

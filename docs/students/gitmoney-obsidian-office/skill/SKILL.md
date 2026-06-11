@@ -34,7 +34,7 @@ Read `references/operating-standard.md` first in any new session. The other refe
 
 This works whether or not you can touch files.
 
-1. **Capture**: one idea per note. Frontmatter: `owner`, `source`, `status`, `classification`, `summary`, `promotion-target`.
+1. **Capture**: one idea per note. Frontmatter: `owner`, `source`, `status`, `classification`, `summary`, `promotion_target`, `created`.
 2. **Shape**: classify the note into a vault lane, add at least one real "This reminds me of..." link, set maturity (`seed`, `sprout`, `asset-candidate`, `ready-to-promote`, `promoted`, `archived`).
 3. **Route**: if work is needed, draft an agent brief from `_agent-context/AGENT_BRIEF_TEMPLATE.md` and place the job on `_agent-context/WORKBENCH_BOARD.md`.
 4. **Work**: execute only briefed, scoped jobs. Output is always a draft with evidence.

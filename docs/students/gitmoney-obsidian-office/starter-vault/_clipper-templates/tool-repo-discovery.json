@@ -10,7 +10,7 @@
     { "name": "status", "value": "seed", "type": "text" },
     { "name": "classification", "value": "private", "type": "text" },
     { "name": "summary", "value": "{{description}}", "type": "text" },
-    { "name": "promotion-target", "value": "none", "type": "text" },
+    { "name": "promotion_target", "value": "none", "type": "text" },
     { "name": "created", "value": "{{date}}", "type": "date" }
   ],
   "noteContentFormat": "# Tool discovery: {{title}}\n\n## What it does\n\n{{description}}\n\n## What business problem it might solve for me\n\n(If you cannot answer this, archive it at weekly review. Collecting is not owning.)\n\n## Before adoption (intake questions from Week 1)\n\n- What data or credentials would it need?\n- Does it touch money, client data, credentials, publishing, or permissions?\n- Risk level: low / medium / high\n- First experiment that would prove it useful:\n\nThis reminds me of... [[]]\n\n## Source\n\n{{url}} - clipped {{date}}\n\n## Processing fate (set at weekly review)\n\nRoute to repo intake / keep watching / archive without guilt.",

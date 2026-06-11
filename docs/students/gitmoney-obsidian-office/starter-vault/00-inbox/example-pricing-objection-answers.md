@@ -4,7 +4,7 @@ source: client call, own head
 status: sprout
 classification: private
 summary: I answer the same pricing objection on every sales call - this should be a written asset.
-promotion-target: sop
+promotion_target: sop
 created: 2026-06-11
 ---
 

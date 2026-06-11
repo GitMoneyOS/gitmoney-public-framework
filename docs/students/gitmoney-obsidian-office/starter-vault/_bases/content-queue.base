@@ -4,7 +4,7 @@ filters:
     - 'file.name != "README"'
     - or:
         - file.inFolder("40-content-and-media")
-        - 'promotion-target == "content"'
+        - 'promotion_target == "content"'
 properties:
   status:
     displayName: Stage

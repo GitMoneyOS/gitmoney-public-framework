@@ -8,7 +8,7 @@ properties:
     displayName: Status
   summary:
     displayName: Summary
-  promotion-target:
+  promotion_target:
     displayName: Route to
 views:
   - type: table
@@ -18,7 +18,7 @@ views:
       - created
       - status
       - summary
-      - promotion-target
+      - promotion_target
   - type: table
     name: Still seeds
     filters:

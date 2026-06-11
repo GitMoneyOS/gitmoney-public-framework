@@ -21,7 +21,7 @@ Bases are Obsidian's built-in database views. The 12 `.base` files in `_bases/` 
 
 ## Property Names
 
-Bases filter on these exact frontmatter properties: `status`, `classification`, `promotion-target`, `owner`, `created`, plus the file properties Obsidian provides (`file.folder`, `file.mtime`, `file.tags`). Rename a property and the views go blind - property renames are a monthly-review decision, applied vault-wide or not at all.
+Bases filter on these exact frontmatter properties: `status`, `classification`, `promotion_target`, `owner`, `created`, plus the file properties Obsidian provides (`file.folder`, `file.mtime`, `file.tags`). Rename a property and the views go blind - property renames are a monthly-review decision, applied vault-wide or not at all.
 
 ## Editing Rules
 

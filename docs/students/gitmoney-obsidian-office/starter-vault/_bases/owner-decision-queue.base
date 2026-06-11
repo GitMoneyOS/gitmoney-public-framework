@@ -7,11 +7,11 @@ filters:
         - 'status == "ready-to-promote"'
         - and:
             - 'status == "asset-candidate"'
-            - 'promotion-target != "none"'
+            - 'promotion_target != "none"'
 properties:
   status:
     displayName: Stage
-  promotion-target:
+  promotion_target:
     displayName: Wants to become
 views:
   - type: table
@@ -19,5 +19,5 @@ views:
     order:
       - file.name
       - status
-      - promotion-target
+      - promotion_target
       - created

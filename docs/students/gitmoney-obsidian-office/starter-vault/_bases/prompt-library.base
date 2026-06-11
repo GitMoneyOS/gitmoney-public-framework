@@ -20,7 +20,7 @@ views:
     name: SOPs
     filters:
       and:
-        - 'promotion-target == "sop"'
+        - 'promotion_target == "sop"'
     order:
       - file.name
       - status

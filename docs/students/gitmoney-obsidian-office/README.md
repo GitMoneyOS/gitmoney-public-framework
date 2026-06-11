@@ -44,15 +44,15 @@ gitmoney-obsidian-office/
 
 ## How To Start
 
-1. Download and unzip `dist/gitmoney-obsidian-office-starter-vault.zip` (or copy the `starter-vault/` folder).
-2. Store it somewhere stable. Not Downloads.
-3. Open the folder in Obsidian as a vault.
+1. Download and unzip `dist/gitmoney-obsidian-office-starter-vault.zip`. It expands into one folder named `gitmoney-obsidian-office-starter-vault/` (or copy the `starter-vault/` folder and rename it).
+2. Store that folder somewhere stable. Not Downloads.
+3. Open that folder in Obsidian as a vault.
 4. Open `START_HERE.md` and do the 30-minute win.
 5. When you are ready to put an agent to work, give your agent platform the `skill/` folder and follow `_agent-context/AGENT_CONTEXT.md`.
 
 ## What You Need
 
-- Obsidian (free), with core plugins only. Bases and Templates are built in.
+- Current Obsidian (free), with the Templates and Bases core plugins enabled. The vault still works as folders and markdown if Bases are unavailable, but the queue views need Bases.
 - Optional: Obsidian Web Clipper browser extension for the capture templates.
 - An agent platform for the workbench steps: Claude Code, Codex, Antigravity, or any chat assistant. The skill includes a chat-only fallback.
 

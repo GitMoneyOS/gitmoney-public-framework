@@ -10,7 +10,7 @@
     { "name": "status", "value": "seed", "type": "text" },
     { "name": "classification", "value": "private", "type": "text" },
     { "name": "summary", "value": "{{description}}", "type": "text" },
-    { "name": "promotion-target", "value": "none", "type": "text" },
+    { "name": "promotion_target", "value": "none", "type": "text" },
     { "name": "created", "value": "{{date}}", "type": "date" }
   ],
   "noteContentFormat": "# Clip: {{title}}\n\n## Why this matters\n\n(One line. Fill this NOW - an empty why is how hoarding starts.)\n\n## Key takeaway\n\nThis reminds me of... [[]]\n\n## Highlights\n\n{{highlights}}\n\n## Source\n\n{{url}} - clipped {{date}}\n\n## Processing fate (set at weekly review)\n\nFile with a link / route to intake / archive without guilt.",

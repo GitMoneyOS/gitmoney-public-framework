@@ -4,7 +4,7 @@ source: weekly review ritual
 status: seed
 classification: private
 summary: Weekly review for week of {{date}}.
-promotion-target: none
+promotion_target: none
 created: {{date}}
 ---
 

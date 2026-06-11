@@ -4,7 +4,7 @@ source: "[[]]"
 status: sprout
 classification: private
 summary: 
-promotion-target: agent-brief
+promotion_target: agent-brief
 created: {{date}}
 ---
 

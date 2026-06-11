@@ -3,7 +3,7 @@ filters:
   and:
     - 'status == "ready-to-promote"'
 properties:
-  promotion-target:
+  promotion_target:
     displayName: Target
   classification:
     displayName: Classification
@@ -12,7 +12,7 @@ views:
     name: Awaiting approval
     order:
       - file.name
-      - promotion-target
+      - promotion_target
       - classification
       - owner
       - created

@@ -9,7 +9,7 @@ Spark -> Capture -> Develop -> Blueprint -> Build -> Ship decision -> Evidence -
 ```
 
 - **Spark**: an idea hits. Do not develop it on the spot.
-- **Capture**: one note in `00-inbox/`, six frontmatter fields, back to your day. Cost: 90 seconds.
+- **Capture**: one note in `00-inbox/`, six student-facing frontmatter fields plus `created`, back to your day. Cost: 90 seconds.
 - **Develop**: at review, promising sparks move to `20-creative-projects/` using the creative project template. Add the "This reminds me of..." link - creative leverage lives in collisions between notes.
 - **Blueprint**: before any agent builds anything, write the project blueprint: what it is, who it serves, what done looks like, what is out of scope. This is the vibe-coding firewall.
 - **Build**: scoped agent briefs per the workbench contract. One brief per deliverable, not one brief per dream.

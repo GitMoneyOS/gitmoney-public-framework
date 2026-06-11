@@ -4,7 +4,7 @@ source: own head
 status: sprout
 classification: private
 summary: Personal operating rule - anything improvised twice gets written down once.
-promotion-target: none
+promotion_target: none
 created: 2026-06-11
 ---
 

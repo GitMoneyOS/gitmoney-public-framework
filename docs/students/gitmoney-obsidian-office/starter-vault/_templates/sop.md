@@ -4,7 +4,7 @@ source:
 status: sprout
 classification: private
 summary: 
-promotion-target: sop
+promotion_target: sop
 created: {{date}}
 ---
 

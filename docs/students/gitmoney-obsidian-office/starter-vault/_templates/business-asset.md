@@ -4,7 +4,7 @@ source:
 status: asset-candidate
 classification: private
 summary: 
-promotion-target: 
+promotion_target:
 created: {{date}}
 ---
 

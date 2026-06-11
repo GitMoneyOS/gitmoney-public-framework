@@ -4,7 +4,7 @@ source: cohort brainstorm
 status: sprout
 classification: private
 summary: Three-part welcome video series for new clients; done means three published links.
-promotion-target: content
+promotion_target: content
 created: 2026-06-11
 ---
 

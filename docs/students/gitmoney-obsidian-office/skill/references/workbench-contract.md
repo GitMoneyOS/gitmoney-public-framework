@@ -10,7 +10,7 @@ No stage may be skipped. Each stage has an artifact.
 
 ## Stage 1: Obsidian Note
 
-Every job traces back to a note (or an existing GitHub issue). If the user gives you a vague job with no note, your first move is: help them write the note. One idea, six frontmatter fields, done.
+Every job traces back to a note (or an existing GitHub issue). If the user gives you a vague job with no note, your first move is: help them write the note. One idea, six student-facing frontmatter fields plus `created`, done.
 
 ## Stage 2: Agent Brief
 

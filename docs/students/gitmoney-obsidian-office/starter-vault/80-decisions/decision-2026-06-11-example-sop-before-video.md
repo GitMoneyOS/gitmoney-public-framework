@@ -1,10 +1,10 @@
 ---
 owner: example-student
 source: weekly review
-status: promoted
+status: sprout
 classification: private
 summary: Decision - write the pricing SOP before recording the welcome video series.
-promotion-target: decision-log
+promotion_target: decision-log
 created: 2026-06-11
 ---
 

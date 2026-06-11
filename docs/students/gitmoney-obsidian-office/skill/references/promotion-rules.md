@@ -7,7 +7,7 @@ How work leaves private memory and enters the official record. This is the most 
 A note may be prepared for promotion only when all are true:
 
 1. `status: ready-to-promote` - it passed the asset test (owner, approval path, evidence, reuse path, lifecycle).
-2. Its `promotion-target` names a real destination, not `none`.
+2. Its `promotion_target` names a real destination, not `none`.
 3. Its `classification` has been deliberately set to `student-safe` or `public` by the owner. `private` never promotes.
 
 ## Promotion Targets

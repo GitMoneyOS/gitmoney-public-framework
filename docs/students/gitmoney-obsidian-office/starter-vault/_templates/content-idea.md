@@ -4,7 +4,7 @@ source:
 status: seed
 classification: private
 summary: 
-promotion-target: content
+promotion_target: content
 created: {{date}}
 ---
 

@@ -4,7 +4,7 @@ source: GitMoney Obsidian Office starter kit
 status: sprout
 classification: private
 summary: The 30-minute win that turns this folder into your Office.
-promotion-target: none
+promotion_target: none
 created: 2026-06-11
 ---
 
@@ -24,7 +24,7 @@ Do not customize anything yet. Do the 30-minute win first.
 
 Not a test note. A real thought from your actual business or life. Create a note in `00-inbox/` using `_templates/daily-capture.md`. One idea, plainly stated.
 
-### 2. Fill the six fields (5 min)
+### 2. Fill the six student-facing fields (5 min)
 
 In the note's frontmatter:
 
@@ -33,7 +33,9 @@ In the note's frontmatter:
 - `status`: `seed`.
 - `classification`: `private`.
 - `summary`: one sentence for your future self.
-- `promotion-target`: leave as `none` for now.
+- `promotion_target`: leave as `none` for now.
+
+The template also includes `created`. Leave it as today's date.
 
 ### 3. Add one real link (5 min)
 
@@ -45,7 +47,7 @@ Is it a `seed` (raw), a `sprout` (you have touched it twice), or already an `ass
 
 ### 5. Route it (10 min)
 
-Decide what, if anything, this note should become, and set `promotion-target`:
+Decide what, if anything, this note should become, and set `promotion_target`:
 
 - `none` - it is memory. Most notes. Perfectly fine.
 - `agent-brief` - an agent should do a job with this.

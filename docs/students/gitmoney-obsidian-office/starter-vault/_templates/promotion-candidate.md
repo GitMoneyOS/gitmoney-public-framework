@@ -4,7 +4,7 @@ source: "[[]]"
 status: ready-to-promote
 classification: 
 summary: 
-promotion-target: 
+promotion_target:
 created: {{date}}
 ---
 

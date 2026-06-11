@@ -4,7 +4,7 @@ source: "[[example-pricing-objection-answers]]"
 status: sprout
 classification: private
 summary: Brief - draft the pricing objection SOP from my capture note.
-promotion-target: agent-brief
+promotion_target: agent-brief
 created: 2026-06-11
 ---
 
@@ -39,7 +39,7 @@ Hard rules apply. Job-specific: no client names or call details in the SOP - pat
 
 ## Done When
 
-- [ ] SOP draft exists in `50-sops-and-prompts/` with all six frontmatter fields.
+- [ ] SOP draft exists in `50-sops-and-prompts/` with the six student-facing frontmatter fields plus `created`.
 - [ ] All three answers appear as runnable steps a teammate could follow cold.
 - [ ] Card moved to Review with this brief linked.
 

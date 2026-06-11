@@ -9,7 +9,7 @@ filters:
 properties:
   status:
     displayName: Stage
-  promotion-target:
+  promotion_target:
     displayName: Target
 views:
   - type: table
@@ -17,7 +17,7 @@ views:
     order:
       - file.name
       - status
-      - promotion-target
+      - promotion_target
       - summary
   - type: table
     name: Ready to promote
@@ -26,5 +26,5 @@ views:
         - 'status == "ready-to-promote"'
     order:
       - file.name
-      - promotion-target
+      - promotion_target
       - owner

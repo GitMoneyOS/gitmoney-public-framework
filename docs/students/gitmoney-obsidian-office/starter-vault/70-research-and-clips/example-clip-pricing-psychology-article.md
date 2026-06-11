@@ -4,7 +4,7 @@ source: https://example.com/pricing-psychology-article
 status: seed
 classification: private
 summary: Clipped article on anchoring in pricing conversations - relevant to my objection playbook.
-promotion-target: none
+promotion_target: none
 created: 2026-06-11
 ---
 

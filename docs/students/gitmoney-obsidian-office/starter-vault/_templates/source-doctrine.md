@@ -4,7 +4,7 @@ source: own head
 status: sprout
 classification: private
 summary: 
-promotion-target: none
+promotion_target: none
 created: {{date}}
 ---
 

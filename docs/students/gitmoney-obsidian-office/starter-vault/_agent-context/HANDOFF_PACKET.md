@@ -1,3 +1,13 @@
+---
+owner: GitMoneyOS
+source: GitMoney Obsidian Office starter kit
+status: sprout
+classification: public
+summary: Copyable packet for moving work between agents, platforms, or owner review.
+promotion_target: agent-brief
+created: 2026-06-11
+---
+
 # HANDOFF PACKET
 
 Use this when work moves between agents, between platforms, or from agent to owner mid-job. A handoff with no packet is a restart in disguise.

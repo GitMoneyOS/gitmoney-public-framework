@@ -4,7 +4,7 @@ source: "[[example-pricing-objection-answers]]"
 status: seed
 classification: private
 summary: Content idea - the cost-of-doing-nothing reframe as a short post.
-promotion-target: content
+promotion_target: content
 created: 2026-06-11
 ---
 

@@ -4,7 +4,7 @@ source: "[[example-pricing-objection-answers]]"
 status: asset-candidate
 classification: private
 summary: The pricing objection playbook, maturing through the asset test toward SOP promotion.
-promotion-target: sop
+promotion_target: sop
 created: 2026-06-11
 ---
 

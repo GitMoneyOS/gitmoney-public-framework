@@ -1,3 +1,13 @@
+---
+owner: GitMoneyOS
+source: GitMoney Obsidian Office starter kit
+status: sprout
+classification: public
+summary: Minimum operating contract for agents working inside this vault.
+promotion_target: agent-brief
+created: 2026-06-11
+---
+
 # AGENT CONTEXT
 
 Read this at the start of every agent session in this vault.
@@ -26,7 +36,7 @@ Capture in Obsidian -> Shape -> Route through workbench -> Promote approved work
 ## Vault Rules
 
 - File into the existing numbered lanes only. Never create new top-level folders.
-- New notes use `_templates/` verbatim and fill all six frontmatter fields: `owner`, `source`, `status`, `classification`, `promotion-target`, `summary` (plus `created`).
+- New notes use `_templates/` verbatim and fill the six student-facing frontmatter fields: `owner`, `source`, `status`, `classification`, `promotion_target`, `summary` plus `created`.
 - Append, never rewrite, in `MEMORY_LOG.md`, `WORKBENCH_BOARD.md` history, and `80-decisions/`.
 - Everything you produce is a draft until the owner approves it.
 
