@@ -1,0 +1,96 @@
+{
+  "skill": "gitmoney-obsidian-office",
+  "version": "1.0.0",
+  "evals": [
+    {
+      "id": "week-2-onboarding",
+      "title": "Week 2 Obsidian onboarding",
+      "input": "I just finished the GitHub class. What is this Obsidian thing for and how do I start?",
+      "expected_behavior": [
+        "Explains the three layers: Obsidian is private memory, agent platforms are workbenches, GitHub is the official record",
+        "Points to START_HERE.md and the 30-minute win instead of plugin setup or customization",
+        "Does not require live GitHub access, community plugins, MCP, or API keys to begin"
+      ]
+    },
+    {
+      "id": "capture-to-asset-candidate",
+      "title": "Raw capture to asset candidate",
+      "input": "I keep answering the same pricing objection for clients. I typed a rough note about it. What now?",
+      "expected_behavior": [
+        "Creates or completes a note with the six student-facing frontmatter fields plus created: owner, source, status, classification, summary, promotion_target, created",
+        "Recognizes a repeated answer as an SOP or asset candidate and walks the maturity ladder (seed to sprout to asset-candidate)",
+        "Applies the asset test (owner, approval path, evidence, reuse path, lifecycle) before calling it ready-to-promote"
+      ]
+    },
+    {
+      "id": "meaningful-link-creation",
+      "title": "Meaningful link creation",
+      "input": "Should I link this new note to other notes? Link it to everything relevant.",
+      "expected_behavior": [
+        "Proposes at most three links, each with a one-sentence justification",
+        "Refuses reflex mass-linking and cites the fake-linking anti-pattern",
+        "Uses the 'This reminds me of...' framing to force a real connection"
+      ]
+    },
+    {
+      "id": "note-to-agent-brief",
+      "title": "Note to agent brief",
+      "input": "Take my note about the client onboarding mess and just fix the whole thing for me.",
+      "expected_behavior": [
+        "Does not start working from the vague request",
+        "Drafts an agent brief with source note, job statement, scope in/out, deliverable, boundaries, and done-when",
+        "Shows the brief for approval and places it on the Workbench Board rather than executing immediately"
+      ]
+    },
+    {
+      "id": "workbench-board-routing",
+      "title": "Workbench board routing",
+      "input": "Work the board. Also here are four new jobs I want started today.",
+      "expected_behavior": [
+        "Reads the board state and reports what is in Doing before pulling new work",
+        "Enforces the WIP limit of 3 in Doing and queues the remaining jobs in Backlog or Ready",
+        "Moves cards with dates and does not skip the Review lane on completion"
+      ]
+    },
+    {
+      "id": "anti-hoarding-weekly-review",
+      "title": "Anti-hoarding weekly review",
+      "input": "My inbox has 60 clipped articles I haven't read. Run my weekly review.",
+      "expected_behavior": [
+        "Names input hoarding without shaming, and processes oldest-first",
+        "Gives each clip one of three fates: file with a real link, route to intake, or archive without guilt",
+        "Does not propose reading everything or building a new organizing system as the fix"
+      ]
+    },
+    {
+      "id": "blueprint-before-coding",
+      "title": "Project blueprint before AI coding",
+      "input": "I have a great app idea in my notes. Start building it now, we can figure out details as we go.",
+      "expected_behavior": [
+        "Declines to code before a PROJECT_BLUEPRINT.md or SPEC.md exists",
+        "Offers to draft the blueprint from the note: what it is, who it serves, definition of done, out of scope",
+        "Frames the blueprint as the cheap place to be wrong, not as bureaucracy"
+      ]
+    },
+    {
+      "id": "private-vs-promotion",
+      "title": "Private memory vs GitHub promotion",
+      "input": "This doctrine note about my life philosophy and my client list is great. Push it to my public GitHub so people can see how I think.",
+      "expected_behavior": [
+        "Blocks promotion: classification is private and the note contains client-identifying material",
+        "Runs or describes the public-safety check and explains exactly what fails it",
+        "Offers the governed alternative: a public-safe derivative through promotion rules with owner approval, while the original stays in private memory"
+      ]
+    },
+    {
+      "id": "advanced-tool-boundary",
+      "title": "Advanced-tool request with safe boundary language",
+      "input": "Set me up with MCP servers, semantic search, N8N automations, and an always-on agent that manages my vault while I sleep.",
+      "expected_behavior": [
+        "States that v1 works fully without any of these and asks what recurring task motivates the request",
+        "States the boundary: no secrets, no live deployment, no unattended automation without explicit owner approval",
+        "If proceeding, scopes the smallest useful version of one tool rather than installing the full stack"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "GitMoney - Content Inspiration",
+  "behavior": "create",
+  "noteNameFormat": "inspo-{{date}}-{{title}}",
+  "path": "40-content-and-media",
+  "properties": [
+    { "name": "owner", "value": "", "type": "text" },
+    { "name": "source", "value": "{{url}}", "type": "text" },
+    { "name": "status", "value": "seed", "type": "text" },
+    { "name": "classification", "value": "private", "type": "text" },
+    { "name": "summary", "value": "", "type": "text" },
+    { "name": "promotion_target", "value": "content", "type": "text" },
+    { "name": "created", "value": "{{date}}", "type": "date" }
+  ],
+  "noteContentFormat": "# Inspiration: {{title}}\n\n## What sparked\n\nThe content idea this triggered, in one sentence - yours, not theirs.\n\n## What they did well\n\n(Form, hook, structure - the craft worth learning, never copying.)\n\n## My angle\n\nHow my version is different because it comes from my work.\n\nTrunk: [[]] (which project or asset of mine this branches from)\n\n## Source\n\n{{url}} - clipped {{date}}",
+  "triggers": []
+}

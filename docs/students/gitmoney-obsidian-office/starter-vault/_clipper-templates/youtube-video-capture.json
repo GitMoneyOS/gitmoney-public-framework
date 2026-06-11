@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "GitMoney - YouTube/Video Capture",
+  "behavior": "create",
+  "noteNameFormat": "clip-{{date}}-{{title}}",
+  "path": "70-research-and-clips",
+  "properties": [
+    { "name": "owner", "value": "", "type": "text" },
+    { "name": "source", "value": "{{url}}", "type": "text" },
+    { "name": "status", "value": "seed", "type": "text" },
+    { "name": "classification", "value": "private", "type": "text" },
+    { "name": "summary", "value": "", "type": "text" },
+    { "name": "promotion_target", "value": "none", "type": "text" },
+    { "name": "created", "value": "{{date}}", "type": "date" }
+  ],
+  "noteContentFormat": "# Video: {{title}}\n\n## Why I'm saving this\n\n(One line, written before you close the tab. 'Looks useful' does not count.)\n\n## The one idea worth keeping\n\n## Timestamped moments\n\n- \n\nThis reminds me of... [[]]\n\n## Source\n\n{{url}} by {{author}} - clipped {{date}}\n\n## Processing fate (set at weekly review)\n\nFile with a link / route to intake / archive without guilt.",
+  "triggers": ["https://www.youtube.com", "https://youtu.be", "https://vimeo.com"]
+}

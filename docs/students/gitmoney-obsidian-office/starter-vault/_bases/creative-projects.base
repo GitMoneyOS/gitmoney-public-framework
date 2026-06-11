@@ -1,0 +1,31 @@
+# Active creative work and its maturity. Three active max.
+filters:
+  and:
+    - file.inFolder("20-creative-projects")
+    - 'file.name != "README"'
+properties:
+  status:
+    displayName: Maturity
+  summary:
+    displayName: Project
+views:
+  - type: table
+    name: Active
+    filters:
+      and:
+        - 'status != "archived"'
+        - 'status != "promoted"'
+    order:
+      - file.name
+      - status
+      - summary
+      - created
+  - type: table
+    name: Shipped or archived
+    filters:
+      or:
+        - 'status == "promoted"'
+        - 'status == "archived"'
+    order:
+      - file.name
+      - status

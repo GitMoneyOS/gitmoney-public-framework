@@ -1,0 +1,27 @@
+# The honesty view: nothing modified in 60+ days.
+# Decisions and promoted stubs are allowed to rest; everything else gets a fate.
+filters:
+  and:
+    - 'file.mtime < now() - dur("60 days")'
+    - 'status != "archived"'
+    - 'file.name != "README"'
+    - not:
+        - file.inFolder("80-decisions")
+        - file.inFolder("90-promoted-to-github")
+        - file.inFolder("_templates")
+        - file.inFolder("_bases")
+        - file.inFolder("_clipper-templates")
+        - file.inFolder("_agent-context")
+properties:
+  status:
+    displayName: Status
+  summary:
+    displayName: What it was
+views:
+  - type: table
+    name: Decide their fate
+    order:
+      - file.name
+      - file.mtime
+      - status
+      - summary

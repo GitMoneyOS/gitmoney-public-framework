@@ -1,0 +1,30 @@
+# Candidates moving through the asset test toward promotion.
+filters:
+  and:
+    - 'file.name != "README"'
+    - or:
+        - file.inFolder("30-business-assets")
+        - 'status == "asset-candidate"'
+        - 'status == "ready-to-promote"'
+properties:
+  status:
+    displayName: Stage
+  promotion_target:
+    displayName: Target
+views:
+  - type: table
+    name: Pipeline
+    order:
+      - file.name
+      - status
+      - promotion_target
+      - summary
+  - type: table
+    name: Ready to promote
+    filters:
+      and:
+        - 'status == "ready-to-promote"'
+    order:
+      - file.name
+      - promotion_target
+      - owner

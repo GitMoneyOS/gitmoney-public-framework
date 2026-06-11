@@ -1,0 +1,18 @@
+# Everything that passed the asset test and awaits owner approval.
+filters:
+  and:
+    - 'status == "ready-to-promote"'
+properties:
+  promotion_target:
+    displayName: Target
+  classification:
+    displayName: Classification
+views:
+  - type: table
+    name: Awaiting approval
+    order:
+      - file.name
+      - promotion_target
+      - classification
+      - owner
+      - created
