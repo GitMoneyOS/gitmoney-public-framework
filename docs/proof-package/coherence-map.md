@@ -4,6 +4,10 @@
 
 Show how the recent GitMoneyOS work folds into one coherent public presentation without creating unnecessary repo sprawl.
 
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 Plain-English translation: this map explains where the proof lives and why it lives there.
 
 ## Minimal Repo Principle

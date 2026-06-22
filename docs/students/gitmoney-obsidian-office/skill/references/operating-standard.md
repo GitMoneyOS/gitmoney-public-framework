@@ -1,5 +1,13 @@
 # Operating Standard
 
+## Purpose
+
+Establish the baseline operating standards for the AI Office.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 The contract every note, job, and promotion follows.
 
 ## The Three Layers

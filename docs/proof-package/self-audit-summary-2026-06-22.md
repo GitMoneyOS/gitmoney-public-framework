@@ -4,6 +4,10 @@
 
 Summarize the second AI Office Audit against GitMoneyOS, focusing on documentation hygiene and adherence to the Proof of Quality standard following the addition of the Student Source Pack.
 
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 ## Audit Frame
 
 This audit evaluated:

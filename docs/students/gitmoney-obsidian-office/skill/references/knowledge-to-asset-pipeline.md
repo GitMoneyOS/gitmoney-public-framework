@@ -1,5 +1,13 @@
 # Knowledge-To-Asset Pipeline
 
+## Purpose
+
+Describe the pipeline for turning raw knowledge into business assets.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 The advanced path: turning an aging vault into a portfolio of business assets. Run monthly, or when the owner asks for a vault audit.
 
 ## Stage 1: Vault Health Audit
