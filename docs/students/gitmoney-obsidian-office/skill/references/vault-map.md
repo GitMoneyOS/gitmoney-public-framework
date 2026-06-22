@@ -1,5 +1,13 @@
 # Vault Map
 
+## Purpose
+
+Outline the organizational structure and folder taxonomy of the Obsidian vault.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 The starter vault has fixed lanes. File into them; do not invent new top-level folders.
 
 | Folder | What lives here | Typical status |

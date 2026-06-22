@@ -1,5 +1,13 @@
 # Bases Standard
 
+## Purpose
+
+Define the standards for using Bases views in Obsidian.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 Bases are Obsidian's built-in database views. The 12 `.base` files in `_bases/` are saved views over the vault's frontmatter. They work only because the frontmatter standard is consistent - that is the deal.
 
 ## The 12 Bases

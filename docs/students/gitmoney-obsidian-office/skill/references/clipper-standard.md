@@ -1,5 +1,13 @@
 # Clipper Standard
 
+## Purpose
+
+Define the standards for using the Obsidian Web Clipper.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 The Obsidian Web Clipper templates in `_clipper-templates/`. They exist so web capture lands governed instead of hoarded.
 
 ## The 4 Templates

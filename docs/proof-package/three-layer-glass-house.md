@@ -4,6 +4,10 @@
 
 Explain the GitMoneyOS operating model with enough transparency that founders can inspect the method, without exposing the private doctrine that makes the system proprietary.
 
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 Plain-English translation: GitMoneyOS is a glass house around the workflow, not an open vault for every private thought.
 
 The public should be able to see the architecture of trust: how an idea enters the system, how AI-assisted work is bounded, how approval happens, and where the receipt lives. The public does not need the raw private doctrine to understand that the system has discipline.

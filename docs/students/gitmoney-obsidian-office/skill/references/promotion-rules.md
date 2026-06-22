@@ -1,5 +1,13 @@
 # Promotion Rules
 
+## Purpose
+
+Define the rules and workflow for promoting work from Obsidian to the official GitHub record.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 How work leaves private memory and enters the official record. This is the most consequential move in the system; it is deliberately slow.
 
 ## Preconditions

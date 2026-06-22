@@ -1,5 +1,13 @@
 # Creative Operator Loop
 
+## Purpose
+
+Define the creative and content production workflow for students using the GitMoneyOS AI Office.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 How creative work moves through the Office without dying in a drafts folder.
 
 ## The Loop

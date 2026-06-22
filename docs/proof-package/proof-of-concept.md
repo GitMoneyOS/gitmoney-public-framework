@@ -1,5 +1,13 @@
 # Proof Of Concept
 
+## Purpose
+
+Demonstrate that GitHub can be a plain-English AI Office for founders using AI.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 ## Thesis
 
 GitMoneyOS proves that GitHub can be used as plain-English business infrastructure for founders, not just as a developer tool.

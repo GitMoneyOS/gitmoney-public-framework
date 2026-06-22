@@ -4,6 +4,12 @@
 
 Help a founder inspect GitMoneyOS as proof of concept, proof of work, and proof of quality.
 
+Note: This is a user-facing checklist for founders. Empty checkboxes indicate items for the founder to verify, not uncompleted repository work.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 ## Verify The Concept
 
 - [ ] Can you explain what an AI Office is in one sentence?

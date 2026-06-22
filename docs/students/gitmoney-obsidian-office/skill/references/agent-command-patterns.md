@@ -1,5 +1,13 @@
 # Agent Command Patterns
 
+## Purpose
+
+Define common command patterns for agents working in the vault.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 Copyable commands for students, and the behavior the agent owes for each. When the user gives a vague job, route them to the nearest pattern instead of guessing.
 
 ## Capture And Shape

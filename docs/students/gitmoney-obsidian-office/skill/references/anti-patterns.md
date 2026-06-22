@@ -1,5 +1,13 @@
 # Anti-Patterns
 
+## Purpose
+
+Identify and explain common AI Office anti-patterns to avoid.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 The ten ways students kill their vault, and the counter for each. Check this list at every weekly review.
 
 ## 1. Setup Paralysis
