@@ -2,6 +2,11 @@
 
 All notable GitMoney changes for this repo will be tracked here.
 
+## 2026-07-03
+
+- Added the capstone synthesis class to the AI Office source pack: `docs/students/ai-office-source-pack/capstone-cybernetic-revenue-loop.md`.
+- Updated the source pack README so the four lessons ladder into the capstone and the loop diagram closes through revenue signal back to new evidence.
+
 ## 2026-06-22
 
 - Performed repository audit and documented governance gaps.
