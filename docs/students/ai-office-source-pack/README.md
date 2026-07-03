@@ -7,7 +7,7 @@ Layer classification: GitHub record
 
 ## What This Is
 
-This source pack turns AI Office research into a four-week student path. It is not a reading pile. It is a way to practice the GitMoney loop:
+This source pack turns AI Office research into a four-week student path plus a synthesis capstone. It is not a reading pile. It is a way to practice the GitMoney loop:
 
 ```mermaid
 flowchart LR
@@ -16,11 +16,14 @@ flowchart LR
     briefs["Agent briefs"]
     outputs["Student lessons and proof"]
     github["GitHub official record"]
+    signal["Revenue signal"]
 
     pdfs --> obsidian
     obsidian --> briefs
     briefs --> outputs
     outputs --> github
+    github --> signal
+    signal --> obsidian
 ```
 
 Plain-English stack:
@@ -30,12 +33,15 @@ Plain-English stack:
 - **GitHub is the official record.** Approved work becomes evidence.
 - **Governor Review keeps it alive.** Work gets reviewed instead of forgotten.
 
-## The Four Lessons
+## The Four Lessons Plus The Capstone
 
 1. [Week 1: GitHub Is The Official Record](week-1-github-official-record.md)
 2. [Week 2: Obsidian Is Private Memory](week-2-obsidian-private-memory.md)
 3. [Week 3: Agents Are Workbenches](week-3-agent-workbench.md)
 4. [Week 4: Governor Review Keeps The Office Alive](week-4-governor-review.md)
+5. [Capstone: The Cybernetic Revenue Loop](capstone-cybernetic-revenue-loop.md)
+
+The four lessons teach the layers. The capstone reveals that the layers were always one system: a business that captures its own signal, diagnoses its own leaks, routes its own work, and learns from its own results.
 
 ## How To Use This Pack
 
