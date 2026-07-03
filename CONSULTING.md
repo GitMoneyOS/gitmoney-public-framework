@@ -70,6 +70,18 @@ Deliverables:
 - Plain-English monthly report
 - Governance advisory
 
+## Where To Start Based On Your Score
+
+We do not pitch. We diagnose. Start with the free [Exit-Ready Score Self-Assessment](docs/exit-ready-score-self-assessment.md) — it takes about ten minutes and routes you to exactly one next step:
+
+| Your Score | Start Here |
+| ---: | --- |
+| 0-10 | AI Work Governance Signal Audit — a short diagnostic conversation that names the control failures already costing you |
+| 11-20 | AI Office Audit |
+| 21-30 | GitOps Setup Sprint |
+| 31-36 | Fractional GitOps Operator |
+| 37-40 | Keep your cadence — and consider sharing a public-safe case file |
+
 ## Intake
 
 Open an issue using the business task template, or contact the KnowTheLedge team through the approved public channel once published.
