@@ -4,6 +4,10 @@
 
 Define how GitMoneyOS judges the quality of its own work.
 
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 The quality bar is not "more docs." The quality bar is governed evidence that a founder can inspect.
 
 ## Quality Standard

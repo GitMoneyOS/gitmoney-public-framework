@@ -4,6 +4,10 @@
 
 Show non-technical founders how GitMoneyOS uses GitHub as an AI Office: a place to organize business knowledge, track work, approve changes, and keep evidence.
 
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 ## The Five-Minute Story
 
 GitMoneyOS is not GitHub for developers. It is GitHub as business infrastructure for founders using AI.

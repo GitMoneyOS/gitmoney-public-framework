@@ -1,5 +1,13 @@
 # Acceptance Rubric
 
+## Purpose
+
+Provide a rubric for accepting or rejecting AI-assisted work.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 How the owner (or an agent pre-reviewing for the owner) judges whether work is done. Used at Stage 5 of the workbench contract and at cohort checkpoints.
 
 ## Judging An Agent Artifact

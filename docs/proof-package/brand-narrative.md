@@ -1,5 +1,13 @@
 # Brand Narrative
 
+## Purpose
+
+Define the brand identity, narrative, and strategic positioning of GitMoneyOS.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 ## One-Line Position
 
 GitMoneyOS turns GitHub into a plain-English AI Office for founders using AI.

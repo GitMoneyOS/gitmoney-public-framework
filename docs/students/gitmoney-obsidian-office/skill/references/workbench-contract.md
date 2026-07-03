@@ -1,5 +1,13 @@
 # Workbench Contract
 
+## Purpose
+
+Define the contract and boundaries for agent-led work on the workbench.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 The agentic chain every job follows:
 
 ```text

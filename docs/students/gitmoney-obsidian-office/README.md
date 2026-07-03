@@ -1,7 +1,14 @@
 # GitMoney Obsidian Office
 
+## Purpose
+
+Define the private memory layer of the AI Office and provide a starter framework for founders using Obsidian.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 Version: v1
-Owner: Red Pillar and Hitsuyo Aku, under KnowTheLedge.
 Audience: GitMoneyOS students who completed GitHub orientation (Week 1).
 Layer classification: GitHub record.
 

@@ -4,6 +4,10 @@
 
 Summarize the first dry AI Office Audit against GitMoneyOS itself without exposing private source doctrine.
 
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 ## Audit Frame
 
 GitMoneyOS audited itself as if it were the first client AI Office.

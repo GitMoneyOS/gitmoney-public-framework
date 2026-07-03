@@ -4,6 +4,10 @@
 
 Show how a founder moves from "GitHub feels technical" to "I can govern my AI Office."
 
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 This is the curriculum path behind the public proof package.
 
 ## Learning Standard

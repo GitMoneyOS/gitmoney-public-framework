@@ -4,6 +4,10 @@
 
 Explain how the public proof package aligns with GitMoneyOS source doctrine now that the owner has approved publishing the GitMoney OS v1 source document.
 
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 ## Published Source
 
 Owner-approved public source document:

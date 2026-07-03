@@ -1,5 +1,13 @@
 # Templates Standard
 
+## Purpose
+
+Define the required note templates for the student Obsidian vault.
+
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 The 14 templates in `_templates/`. Copy them; never edit the originals in place. Every template carries the six-field frontmatter standard from `operating-standard.md`.
 
 | Template | File | Use for | Default lane |

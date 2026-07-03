@@ -15,6 +15,8 @@ Use short names like:
 
 ## Pull Request Checklist
 
+*Note: These checkboxes are a template for contributors to follow.*
+
 - [ ] The business change is clear.
 - [ ] The owner is named.
 - [ ] The evidence is attached or described.

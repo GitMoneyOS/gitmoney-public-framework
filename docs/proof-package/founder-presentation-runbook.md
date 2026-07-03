@@ -4,6 +4,10 @@
 
 Guide a founder through GitMoneyOS in five minutes without overwhelming them with GitHub mechanics.
 
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 ## Audience
 
 Founders, operators, creators, agency owners, and small teams using AI before they have a clear operating record.

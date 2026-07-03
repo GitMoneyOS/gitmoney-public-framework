@@ -4,6 +4,10 @@
 
 Show the visible work trail behind GitMoneyOS.
 
+## Owner
+
+Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
 This is not a polished marketing claim. It is the operating evidence that the concept has been built, reviewed, corrected, and promoted through GitHub.
 
 ## Live Public Evidence
