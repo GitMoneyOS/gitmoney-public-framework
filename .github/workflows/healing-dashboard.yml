@@ -1,0 +1,43 @@
+# Healing Dashboard reminder — deterministic post-merge receipt.
+# Design note: this intentionally opens an issue instead of auto-committing to
+# HEALING-DASHBOARD.md. Auto-commits fight branch protection and hide authorship;
+# an issue keeps the dashboard entry inside the normal approval lane (AVSM:
+# smallest safe control surface). Permissions stay at issues:write.
+name: Healing Dashboard Entry Reminder
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  issues: write
+
+jobs:
+  request-dashboard-entry:
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'audit')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open dashboard entry issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[Dashboard] Add healing entry for PR #${pr.number}`,
+              labels: ["type:governor-review"],
+              body: [
+                `Merged audit PR: #${pr.number} — ${pr.title}`,
+                "",
+                "Add a cycle entry to `HEALING-DASHBOARD.md` answering the five questions:",
+                "",
+                "- What scattered knowledge was found?",
+                "- What assets were created?",
+                "- What risks were named?",
+                "- What approvals were added?",
+                "- What reusable systems now exist?",
+                "",
+                "Submit the entry through a pull request. Close this issue when the entry merges."
+              ].join("\n")
+            });
