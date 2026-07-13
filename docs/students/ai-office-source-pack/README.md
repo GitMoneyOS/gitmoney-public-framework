@@ -1,13 +1,13 @@
 # GitMoney AI Office Source Pack
 
-Version: v1
+Version: v1.1
 Owner: Red Pillar and Hitsuyo Aku, under KnowTheLedge
 Audience: GitMoneyOS students, founders, creators, and operators
 Layer classification: GitHub record
 
 ## What This Is
 
-This source pack turns AI Office research into a four-week student path plus a synthesis capstone. It is not a reading pile. It is a way to practice the GitMoney loop:
+This source pack turns AI Office research into a preparation lesson, a four-week student path, and a synthesis capstone. It is not a reading pile. It is a way to practice the GitMoney loop:
 
 ```mermaid
 flowchart LR
@@ -33,15 +33,16 @@ Plain-English stack:
 - **GitHub is the official record.** Approved work becomes evidence.
 - **Governor Review keeps it alive.** Work gets reviewed instead of forgotten.
 
-## The Four Lessons Plus The Capstone
+## The Preparation Lesson, Four Core Lessons, And The Capstone
 
-1. [Week 1: GitHub Is The Official Record](week-1-github-official-record.md)
-2. [Week 2: Obsidian Is Private Memory](week-2-obsidian-private-memory.md)
-3. [Week 3: Agents Are Workbenches](week-3-agent-workbench.md)
-4. [Week 4: Governor Review Keeps The Office Alive](week-4-governor-review.md)
-5. [Capstone: The Cybernetic Revenue Loop](capstone-cybernetic-revenue-loop.md)
+1. [Week 0: Agentic Systems First Principles](week-0-agentic-systems-first-principles.md)
+2. [Week 1: GitHub Is The Official Record](week-1-github-official-record.md)
+3. [Week 2: Obsidian Is Private Memory](week-2-obsidian-private-memory.md)
+4. [Week 3: Agents Are Workbenches](week-3-agent-workbench.md)
+5. [Week 4: Governor Review Keeps The Office Alive](week-4-governor-review.md)
+6. [Capstone: The Cybernetic Revenue Loop](capstone-cybernetic-revenue-loop.md)
 
-The four lessons teach the layers. The capstone reveals that the layers were always one system: a business that captures its own signal, diagnoses its own leaks, routes its own work, and learns from its own results.
+Week 0 establishes the safety, ownership, and evidence rules. The four core lessons teach the layers. The capstone reveals that the layers were always one system: a business that captures its own signal, diagnoses its own leaks, routes its own work, and learns from its own results.
 
 ## How To Use This Pack
 
@@ -62,4 +63,3 @@ Use this with the [GitMoney Obsidian Office](../gitmoney-obsidian-office/README.
 ## Boundary
 
 This public pack summarizes concepts from internal source material. It does not include private PDFs, internal pricing, investor strategy, client data, or unsupported legal, financial, security, valuation, acquisition, or revenue claims.
-

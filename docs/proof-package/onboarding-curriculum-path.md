@@ -25,6 +25,10 @@ Business job:
 
 - Give the founder a mental model for why GitHub matters.
 
+Preparation:
+
+- Complete [Week 0: Agentic Systems First Principles](../students/ai-office-source-pack/week-0-agentic-systems-first-principles.md) before the live GitBuilt lesson.
+
 Teach:
 
 - GitHub is the official company record.

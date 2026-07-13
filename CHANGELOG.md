@@ -2,6 +2,11 @@
 
 All notable GitMoney changes for this repo will be tracked here.
 
+## 2026-07-13
+
+- Added Week 0 student preparation for the GitBuilt lesson: docs/students/ai-office-source-pack/week-0-agentic-systems-first-principles.md.
+- Updated the public source-pack index, onboarding curriculum path, and README so students can find the preparation lesson before Week 1.
+
 ## 2026-07-03
 
 - Added the capstone synthesis class to the AI Office source pack: `docs/students/ai-office-source-pack/capstone-cybernetic-revenue-loop.md`.

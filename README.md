@@ -86,6 +86,7 @@ Supporting paths:
 - [Founder Presentation Runbook](docs/proof-package/founder-presentation-runbook.md)
 - [Plain-English GitHub Founder Demo](docs/demo/plain-english-github-founder-demo.md)
 - [Class One GitHub Orientation Official Record](docs/students/class-one-github-orientation-official-record.md)
+- [GitBuilt Agentic Systems Preparation](docs/students/ai-office-source-pack/week-0-agentic-systems-first-principles.md)
 
 ## Three-Layer AI Office
 
