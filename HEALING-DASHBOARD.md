@@ -145,7 +145,7 @@ Live evidence:
 - `signal:self-heal-run` created
 - [Issue #15](https://github.com/GitMoneyOS/gitmoney-public-framework/issues/15) records the self-annealing work.
 - [Draft PR #16](https://github.com/GitMoneyOS/gitmoney-public-framework/pull/16) is the owner review packet.
-- [Public Framework Contract run 29295574564](https://github.com/GitMoneyOS/gitmoney-public-framework/actions/runs/29295574564/job/86968183241) passed on the branch.
+- The [current PR checks](https://github.com/GitMoneyOS/gitmoney-public-framework/pull/16/checks) show the Public Framework Contract result for the latest branch commit.
 
 Candidate evidence:
 

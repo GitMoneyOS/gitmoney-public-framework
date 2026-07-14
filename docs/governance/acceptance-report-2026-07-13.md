@@ -38,7 +38,7 @@
 - [x] Social-preview SVG is valid XML and the PNG is `1280 × 640`.
 - [x] `git diff --check` passes.
 - [x] Bounded credential-pattern scan returns no match.
-- [x] GitHub Actions contract check passes on the pushed branch: [run 29295574564](https://github.com/GitMoneyOS/gitmoney-public-framework/actions/runs/29295574564/job/86968183241).
+- [x] GitHub Actions contract check passes on the pushed branch: [current PR checks](https://github.com/GitMoneyOS/gitmoney-public-framework/pull/16/checks).
 - [ ] Both owners complete public-positioning review.
 - [ ] Main branch state is re-inspected after merge.
 
