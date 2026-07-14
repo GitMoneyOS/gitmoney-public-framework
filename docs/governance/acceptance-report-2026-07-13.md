@@ -10,6 +10,8 @@
 
 **Official work receipt:** [Issue #15](https://github.com/GitMoneyOS/gitmoney-public-framework/issues/15)
 
+**Review packet:** [Draft PR #16](https://github.com/GitMoneyOS/gitmoney-public-framework/pull/16)
+
 ## Acceptance Results
 
 | Card | Result | Evidence | Remaining Decision |
@@ -36,7 +38,7 @@
 - [x] Social-preview SVG is valid XML and the PNG is `1280 × 640`.
 - [x] `git diff --check` passes.
 - [x] Bounded credential-pattern scan returns no match.
-- [ ] GitHub Actions check passes on the pushed branch.
+- [x] GitHub Actions contract check passes on the pushed branch: [run 29295574564](https://github.com/GitMoneyOS/gitmoney-public-framework/actions/runs/29295574564/job/86968183241).
 - [ ] Both owners complete public-positioning review.
 - [ ] Main branch state is re-inspected after merge.
 

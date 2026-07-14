@@ -5,6 +5,7 @@ Classification: Public
 Owner: Red Pillar and Hitsuyo Aku, under KnowTheLedge
 Source of truth: `gitmoney-public-framework-strange-attractor-audit-2026-07-13.md`
 Official work receipt: [Issue #15](https://github.com/GitMoneyOS/gitmoney-public-framework/issues/15)
+Review packet: [Draft PR #16](https://github.com/GitMoneyOS/gitmoney-public-framework/pull/16)
 Cycle: `2026-07-13-strange-attractor-self-anneal`
 Sprint goal: make the public framework explain one valuable transformation, activate one privacy-safe first official asset, and prove its own governance controls work.
 WIP limits: Doing 3, Review 2, Agent WIP 1
