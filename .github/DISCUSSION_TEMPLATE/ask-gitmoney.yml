@@ -1,0 +1,33 @@
+title: "[Ask GitMoney] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask about founder control, private-memory boundaries, agent governance, or official business records.
+        This discussion will be public. Do not post client identity, credentials, private links, access details, screenshots, or confidential evidence.
+  - type: dropdown
+    id: room
+    attributes:
+      label: Which room is involved?
+      options:
+        - Private Notebook
+        - Work Desk
+        - Company Record
+        - The boundary between rooms
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Describe the control problem in plain English.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Public boundary
+      options:
+        - label: I removed private, client-owned, restricted, and secret information.
+          required: true

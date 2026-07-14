@@ -1,0 +1,70 @@
+name: First Official Asset Receipt
+description: Share a public-safe receipt for one governed, reusable asset
+title: "[First Asset] "
+labels: ["signal:first-asset"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form only when the asset and evidence are safe to discuss publicly.
+        A private asset is still valid. Keep its receipt in your private official record instead of filing here.
+  - type: input
+    id: asset
+    attributes:
+      label: Asset
+      description: Name the asset in one plain-English sentence.
+      placeholder: Approved customer-onboarding playbook
+    validations:
+      required: true
+  - type: dropdown
+    id: asset-type
+    attributes:
+      label: Asset type
+      options:
+        - Decision record
+        - Standard operating procedure
+        - Prompt or agent rule
+        - Scorecard or assessment
+        - Product or delivery specification
+        - Public contribution
+        - Other governed business asset
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Owner role
+      description: Use a role instead of a private person's name when appropriate.
+      placeholder: Founder or Delivery Lead
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Public evidence URL
+      description: Link to a public commit, pull request, release, or approved artifact.
+    validations:
+      required: true
+  - type: textarea
+    id: asset-test
+    attributes:
+      label: Five-part asset test
+      description: State the approval path, reuse path, and next review date. Owner and evidence are captured above.
+      placeholder: |
+        Approval path:
+        Reuse path:
+        Next review:
+    validations:
+      required: true
+  - type: input
+    id: cycle-time
+    attributes:
+      label: Time from scattered work to governed receipt
+      placeholder: 45 minutes
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Public evidence boundary
+      options:
+        - label: I have permission to share this evidence and removed private, client-owned, restricted, and secret information.
+          required: true

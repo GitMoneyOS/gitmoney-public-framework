@@ -1,0 +1,60 @@
+name: Public-Safe Audit Request
+description: Ask for the right GitMoneyOS diagnostic without posting private business details
+title: "[Audit Request] "
+labels: ["type:audit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This request is public. Describe the operating condition, not confidential evidence.
+        Never include client names, credentials, private links, access lists, revenue details, or sensitive screenshots.
+  - type: dropdown
+    id: route
+    attributes:
+      label: Best-fit route
+      options:
+        - AI-enabled agency with delivery or contractor-control gaps
+        - Founder-led SaaS team using coding agents
+        - Knowledge business with a private vault or source doctrine
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: signal
+    attributes:
+      label: What is hardest to control?
+      options:
+        - Knowing what work is official
+        - Reviewing AI-assisted work
+        - Finding and reusing business knowledge
+        - Managing access and handoff
+        - Proving decisions and contribution
+        - Choosing the right first control
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired operating outcome
+      description: What should become easier to inspect, approve, reuse, delegate, or hand off?
+    validations:
+      required: true
+  - type: dropdown
+    id: score-band
+    attributes:
+      label: Exit-Ready Score band
+      description: Optional. Keep the exact score and evidence private.
+      options:
+        - Not completed
+        - 0-10
+        - 11-20
+        - 21-30
+        - 31-36
+        - 37-40
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Public request boundary
+      options:
+        - label: I understand this request is public and have removed private, client-owned, restricted, and secret information.
+          required: true

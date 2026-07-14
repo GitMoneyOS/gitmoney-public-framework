@@ -1,0 +1,21 @@
+# Canonical public-framework label contract.
+# Apply these labels in GitHub and keep issue forms aligned with this file.
+labels:
+  - name: signal:first-asset
+    color: "1f883d"
+    description: Public-safe receipt for a verified first official asset
+  - name: signal:score-completed
+    color: "8250df"
+    description: Optional public-safe Exit-Ready Score band receipt
+  - name: signal:self-heal-run
+    color: "0969da"
+    description: Public-safe governance self-heal receipt
+  - name: type:audit
+    color: "d4c5f9"
+    description: Audit, diagnostic, or evidence-review work
+  - name: type:governor-review
+    color: "fbca04"
+    description: Monthly governance or healing-dashboard review
+  - name: question
+    color: "d876e3"
+    description: Public question or founder clarification

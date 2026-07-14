@@ -1,0 +1,35 @@
+title: "[First Official Asset] "
+labels: ["signal:first-asset"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this community surface to teach what changed and what you learned.
+        Use the issue receipt for the structured completion event. Only share assets and stories you have permission to publish.
+  - type: input
+    id: receipt
+    attributes:
+      label: Receipt URL
+      description: Link to the public First Official Asset issue receipt.
+    validations:
+      required: true
+  - type: textarea
+    id: before-after
+    attributes:
+      label: Before and after
+      description: What was scattered before, and what control now exists?
+    validations:
+      required: true
+  - type: textarea
+    id: lesson
+    attributes:
+      label: Lesson for the next founder
+    validations:
+      required: true
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Permission
+      options:
+        - label: I have permission to share this asset, evidence, and story publicly.
+          required: true
