@@ -1,0 +1,14 @@
+title: "[Announcement] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Official GitMoneyOS announcements are created by maintainers. Replies remain public and follow the Code of Conduct.
+        Do not post credentials, client information, private links, screenshots, or confidential evidence.
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Public boundary
+      options:
+        - label: I removed private, client-owned, restricted, and secret information.
+          required: true

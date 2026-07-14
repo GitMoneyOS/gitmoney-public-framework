@@ -9,7 +9,7 @@ Review packet: [Draft PR #16](https://github.com/GitMoneyOS/gitmoney-public-fram
 Cycle: `2026-07-13-strange-attractor-self-anneal`
 Sprint goal: make the public framework explain one valuable transformation, activate one privacy-safe first official asset, and prove its own governance controls work.
 WIP limits: Doing 3, Review 2, Agent WIP 1
-Approval policy: repository drafts and branch changes may proceed; both owners review public positioning before merge; live settings and release actions require an explicit owner decision.
+Approval policy: owner decisions 1-6 were accepted on 2026-07-13; both owners still review public positioning before merge; post-merge settings and every release require recorded evidence and the stated human gate.
 
 ## Why This Matters
 
@@ -27,31 +27,30 @@ Done requires an output, passing acceptance evidence, human review, an approval 
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | SA-01 Restore the proof loop | System | Defect | Hybrid | Audit-labelled merge can request a dashboard receipt; completion templates emit usable privacy-safe labels; deterministic validation passes | Workflow test, template checks, live label receipt | Branch accepted deterministically; blocked on human PR acceptance | Blocked |
 | SA-02 Establish one founder front door | Offer | Feature | Agent draft + owner review | README states one problem, mechanism, CTA, and three buyer routes; intake is real and privacy-safe | File diff, link check, cold-reader checklist | Dual-owner review before merge | Review |
-| SA-03 Complete the public trust baseline | System | Risk | Hybrid | Public status matches reality; required governance files exist or have an explicit owner decision; automation uses narrow permissions and immutable action references | Community profile, validator, Actions lint | License choice and live settings owner-gated | Review |
+| SA-03 Complete the public trust baseline | System | Risk | Hybrid | Public status matches reality; required governance files exist; automation uses narrow permissions and immutable action references | License map, channel matrix, live security API, validator, Actions lint | Inbound email tests and post-merge settings remain evidence-gated | Review |
 
 ## Ready Queue
 
 | Card | Lane | Type | Value Path | Acceptance | Gate |
 | --- | --- | --- | --- | --- | --- |
 | SA-04 Compress the proof route | Offer | Debt | Lower verification friction | Proof package offers a five-minute route before the full library | Candidate built; blocked on dual-owner positioning review |
-| SA-05 Create the First Official Asset Challenge | SaaS-growth | Feature | Turn doctrine into measurable activation | Challenge guide, private-first receipt, completion event, lifecycle rule | Candidate built; blocked on owner launch approval |
+| SA-05 Create the First Official Asset Challenge | SaaS-growth | Feature | Turn doctrine into measurable activation | Challenge guide, private-first receipt, completion event, lifecycle rule | Bounded 10-12 founder beta approved; intake test, moderation rehearsal, and cohort evidence required |
 | SA-06 Add answer-first authority pages | Offer | Feature | Create stable search and AI-citation surfaces | Five evidence-bound answers with one CTA and source receipts | Candidate built; blocked on claim review before merge |
 | SA-07 Prepare founder homepage and social-preview assets | Offer | Launch | Make the repo legible outside developer culture | Accessible page, preview image, stable CTA, tracking plan | Candidate built; blocked on Pages and visual approval |
 | SA-08 Establish first release packet | System | Launch | Turn the framework into a named inspectable version | Version decision, release notes, rollback and lifecycle | Explicit owner approval before release |
-| SA-09 Enable governed community surfaces | SaaS-growth | Launch | Separate work tracking from community conversation | Discussion categories, forms, owners, moderation path | Live GitHub owner approval |
+| SA-09 Enable governed community surfaces | SaaS-growth | Launch | Separate work tracking from community conversation | Ask GitMoney, First Official Assets, Announcements, forms, owners, moderation path | Approved; enable and render-test after merge |
 | SA-10 Prepare the Agentic Repo Governance Index | SaaS-growth | Research | Build recurring authority from visible controls | Public rubric, methodology limits, correction path, pilot sample | Owner approval before claims or publication |
-| SA-11 Stage GitBuilt Proof Sprint separately | Offer | Launch | Create contribution proof without blurring the buyer category | Dedicated-repo decision, public-safe packet, consent model, real BuildBoard metrics | P0 security, evidence, brand, and outreach gates |
+| SA-11 Stage GitBuilt Proof Sprint separately | Offer | Launch | Create contribution proof without blurring the buyer category | Private `GitMoneyOS/gitbuilt-proof-sprint` staging repo, form transfer, five launch gates | Security, consent, metrics, brand, and claim evidence before visibility or launch |
 
 ## Blocked And Owner-Gated
 
 | Decision | Options | Evidence Needed | Owner | Status |
 | --- | --- | --- | --- | --- |
-| License | Choose an approved open-source/content license, or preserve all rights | Intended reuse, commercial model, counsel or owner preference | Red Pillar + Hitsuyo Aku | Blocked |
-| Conduct reporting channel | Publish a private reporting address or approved private form | Monitored owner and response cadence | Red Pillar + Hitsuyo Aku | Blocked |
-| Public intake channel | Private form or approved email in addition to public-safe GitHub intake | Monitored owner, privacy notice, response cadence | Red Pillar + Hitsuyo Aku | Blocked |
-| GitHub settings | Discussions, private vulnerability reporting, security features, Pages, Actions policy | Current live setting evidence and change plan | GitMoneyOS owners | Blocked until review |
+| License | Scoped Apache-2.0 plus CC BY 4.0; explicit exclusions; joint copyright | Scope map and owner review | Red Pillar + Hitsuyo Aku | Approved and encoded |
+| Private channels | `security@`, `conduct@`, and `audit@hitsuyoaku.tech` | End-to-end inbound delivery, reply test, access confirmation | Assigned primary and backup owners | Approved names; activation test open |
+| GitHub settings | Discussions, Pages, social preview, security baseline, GitHub-owned Actions | Current live setting evidence and post-merge sequence | GitMoneyOS owners | Approved; security baseline live, remaining steps post-merge |
 | First release | Version, release title, public claim boundary | Accepted PR and owner sign-off | Red Pillar + Hitsuyo Aku | Blocked until merge-ready |
-| GitBuilt home | Dedicated repo recommended, or framework subdirectory | P0 readiness and public packet | Red Pillar + Hitsuyo Aku | Blocked |
+| GitBuilt home | Dedicated `GitMoneyOS/gitbuilt-proof-sprint` repository | Five launch-gate receipts | Red Pillar + Hitsuyo Aku | Private staging repository created; public launch blocked |
 
 ## Card Controls
 

@@ -1,12 +1,25 @@
 # Seven-Day First Official Asset Challenge
 
-Status: launch-ready draft pending dual-owner review
+Status: approved bounded beta; not yet open for public enrollment
 Classification: Public
-Owner: Red Pillar and Hitsuyo Aku, under KnowTheLedge
+Program owner: Hitsuyo Aku
+Moderation owner: Red Pillar
+Backup owner: each owner backs up the other
 Audience: nontechnical founders and operators using AI-assisted work
 Purpose: create one governed asset without exposing private source material
-Update cadence: review after every cohort or 30 days of public receipts
-Approval path: both owners approve launch and claim language through a pull request
+Beta boundary: 10-12 invited founders over seven days; private asset path by default; public receipts optional
+Update cadence: review after the beta cohort and again 30 days after completion
+Approval path: both owners approved the bounded beta; both owners must separately approve any full public campaign
+
+## Beta Gate
+
+The beta may begin only after:
+
+- `audit@hitsuyoaku.tech` passes an end-to-end delivery and reply test
+- the moderation owner confirms access to the conduct channel and the response playbook
+- 10-12 invited founders receive the same bounded instructions and consent language
+
+Do not present the beta as a full public launch. A full campaign remains blocked until the private intake path is operational, the moderation owner has completed one moderation rehearsal, and the first cohort produces an evidence packet with starts, verified assets, reuse signals, drop-off reasons, consent status, and corrections.
 
 ## The Promise
 
@@ -74,6 +87,8 @@ Quality measure:
 > Assets reused or updated within 30 days divided by verified first official assets.
 
 Stars, likes, prompts, and file counts are not activation evidence.
+
+Beta evidence must report the denominator: invited founders, qualified starts, verified assets, opted-in public receipts, 30-day reuse, withdrawals, and unresolved safety or moderation events. Participant identities and private asset contents remain private unless the participant gives explicit, revocable publication consent.
 
 ## Safety Rules
 

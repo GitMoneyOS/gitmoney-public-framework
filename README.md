@@ -1,5 +1,9 @@
 # GitMoneyOS Public Framework
 
+> **Founder control system for AI-assisted work.**
+>
+> **Make AI work official.**
+>
 > **Turn AI-assisted work into owned, reviewable business assets.**
 
 AI can produce work faster than a founder can review, approve, remember, or hand it off. GitMoneyOS gives that work a plain-English control system so the business can prove:
@@ -10,7 +14,7 @@ AI can produce work faster than a founder can review, approve, remember, or hand
 - what evidence supports it
 - when it should be reviewed again
 
-GitMoneyOS is built for nontechnical founders, operators, agencies, knowledge businesses, and small SaaS teams. GitHub is the trust layer, not the subject you have to master.
+GitMoneyOS is built for nontechnical founders, operators, agencies, knowledge businesses, and small SaaS teams. Its mechanism is the **AI Office**: private memory, a bounded human-and-agent work desk, and an official company record. Plain-English GitHub is the accessibility benefit—the trust layer, not the subject you have to master.
 
 ![GitMoneyOS maps private memory through a bounded work desk into an owned company record.](docs/assets/gitmoneyos-social-preview.png)
 
@@ -124,6 +128,8 @@ The [Public Proof Package](docs/proof-package/README.md) provides a five-minute 
 - [`docs/students/`](docs/students/): founder and builder learning paths.
 - [`AGENTS.md`](AGENTS.md): AI contribution boundaries.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): human contribution and review path.
+- [`PRIVATE-CHANNELS.md`](PRIVATE-CHANNELS.md): private-channel owners, access, cadence, and minimum-data rules.
+- [`LICENSE.md`](LICENSE.md): scoped dual-license map and explicit exclusions.
 - [`.github/`](.github): ownership, templates, automation, and evidence controls.
 
 ## Long-Horizon Operating Standard
@@ -133,6 +139,8 @@ The source doctrine uses 9-Figure Ease as an ambition and operating standard, no
 ## Ownership And Approval
 
 GitMoneyOS is a KnowTheLedge project built by Red Pillar and Hitsuyo Aku.
+
+Copyright is held jointly by Red Pillar and Hitsuyo Aku. Reuse is governed by the scoped dual-license map in [LICENSE.md](LICENSE.md); source doctrine, marks, brand assets, third-party material, client material, and private or internal assets are excluded.
 
 Public positioning changes require both owners to approve the pull request before merge. Merging into `main` means the public framework has accepted the change as its current official record.
 

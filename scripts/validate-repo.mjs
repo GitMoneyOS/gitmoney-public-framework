@@ -13,11 +13,37 @@ const requiredFiles = [
   "AGENTS.md",
   "CHANGELOG.md",
   "SECURITY.md",
+  "PRIVATE-CHANNELS.md",
+  "LICENSE.md",
+  "LICENSES/Apache-2.0.txt",
+  "LICENSES/CC-BY-4.0.txt",
+  "NOTICE",
+  "TRADEMARKS.md",
   ".gitignore",
   ".github/CODEOWNERS",
   ".github/pull_request_template.md",
   ".github/labels.yml",
 ];
+
+const forbiddenParentDiscussionForms = [".github/DISCUSSION_TEMPLATE/gitbuilt-show-and-tell.yml"];
+for (const file of forbiddenParentDiscussionForms) {
+  if (existsSync(join(root, file))) errors.push(`Dedicated-initiative form must not live in parent repository: ${file}`);
+}
+
+const exactContract = [
+  ["README.md", "Founder control system for AI-assisted work."],
+  ["README.md", "Make AI work official."],
+  ["README.md", "Turn AI-assisted work into owned, reviewable business assets."],
+  ["LICENSE.md", "Copyright 2026 Red Pillar and Hitsuyo Aku, jointly."],
+  ["PRIVATE-CHANNELS.md", "security@hitsuyoaku.tech"],
+  ["PRIVATE-CHANNELS.md", "conduct@hitsuyoaku.tech"],
+  ["PRIVATE-CHANNELS.md", "audit@hitsuyoaku.tech"],
+];
+for (const [file, requiredText] of exactContract) {
+  if (!existsSync(join(root, file)) || !readFileSync(join(root, file), "utf8").includes(requiredText)) {
+    errors.push(`Contract text missing from ${file}: ${requiredText}`);
+  }
+}
 
 for (const file of requiredFiles) {
   if (!existsSync(join(root, file))) errors.push(`Missing required file: ${file}`);

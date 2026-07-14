@@ -16,9 +16,9 @@ If sensitive information has already been posted, do not repeat it in another is
 
 ## Reporting A Vulnerability
 
-Use GitHub's private vulnerability-reporting option in the repository Security tab when it is available.
+Use GitHub's private vulnerability-reporting option in the repository Security tab. The approved fallback alias is `security@hitsuyoaku.tech`, but do not rely on that route until [PRIVATE-CHANNELS.md](PRIVATE-CHANNELS.md) records a passing delivery test.
 
-If no private reporting option is visible and you do not already have an approved private contact, open a minimal issue titled `[Private Security Contact Requested]`. Do not include the vulnerability, affected values, screenshots, private links, or reproduction details in that public issue. A maintainer can then establish a private response lane.
+Do not open a public issue to request a security contact. Do not include the vulnerability, affected values, screenshots, private links, or reproduction details in any public repository surface.
 
 ## What To Include Privately
 
@@ -31,10 +31,13 @@ If no private reporting option is visible and you do not already have an approve
 
 ## Response And Claims Boundary
 
-The maintainers will acknowledge, investigate, contain, and document accepted reports as capacity allows. This repository does not claim certification, continuous monitoring, guaranteed response times, or a complete security posture. Live security settings must be verified in GitHub before they are represented as enabled.
+The security owner targets acknowledgment within one business day and an initial triage update within three business days. These are operating targets, not guaranteed remediation times. This repository does not claim certification, continuous monitoring, or a complete security posture. Live security settings must be verified in GitHub before they are represented as enabled.
 
 ## Owner And Lifecycle
 
-Owner: GitMoneyOS owners.
+Primary owner: Hitsuyo Aku (`HitsuyoAkuWeb3`).
+Backup owner: Red Pillar (`redpillar75`).
+Access: the primary and backup owner only, plus a specifically approved incident specialist when the report requires it.
+Minimum-data rule: collect only the affected public surface, smallest safe reproduction, impact, exploitability, and a reply route; do not request credentials, production secrets, unrelated client data, or full private repositories.
 Review cadence: monthly governor review and after any accepted security report.
 Approval path: security-policy changes require owner review through a pull request.

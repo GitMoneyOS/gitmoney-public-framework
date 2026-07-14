@@ -67,7 +67,7 @@ Evidence present:
 
 Remaining gap:
 
-- live Actions policy, security features, and the self-annealing candidate must be verified after owner decisions and merge
+- the security baseline is enabled; the live Actions policy and remaining post-merge settings must be verified after merge
 
 ### Exit-Ready Score: not recalculated publicly
 
@@ -111,10 +111,10 @@ This positioning requires both owners to approve it before merge.
 
 ## Top Open Risks
 
-1. License choice remains an owner decision with legal and commercial consequences.
-2. A durable private conduct, security, and commercial intake channel is not published.
-3. Discussions, Pages, private vulnerability reporting, security features, and stricter Actions policy require live owner decisions.
-4. GitBuilt requires a dedicated-repository decision and must pass security, consent, public-packet, metric, and claim gates before launch or partner outreach.
+1. The scoped Apache-2.0/CC BY 4.0 license map is owner-approved but remains a merge candidate; material enforcement or transaction reliance warrants legal review.
+2. The approved conduct, security, and audit aliases still require end-to-end inbound delivery and reply evidence.
+3. Private vulnerability reporting, Dependabot security updates, secret scanning, and push protection are enabled; Discussions, Pages, social preview, and the GitHub-owned Actions policy remain post-merge evidence gates.
+4. GitBuilt now has a dedicated private staging repository and must pass security, consent, metrics, brand, and claim gates before visibility change, launch, or partner outreach.
 5. Public activity does not yet prove score completion, first-asset activation, client outcomes, or GitBuilt opportunity outcomes.
 
 ## Next Acceptance Gate
@@ -123,7 +123,7 @@ The self-annealing pass becomes official only when:
 
 - deterministic repository checks pass
 - both owners review the positioning and public claim boundaries
-- owner-gated license and contact decisions are captured
+- owner-approved license and contact decisions are encoded and the channel activation limitation is explicit
 - the pull request is accepted and merged by a human owner
 - live settings are re-inspected after merge
 

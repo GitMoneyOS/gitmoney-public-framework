@@ -86,7 +86,9 @@ We do not pitch. We diagnose. Start with the free [Exit-Ready Score Self-Assessm
 
 If the operating condition is safe to describe publicly, open a [Public-Safe Audit Request](https://github.com/GitMoneyOS/gitmoney-public-framework/issues/new?template=audit-request.yml). The form asks for your route, control problem, desired operating outcome, and optional score band.
 
-Do not post client identities, credentials, private repository links, access lists, screenshots, revenue details, or confidential evidence. If your request cannot be described safely in public, keep the evidence private until the owners publish an approved private intake channel.
+Do not post client identities, credentials, private repository links, access lists, screenshots, revenue details, or confidential evidence. The approved private-intake alias is `audit@hitsuyoaku.tech`, but do not rely on it until [PRIVATE-CHANNELS.md](PRIVATE-CHANNELS.md) records a passing delivery test. Once active, send only your name, reply address, business type, requested route, and a one-sentence description of the control problem. Do not attach private evidence until the intake owner explicitly requests a bounded transfer method.
+
+Private audit intake owner: Hitsuyo Aku (`HitsuyoAkuWeb3`). Backup: Red Pillar (`redpillar75`). Access is limited to both owners and a specifically approved delivery specialist. Target acknowledgment is within two business days. The minimum-data rule is to collect only what is needed to route or decline the request; credentials, raw vaults, client records, and unrestricted repository access are never intake requirements.
 
 Submitting a public request does not create a client relationship, promise availability, or authorize access to private systems.
 
