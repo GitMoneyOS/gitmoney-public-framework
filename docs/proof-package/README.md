@@ -61,20 +61,23 @@ The deeper point: GitMoneyOS turns scattered output into a business record. Prom
 
 That is why this matters for serious scale. A solo operator or small team can only move at record speed when the business does not depend on hidden context, fragile memory, or unreviewed AI output. The system has to carry the leverage and shorten the learning loop.
 
-## Start Here
+## Five-Minute Verification Route
 
-1. [Brand Narrative](brand-narrative.md)
-2. [Founder Presentation Runbook](founder-presentation-runbook.md)
-3. [Proof of Concept](proof-of-concept.md)
-4. [Three-Layer Glass House](three-layer-glass-house.md)
-5. [Proof of Work](proof-of-work.md)
-6. [Proof of Quality](proof-of-quality.md)
-7. [Public-Safe Self-Audit Summary](self-audit-summary.md)
-8. [Coherence Map](coherence-map.md)
-9. [Onboarding Curriculum Path](onboarding-curriculum-path.md)
-10. [Founder Verification Checklist](founder-verification-checklist.md)
-11. [Source Doctrine Alignment](source-doctrine-alignment.md)
-12. [GitMoney OS v1 Source Document](../source-doctrine/GitMoney_OS_v1.docx)
+1. [Three-Layer Glass House](three-layer-glass-house.md): understand the private-memory, workbench, and official-record boundary.
+2. [Proof of Concept](proof-of-concept.md): inspect the mechanism and its claim limits.
+3. [Proof of Work](proof-of-work.md): inspect the operating receipts.
+4. [Public-Safe Self-Audit Summary](self-audit-summary.md): see what is strong and what remains unproven.
+5. [Founder Verification Checklist](founder-verification-checklist.md): decide whether the evidence supports the claim.
+
+## Full Evidence Library
+
+- [Brand Narrative](brand-narrative.md)
+- [Founder Presentation Runbook](founder-presentation-runbook.md)
+- [Proof of Quality](proof-of-quality.md)
+- [Coherence Map](coherence-map.md)
+- [Onboarding Curriculum Path](onboarding-curriculum-path.md)
+- [Source Doctrine Alignment](source-doctrine-alignment.md)
+- [GitMoney OS v1 Source Document](../source-doctrine/GitMoney_OS_v1.docx)
 
 ## Coherence Rule
 

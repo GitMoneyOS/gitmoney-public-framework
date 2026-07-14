@@ -1,0 +1,45 @@
+name: Governance Self-Heal Receipt
+description: Share counts and a public-safe lesson from a bounded self-heal
+title: "[Self-Heal] "
+labels: ["signal:self-heal-run"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share counts and plain-English summaries only. Do not paste private filenames, note bodies, credentials, access lists, client data, or internal paths.
+  - type: input
+    id: gap-count
+    attributes:
+      label: Gaps found
+      description: Enter a count only.
+      placeholder: "3"
+    validations:
+      required: true
+  - type: textarea
+    id: top-gap
+    attributes:
+      label: Top gap in plain English
+      placeholder: Approved decisions did not have a consistent review date.
+    validations:
+      required: true
+  - type: textarea
+    id: control
+    attributes:
+      label: Smallest control pulled first
+      description: Name one batch, WIP limit, owner decision, or deterministic check.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public-safe acceptance evidence
+      description: Explain how you know the control worked without exposing the private source.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Data boundary
+      options:
+        - label: This receipt contains counts and summaries only, with no private, client-owned, restricted, or secret information.
+          required: true

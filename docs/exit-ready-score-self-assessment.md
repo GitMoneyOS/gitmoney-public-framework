@@ -1,6 +1,6 @@
 # Exit-Ready Score Self-Assessment
 
-Status: draft public-safe worksheet
+Status: public worksheet under monthly governance
 Classification: Public
 Owner: Red Pillar and Hitsuyo Aku, under KnowTheLedge
 Update cadence: monthly, or after a material workflow, access, repo, or AI-agent change
@@ -69,9 +69,13 @@ The score is a diagnostic, not a pitch. Each band has exactly one next step:
 
 Offer details live in [CONSULTING.md](../CONSULTING.md).
 
-## File Your Receipt
+## Keep It Private Or File An Optional Receipt
 
-When you finish scoring, open an issue with the **Exit-Ready Score Completed** template in this repository. Your score, band, and top risk — no private details. That receipt is your first entry in the same evidence habit this whole framework teaches.
+Your completed worksheet, exact score, and supporting evidence stay private by default. Store the completed assessment in your private notebook or official company record according to its sensitivity.
+
+If a public receipt is useful and safe, open the optional [Exit-Ready Score Receipt](https://github.com/GitMoneyOS/gitmoney-public-framework/issues/new?template=score-completed.yml). The public form asks for a score band and a plain-English lesson, not your exact score or private evidence.
+
+Never post client names, private URLs, screenshots, access details, credentials, revenue details, or confidential strategy in a public receipt.
 
 ## The Eight Dimensions
 
@@ -161,4 +165,3 @@ Keep private or client-owned details out of this worksheet before sharing it pub
 - The next three actions are small enough to start.
 - The first official asset has an owner, approval path, evidence field, reuse path, and lifecycle.
 - Any private, client-owned, restricted, or secret material has been removed or summarized safely.
-

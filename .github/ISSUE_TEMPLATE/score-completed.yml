@@ -1,0 +1,50 @@
+name: Exit-Ready Score Receipt
+description: Optionally share a public-safe score band and chosen next step
+title: "[Score Receipt] "
+labels: ["signal:score-completed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Your worksheet stays private by default. This optional receipt is public.
+        Share a band and a plain-English lesson only. Do not include an exact score, client identity, private URL, screenshot, access detail, or confidential evidence.
+  - type: dropdown
+    id: band
+    attributes:
+      label: Score band
+      description: Choose the band from your private worksheet.
+      options:
+        - "0-10: Hidden and fragile"
+        - "11-20: Scattered but recoverable"
+        - "21-30: Governable"
+        - "31-36: Strong operating shell"
+        - "37-40: Highly inspectable"
+    validations:
+      required: true
+  - type: dropdown
+    id: next-step
+    attributes:
+      label: Next step chosen
+      options:
+        - AI Work Governance Signal Audit
+        - AI Office Audit
+        - GitOps Setup Sprint
+        - Fractional GitOps Operator
+        - Keep the monthly governance cadence
+    validations:
+      required: true
+  - type: textarea
+    id: lesson
+    attributes:
+      label: Biggest public-safe lesson
+      description: What control gap became clear, without naming private evidence?
+      placeholder: We need one approved location for our operating playbooks.
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Public receipt consent
+      options:
+        - label: I understand this issue is public and have removed private, client-owned, restricted, and secret information.
+          required: true

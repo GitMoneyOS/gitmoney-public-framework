@@ -1,0 +1,23 @@
+# Deterministic repository contract check.
+# Business job: stop broken links, missing trust files, and label drift before merge.
+name: Public Framework Contract
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the review packet
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - name: Validate repository contract
+        run: node scripts/validate-repo.mjs
+      - name: Validate YAML syntax
+        run: ruby -e 'require "yaml"; Dir[".github/**/*.yml"].each { |file| YAML.load_file(file) }'

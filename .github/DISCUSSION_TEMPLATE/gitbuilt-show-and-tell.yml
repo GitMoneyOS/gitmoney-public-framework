@@ -1,0 +1,37 @@
+title: "[GitBuilt Show-and-Tell] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        GitBuilt is a staged, independent proof-sprint initiative. This form becomes active only after pilot, consent, security, and owner-approval gates pass. Do not imply GitHub affiliation.
+  - type: dropdown
+    id: lane
+    attributes:
+      label: Contribution lane
+      options:
+        - Builder
+        - Designer or Creative
+        - Marketer or Content
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Public evidence URL
+    validations:
+      required: true
+  - type: textarea
+    id: judgment
+    attributes:
+      label: What judgment did this contribution demonstrate?
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent and claim boundary
+      options:
+        - label: Every identified contributor approved this public story.
+          required: true
+        - label: This post makes no unverified income, opportunity, sponsor, or affiliation claim.
+          required: true

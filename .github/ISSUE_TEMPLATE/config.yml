@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Start with the Exit-Ready Score
+    url: https://github.com/GitMoneyOS/gitmoney-public-framework/blob/main/docs/exit-ready-score-self-assessment.md
+    about: Complete the worksheet privately before sharing any public-safe receipt.
+  - name: Choose your GitMoneyOS path
+    url: https://github.com/GitMoneyOS/gitmoney-public-framework/blob/main/START_HERE.md
+    about: Find the route for an agency, SaaS team, knowledge business, or GitBuilt participant.
