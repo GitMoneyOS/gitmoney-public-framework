@@ -2,6 +2,11 @@
 
 All notable GitMoney changes for this repo will be tracked here.
 
+## 2026-07-18
+
+- Added a public-review GitBuilt × GitHub opportunity map covering workforce development, agentic proof, ecosystem paths, future sponsorship inventory, evidence standards, and lifecycle guardrails.
+- Linked the opportunity map from the public proof package and repository entry points.
+
 ## 2026-07-03
 
 - Added the capstone synthesis class to the AI Office source pack: `docs/students/ai-office-source-pack/capstone-cybernetic-revenue-loop.md`.
