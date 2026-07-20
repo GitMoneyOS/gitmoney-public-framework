@@ -74,7 +74,8 @@ That is why this matters for serious scale. A solo operator or small team can on
 9. [Onboarding Curriculum Path](onboarding-curriculum-path.md)
 10. [Founder Verification Checklist](founder-verification-checklist.md)
 11. [Source Doctrine Alignment](source-doctrine-alignment.md)
-12. [GitMoney OS v1 Source Document](../source-doctrine/GitMoney_OS_v1.docx)
+12. [QMM — Proof You Can Inspect](gitbuilt-qmm-proof-packet.md) *(public-review candidate)*
+13. [GitMoney OS v1 Source Document](../source-doctrine/GitMoney_OS_v1.docx)
 
 ## Coherence Rule
 
