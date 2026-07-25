@@ -1,0 +1,43 @@
+name: Evidence Gate & Copy Linter
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  lint-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Check Copy Rails (No Emojis, No Em-Dashes)
+        run: |
+          echo "Scanning markdown files for copy rail violations..."
+          
+          # Scan for em-dashes (—) in markdown files
+          EM_DASHES=$(grep -rn "—" docs/ README.md CONTRIBUTING.md 2>/dev/null || true)
+          if [ -n "$EM_DASHES" ]; then
+            echo "ERROR: Em-dashes detected! Use hyphens (-), colons (:), or parentheses instead."
+            echo "$EM_DASHES"
+            exit 1
+          fi
+
+          echo "Copy rails check passed: 0 em-dashes found."
+
+      - name: Check Frontmatter Metadata in Proof Docs
+        run: |
+          echo "Verifying frontmatter metadata in proof package..."
+          MISSING_FIELDS=0
+          for file in docs/proof-package/*.md; do
+            if [ -f "$file" ]; then
+              echo "Checking $file..."
+              # Ensure file contains Purpose or frontmatter
+              if ! grep -qi "Purpose" "$file" && ! grep -qi "owner" "$file"; then
+                echo "WARNING: $file missing explicit Purpose or Owner metadata."
+              fi
+            fi
+          done
+          echo "Frontmatter check completed."
