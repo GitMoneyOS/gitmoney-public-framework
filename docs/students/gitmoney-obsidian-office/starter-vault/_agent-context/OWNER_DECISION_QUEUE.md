@@ -3,11 +3,12 @@ owner: GitMoneyOS
 source: GitMoney Obsidian Office starter kit
 status: sprout
 classification: private
-summary: Owner-only queue for approvals, promotions, classification changes, and hard-boundary decisions.
+summary: Owner-only queue for approvals, promotions, classification changes, and hard-boundary
+  decisions.
 promotion_target: decision-log
 created: 2026-06-11
+type: vault-memory
 ---
-
 # OWNER DECISION QUEUE
 
 Anything an agent cannot decide lands here instead of being done silently. The owner clears this queue at weekly review or sooner. Decisions of consequence also get a record in `80-decisions/`.
@@ -33,7 +34,6 @@ What always queues here, never gets decided by an agent:
 - Template or base schema changes.
 
 ---
-
 ## open 2026-06-11 - Example: approve first promotion candidate
 
 - What needs deciding: whether the pricing objection SOP (once drafted) is approved for promotion as an official SOP.

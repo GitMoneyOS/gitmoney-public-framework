@@ -6,8 +6,8 @@ classification: public
 summary: Lane guide for notes maturing through the asset test.
 promotion_target: none
 created: 2026-06-11
+type: vault-memory
 ---
-
 # 30-business-assets
 
 Notes maturing through the asset test - owner, approval path, evidence, reuse path, lifecycle.

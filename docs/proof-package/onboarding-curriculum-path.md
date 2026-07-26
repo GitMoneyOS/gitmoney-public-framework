@@ -1,3 +1,14 @@
+---
+title: "onboarding-curriculum-path"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Onboarding Curriculum Path
 
 ## Purpose

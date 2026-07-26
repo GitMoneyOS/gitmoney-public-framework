@@ -1,3 +1,14 @@
+---
+title: "README"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # GitMoneyOS Public Framework
 
 GitMoneyOS is a KnowTheLedge project built by Red Pillar and Hitsuyo Aku.
@@ -79,11 +90,16 @@ It does claim that 9-figure scale becomes more realistic when the company can pr
 Start here:
 
 - [Public Proof Package](docs/proof-package/README.md)
+- [GitBuilt Master Workbooks & Curriculum](workbooks/gitbuilt-master-series/README.md)
 
 Supporting paths:
 
+- [Workbook 2: Skills, Workflows & Repositories](workbooks/gitbuilt-master-series/workbook-02-skills-workflows-repos.md)
+- [Workbook 2: Solution Guide & Answer Key](workbooks/gitbuilt-master-series/workbook-02-answer-key.md)
+- [Workbook 3: AI Recommendations & Business Scaling](workbooks/gitbuilt-master-series/workbook-03-ai-fable-recommendations-scaling.md)
 - [GitMoney OS v1 Source Document](docs/source-doctrine/GitMoney_OS_v1.docx)
 - [Founder Presentation Runbook](docs/proof-package/founder-presentation-runbook.md)
+- [GitBuilt × GitHub Opportunity Map](docs/proof-package/gitbuilt-github-opportunity-map.md)
 - [Plain-English GitHub Founder Demo](docs/demo/plain-english-github-founder-demo.md)
 - [Class One GitHub Orientation Official Record](docs/students/class-one-github-orientation-official-record.md)
 - [GitBuilt Agentic Systems Preparation](docs/students/ai-office-source-pack/week-0-agentic-systems-first-principles.md)

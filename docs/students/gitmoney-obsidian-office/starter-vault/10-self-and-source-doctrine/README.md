@@ -6,8 +6,8 @@ classification: public
 summary: Lane guide for operating principles, beliefs, and decision rules.
 promotion_target: none
 created: 2026-06-11
+type: vault-memory
 ---
-
 # 10-self-and-source-doctrine
 
 Operating principles, beliefs, and decision rules. The notes that explain how you choose.

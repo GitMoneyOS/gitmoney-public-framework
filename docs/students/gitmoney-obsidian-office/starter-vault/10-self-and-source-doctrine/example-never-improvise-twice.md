@@ -6,8 +6,8 @@ classification: private
 summary: Personal operating rule - anything improvised twice gets written down once.
 promotion_target: none
 created: 2026-06-11
+type: vault-memory
 ---
-
 # Example: never improvise twice
 
 (Synthetic example - replace with your own doctrine.)

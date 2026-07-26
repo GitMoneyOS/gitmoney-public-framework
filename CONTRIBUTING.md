@@ -1,3 +1,14 @@
+---
+title: "CONTRIBUTING"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Contributing
 
 ## Purpose

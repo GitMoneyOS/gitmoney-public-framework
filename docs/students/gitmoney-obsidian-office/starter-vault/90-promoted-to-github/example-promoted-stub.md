@@ -1,13 +1,13 @@
 ---
 owner: example-student
-source: "[[example-pricing-objection-asset]]"
+source: '[[example-pricing-objection-asset]]'
 status: promoted
 classification: student-safe
 summary: Stub - the pricing objection SOP was promoted to the official record (example).
 promotion_target: sop
 created: 2026-06-11
+type: vault-memory
 ---
-
 # Promoted: pricing objection SOP (example stub)
 
 (Synthetic example of what lands here after a real promotion.)

@@ -3,11 +3,12 @@ owner: example-student
 source: cohort brainstorm
 status: sprout
 classification: private
-summary: Three-part welcome video series for new clients; done means three published links.
+summary: Three-part welcome video series for new clients; done means three published
+  links.
 promotion_target: content
 created: 2026-06-11
+type: vault-memory
 ---
-
 # Example: welcome video series
 
 (Synthetic example - replace with your own project.)

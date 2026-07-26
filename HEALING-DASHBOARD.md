@@ -1,3 +1,14 @@
+---
+title: "HEALING-DASHBOARD"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # GitMoneyOS Real-Time Healing Dashboard
 
 Status: draft public-safe dashboard

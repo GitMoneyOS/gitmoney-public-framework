@@ -1,3 +1,14 @@
+---
+title: "week-3-agent-workbench"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Week 3: Agents Are Workbenches
 
 Recorded: 2026-06-11

@@ -1,3 +1,14 @@
+---
+title: "plain-english-github-founder-demo"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Plain-English GitHub Founder Demo
 
 ## Purpose

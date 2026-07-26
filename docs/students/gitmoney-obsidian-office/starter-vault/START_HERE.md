@@ -6,8 +6,8 @@ classification: private
 summary: The 30-minute win that turns this folder into your Office.
 promotion_target: none
 created: 2026-06-11
+type: vault-memory
 ---
-
 # START HERE
 
 Welcome to your Obsidian Office. Three layers, say them once out loud:

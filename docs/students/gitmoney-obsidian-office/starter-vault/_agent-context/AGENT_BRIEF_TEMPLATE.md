@@ -6,8 +6,8 @@ classification: public
 summary: Copyable template for scoped agent job briefs.
 promotion_target: agent-brief
 created: 2026-06-11
+type: vault-memory
 ---
-
 # AGENT BRIEF TEMPLATE
 
 Copy this into `60-agent-briefs/` as `brief-YYYY-MM-DD-short-job-name.md`. A brief missing any section is not ready for the board.
@@ -22,7 +22,6 @@ summary: One sentence: what job, what deliverable.
 promotion_target: agent-brief
 created: YYYY-MM-DD
 ---
-
 # Brief: [short job name]
 
 ## Source

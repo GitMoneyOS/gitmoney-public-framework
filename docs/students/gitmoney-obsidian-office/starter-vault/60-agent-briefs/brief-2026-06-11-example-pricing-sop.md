@@ -1,13 +1,13 @@
 ---
 owner: example-student
-source: "[[example-pricing-objection-answers]]"
+source: '[[example-pricing-objection-answers]]'
 status: sprout
 classification: private
 summary: Brief - draft the pricing objection SOP from my capture note.
 promotion_target: agent-brief
 created: 2026-06-11
+type: vault-memory
 ---
-
 # Brief: draft pricing objection SOP
 
 (Synthetic example - the board's Backlog card links here.)

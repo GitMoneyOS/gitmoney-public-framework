@@ -1,3 +1,14 @@
+---
+title: "exit-ready-score-self-assessment"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Exit-Ready Score Self-Assessment
 
 Status: draft public-safe worksheet

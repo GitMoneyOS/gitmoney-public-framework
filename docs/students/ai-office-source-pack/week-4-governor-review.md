@@ -1,3 +1,14 @@
+---
+title: "week-4-governor-review"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Week 4: Governor Review Keeps The Office Alive
 
 Recorded: 2026-06-11

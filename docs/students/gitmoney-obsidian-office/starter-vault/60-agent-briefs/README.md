@@ -6,8 +6,8 @@ classification: public
 summary: Lane guide for scoped agent jobs and reusable briefs.
 promotion_target: none
 created: 2026-06-11
+type: vault-memory
 ---
-
 # 60-agent-briefs
 
 One brief per scoped agent job. No brief, no job. Cards on the Workbench Board link here.

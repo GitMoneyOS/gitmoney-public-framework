@@ -1,3 +1,14 @@
+---
+title: "week-1-github-official-record"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Week 1: GitHub Is The Official Record
 
 Recorded: 2026-06-11
