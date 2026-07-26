@@ -1,3 +1,14 @@
+---
+title: "README"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # GitMoneyOS Public Proof Package
 
 ## Purpose
@@ -75,7 +86,8 @@ That is why this matters for serious scale. A solo operator or small team can on
 10. [Founder Verification Checklist](founder-verification-checklist.md)
 11. [Source Doctrine Alignment](source-doctrine-alignment.md)
 12. [GitBuilt × GitHub Opportunity Map](gitbuilt-github-opportunity-map.md)
-13. [GitMoney OS v1 Source Document](../source-doctrine/GitMoney_OS_v1.docx)
+13. [QMM — Proof You Can Inspect](gitbuilt-qmm-proof-packet.md) *(public-review candidate)*
+14. [GitMoney OS v1 Source Document](../source-doctrine/GitMoney_OS_v1.docx)
 
 ## Coherence Rule
 

@@ -1,13 +1,14 @@
 ---
 owner: example-student
-source: "[[example-pricing-objection-answers]]"
+source: '[[example-pricing-objection-answers]]'
 status: asset-candidate
 classification: private
-summary: The pricing objection playbook, maturing through the asset test toward SOP promotion.
+summary: The pricing objection playbook, maturing through the asset test toward SOP
+  promotion.
 promotion_target: sop
 created: 2026-06-11
+type: vault-memory
 ---
-
 # Example: pricing objection playbook (asset candidate)
 
 (Synthetic example - replace with your own asset.)

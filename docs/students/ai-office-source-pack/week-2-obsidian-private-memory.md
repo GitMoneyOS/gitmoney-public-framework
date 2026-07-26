@@ -1,3 +1,14 @@
+---
+title: "week-2-obsidian-private-memory"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Week 2: Obsidian Is Private Memory
 
 Recorded: 2026-06-11

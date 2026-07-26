@@ -1,3 +1,14 @@
+---
+title: "gitbuilt-github-opportunity-map"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # GitBuilt × GitHub Opportunity Map
 
 ## Purpose

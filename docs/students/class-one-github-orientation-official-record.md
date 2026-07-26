@@ -1,3 +1,14 @@
+---
+title: "class-one-github-orientation-official-record"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Class One GitHub Orientation Official Record
 
 Recorded: 2026-06-04

@@ -1,40 +1,12 @@
-# Operating Standard
-
-## Purpose
-
-Establish the baseline operating standards for the AI Office.
-
-## Owner
-
-Red Pillar and Hitsuyo Aku, under KnowTheLedge.
-
-The contract every note, job, and promotion follows.
-
-## The Three Layers
-
-- **Obsidian is private memory.** Nothing in the vault is official. Everything in it is safe to be wrong.
-- **Agent platforms are workbenches.** Scoped jobs in, drafts with evidence out.
-- **GitHub is the official record.** Only approved work, always with a receipt.
-
-## The Loop
-
-```text
-Capture in Obsidian -> Shape with AI Office skill -> Route through agent workbench -> Promote approved work to GitHub -> Review monthly
-```
-
-## Frontmatter Standard
-
-Every markdown note in the vault carries:
-
-```yaml
 ---
-owner:               # who is responsible for this note
-source:              # where it came from - conversation, URL, session, own head
-status: seed         # seed | sprout | asset-candidate | ready-to-promote | promoted | archived
-classification: private   # private | student-safe | public
-summary:             # one sentence, written for your future self
-promotion_target: none    # none | agent-brief | github-issue | repo-doc | decision-log | content | sop
-created:             # YYYY-MM-DD
+owner: null
+source: null
+status: seed
+classification: private
+summary: null
+promotion_target: none
+created: null
+type: vault-memory
 ---
 ```
 

@@ -3,11 +3,12 @@ owner: example-student
 source: https://example.com/pricing-psychology-article
 status: seed
 classification: private
-summary: Clipped article on anchoring in pricing conversations - relevant to my objection playbook.
+summary: Clipped article on anchoring in pricing conversations - relevant to my objection
+  playbook.
 promotion_target: none
 created: 2026-06-11
+type: vault-memory
 ---
-
 # Example clip: pricing psychology article
 
 (Synthetic example - real clips arrive via the Web Clipper templates.)

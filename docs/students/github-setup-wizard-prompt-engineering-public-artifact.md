@@ -1,3 +1,14 @@
+---
+title: "github-setup-wizard-prompt-engineering-public-artifact"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # GitHub Setup Wizard Prompt Engineering Public Artifact
 
 Recorded: 2026-06-06

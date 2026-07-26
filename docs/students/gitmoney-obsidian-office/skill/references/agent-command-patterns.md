@@ -1,3 +1,14 @@
+---
+title: "agent-command-patterns"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Agent Command Patterns
 
 ## Purpose

@@ -1,3 +1,14 @@
+---
+title: "self-audit-summary"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Public-Safe Self-Audit Summary
 
 ## Purpose

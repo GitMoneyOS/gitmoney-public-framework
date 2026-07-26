@@ -1,10 +1,13 @@
 ---
 name: Risk or Gap
 about: Track an IP, access, security, docs, agent, or delivery risk
-title: "[Risk] "
+title: '[Risk] '
 labels: risk:ip
+type: vault-memory
+owner: Hitsuyo Aku
+status: active-internal
+classification: internal
 ---
-
 ## Summary
 
 ## Risk Type

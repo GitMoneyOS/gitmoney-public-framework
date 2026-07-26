@@ -1,3 +1,14 @@
+---
+title: "repo-man-starter-lab-checklist-and-intake-form"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Repo Man Starter Lab: Checklist And Repo Intake Form
 
 Recorded: 2026-06-10

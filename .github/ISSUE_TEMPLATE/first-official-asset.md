@@ -1,10 +1,13 @@
 ---
 name: First Official Asset Completed
 about: File the receipt for your first governed asset (commit + issue + owner)
-title: "[First Asset] "
+title: '[First Asset] '
 labels: signal:first-asset
+type: vault-memory
+owner: Hitsuyo Aku
+status: active-internal
+classification: internal
 ---
-
 ## What The Asset Is
 
 One sentence in plain English.

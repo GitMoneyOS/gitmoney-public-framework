@@ -1,8 +1,14 @@
 ---
 name: gitmoney-obsidian-office
-description: Operate a student's GitMoney Obsidian Office vault - capture, shape, route, and promote notes through the loop "Obsidian private memory -> agent workbench -> GitHub official record." Use when the user mentions their vault, inbox, notes, agent briefs, the Workbench Board, asset candidates, or promotion to GitHub.
+description: Operate a student's GitMoney Obsidian Office vault - capture, shape,
+  route, and promote notes through the loop "Obsidian private memory -> agent workbench
+  -> GitHub official record." Use when the user mentions their vault, inbox, notes,
+  agent briefs, the Workbench Board, asset candidates, or promotion to GitHub.
+type: vault-memory
+owner: Hitsuyo Aku
+status: active-internal
+classification: internal
 ---
-
 # GitMoney Obsidian Office Skill
 
 ## Purpose

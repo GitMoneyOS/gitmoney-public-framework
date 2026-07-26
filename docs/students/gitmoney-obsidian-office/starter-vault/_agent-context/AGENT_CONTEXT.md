@@ -6,8 +6,8 @@ classification: public
 summary: Minimum operating contract for agents working inside this vault.
 promotion_target: agent-brief
 created: 2026-06-11
+type: vault-memory
 ---
-
 # AGENT CONTEXT
 
 Read this at the start of every agent session in this vault.

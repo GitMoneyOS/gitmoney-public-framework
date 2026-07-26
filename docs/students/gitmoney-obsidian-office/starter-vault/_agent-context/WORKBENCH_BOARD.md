@@ -6,8 +6,8 @@ classification: private
 summary: Scrumban board for scoped agent work in the vault.
 promotion_target: agent-brief
 created: 2026-06-11
+type: vault-memory
 ---
-
 # WORKBENCH BOARD
 
 Every agent job lives on this board. Cards are links to briefs in `60-agent-briefs/`. Move cards with a date stamp; append moves to the history. **WIP limit: 3 cards in Doing.** If Doing is full, finish something before pulling.
@@ -49,7 +49,6 @@ Approved. Promoted items also note their official record location.
 -
 
 ---
-
 ## Move History
 
 Append-only: `YYYY-MM-DD card: lane -> lane (who)`

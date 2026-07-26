@@ -1,10 +1,13 @@
 ---
 name: Exit-Ready Score Completed
 about: File your completed Exit-Ready Score as a receipt (no private data)
-title: "[Score] __/40"
+title: '[Score] __/40'
 labels: signal:score-completed
+type: vault-memory
+owner: Hitsuyo Aku
+status: active-internal
+classification: internal
 ---
-
 ## Total Score
 
 `__/40`

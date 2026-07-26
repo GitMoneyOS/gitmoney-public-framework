@@ -3,11 +3,12 @@ owner: example-student
 source: client call, own head
 status: sprout
 classification: private
-summary: I answer the same pricing objection on every sales call - this should be a written asset.
+summary: I answer the same pricing objection on every sales call - this should be
+  a written asset.
 promotion_target: sop
 created: 2026-06-11
+type: vault-memory
 ---
-
 # Example: pricing objection answers
 
 (Synthetic example - replace with your own captures.)

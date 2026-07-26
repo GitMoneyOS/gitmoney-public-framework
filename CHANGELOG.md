@@ -1,3 +1,14 @@
+---
+title: "CHANGELOG"
+type: "vault-memory"
+owner: "Hitsuyo Aku"
+status: "active-internal"
+classification: "internal"
+approval_path: "Hitsuyo Aku"
+tags:
+  - vault/memory
+---
+
 # Changelog
 
 All notable GitMoney changes for this repo will be tracked here.

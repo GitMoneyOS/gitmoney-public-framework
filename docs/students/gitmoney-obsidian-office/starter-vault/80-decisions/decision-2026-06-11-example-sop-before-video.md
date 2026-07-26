@@ -6,8 +6,8 @@ classification: private
 summary: Decision - write the pricing SOP before recording the welcome video series.
 promotion_target: decision-log
 created: 2026-06-11
+type: vault-memory
 ---
-
 # Decision: SOP before video (example)
 
 (Synthetic example - decisions are append-only; supersede, never edit.)
