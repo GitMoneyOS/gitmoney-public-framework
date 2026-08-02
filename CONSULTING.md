@@ -1,14 +1,3 @@
----
-title: "CONSULTING"
-type: "vault-memory"
-owner: "Hitsuyo Aku"
-status: "active-internal"
-classification: "internal"
-approval_path: "Hitsuyo Aku"
-tags:
-  - vault/memory
----
-
 # Consulting
 
 GitMoneyOS is a KnowTheLedge project built by Red Pillar and Hitsuyo Aku.
@@ -95,7 +84,7 @@ We do not pitch. We diagnose. Start with the free [Exit-Ready Score Self-Assessm
 
 ## Intake
 
-Open an issue using the business task template, or contact the KnowTheLedge team through the approved public channel once published.
+Start with the [Founder-Control Diagnostic](https://architect.hitsuyoaku.io). It is the named public contact and diagnostic route for this framework.
 
 ## Approval Note
 

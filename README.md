@@ -1,14 +1,3 @@
----
-title: "README"
-type: "vault-memory"
-owner: "Hitsuyo Aku"
-status: "active-internal"
-classification: "internal"
-approval_path: "Hitsuyo Aku"
-tags:
-  - vault/memory
----
-
 # GitMoneyOS Public Framework
 
 GitMoneyOS is a KnowTheLedge project built by Red Pillar and Hitsuyo Aku.
@@ -40,6 +29,10 @@ Publish the public framework for plain-English GitHub, AI Office infrastructure,
 ## Owner
 
 Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+
+## Public-Use Boundary
+
+This repository is public so founders can inspect the method, the proof boundaries, and the operating examples. It is not currently released under an open-source license. Do not treat public visibility as permission to reuse the materials.
 
 ## What Belongs Here
 
@@ -77,18 +70,19 @@ Red Pillar and Hitsuyo Aku, under KnowTheLedge.
 - Founder GitHub Literacy
 - Exit-Ready Score
 - Plain-English GitOps
-- 9-Figure Ease Infrastructure
+- Founder Operating Infrastructure
 
-## 9-Figure Ease Standard
+## Operating Standard
 
-GitMoneyOS does not claim that a tool makes a company worth 9 figures.
+GitMoneyOS does not claim revenue, valuation, investment, legal, security, acquisition, or client outcomes.
 
-It does claim that 9-figure scale becomes more realistic when the company can preserve operating knowledge, govern AI-assisted work, prove approvals, reduce handoff risk, and inspect its own growth system without depending on one overextended founder.
+It documents a control model for preserving operating knowledge, governing AI-assisted work, recording approvals, reducing handoff risk, and making the business record easier to inspect.
 
 ## Founder Demo
 
 Start here:
 
+- [Run the Founder-Control Diagnostic](https://architect.hitsuyoaku.io)
 - [Public Proof Package](docs/proof-package/README.md)
 - [GitBuilt Master Workbooks & Curriculum](workbooks/gitbuilt-master-series/README.md)
 
