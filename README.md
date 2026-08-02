@@ -89,6 +89,7 @@ It does claim that 9-figure scale becomes more realistic when the company can pr
 
 Start here:
 
+- [Founder Control Audit](docs/founder-control-audit/README.md)
 - [Public Proof Package](docs/proof-package/README.md)
 - [GitBuilt Master Workbooks & Curriculum](workbooks/gitbuilt-master-series/README.md)
 

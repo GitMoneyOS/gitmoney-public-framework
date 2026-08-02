@@ -80,9 +80,11 @@ The score is a diagnostic, not a pitch. Each band has exactly one next step:
 
 Offer details live in [CONSULTING.md](../CONSULTING.md).
 
-## File Your Receipt
+## Keep Your Worksheet Private
 
-When you finish scoring, open an issue with the **Exit-Ready Score Completed** template in this repository. Your score, band, and top risk — no private details. That receipt is your first entry in the same evidence habit this whole framework teaches.
+This public repository is the instruction set, not a place to submit your business details. Keep the completed worksheet in your own private repository or local records. The [Founder Control Audit](founder-control-audit/README.md) includes a private-copy template and explains how to turn the result into an internal receipt.
+
+Do not post client names, credentials, private URLs, screenshots, access lists, financial details, or confidential strategy in a public issue. A public issue is not required to complete this assessment.
 
 ## The Eight Dimensions
 
@@ -172,4 +174,3 @@ Keep private or client-owned details out of this worksheet before sharing it pub
 - The next three actions are small enough to start.
 - The first official asset has an owner, approval path, evidence field, reuse path, and lifecycle.
 - Any private, client-owned, restricted, or secret material has been removed or summarized safely.
-

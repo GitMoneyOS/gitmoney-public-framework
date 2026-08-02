@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1.0",
+  "title": "Founder Control Audit",
+  "owner": "Red Pillar and Hitsuyo Aku, under KnowTheLedge",
+  "classification": "public",
+  "publicSubmission": false,
+  "scoreScale": {
+    "minimum": 0,
+    "maximum": 5
+  },
+  "dimensions": [
+    "ip-organization",
+    "access-control",
+    "documentation-quality",
+    "ai-agent-governance",
+    "security-baseline",
+    "change-history",
+    "founder-visibility",
+    "handoff-readiness"
+  ],
+  "resultBands": [
+    { "minimum": 0, "maximum": 10, "route": "signal-audit" },
+    { "minimum": 11, "maximum": 20, "route": "ai-office-audit" },
+    { "minimum": 21, "maximum": 30, "route": "gitops-setup-sprint" },
+    { "minimum": 31, "maximum": 36, "route": "monthly-governance" },
+    { "minimum": 37, "maximum": 40, "route": "keep-cadence" }
+  ]
+}

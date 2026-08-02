@@ -1,4 +1,4 @@
-# QMM — Proof You Can Inspect
+# QMM - Proof You Can Inspect
 
 ## Purpose
 
@@ -16,7 +16,7 @@ It is a public-review candidate in the GitMoneyOS proof package. It does not rep
 
 ## The QMM Proof Cards
 
-### KAREN — Manuscript-Structure Scanner
+### KAREN - Manuscript-Structure Scanner
 
 KAREN is a public, MIT-licensed, open-core scanner for DOCX, PDF, and Markdown manuscripts. Its public code diagnoses four kinds of structural defects; the repair pipeline is intentionally not included in the public release.
 
@@ -26,7 +26,7 @@ KAREN is a public, MIT-licensed, open-core scanner for DOCX, PDF, and Markdown m
 
 **Claim boundary:** this card does not claim that the paid repair pipeline is public, that every manuscript will be repaired, or that a scan establishes editorial quality.
 
-### DCC — Digital Creative Contractors, Phase 0
+### DCC - Digital Creative Contractors, Phase 0
 
 DCC is a public QMM × GitMoney project surface for a proposed freelance-platform model. Its repository presents the Phase 0 landing page, pitch deck, launch tracker, and open Phase 1 workstream issues in one inspectable place.
 
@@ -36,7 +36,7 @@ DCC is a public QMM × GitMoney project surface for a proposed freelance-platfor
 
 **Claim boundary:** this card does not claim that DCC is a launched marketplace, that its proposed payment or escrow system is live, or that the repository is an open-source project. Its public README identifies the surface as Phase 0 and its Phase 1 work as proposed.
 
-### QMM Links — Public Point Of Entry
+### QMM Links - Public Point Of Entry
 
 QMM Links is a deliberately simple public links surface: an `index.html` page in a public repository, served through GitHub Pages.
 
