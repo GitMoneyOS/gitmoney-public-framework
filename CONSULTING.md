@@ -83,7 +83,7 @@ Deliverables:
 
 ## Where To Start Based On Your Score
 
-We do not pitch. We diagnose. Start with the free [Exit-Ready Score Self-Assessment](docs/exit-ready-score-self-assessment.md) — it takes about ten minutes and routes you to exactly one next step:
+We do not pitch. We diagnose. Start with the free [Founder Control Audit](docs/founder-control-audit/README.md). It keeps your working notes in your own private repository, uses the [Exit-Ready Score Self-Assessment](docs/exit-ready-score-self-assessment.md), and routes you to exactly one next step:
 
 | Your Score | Start Here |
 | ---: | --- |

@@ -2,6 +2,11 @@
 
 All notable GitMoney changes for this repo will be tracked here.
 
+## Unreleased
+
+- Added the Founder Control Audit entry point, private-copy template, and deterministic audit-contract validation.
+- Updated the Exit-Ready Score worksheet so public issues are not part of the assessment flow.
+
 ## 2026-07-13
 
 - Added Week 0 student preparation for the GitBuilt lesson: docs/students/ai-office-source-pack/week-0-agentic-systems-first-principles.md.

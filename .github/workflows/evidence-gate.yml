@@ -27,6 +27,9 @@ jobs:
 
           echo "Copy rails check passed: 0 em-dashes found."
 
+      - name: Validate Founder Control Audit Contract
+        run: node scripts/validate-founder-control-audit.mjs
+
       - name: Check Frontmatter Metadata in Proof Docs
         run: |
           echo "Verifying frontmatter metadata in proof package..."
