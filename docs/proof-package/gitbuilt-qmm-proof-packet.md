@@ -1,10 +1,10 @@
-# QMM — Proof You Can Inspect
+# QMM - Proof You Can Inspect
 
 ## Purpose
 
 This card gives a third party a clear, read-only route to selected Quantum Melanin Media (QMM) work. Each card says what exists, where to inspect it, and where the claim stops.
 
-It is a public-review candidate in the GitMoneyOS proof package. It does not report GitBuilt participant outcomes, revenue, employment results, investment readiness, acquisition readiness, security certification, or a GitHub relationship.
+It is a bounded public evidence card in the GitMoneyOS proof package. It does not report GitBuilt participant outcomes, revenue, employment results, investment readiness, acquisition readiness, security certification, or a GitHub relationship.
 
 ## Start With The Work
 
@@ -16,7 +16,7 @@ It is a public-review candidate in the GitMoneyOS proof package. It does not rep
 
 ## The QMM Proof Cards
 
-### KAREN — Manuscript-Structure Scanner
+### KAREN - Manuscript-Structure Scanner
 
 KAREN is a public, MIT-licensed, open-core scanner for DOCX, PDF, and Markdown manuscripts. Its public code diagnoses four kinds of structural defects; the repair pipeline is intentionally not included in the public release.
 
@@ -26,7 +26,7 @@ KAREN is a public, MIT-licensed, open-core scanner for DOCX, PDF, and Markdown m
 
 **Claim boundary:** this card does not claim that the paid repair pipeline is public, that every manuscript will be repaired, or that a scan establishes editorial quality.
 
-### DCC — Digital Creative Contractors, Phase 0
+### DCC - Digital Creative Contractors, Phase 0
 
 DCC is a public QMM × GitMoney project surface for a proposed freelance-platform model. Its repository presents the Phase 0 landing page, pitch deck, launch tracker, and open Phase 1 workstream issues in one inspectable place.
 
@@ -36,7 +36,7 @@ DCC is a public QMM × GitMoney project surface for a proposed freelance-platfor
 
 **Claim boundary:** this card does not claim that DCC is a launched marketplace, that its proposed payment or escrow system is live, or that the repository is an open-source project. Its public README identifies the surface as Phase 0 and its Phase 1 work as proposed.
 
-### QMM Links — Public Point Of Entry
+### QMM Links - Public Point Of Entry
 
 QMM Links is a deliberately simple public links surface: an `index.html` page in a public repository, served through GitHub Pages.
 
@@ -83,4 +83,4 @@ Identify the public work you can use, the claims you can support, what must stay
 
 This candidate uses only public URLs and evidence-bound descriptions. It excludes private project material, raw reports, private repository information, credentials, screenshots, personal data, client information, technical security settings, and unapproved claims.
 
-Before a public merge or external use, Red Pillar and Hitsuyo Aku must approve the exact wording, selected proof cards, CTA destination, and public review/merge path. Review the card before public use, whenever a selected surface changes, and during the GitMoney monthly governor review.
+Before a material revision or new external reuse, Red Pillar and Hitsuyo Aku must approve the exact wording, selected proof cards, CTA destination, and review path. Review the card whenever a selected surface changes and during the GitMoney monthly governor review.
