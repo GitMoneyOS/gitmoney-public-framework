@@ -3,7 +3,7 @@ title: "self-audit-summary-2026-06-22"
 type: "vault-memory"
 owner: "Hitsuyo Aku"
 status: "active-internal"
-classification: "internal"
+classification: "public"
 approval_path: "Hitsuyo Aku"
 tags:
   - vault/memory
@@ -51,7 +51,7 @@ This audit evaluated:
 
 Following the successful baseline setup, GitMoneyOS promoted a significant "Student Source Pack" into the public record. This audit caught the natural "governance debt" that occurs after a large promotion: missing metadata and an outdated changelog.
 
-By identifying these gaps early, GitMoneyOS demonstrates its "Self-Healing Rule" in action—fixing the operating system's hygiene before the debt compounds.
+By identifying these gaps early, GitMoneyOS demonstrates its "Self-Healing Rule" in action - fixing the operating system's hygiene before the debt compounds.
 
 ## Evidence Boundary
 

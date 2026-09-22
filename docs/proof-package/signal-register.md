@@ -3,7 +3,7 @@ title: "signal-register"
 type: "vault-memory"
 owner: "Hitsuyo Aku"
 status: "active-internal"
-classification: "internal"
+classification: "public"
 approval_path: "Hitsuyo Aku"
 tags:
   - vault/memory
@@ -19,7 +19,7 @@ Approval path: issue and pull request before this becomes official public doctri
 
 ## Purpose
 
-Every felt-value surface in the public framework has exactly one completion signal. The signal is a GitHub issue filed by the founder — measurement lives inside the official record, not in a bolted-on analytics tool.
+Every felt-value surface in the public framework has exactly one completion signal. The signal is a GitHub issue filed by the founder - measurement lives inside the official record, not in a bolted-on analytics tool.
 
 Plain-English translation: when someone finishes one of our diagnostics, the proof is a receipt in this repo, the same way all official work becomes a receipt.
 

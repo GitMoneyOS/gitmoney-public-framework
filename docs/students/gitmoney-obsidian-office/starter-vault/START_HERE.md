@@ -39,7 +39,7 @@ The template also includes `created`. Leave it as today's date.
 
 ### 3. Add one real link (5 min)
 
-Finish this sentence inside the note: *"This reminds me of..."* — and link it: `[[like this]]`. If nothing exists to link yet, link it to the idea it came from and write why. One honest link beats ten reflex links.
+Finish this sentence inside the note: *"This reminds me of..."* - and link it: `[[like this]]`. If nothing exists to link yet, link it to the idea it came from and write why. One honest link beats ten reflex links.
 
 ### 4. Mark its maturity (5 min)
 
