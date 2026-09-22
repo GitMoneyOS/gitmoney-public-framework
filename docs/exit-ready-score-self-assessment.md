@@ -82,7 +82,7 @@ Offer details live in [CONSULTING.md](../CONSULTING.md).
 
 ## File Your Receipt
 
-When you finish scoring, open an issue with the **Exit-Ready Score Completed** template in this repository. Your score, band, and top risk — no private details. That receipt is your first entry in the same evidence habit this whole framework teaches.
+When you finish scoring, open an issue with the **Exit-Ready Score Completed** template in this repository. Your score, band, and top risk - no private details. That receipt is your first entry in the same evidence habit this whole framework teaches.
 
 ## The Eight Dimensions
 
