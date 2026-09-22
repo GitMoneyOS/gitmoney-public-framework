@@ -28,7 +28,7 @@ GitMoney was never about Obsidian. It was never about agents. It was never about
 
 It was about building a business that can learn from itself.
 
-Most founders do not have a marketing problem. They have a memory problem. Their business keeps generating evidence — client calls, objections, content reactions, sales notes, testimonials, refunds, silences, failed launches, half-built assets, ideas trapped in voice notes. None of it becomes a closed loop. It just becomes clutter.
+Most founders do not have a marketing problem. They have a memory problem. Their business keeps generating evidence - client calls, objections, content reactions, sales notes, testimonials, refunds, silences, failed launches, half-built assets, ideas trapped in voice notes. None of it becomes a closed loop. It just becomes clutter.
 
 A business that cannot inspect itself cannot improve itself. A business that cannot improve itself cannot scale without the founder becoming the missing interface.
 
@@ -50,7 +50,7 @@ The result becomes new source material.
 
 ## Opening Frame: AI Made You Faster, Not Safer
 
-Most AI-powered founders are not building businesses. They are producing ungoverned output faster: more prompts, more drafts, more documents, more automations, more half-finished assets — with no evidence trail, no approval path, no source of truth, and no memory.
+Most AI-powered founders are not building businesses. They are producing ungoverned output faster: more prompts, more drafts, more documents, more automations, more half-finished assets - with no evidence trail, no approval path, no source of truth, and no memory.
 
 GitMoney exists because speed without governance is expensive confusion.
 
@@ -60,13 +60,13 @@ Every lesson in this pack was secretly one layer of the same loop:
 
 | Layer | Loop Role |
 | --- | --- |
-| Obsidian (Week 2) | Evidence layer — raw signal lives here first |
-| Agent platforms (Week 3) | Diagnosis and execution layer — bounded briefs turn signal into work |
-| GitHub issues (Week 1) | Routing layer — every problem becomes a trackable task, risk, or decision |
-| Pull requests (Week 1) | Approval and reporting layer — work becomes a reviewable packet |
-| Commits (Week 1) | Receipts — timestamped proof of what changed |
-| Governor Review (Week 4) | The heartbeat — work gets a fate instead of being forgotten |
-| Revenue signal | Market feedback — the outside world grades the work |
+| Obsidian (Week 2) | Evidence layer - raw signal lives here first |
+| Agent platforms (Week 3) | Diagnosis and execution layer - bounded briefs turn signal into work |
+| GitHub issues (Week 1) | Routing layer - every problem becomes a trackable task, risk, or decision |
+| Pull requests (Week 1) | Approval and reporting layer - work becomes a reviewable packet |
+| Commits (Week 1) | Receipts - timestamped proof of what changed |
+| Governor Review (Week 4) | The heartbeat - work gets a fate instead of being forgotten |
+| Revenue signal | Market feedback - the outside world grades the work |
 | New evidence | The next cycle begins |
 
 We did not spend this pack teaching you tools. We taught you how to stop letting business intelligence rot in private memory.
@@ -120,7 +120,7 @@ Example status: fictional, public-safe, non-client-specific.
 
 The raw signal: a founder keeps hearing "your work is powerful, but I don't understand what you actually sell."
 
-**1. Evidence** — an Obsidian note:
+**1. Evidence** - an Obsidian note:
 
 ```text
 Raw Evidence:
@@ -133,7 +133,7 @@ Observed Pattern:
 Attention is present. Buyer clarity is absent.
 ```
 
-**2. Diagnosis** — name the actual problem:
+**2. Diagnosis** - name the actual problem:
 
 ```text
 Diagnosis:
@@ -143,7 +143,7 @@ Business Risk:
 The founder is forced to explain the value manually on every call.
 ```
 
-**3. Routing** — create a GitHub issue:
+**3. Routing** - create a GitHub issue:
 
 ```text
 Title:
@@ -163,7 +163,7 @@ Done When:
 - Founder approval recorded
 ```
 
-**4. Execution** — a bounded agent brief:
+**4. Execution** - a bounded agent brief:
 
 ```text
 Agent Task:
@@ -174,7 +174,7 @@ Human Review:
 Founder chooses the final version. The agent does not publish anything.
 ```
 
-**5. Reporting** — the pull request:
+**5. Reporting** - the pull request:
 
 ```text
 What Changed:
@@ -190,7 +190,7 @@ Review Needed:
 Founder approval before merge.
 ```
 
-**6. Revenue Signal** — define what feedback will grade the work:
+**6. Revenue Signal** - define what feedback will grade the work:
 
 ```text
 Revenue Signals To Track:
@@ -201,7 +201,7 @@ Revenue Signals To Track:
 - Reduced explanation burden on calls
 ```
 
-**7. New Evidence** — the loop continues:
+**7. New Evidence** - the loop continues:
 
 ```text
 New Evidence:
@@ -211,7 +211,7 @@ Next Issue:
 Build a proof section to reduce the trust gap.
 ```
 
-That is one full metabolic cycle: a vague frustration became a diagnosed leak, a routed task, an approved asset, a measurable signal, and the seed of the next improvement — with receipts at every step.
+That is one full metabolic cycle: a vague frustration became a diagnosed leak, a routed task, an approved asset, a measurable signal, and the seed of the next improvement - with receipts at every step.
 
 ## Capstone Assignment: Build Your First Cybernetic Revenue Loop
 
@@ -234,21 +234,21 @@ Follow the proof-package rule: show the workflow, protect the source. Your submi
 
 ## Scoring Rubric (20 Points)
 
-**1. Evidence quality — 4 points.** Did you use real business signal, or vague founder feelings?
+**1. Evidence quality - 4 points.** Did you use real business signal, or vague founder feelings?
 
 ```text
 Weak:   "I got 12 likes."
 Strong: "Three prospects asked the same objection before going silent."
 ```
 
-**2. Diagnosis quality — 4 points.** Did you name the actual problem?
+**2. Diagnosis quality - 4 points.** Did you name the actual problem?
 
 ```text
 Weak:   "Need better content."
 Strong: "The offer creates attention but does not create buyer certainty."
 ```
 
-**3. Routing quality — 4 points.** Does the issue route the problem to the right next action?
+**3. Routing quality - 4 points.** Does the issue route the problem to the right next action?
 
 ```text
 Weak:   "Make brand better."
@@ -256,9 +256,9 @@ Strong: "Rewrite landing page hero to clarify buyer, pain, promise,
          proof, and next step."
 ```
 
-**4. Execution quality — 4 points.** Did you produce a usable asset, SOP, checklist, report, page section, campaign, or sales artifact? No vapor. No "strategy coming soon." Ship something reviewable.
+**4. Execution quality - 4 points.** Did you produce a usable asset, SOP, checklist, report, page section, campaign, or sales artifact? No vapor. No "strategy coming soon." Ship something reviewable.
 
-**5. Feedback quality — 4 points.** Did you define what signal will determine whether it worked?
+**5. Feedback quality - 4 points.** Did you define what signal will determine whether it worked?
 
 ```text
 Good signals: booked calls, qualified replies, sales objections,
@@ -291,7 +291,7 @@ Obsidian captures the raw signal. Agents help interpret and execute the work. Gi
 
 That is how a business learns.
 
-Most founders keep repeating themselves because their business cannot remember what already happened. After this pack, the goal is not that you "know GitHub." The goal is that you can take one messy insight, one client objection, one failed launch, one sales call, one content pattern, one operational bottleneck — and turn it into a tracked asset with a visible owner, a clear reason, an approval path, and a measurable business result.
+Most founders keep repeating themselves because their business cannot remember what already happened. After this pack, the goal is not that you "know GitHub." The goal is that you can take one messy insight, one client objection, one failed launch, one sales call, one content pattern, one operational bottleneck - and turn it into a tracked asset with a visible owner, a clear reason, an approval path, and a measurable business result.
 
 That is the difference between using AI and governing AI. That is the difference between making content and building infrastructure. That is the difference between a founder trapped inside the machine and a founder who finally has a machine that remembers, routes, executes, and improves.
 
@@ -321,7 +321,7 @@ Nothing in your loop becomes an official asset until it has:
 - reuse path,
 - lifecycle.
 
-Revenue signals are feedback for your own decisions, not promises. This class makes no legal, financial, security, investment, valuation, or income claims. A completed loop proves your business can learn — it does not guarantee any specific business result.
+Revenue signals are feedback for your own decisions, not promises. This class makes no legal, financial, security, investment, valuation, or income claims. A completed loop proves your business can learn - it does not guarantee any specific business result.
 
 ## Completion Checklist
 
