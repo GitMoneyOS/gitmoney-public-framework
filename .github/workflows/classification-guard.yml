@@ -1,0 +1,96 @@
+name: Classification Guard
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  classification-guard:
+    name: Classification Guard
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Scan changed files for restricted classification
+        run: |
+          node -e '
+          const { execSync } = require("child_process");
+          const { readFileSync, existsSync } = require("fs");
+          
+          let baseRef = process.env.GITHUB_BASE_REF;
+          let diffCmd;
+          
+          if (baseRef) {
+            diffCmd = `git diff --name-only origin/${baseRef}...HEAD`;
+          } else if (process.env.GITHUB_EVENT_BEFORE && process.env.GITHUB_EVENT_BEFORE !== "0000000000000000000000000000000000000000") {
+            diffCmd = `git diff --name-only ${process.env.GITHUB_EVENT_BEFORE} HEAD`;
+          } else {
+            diffCmd = `git diff --name-only HEAD~1 HEAD`;
+          }
+          
+          let changedFiles = [];
+          try {
+            changedFiles = execSync(diffCmd, { encoding: "utf8" })
+              .split("\n")
+              .map(s => s.trim())
+              .filter(f => f.endsWith(".md") && existsSync(f));
+          } catch (e) {
+            console.log("Diff inspection fallback: checking HEAD commit");
+            try {
+              changedFiles = execSync("git diff-tree --no-commit-id --name-only -r HEAD", { encoding: "utf8" })
+                .split("\n")
+                .map(s => s.trim())
+                .filter(f => f.endsWith(".md") && existsSync(f));
+            } catch (err) {
+              changedFiles = [];
+            }
+          }
+          
+          console.log(`Auditing ${changedFiles.length} changed markdown file(s) for classification leaks...`);
+          
+          const BLOCKED = new Set(["internal", "confidential", "restricted"]);
+          let violations = 0;
+          
+          // Specific quarantined doctrine paths
+          const FORBIDDEN_PATHS = [
+            "docs/proposals/57_Nine_Figure_Optimization_Proposal_2026-06-10.md",
+            "docs/routing/04_Agent_Platform_Routing.md"
+          ];
+          
+          for (const forbidden of FORBIDDEN_PATHS) {
+            if (existsSync(forbidden)) {
+              console.error(`❌ [QUARANTINE VIOLATION] Quarantined internal doctrine file exists: ${forbidden}`);
+              violations++;
+            }
+          }
+          
+          for (const f of changedFiles) {
+            try {
+              const text = readFileSync(f, "utf8");
+              const fm = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+              if (!fm) continue;
+              const cm = fm[1].match(/^classification:\s*["\x27]?([^"\x27\n]+)/m);
+              if (!cm) continue;
+              const cls = cm[1].trim().toLowerCase();
+              if (BLOCKED.has(cls)) {
+                console.error(`❌ [CLASSIFICATION GUARD] ${f} declares classification "${cls}". Vault-internal doctrine cannot be committed to public repositories.`);
+                violations++;
+              }
+            } catch (err) {
+              console.error(`Error reading ${f}:`, err.message);
+            }
+          }
+          
+          if (violations > 0) {
+            console.error(`\n❌ [CLASSIFICATION GUARD FAILED] Found ${violations} classification violation(s). Merge rejected.`);
+            process.exit(1);
+          }
+          
+          console.log("✅ [CLASSIFICATION GUARD PASSED] Zero classified files or quarantined doctrine detected in changeset.");
+          process.exit(0);
+          '
