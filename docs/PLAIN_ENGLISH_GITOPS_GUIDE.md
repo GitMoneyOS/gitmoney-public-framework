@@ -149,5 +149,5 @@ To eliminate the Enterprise Liability Void, every agent workflow inside GitMoney
 You do not have to build this from scratch.
 
 - **Option A (Self-Serve):** Clone the public GitMoney OS starter framework from `https://github.com/GitMoneyOS/gitmoney-public-framework` and explore the template folders.
-- **Option B (Assisted Diagnostic):** If you want to know how much founder dependency is currently choking your company, book a **Founder Dependency Diagnostic ($1,500)** at `https://architect.hitsuyoaku.io/contact?tier=v2-diagnose`.
-- **Option C (Forward-Deployed Build):** Hire our engineering team to install the complete 5-layer ICM structure, custom skills, and branch protection into your company in a 14-day **Setup Sprint ($20,000)**.
+- **Option B (Assisted Diagnostic):** If you want to know how much founder dependency is currently choking your company, apply for a **Founder Dependency Diagnostic ($1,500 / $3,500 / $7,500)** at `https://architect.hitsuyoaku.io/contact?tier=v2-diagnose`.
+- **Option C (Systems Transformation):** Engage our engineering team for full **Sovereign Reconstruction (FROM $50,000 Floor)** to install the complete 5-layer ICM structure, custom skills, branch protection, and production systems into your company.
