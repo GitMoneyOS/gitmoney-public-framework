@@ -1,102 +1,148 @@
 ---
-title: "CONSULTING"
-type: "vault-memory"
+title: "GitMoney OS Commercial Offer Ladder & Advisory Services"
+type: "commercial-doctrine"
 owner: "Hitsuyo Aku"
-status: "active-internal"
-classification: "internal"
-approval_path: "Hitsuyo Aku"
-tags:
-  - vault/memory
+status: "active-commercial"
+classification: "public"
+standard: "IFL-COMM-V2-2026-09-01"
+margin_floor: ">= 70%"
+created: "2026-09-22"
+updated: "2026-09-22"
 ---
 
-# Consulting
+# GitMoney OS Commercial Services & Advisory Ladder
 
-GitMoneyOS is a KnowTheLedge project built by Red Pillar and Hitsuyo Aku.
+**Standard:** `IFL-COMM-V2-2026-09-01`  
+**Operating Authority:** Hitsuyo Aku (System 5)  
+**Economic Invariant:** Target Gross Margin >= 70% Across All Tiers  
 
-We help founders turn scattered business knowledge, AI workflows, prompts, SOPs, assets, and delivery systems into a governed GitHub-native AI Office.
+---
 
-## Who This Is For
+## 1. The Core Commercial Thesis
 
-- AI-powered agencies
-- Creator-led businesses
-- Small SaaS teams
-- Coaches, consultants, and operators using AI across client delivery
-- Founders whose IP is scattered across Drive, Notion, Slack, freelancers, and AI tools
+GitMoney OS does not sell software subscriptions to empty tools, generic prompt bundles, or theoretical courses.
 
-## The Business Problem
+We diagnose and eliminate the **Enterprise Liability Void**:
+1. When autonomous AI agents produce faulty code, breach data boundaries, or hallucinate business logic, the company absorbs 100% of the legal and operational damages.
+2. Founder-led businesses suffer from catastrophic founder dependency: every routine decision, client delivery handoff, and quality check halts the moment the founder steps away.
+3. Complex agent frameworks (LangChain, CrewAI, AutoGen) collapse in production due to context rot, hidden state, and synchronization debt.
 
-AI makes work faster, but it also makes company knowledge easier to scatter.
+We turn GitHub into your company's **Cryptographic Court of Record** through **Interpretable Context Methodology (ICM: arXiv:2603.16021v2)** and the **Skills-as-Architecture Law**:
+- Architecture is never taught through syntax lectures; it is enforced through agent skill boundaries and folder structure.
+- Non-technical operators govern autonomous agents with military precision using human-in-the-loop Pull Requests and immutable commit receipts.
 
-When prompts, SOPs, automations, client workflows, and decisions live everywhere, the founder loses visibility. GitMoneyOS treats GitHub as the company control room: one place to see what changed, who approved it, what belongs where, and what still creates risk.
+---
 
-## How The AI Office Works
+## 2. The Five-Tier Commercial Ladder
 
-GitMoneyOS connects three layers:
+We do not pitch generic retainers. We diagnose first, verify evidence second, and build forward-deployed systems third.
 
-- Private memory for founder and builder thinking.
-- Agent platforms for turning that thinking into structured work.
-- GitHub for the governed business record.
+```text
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ TIER 1: FOUNDER DEPENDENCY DIAGNOSTIC ($1,500)                                          │
+│ Scope: Rapid FDBR scoring, operational bottleneck mapping, 96-hour freeze test.        │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ TIER 2: AI OFFICE FORENSIC AUDIT ($3,500)                                              │
+│ Scope: Complete VSM System 1-5 forensic inspection, context rot audit, liability map. │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ TIER 3: ARCHITECTURE RECONNAISSANCE ($7,500)                                           │
+│ Scope: Enterprise technical specification, migration blueprint, custom skill taxonomy. │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ TIER 4: CLIENT AI OFFICE SETUP SPRINT ($20,000)                                        │
+│ Scope: 14-day forward-deployed buildout of 5-layer ICM structure, skills, and gates.   │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ TIER 5: FORWARD-DEPLOYED SYSTEMS BUILD (FROM $50,000 FLOOR)                            │
+│ Scope: Custom enterprise autonomous agent and data infrastructure, production ready.   │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ RECURRING: FRACTIONAL SYSTEMS OPERATOR ($10,000/MONTH)                                 │
+│ Scope: Monthly cybernetic governance, drift monitoring, skill updates, court reviews.  │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
 
-The goal is simple: do not leave valuable business knowledge trapped in notes, chats, or unapproved drafts. Move the right work into issues, pull requests, docs, reviews, and evidence.
+---
 
-## Offers
+### Tier 1: Founder Dependency Diagnostic ($1,500)
 
-### AI Office Audit
+**Format:** 90-minute structured diagnostic session + Diagnostic Scorecard.  
+**Target Turnaround:** 48 hours from session completion.  
+**Deliverables:**
+- **Founder Dependency Bottleneck Rate (FDBR):** Quantified score showing the percentage of core business operations that halt if the founder disconnects for 96 hours.
+- **Context Rot Assessment:** Forensic audit of scattered company memory across Google Docs, Slack, private chats, and local hard drives.
+- **Actionable Remediation Memo:** A decision-grade executive memo detailing exactly which workflows must be converted into GitHub repositories immediately.
 
-A diagnostic review of your current AI workflows, IP storage, documentation, permissions, and GitHub readiness.
+---
 
-Deliverables:
+### Tier 2: AI Office Forensic Audit ($3,500)
 
-- Current workflow map
-- IP risk map
-- GitHub organization recommendation
-- AI-agent readiness score
-- Security and access-control gaps
-- 30-day implementation roadmap
+**Format:** Complete forensic discovery across your operational stack.  
+**Target Turnaround:** 5 business days.  
+**Deliverables:**
+- **Viable System Model (VSM) System 1-5 Inspection:** Mapping primary operations, coordination channels, operational control, forward-looking intelligence, and executive policy.
+- **Agent Liability Audit:** Identification of all unmonitored AI touchpoints, API leaks, and unverified code mutations.
+- **Three Mutation Invariants Scorecard:** Assessment of your workflows against the Atomic, Inspectable, and Reversible invariants.
+- **The AI Office Blueprint:** Structural specification of the 5-layer folder hierarchy required to govern your autonomous agents safely.
 
-### GitOps Setup Sprint
+---
 
-A 2-4 week buildout of your GitHub-native AI Office.
+### Tier 3: Architecture Reconnaissance ($7,500)
 
-Deliverables:
+**Format:** Deep-dive technical reconnaissance for multi-team or technical organizations.  
+**Target Turnaround:** 10 business days.  
+**Deliverables:**
+- **Full Architecture Decision Records (ADRs):** Detailed documentation of your target system state, data contracts, and integration surfaces.
+- **Custom Skill Taxonomy:** Specification of all required Layer 3 persistent skills needed to govern your specific agents.
+- **Security & Permission Matrix:** Enterprise branch protection rules, GitHub Actions security gates, and machine write boundaries.
+- **Statement of Work (SOW):** Bound proposal for Tier 4 or Tier 5 implementation with fixed milestones and verified acceptance criteria.
 
-- GitHub organization architecture
-- Repo structure for SOPs, prompts, governance, assets, and workflows
-- Role-based access model
-- Agent contribution rules
-- Security defaults
-- Founder operating guide
-- Handoff checklist
+---
 
-### Fractional GitOps Operator
+### Tier 4: Client AI Office Setup Sprint ($20,000)
 
-Monthly governance for teams using GitHub and AI agents as operating infrastructure.
+**Format:** 14-day forward-deployed engineering sprint.  
+**Target Turnaround:** 14 calendar days.  
+**Deliverables:**
+- **Full GitHub Organization Architecture:** Deployment of the 5-layer ICM structure into your company GitHub organization.
+- **Layer 0 Identity Configuration:** Hardened `AGENTS.md` and `00_COCKPIT.md` establishing executive authority and operational boundaries.
+- **Layer 3 Skill Installation:** Provisioning of verified engineering, marketing, and operations skills inside `.agents/skills/`.
+- **Three Mutation Invariants Enforcement:** Configuration of branch protection rules, GitHub Actions automated verification gates, and machine-only write lanes (`_generated/**`).
+- **Team Enablement Workshop:** Plain-English training for non-technical leadership on reviewing and merging agent Pull Requests.
+- **First Verified Agent PR:** End-to-end execution of a real business workflow through an autonomous agent, verified by a human operator, and committed to the cryptographic court of record.
 
-Deliverables:
+---
 
-- Monthly access review
-- Documentation hygiene review
-- AI-agent workflow review
-- Permission updates
-- Plain-English monthly report
-- Governance advisory
+### Tier 5: Forward-Deployed Systems Build (FROM $50,000 Floor)
 
-## Where To Start Based On Your Score
+**Format:** Multi-week dedicated enterprise installation.  
+**Scope:** Custom enterprise agent infrastructure, private data connectors, automated compliance loops, and production application builds.  
+**Deliverables:**
+- Bound by formal Statement of Work (SOW) with binary acceptance criteria.
+- Full ownership transfer of all code, configuration, and documentation.
+- Production deployment with passing end-to-end integration tests.
 
-We do not pitch. We diagnose. Start with the free [Exit-Ready Score Self-Assessment](docs/exit-ready-score-self-assessment.md) — it takes about ten minutes and routes you to exactly one next step:
+---
 
-| Your Score | Start Here |
-| ---: | --- |
-| 0-10 | AI Work Governance Signal Audit — a short diagnostic conversation that names the control failures already costing you |
-| 11-20 | AI Office Audit |
-| 21-30 | GitOps Setup Sprint |
-| 31-36 | Fractional GitOps Operator |
-| 37-40 | Keep your cadence — and consider sharing a public-safe case file |
+### Standing Retainer: Fractional Systems Operator ($10,000 / Month)
 
-## Intake
+**Prerequisite:** Completion of Tier 4 Setup Sprint or Tier 5 Systems Build.  
+**Capacity:** Capped at 5 concurrent clients per quarter.  
+**Deliverables:**
+- **Weekly Agent Drift Monitoring:** Auditing agent mutations to ensure zero unauthorized writes outside designated lanes.
+- **Monthly Skill Library Updates:** Hardening Layer 3 skills against emerging edge cases and API deprecations.
+- **Executive Court of Record Reviews:** Monthly review of merged pull requests, verified proof receipts, and operational velocity.
+- **Quarterly Architecture Annealing:** Systemic updates to the company context hierarchy to support new product lines or organizational changes.
 
-Open an issue using the business task template, or contact the KnowTheLedge team through the approved public channel once published.
+---
 
-## Approval Note
+## 3. How to Engage
 
-Public-facing offer language should be approved by both Red Pillar and Hitsuyo Aku before it becomes official.
+We do not accept client engagements without preliminary diagnostic verification.
+
+1. **Step 1: Schedule Your Diagnostic**  
+   Book your Founder Dependency Diagnostic ($1,500):  
+   `https://architect.hitsuyoaku.io/contact?tier=v2-diagnose`
+
+2. **Step 2: Review Your Scorecard**  
+   Receive your FDBR score, context rot assessment, and executive remediation memo.
+
+3. **Step 3: Deploy Your AI Office**  
+   Apply 100% of your diagnostic fee toward the $20,000 Setup Sprint upon mutual qualification.
