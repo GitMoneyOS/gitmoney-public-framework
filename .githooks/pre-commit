@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+/**
+ * Classification guard (cross-repo exfiltration control).
+ * Blocks committing vault-internal governance content
+ * (classification: internal | confidential | restricted) into this repo, which
+ * has its own remote. Non-classified files (code, skills, public docs) pass.
+ */
+const { execSync } = require("node:child_process");
+const { readFileSync } = require("node:fs");
+const { join } = require("node:path");
+let ROOT;
+try { ROOT = execSync("git rev-parse --show-toplevel", { encoding: "utf8" }).trim(); }
+catch { process.exit(0); }
+const BLOCKED = new Set(["internal", "confidential", "restricted"]);
+let staged = [];
+try {
+  staged = execSync("git diff --cached --name-only --diff-filter=ACM", { encoding: "utf8" })
+    .split("\n").map((s) => s.trim()).filter((f) => f.endsWith(".md"));
+} catch { process.exit(0); }
+let errors = 0;
+for (const f of staged) {
+  let text = "";
+  try { text = readFileSync(join(ROOT, f), "utf8"); } catch { continue; }
+  const fm = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (!fm) continue;
+  const cm = fm[1].match(/^classification:\s*["\x27]?([^"\x27\n]+)/m);
+  if (!cm) continue;
+  const cls = cm[1].trim().toLowerCase();
+  if (BLOCKED.has(cls)) {
+    console.error(`❌ [CLASSIFICATION GUARD] ${f} is classification '${cls}' — vault-internal content may not be committed to this public framework repo.`);
+    errors++;
+  }
+}
+if (errors) {
+  console.error(`\n❌ [CLASSIFICATION GUARD] ${errors} blocked file(s). Commit aborted (cross-repo exfiltration guard).`);
+  process.exit(1);
+}
+process.exit(0);
