@@ -1,133 +1,116 @@
+# GitMoney OS Public Framework
+
+### Plain-English GitHub, Interpretable Context Methodology, and The Skills-as-Architecture Law
+
+**GitMoney OS** is the open-source framework that turns GitHub into a plain-English, enterprise-grade AI Office for non-technical founders, operators, and forward-deployed engineers.
+
+This is not GitHub for software developers.
+
+This is GitHub as **Business Infrastructure** and the **Cryptographic Court of Record** for teams running autonomous AI agents.
+
 ---
-title: "README"
-type: "vault-memory"
-owner: "Hitsuyo Aku"
-status: "active-internal"
-classification: "internal"
-approval_path: "Hitsuyo Aku"
-tags:
-  - vault/memory
+
+## 1. The Core Law: Folder Structure IS Agent Architecture
+
+Current industry approaches to AI agents rely on heavy, black-box orchestration frameworks (LangChain, CrewAI, AutoGen). In production, these frameworks fail due to context rot, hidden state drift, and synchronization crashes.
+
+GitMoney OS implements **Interpretable Context Methodology (ICM: arXiv:2603.16021v2)**:
+
+> **You do not manage autonomous agents with complex Python orchestration code. You manage autonomous agents by structuring the filesystem.**
+
+Under the **Skills-as-Architecture Law**, architecture is not taught through syntax lectures; it is enforced through agent skill boundaries and folder structure.
+
+When you configure your repository with disciplined folders and canonical skills, non-technical founders can direct autonomous coding agents that automatically implement enterprise standards (bcrypt password hashing, auth boundaries, database normalization) without writing code.
+
 ---
 
-# GitMoneyOS Public Framework
+## 2. The 5-Layer ICM Context Hierarchy
 
-GitMoneyOS is a KnowTheLedge project built by Red Pillar and Hitsuyo Aku.
+Every GitMoney OS repository implements the 5-layer context hierarchy:
 
-It helps founders turn GitHub into a plain-English AI Office: a place to organize operational IP, govern AI-assisted work, track decisions, and create a business-ready history of what changed, who approved it, and why it matters.
+```text
+your-company-ai-office/
+├── AGENTS.md                  # Layer 0: Global Identity, role boundaries, and hard negative constraints
+├── 00_COCKPIT.md              # Layer 0: Human Owner Decision Queue and active operational pulse
+├── 01_research/               # Layer 2: Stage Contract (Discovery inputs, transcripts, evidence)
+├── 02_architecture/           # Layer 2: Stage Contract (Specs, ADRs, data schemas, blueprints)
+├── 03_build/                  # Layer 2: Stage Contract (Implementation deliverables and production code)
+├── .agents/skills/            # Layer 3: Persistent Factory Skills (Security, API design, copywriting)
+├── .agents/rules/             # Layer 3: Persistent Engineering Rules and governance constraints
+└── _generated/                # Layer 4: Working Artifacts, PR drafts, and ephemeral run outputs
+```
 
-This is not GitHub for developers. It is GitHub as business infrastructure for founders, operators, creators, agencies, and small teams using AI without a clear chain of command.
+### Why This Works
+- **Layer 0 (Global Identity):** The agent reads `AGENTS.md` to learn who it is, where it is, and what it is strictly forbidden from doing.
+- **Layer 1 (Workspace Routing):** Routes incoming tasks to the accountable executive seat (CEO, CMO, COO, CTO, CFO).
+- **Layer 2 (Stage Contract):** Scopes the exact inputs, processing rules, and outputs for the current step. A stage that researches does not build.
+- **Layer 3 (Persistent Factory):** Stable domain rules that persist across all runs.
+- **Layer 4 (Working Artifacts):** Per-run dynamic inputs that change with every execution.
 
-If your business is already running through prompts, docs, contractors, automations, Slack threads, Notion pages, Drive folders, and half-remembered decisions, GitMoneyOS gives that work a governed home. The goal is simple: make valuable knowledge easier to find, approve, protect, hand off, and improve.
+---
 
-The old growth model assumed that scale required more people, more meetings, and more operational drag. The new model is smaller, sharper, and more governed: a founder with strong source doctrine, bounded AI workbenches, and an inspectable business record can create leverage that used to require a much larger organization.
+## 3. Plain-English GitOps Translation Table
 
-GitMoneyOS is built for that future. It is the infrastructure pattern for solo operators and small teams who intend to scale without losing the chain of command.
+For non-technical founders, Git commands feel like an intimidating black box. Here is the plain-English translation of GitHub's primitives into business operating controls:
 
-## If You Are New To GitHub Or Obsidian.md
+| Developer Term | GitMoney OS Business Control | Why It Matters |
+| :--- | :--- | :--- |
+| **Organization** | **AI Office Building** | The secure perimeter holding all company knowledge and departments. |
+| **Repository** | **Business Vault** | A secure safe dedicated to one category of operational assets. |
+| **Folder** | **ICM Context Scope** | Limits what an agent can read and write, preventing context rot. |
+| **Branch** | **Agent Sandbox** | An isolated scratchpad where an agent works without risking production state. |
+| **Commit** | **Cryptographic Receipt** | An immutable, timestamped record proving exactly what changed and when. |
+| **Pull Request** | **Mandatory Edit Surface** | The review checkpoint where a human owner inspects, edits, and ratifies agent work. |
+| **GitHub Actions** | **Deterministic Safety Gate** | Automated tests, security scans, and policy locks that run before merging. |
+| **CODEOWNERS** | **Executive Chain of Command** | Defines which human or executive seat has final approval over each directory. |
 
-Read GitMoneyOS like a business building, not a software project.
+---
 
-- **Obsidian.md** is the private notebook. It is where messy thinking, founder doctrine, drafts, research, prompts, and ideas can be captured before they are ready for the company record. Public readers can research the software at [obsidian.md](https://obsidian.md).
-- **Agent platforms** are the work desk. GitMoneyOS is optimized for Codex, Antigravity 2, and Claude Code. This is where AI or humans turn the notebook into a document, task, audit, checklist, or proposal.
-- **GitHub** is the official company record. It keeps the approved version, the change history, the owner, the review, and the receipt.
+## 4. The Three Mutation Invariants
 
-You do not need to know how to code to understand the control. GitMoneyOS is asking one plain question: when important work happens, can the business prove what changed, who approved it, and where the knowledge lives?
+To prevent autonomous agents from hallucinating or damaging business state, every agent operation in GitMoney OS must satisfy three non-negotiable rules:
 
-## Purpose
+1. **Atomic:** The agent performs exactly one bounded task per run.
+2. **Inspectable:** Every change is captured as a human-readable diff in plain text on disk.
+3. **Reversible:** Fast one-action rollback via Git commits if an agent drifts.
 
-Publish the public framework for plain-English GitHub, AI Office infrastructure, IP Vault thinking, and founder-facing GitOps under the KnowTheLedge brand.
+---
 
-## Owner
+## 5. The Three-Plane Operating System
 
-Red Pillar and Hitsuyo Aku, under KnowTheLedge.
+```text
++-----------------------------------------------------------------------------------+
+|                        GITMONEY OS 3-PLANE ARCHITECTURE                           |
++-----------------------------------------------------------------------------------+
+|                                                                                   |
+|  [ Private Memory ]             [ Agent Workbench ]          [ Court of Record ]  |
+|   Obsidian PKM Vault   <----->   AI Office Cockpit   <----->   GitHub Repositories |
+|  Raw capture & doctrine        Autonomous Agent Platforms    Governed Proof Assets|
+|                                                                                   |
++-----------------------------------------------------------------------------------+
+```
 
-## What Belongs Here
+- **Obsidian is Private Memory:** Capture raw ideas, customer notes, and private doctrine. Never leaves local disk without approval.
+- **Agent Platforms are Workbenches:** Codex, Claude Code, Antigravity. Autonomous agents shape raw ideas into structured drafts.
+- **GitHub is the Cryptographic Court of Record:** Approved, evidence-backed assets that have passed the Five-Part Asset Test.
 
-- Public GitMoney thesis
-- Owner-approved GitMoney source doctrine
-- Plain-English GitHub explanations
-- Consulting and audit entry points
-- Founder education assets
-- KnowTheLedge-approved public positioning
-- Case files and examples that contain no private client data
+---
 
-## What Does Not Belong Here
+## 6. Commercial Engagements & Diagnostic Entry
 
-- Private source docs that have not been explicitly approved for publication
-- Client data
-- Unapproved internal pricing notes
-- Secrets or credentials
-- Public claims that Red Pillar and Hitsuyo Aku have not approved together
+GitMoney OS is backed by the commercial delivery infrastructure of **Identity Forensics Lab (IFL)**:
 
-## Plain-English GitHub
+- **Founder Dependency Diagnostic ($1,500):** Measure your Founder Dependency Bottleneck Rate (FDBR) and inspect what breaks when leadership steps away for 96 hours.
+- **AI Office Audit ($3,500):** Full forensic inventory of scattered prompts, shadow tools, and ungoverned workflows.
+- **Client AI Office Setup Sprint ($20,000):** Complete 30-day production install of the 5-layer ICM architecture into your GitHub organization.
+- **Forward-Deployed Infrastructure Build (FROM $50,000 Floor):** Production-hardened enterprise systems architecture, agent governance, and revenue engineering.
 
-- A GitHub organization is the company's AI Office building.
-- A repository is a business vault for one category of company knowledge.
-- An issue is a trackable task, risk, or decision.
-- A commit is a timestamped receipt proving what changed.
-- A pull request is an approval lane before work becomes official.
-- CODEOWNERS is the chain of command.
-- Branch protection is a rule that prevents accidental or unauthorized changes to critical assets.
+Apply for a diagnostic: [architect.hitsuyoaku.io/contact?tier=v2-diagnose](https://architect.hitsuyoaku.io/contact?tier=v2-diagnose)
 
-## Framework Pillars
+---
 
-- AI Office Infrastructure
-- IP Vaults
-- Agent Chain of Command
-- Founder GitHub Literacy
-- Exit-Ready Score
-- Plain-English GitOps
-- 9-Figure Ease Infrastructure
+## 7. Master Thesis & Deep Documentation
 
-## 9-Figure Ease Standard
-
-GitMoneyOS does not claim that a tool makes a company worth 9 figures.
-
-It does claim that 9-figure scale becomes more realistic when the company can preserve operating knowledge, govern AI-assisted work, prove approvals, reduce handoff risk, and inspect its own growth system without depending on one overextended founder.
-
-## Founder Demo
-
-Start here:
-
-- [Public Proof Package](docs/proof-package/README.md)
-- [GitBuilt Master Workbooks & Curriculum](workbooks/gitbuilt-master-series/README.md)
-
-Supporting paths:
-
-- [Workbook 2: Skills, Workflows & Repositories](workbooks/gitbuilt-master-series/workbook-02-skills-workflows-repos.md)
-- [Workbook 2: Solution Guide & Answer Key](workbooks/gitbuilt-master-series/workbook-02-answer-key.md)
-- [Workbook 3: AI Recommendations & Business Scaling](workbooks/gitbuilt-master-series/workbook-03-ai-fable-recommendations-scaling.md)
-- [GitMoney OS v1 Source Document](docs/source-doctrine/GitMoney_OS_v1.docx)
-- [Founder Presentation Runbook](docs/proof-package/founder-presentation-runbook.md)
-- [GitBuilt × GitHub Opportunity Map](docs/proof-package/gitbuilt-github-opportunity-map.md)
-- [Plain-English GitHub Founder Demo](docs/demo/plain-english-github-founder-demo.md)
-- [Class One GitHub Orientation Official Record](docs/students/class-one-github-orientation-official-record.md)
-- [GitBuilt Agentic Systems Preparation](docs/students/ai-office-source-pack/week-0-agentic-systems-first-principles.md)
-
-## Three-Layer AI Office
-
-GitMoneyOS treats the AI Office as three connected layers:
-
-- Source Memory captures founder and builder thinking before it is ready for approval.
-- Agent Workbench turns that thinking into reviewable tasks, documents, audits, and decisions.
-- GitHub Record stores the governed business record with owners, approvals, history, and evidence.
-
-Plain-English rule: thinking becomes work, and work becomes evidence.
-
-Glass house rule: show the workflow, protect the source.
-
-## Approval Path
-
-Changes should move through an issue or pull request when they affect strategy, public positioning, client delivery, agent behavior, permissions, or product direction.
-
-Plain-English GitHub translation: a pull request is the review packet before a change becomes official.
-
-Public positioning changes should be approved by both Red Pillar and Hitsuyo Aku before merge.
-
-## Update Cadence
-
-Review monthly during the GitMoney AI Office governor review.
-
-## Evidence
-
-Use commits, pull requests, linked issues, screenshots, or GitHub settings as proof that work is complete.
+Read the full viral manifesto:
+- **Master Thesis:** [The Skills-as-Architecture Law: Why Folder Structure Is Agent Architecture and Why GitHub Is Missing Their Own Trillion-Dollar Enterprise Market](docs/master-thesis.md)
+- **Executive Authority:** [@HitsuyoAkuWeb3](https://github.com/HitsuyoAkuWeb3)
