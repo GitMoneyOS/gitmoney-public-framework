@@ -3,7 +3,7 @@ title: "self-audit-summary-2026-06-22"
 type: "vault-memory"
 owner: "Hitsuyo Aku"
 status: "active-internal"
-classification: "internal"
+classification: "public"
 approval_path: "Hitsuyo Aku"
 tags:
   - vault/memory
