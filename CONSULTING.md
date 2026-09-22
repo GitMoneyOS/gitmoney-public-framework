@@ -33,98 +33,90 @@ We turn GitHub into your company's **Cryptographic Court of Record** through **I
 
 ---
 
-## 2. The Five-Tier Commercial Ladder
+## 2. Canonical Commercial Offer Ladder
 
-We do not pitch generic retainers. We diagnose first, verify evidence second, and build forward-deployed systems third.
+All client engagements adhere strictly to `IFL-COMM-V2-2026-09-01`:
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ TIER 1: FOUNDER DEPENDENCY DIAGNOSTIC ($1,500)                                          │
-│ Scope: Rapid FDBR scoring, operational bottleneck mapping, 96-hour freeze test.        │
+│ FOUNDER DEPENDENCY DIAGNOSTIC                                                          │
+│ - Single Vector ($1,500): Single dependency vector deep-dive, FDBR score, memo         │
+│ - Full Executive ($3,500): Full 6-vector diagnostic assessment and 96-hour freeze test │
+│ - 1-Day Sprint ($7,500): 1-day executive diagnostic sprint, full operational mapping   │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│ TIER 2: AI OFFICE FORENSIC AUDIT ($3,500)                                              │
-│ Scope: Complete VSM System 1-5 forensic inspection, context rot audit, liability map. │
+│ IDENTITY FORENSICS AUDIT ($20,000)                                                     │
+│ Scope: Comprehensive Viable System Model (VSM) S1-S5 and S3* audit, liability matrix   │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│ TIER 3: ARCHITECTURE RECONNAISSANCE ($7,500)                                           │
-│ Scope: Enterprise technical specification, migration blueprint, custom skill taxonomy. │
+│ SOVEREIGN RECONSTRUCTION (FROM $50,000 ENTRY FLOOR)                                    │
+│ Scope: Full custom systems transformation, 5-layer ICM structure, production software  │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│ TIER 4: CLIENT AI OFFICE SETUP SPRINT ($20,000)                                        │
-│ Scope: 14-day forward-deployed buildout of 5-layer ICM structure, skills, and gates.   │
-├────────────────────────────────────────────────────────────────────────────────────────┤
-│ TIER 5: FORWARD-DEPLOYED SYSTEMS BUILD (FROM $50,000 FLOOR)                            │
-│ Scope: Custom enterprise autonomous agent and data infrastructure, production ready.   │
-├────────────────────────────────────────────────────────────────────────────────────────┤
-│ RECURRING: FRACTIONAL SYSTEMS OPERATOR ($10,000/MONTH)                                 │
-│ Scope: Monthly cybernetic governance, drift monitoring, skill updates, court reviews.  │
+│ SIGNAL & DEPENDENCY GOVERNANCE ($10,000 / MONTH)                                       │
+│ Scope: Standing monthly cybernetic governance, drift monitoring, skill updates, reviews│
 └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-### Tier 1: Founder Dependency Diagnostic ($1,500)
+### Tier 1: Founder Dependency Diagnostic ($1,500 / $3,500 / $7,500)
 
-**Format:** 90-minute structured diagnostic session + Diagnostic Scorecard.  
-**Target Turnaround:** 48 hours from session completion.  
-**Deliverables:**
-- **Founder Dependency Bottleneck Rate (FDBR):** Quantified score showing the percentage of core business operations that halt if the founder disconnects for 96 hours.
-- **Context Rot Assessment:** Forensic audit of scattered company memory across Google Docs, Slack, private chats, and local hard drives.
-- **Actionable Remediation Memo:** A decision-grade executive memo detailing exactly which workflows must be converted into GitHub repositories immediately.
+The diagnostic front door quantifies operational vulnerability and exposes single points of failure.
+
+#### Variant A: Single Vector ($1,500)
+- **Scope:** Deep-dive examination into a single operational dependency vector (e.g. sales fulfillment, client onboarding, or code deployment).
+- **Target Turnaround:** 48 hours from intake session.
+- **Deliverables:**
+  - Quantified Founder Dependency Bottleneck Rate (FDBR) for the target vector.
+  - 96-Hour Freeze simulation results.
+  - Actionable executive remediation memo.
+
+#### Variant B: Full Executive ($3,500)
+- **Scope:** Full 6-vector diagnostic assessment across authority, memory, logic, verification, tool routing, and customer handoff.
+- **Target Turnaround:** 5 business days.
+- **Deliverables:**
+  - Complete multi-vector FDBR scorecard.
+  - Context Rot audit of scattered documentation across Slack, Google Drive, and local hard drives.
+  - Comprehensive structural remediation roadmap.
+
+#### Variant C: 1-Day Sprint ($7,500)
+- **Scope:** High-velocity, 1-day executive diagnostic sprint conducted with founder and leadership team.
+- **Target Turnaround:** Same-day delivery + 24-hour final documentation synthesis.
+- **Deliverables:**
+  - Live operational stress-testing and bottleneck mapping.
+  - Formal Architecture Decision Record (ADR) draft.
+  - Priority migration matrix for converting fragile manual workflows into governed GitHub repositories.
 
 ---
 
-### Tier 2: AI Office Forensic Audit ($3,500)
+### Tier 2: Identity Forensics Audit ($20,000)
 
-**Format:** Complete forensic discovery across your operational stack.  
-**Target Turnaround:** 5 business days.  
-**Deliverables:**
-- **Viable System Model (VSM) System 1-5 Inspection:** Mapping primary operations, coordination channels, operational control, forward-looking intelligence, and executive policy.
-- **Agent Liability Audit:** Identification of all unmonitored AI touchpoints, API leaks, and unverified code mutations.
-- **Three Mutation Invariants Scorecard:** Assessment of your workflows against the Atomic, Inspectable, and Reversible invariants.
-- **The AI Office Blueprint:** Structural specification of the 5-layer folder hierarchy required to govern your autonomous agents safely.
-
----
-
-### Tier 3: Architecture Reconnaissance ($7,500)
-
-**Format:** Deep-dive technical reconnaissance for multi-team or technical organizations.  
+**Format:** Comprehensive forensic discovery and systems audit across your operational organization.  
 **Target Turnaround:** 10 business days.  
 **Deliverables:**
-- **Full Architecture Decision Records (ADRs):** Detailed documentation of your target system state, data contracts, and integration surfaces.
-- **Custom Skill Taxonomy:** Specification of all required Layer 3 persistent skills needed to govern your specific agents.
-- **Security & Permission Matrix:** Enterprise branch protection rules, GitHub Actions security gates, and machine write boundaries.
-- **Statement of Work (SOW):** Bound proposal for Tier 4 or Tier 5 implementation with fixed milestones and verified acceptance criteria.
+- **Viable System Model (VSM) S1-S5 & S3* Inspection:** Full organizational audit inspecting primary operations (S1), coordination (S2), operational control (S3), System 3* forensic audit channel, forward-looking intelligence (S4), and executive policy (S5).
+- **Agent Liability Matrix:** Identification of all unmonitored AI touchpoints, API credentials leaks, and unverified autonomous mutations.
+- **Three Mutation Invariants Evaluation:** Comprehensive assessment of workflows against the Atomic, Inspectable, and Reversible invariants.
+- **Formal Audit Report & Cryptographic Court Blueprint:** Decision-grade audit findings and architectural specification for full systems reconstruction.
 
 ---
 
-### Tier 4: Client AI Office Setup Sprint ($20,000)
+### Tier 3: Sovereign Reconstruction (FROM $50,000 Entry Floor)
 
-**Format:** 14-day forward-deployed engineering sprint.  
-**Target Turnaround:** 14 calendar days.  
+**Format:** Forward-deployed engineering engagement. Turnkey systems transformation and production deployment.  
+**Price Floor Law:** "FROM $50,000" is an entry floor, NEVER an upper ceiling. Enterprise transformations scale according to scope and organizational complexity.  
 **Deliverables:**
-- **Full GitHub Organization Architecture:** Deployment of the 5-layer ICM structure into your company GitHub organization.
-- **Layer 0 Identity Configuration:** Hardened `AGENTS.md` and `00_COCKPIT.md` establishing executive authority and operational boundaries.
-- **Layer 3 Skill Installation:** Provisioning of verified engineering, marketing, and operations skills inside `.agents/skills/`.
+- **5-Layer ICM Organization Scaffolding:** Complete deployment of Layers 0 through 4 into your company GitHub organization.
+- **Layer 0 Identity & Authority Configuration:** Hardened `AGENTS.md` and `00_COCKPIT.md` establishing executive authority and operational boundaries.
+- **Layer 3 Skill Factory Installation:** Authoring and mounting of verified engineering, marketing, and operational skills inside `.agents/skills/`.
 - **Three Mutation Invariants Enforcement:** Configuration of branch protection rules, GitHub Actions automated verification gates, and machine-only write lanes (`_generated/**`).
-- **Team Enablement Workshop:** Plain-English training for non-technical leadership on reviewing and merging agent Pull Requests.
-- **First Verified Agent PR:** End-to-end execution of a real business workflow through an autonomous agent, verified by a human operator, and committed to the cryptographic court of record.
+- **Production Software & Data Systems:** Custom autonomous agent infrastructure, private data connectors, automated compliance loops, and production application builds.
+- **Executive & Team Enablement:** Plain-English training for leadership and operators on the 60-second PR review workflow.
 
 ---
 
-### Tier 5: Forward-Deployed Systems Build (FROM $50,000 Floor)
+### Tier 4: Signal & Dependency Governance ($10,000 / Month Retainer)
 
-**Format:** Multi-week dedicated enterprise installation.  
-**Scope:** Custom enterprise agent infrastructure, private data connectors, automated compliance loops, and production application builds.  
-**Deliverables:**
-- Bound by formal Statement of Work (SOW) with binary acceptance criteria.
-- Full ownership transfer of all code, configuration, and documentation.
-- Production deployment with passing end-to-end integration tests.
-
----
-
-### Standing Retainer: Fractional Systems Operator ($10,000 / Month)
-
-**Prerequisite:** Completion of Tier 4 Setup Sprint or Tier 5 Systems Build.  
-**Capacity:** Capped at 5 concurrent clients per quarter.  
+**Format:** Standing monthly cybernetic governance retainer.  
+**Capacity:** Strictly capped at 5 concurrent client partnerships per quarter.  
 **Deliverables:**
 - **Weekly Agent Drift Monitoring:** Auditing agent mutations to ensure zero unauthorized writes outside designated lanes.
 - **Monthly Skill Library Updates:** Hardening Layer 3 skills against emerging edge cases and API deprecations.
@@ -138,11 +130,11 @@ We do not pitch generic retainers. We diagnose first, verify evidence second, an
 We do not accept client engagements without preliminary diagnostic verification.
 
 1. **Step 1: Schedule Your Diagnostic**  
-   Book your Founder Dependency Diagnostic ($1,500):  
+   Apply for your Founder Dependency Diagnostic ($1,500 / $3,500 / $7,500):  
    `https://architect.hitsuyoaku.io/contact?tier=v2-diagnose`
 
 2. **Step 2: Review Your Scorecard**  
    Receive your FDBR score, context rot assessment, and executive remediation memo.
 
-3. **Step 3: Deploy Your AI Office**  
-   Apply 100% of your diagnostic fee toward the $20,000 Setup Sprint upon mutual qualification.
+3. **Step 3: Systems Transformation**  
+   Apply 100% of your diagnostic fee toward full Sovereign Reconstruction upon mutual qualification.
