@@ -97,14 +97,14 @@ To prevent autonomous agents from hallucinating or damaging business state, ever
 ---
 
 ## 6. Commercial Engagements & Diagnostic Entry
-
-GitMoney OS is backed by the commercial delivery infrastructure of **Identity Forensics Lab (IFL)**:
-
-- **Founder Dependency Diagnostic ($1,500):** Measure your Founder Dependency Bottleneck Rate (FDBR) and inspect what breaks when leadership steps away for 96 hours.
-- **AI Office Audit ($3,500):** Full forensic inventory of scattered prompts, shadow tools, and ungoverned workflows.
-- **Client AI Office Setup Sprint ($20,000):** Complete 30-day production install of the 5-layer ICM architecture into your GitHub organization.
-- **Forward-Deployed Infrastructure Build (FROM $50,000 Floor):** Production-hardened enterprise systems architecture, agent governance, and revenue engineering.
-
+ 
+GitMoney OS is backed by the commercial delivery infrastructure of **Identity Forensics Lab (IFL)** (`IFL-COMM-V2-2026-09-01`):
+ 
+- **Founder Dependency Diagnostic ($1,500 / $3,500 / $7,500):** Single Vector ($1,500), Full Executive ($3,500), or 1-Day Sprint ($7,500). Measure your Founder Dependency Bottleneck Rate (FDBR) and inspect what breaks when leadership steps away for 96 hours.
+- **Identity Forensics Audit ($20,000):** Comprehensive forensic audit across VSM Systems 1-5 and System 3* audit channels, agent liability boundaries, and court of record verification.
+- **Sovereign Reconstruction (FROM $50,000 Floor):** Production-hardened enterprise systems transformation, agent governance, and revenue engineering.
+- **Signal & Dependency Governance ($10,000 / month):** Standing monthly cybernetic governance, drift monitoring, and skill updates.
+ 
 Apply for a diagnostic: [architect.hitsuyoaku.io/contact?tier=v2-diagnose](https://architect.hitsuyoaku.io/contact?tier=v2-diagnose)
 
 ---
