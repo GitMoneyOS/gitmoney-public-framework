@@ -19,6 +19,7 @@ Within 90 seconds, you should know:
 - what expensive problem this framework addresses;
 - whether the wound is yours;
 - why GitMoney OS is the open public skeleton;
+- what architecture governs the skeleton;
 - what remains private;
 - what proof you can inspect;
 - what paid step comes next.
@@ -26,11 +27,12 @@ Within 90 seconds, you should know:
 Within 10 minutes, inspect:
 
 1. [`START-HERE.md`](START-HERE.md)
-2. [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md)
-3. [`docs/open-source-boundary.md`](docs/open-source-boundary.md)
-4. [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md)
-5. [`docs/proof-package/founder-verification-checklist.md`](docs/proof-package/founder-verification-checklist.md)
-6. [`CONSULTING.md`](CONSULTING.md)
+2. [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md)
+3. [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md)
+4. [`docs/open-source-boundary.md`](docs/open-source-boundary.md)
+5. [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md)
+6. [`docs/proof-package/founder-verification-checklist.md`](docs/proof-package/founder-verification-checklist.md)
+7. [`CONSULTING.md`](CONSULTING.md)
 
 The skeleton is open. The living machine is paid.
 
@@ -40,6 +42,8 @@ The skeleton is open. The living machine is paid.
 2. **Viable System Model (VSM):** identify operating functions, accountable owners, coordination, control, future intelligence, and policy authority.
 3. **Interpretable Context Methodology (ICM):** organize the context, stage contracts, artifacts, and handoffs an agent or person needs for a bounded job.
 4. **Identity Forensics Lab (IFL):** investigate evidence, design interventions, and compare results with the prior state.
+
+The public three-layer skeleton is governed by this deeper stack. Read [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md) for the operational map.
 
 **Interpretable Context Methodology is Jake Van Clief's work.** See the [original methodology repository](https://github.com/RinDig/Interpretable-Context-Methodology) and [paper](https://arxiv.org/html/2603.16021v2). Hitsuyo Aku used related files-in-folders logic before formally naming ICM as a component of this integrated architecture. Those earlier practices and this later adoption should not be mistaken for authorship of ICM.
 
@@ -72,6 +76,7 @@ Git commits and pull requests can make changes inspectable. They do not make a c
 
 ## What to inspect
 
+- [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md): how POL, VSM, ICM, and IFL govern the public three-layer skeleton.
 - [`docs/open-source-boundary.md`](docs/open-source-boundary.md): what is open source, what is not, and why.
 - [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md): map founder dependency wounds to the public skeleton and paid path.
 - [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md): claim-to-evidence table.
@@ -79,10 +84,10 @@ Git commits and pull requests can make changes inspectable. They do not make a c
 - [`docs/templates/icm-execution-contract.md`](docs/templates/icm-execution-contract.md): bounded execution contract.
 - [`docs/templates/icm-receipt.md`](docs/templates/icm-receipt.md): receipt template for work after completion.
 - [`docs/templates/icm-conformance-checklist.md`](docs/templates/icm-conformance-checklist.md): verification checklist for bounded jobs.
-- [`docs/commercial-translation.md`](docs/commercial-translation.md): how the public skeleton connects to the paid ladder.
+- [`docs/commercial-translation.md`](docs/commercial-translation.md): how the open skeleton connects to the paid ladder.
 
 ## Work with Hitsuyo Aku
 
 The **$20,000 Identity Forensics Audit** is the main paid entry to the Enterprise Systems Architecture service. Qualified buyers can [review the Audit and apply directly](https://architect.hitsuyoaku.io/sovereign-brand-os-audit). A separate **$7,500 Architecture Sprint** addresses a narrower immediate architecture question; [ask about its current scope](https://architect.hitsuyoaku.io/contact?tier=v2-diagnose-architecture-sprint). Smaller Diagnostic scopes can be offered where a narrower investigation fits. Sovereign Reconstruction is a contracted build scoped after the Audit, starting at $50,000; ongoing governance is separately contracted.
 
-This open-source framework teaches the standard. The paid work applies private judgment, diagnosis, implementation, integration, governance, and adaptation to a specific business.
+This framework is the open skeleton for learning how the architecture organizes governed AI-assisted business work. Reading or adopting it does not by itself establish a financial return, security guarantee, legal conclusion, investment claim, acquisition readiness, or client outcome.
