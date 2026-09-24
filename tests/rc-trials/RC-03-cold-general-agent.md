@@ -4,7 +4,7 @@ type: "rc-evidence-kit"
 trial_id: "RC-03"
 status: "prepared-unverified"
 classification: "public"
-target_tag: "v0.9.0-beta.2"
+target_tag: "v0.9.0-beta.3"
 target_sha: "0d25a7b17b44c2f725ac49bccd409f6b59e3390d"
 ---
 
@@ -71,7 +71,7 @@ Complete LLM prompt transcript, tool call logs, generated artifact, output recei
   "trial_id": "RC-03",
   "tester_type": "COLD_AGENT",
   "prior_exposure": "NONE",
-  "tag": "v0.9.0-beta.2",
+  "tag": "v0.9.0-beta.3",
   "tag_sha": "0d25a7b17b44c2f725ac49bccd409f6b59e3390d",
   "start_time": "UNVERIFIED",
   "end_time": "UNVERIFIED",

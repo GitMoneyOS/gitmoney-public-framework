@@ -34,8 +34,8 @@ GitMoney OS manifests (`gitmoney.yaml`) decouple framework, operator, and schema
 
 | Field | Contract Scope | Example | Description |
 | :--- | :--- | :--- | :--- |
-| `spec_version` | Framework specification | `0.9.0-beta.2` | The active version of the GitMoney OS public framework contract. |
-| `installed_spec_version` | Adopter baseline | `0.9.0-beta.2` | The framework version that was originally initialized in the adopter repository. |
+| `spec_version` | Framework specification | `0.9.0-beta.3` | The active version of the GitMoney OS public framework contract. |
+| `installed_spec_version` | Adopter baseline | `0.9.0-beta.3` | The framework version that was originally initialized in the adopter repository. |
 | `operator_version` | Public operator contract | `0.1.0` | The contract version of `gitmoney-public-operator` declared in its frontmatter. |
 | `schema_version` | Machine schema family | `0.1.0` | The canonical version shared by all Draft-07 JSON schemas in `schemas/`. |
 
