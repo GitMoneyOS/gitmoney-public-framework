@@ -16,11 +16,11 @@ tags:
 
 Translate the public framework into the paid commercial ladder without turning the repo into a sales page wearing a cheap cologne cloud.
 
-GitMoney OS is the public proof layer. It shows how governed AI-assisted work can become inspectable business infrastructure.
+GitMoney OS is the open-source public skeleton. It shows how governed AI-assisted work can become inspectable business infrastructure.
 
-The paid work applies that discipline to a specific business.
+The paid work applies the private discipline to a specific business.
 
-## Free proof layer: GitMoney OS Public Framework
+## Open skeleton: GitMoney OS Public Framework
 
 GitMoney OS shows how public proof works:
 
@@ -31,16 +31,16 @@ GitMoney OS shows how public proof works:
 - public claims need evidence and boundaries;
 - private machinery needs to stay private.
 
-This is the only free resource worth routing through the buyer journey.
+This is the only open public standard worth routing through the buyer journey.
 
-It is free to read. It is not free permission to copy, adapt, redistribute, or claim the private delivery system.
+Reuse rights are governed by the published license. The license applies to this public framework repository, not the private delivery system.
 
 ## Paid entry: Identity Forensics Audit
 
 The **$20,000 Identity Forensics Audit** asks a different question:
 
 ```text
-Where does this founder-led business depend on hidden memory, judgment, context, authority, or intervention — and what architecture would let the work operate with clearer ownership and evidence?
+Where does this founder-led business depend on hidden memory, judgment, context, authority, or intervention, and what architecture would let the work operate with clearer ownership and evidence?
 ```
 
 The Audit is appropriate when:
@@ -107,7 +107,7 @@ This is for businesses where the system is alive enough to drift.
 
 ## Rule of thumb
 
-If the buyer wants to learn, send them to GitMoney OS.
+If the buyer wants to learn or adopt the standard, send them to GitMoney OS.
 
 If the buyer wants diagnosis, send them to the Identity Forensics Audit.
 
@@ -117,8 +117,8 @@ If the buyer wants the machinery installed, scope it only after evidence.
 
 ## Commercial close
 
-The free layer is not charity.
+The open layer is not charity.
 
-It is proof.
+It is proof and standard-setting.
 
 The paid work begins when the buyer wants that proof discipline aimed at their own business.
