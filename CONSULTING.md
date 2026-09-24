@@ -1,8 +1,25 @@
 # Enterprise Systems Architecture with Hitsuyo Aku
 
-GitMoney OS is a public way to inspect part of Hitsuyo Aku's Enterprise Systems Architecture practice. The paid work addresses a different question: where does a founder-led business depend on one person's memory, judgment, or intervention, and what architecture would let the work operate with clearer ownership and evidence?
+GitMoney OS is a public way to inspect part of Hitsuyo Aku's Enterprise Systems Architecture practice. The paid work addresses a different question: where does a founder-led business depend on one person's memory, judgment, context, authority, or intervention, and what architecture would let the work operate with clearer ownership and evidence?
 
 Hitsuyo Aku works as an **Enterprise Systems Architect and Forward-Deployed Business Engineer**. Identity Forensics Lab is the investigative and intervention practice behind the engagement. GitMoney OS is one possible implementation surface, not a mandatory platform for every client.
+
+The public framework is the free proof layer. The paid work is the private operating transformation.
+
+## When this is your problem
+
+This work is relevant when:
+
+- the founder is still the routing layer for too many decisions;
+- AI-assisted work exists, but approval, ownership, and evidence are unclear;
+- the company creates more assets than it can govern;
+- sales, delivery, or operations logic depends on hidden context;
+- important work lives across chats, docs, prompts, contractors, and memory;
+- handoffs break when a specific person leaves the room;
+- automation says complete without proving what happened;
+- the business needs a decision-grade architecture before building more machinery.
+
+GitMoney OS lets a buyer inspect the public pattern. The engagement applies the discipline to the buyer's actual records, constraints, workflows, and authority structure.
 
 ## The main offer: Identity Forensics Audit
 
@@ -15,6 +32,8 @@ The Audit examines a defined business workflow or operating constraint. It ident
 ## A separate bounded option: Architecture Sprint
 
 The **$7,500 Architecture Sprint** is a bounded paid diagnostic for one immediate architecture question. It is a separate path, not a required purchase before the Audit. Current availability, duration, payment terms, and deliverables are confirmed in the specific offer and contract before a buyer commits.
+
+Use this path when the question is narrow enough to answer without the full Audit, such as a proof package, buyer path, route retirement, agent authority boundary, or one workflow architecture decision.
 
 [Ask about the Architecture Sprint](https://architect.hitsuyoaku.io/contact?tier=v2-diagnose-architecture-sprint).
 
@@ -32,5 +51,13 @@ No diagnostic is a prerequisite to a qualified buyer applying for the Audit. Exa
 **Primal Ontological Loop → Viable System Model → Interpretable Context Methodology → Identity Forensics Lab.** POL makes identity and value commitments explicit. VSM identifies operating functions and authority. ICM structures context, artifacts, stages, and handoffs. IFL investigates evidence, guides an intervention, and compares the result with the baseline. [Jake Van Clief created Interpretable Context Methodology](https://github.com/RinDig/Interpretable-Context-Methodology); Hitsuyo Aku's earlier files-in-folders practices and later application of ICM have a distinct lineage.
 
 Folders and written agent instructions can improve context selection. They do not enforce technical permissions. Repository access, tool grants, sandboxing, application authorization, review rules, and client-specific approval are separate controls. A workflow's value is evaluated from its actual operation and evidence, not assumed from its diagram.
+
+## Commercial translation
+
+- GitMoney OS shows how public proof works.
+- Identity Forensics Audit finds where your company lacks proof.
+- Architecture Sprint answers one bounded architecture question.
+- Sovereign Reconstruction installs the private operating architecture after evidence supports a build.
+- Governance keeps the system learning where ongoing review is needed.
 
 [Read the GitMoney OS Public Framework](https://github.com/GitMoneyOS/gitmoney-public-framework) as the free resource. Public viewing does not establish reuse rights; check the repository's published license if one is added.
