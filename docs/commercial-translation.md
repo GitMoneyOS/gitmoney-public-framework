@@ -28,6 +28,7 @@ GitMoney OS shows how public proof works:
 - AI-assisted work needs a bounded workbench;
 - approved changes need a company record;
 - meaningful work needs owners, issues, pull requests, commits, checks, and receipts;
+- POL, VSM, ICM, and IFL give the skeleton its operating logic;
 - public claims need evidence and boundaries;
 - private machinery needs to stay private.
 
@@ -99,6 +100,7 @@ This is for businesses where the system is alive enough to drift.
 | Buyer state | Public resource | Paid path |
 |---|---|---|
 | Curious about the concept | START-HERE.md and README.md | none yet |
+| Wants the architecture stack | pol-vsm-icm-ifl-stack.md | Audit if the wound is expensive |
 | Recognizes founder dependency | founder-dependency-map.md | Audit or Sprint |
 | Wants proof | proof-index.md and proof package | Audit if the wound is expensive |
 | Has one narrow question | ICM templates and proof package | Architecture Sprint |
