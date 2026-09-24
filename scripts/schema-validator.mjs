@@ -1,6 +1,17 @@
 // scripts/schema-validator.mjs
-// Lightweight, dependency-free Draft-07 schema and YAML validation engine.
+// Schema-driven Draft-07 validation engine for GitMoney OS.
+// SCHEMA = CANON; VALIDATOR = EXECUTOR.
 
+import { readFileSync, existsSync } from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+/**
+ * Lightweight, zero-dependency YAML parser for GitMoney manifests.
+ */
 export function parseSimpleYaml(yamlText) {
   const result = {};
   const lines = yamlText.split("\n");
@@ -43,147 +54,154 @@ export function parseSimpleYaml(yamlText) {
   return result;
 }
 
-export function validateManifest(data) {
+/**
+ * Core schema-driven evaluator interpreting Draft-07 keywords used across GitMoney schemas:
+ * type, required, properties, enum, pattern, minLength, maxLength, minItems, maxItems, items, format, additionalProperties
+ */
+export function validateAgainstSchema(data, schema, pointer = "") {
   const errors = [];
-  const required = [
-    "spec_version",
-    "installed_spec_version",
-    "owner",
-    "profile",
-    "source_memory",
-    "operator_version",
-    "schema_version",
-    "required_artifacts"
-  ];
+  if (!schema || typeof schema !== "object") return { valid: true, errors };
 
-  for (const req of required) {
-    if (data[req] === undefined || data[req] === null || data[req] === "") {
-      errors.push(`Missing required field: ${req}`);
+  // 1. Type check
+  if (schema.type) {
+    const actualType = Array.isArray(data)
+      ? "array"
+      : data === null
+      ? "null"
+      : typeof data;
+
+    if (schema.type === "integer") {
+      if (typeof data !== "number" || !Number.isInteger(data)) {
+        errors.push(`${pointer || "root"}: expected integer, got ${actualType}`);
+        return { valid: false, errors };
+      }
+    } else if (actualType !== schema.type) {
+      errors.push(`${pointer || "root"}: expected ${schema.type}, got ${actualType}`);
+      return { valid: false, errors };
     }
   }
 
-  const semverRegex = /^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$/;
-  if (data.spec_version && !semverRegex.test(data.spec_version)) {
-    errors.push(`Invalid spec_version "${data.spec_version}". Must match semver pattern ^[0-9]+\.[0-9]+\.[0-9]+$`);
-  }
-  if (data.installed_spec_version && !semverRegex.test(data.installed_spec_version)) {
-    errors.push(`Invalid installed_spec_version "${data.installed_spec_version}". Must match semver pattern ^[0-9]+\.[0-9]+\.[0-9]+$`);
+  if (data === undefined || data === null) {
+    return { valid: errors.length === 0, errors };
   }
 
-  const validProfiles = ["public-framework", "ai-office", "custom"];
-  if (data.profile && !validProfiles.includes(data.profile)) {
-    errors.push(`Invalid profile "${data.profile}". Must be one of: ${validProfiles.join(", ")}`);
-  }
-
-  if (data.required_artifacts !== undefined) {
-    if (!Array.isArray(data.required_artifacts) || data.required_artifacts.length === 0) {
-      errors.push("required_artifacts must be a non-empty array of file paths.");
+  // 2. String constraints
+  if (typeof data === "string") {
+    if (schema.minLength !== undefined && data.length < schema.minLength) {
+      errors.push(`${pointer || "root"}: string length ${data.length} is less than minLength ${schema.minLength}`);
+    }
+    if (schema.maxLength !== undefined && data.length > schema.maxLength) {
+      errors.push(`${pointer || "root"}: string length ${data.length} exceeds maxLength ${schema.maxLength}`);
+    }
+    if (schema.pattern !== undefined) {
+      const rx = new RegExp(schema.pattern);
+      if (!rx.test(data)) {
+        errors.push(`${pointer || "root"}: "${data}" does not match pattern ${schema.pattern}`);
+      }
+    }
+    if (schema.format === "date") {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(data)) {
+        errors.push(`${pointer || "root"}: "${data}" is not a valid date format (YYYY-MM-DD)`);
+      }
     }
   }
 
-  return { valid: errors.length === 0, errors };
-}
-
-export function validateIcmContract(data) {
-  const errors = [];
-  const required = [
-    "task_id",
-    "title",
-    "job_to_be_done",
-    "business_reason",
-    "owner",
-    "executor",
-    "allowed_inputs",
-    "expected_outputs"
-  ];
-
-  for (const req of required) {
-    if (data[req] === undefined || data[req] === null || data[req] === "") {
-      errors.push(`Missing required field: ${req}`);
+  // 3. Enum check
+  if (schema.enum !== undefined) {
+    if (!schema.enum.includes(data)) {
+      errors.push(`${pointer || "root"}: value ${JSON.stringify(data)} not in enum: [${schema.enum.map(v => JSON.stringify(v)).join(", ")}]`);
     }
   }
 
-  const taskIdRegex = /^[A-Z0-9]+-[0-9]+$/;
-  if (data.task_id && !taskIdRegex.test(data.task_id)) {
-    errors.push(`Invalid task_id "${data.task_id}". Must match pattern ^[A-Z0-9]+-[0-9]+$`);
-  }
-
-  if (data.title && typeof data.title === "string" && data.title.length < 5) {
-    errors.push("title must have at least 5 characters.");
-  }
-  if (data.job_to_be_done && typeof data.job_to_be_done === "string" && data.job_to_be_done.length < 10) {
-    errors.push("job_to_be_done must have at least 10 characters.");
-  }
-  if (data.business_reason && typeof data.business_reason === "string" && data.business_reason.length < 10) {
-    errors.push("business_reason must have at least 10 characters.");
-  }
-
-  if (data.allowed_inputs && (!Array.isArray(data.allowed_inputs) || data.allowed_inputs.length < 1)) {
-    errors.push("allowed_inputs must be an array with at least 1 item.");
-  }
-  if (data.expected_outputs && (!Array.isArray(data.expected_outputs) || data.expected_outputs.length < 1)) {
-    errors.push("expected_outputs must be an array with at least 1 item.");
-  }
-
-  return { valid: errors.length === 0, errors };
-}
-
-export function validateIcmReceipt(data) {
-  const errors = [];
-  const required = [
-    "task_id",
-    "owner",
-    "executor",
-    "date",
-    "commit_sha",
-    "status",
-    "modifications",
-    "verification_gates"
-  ];
-
-  for (const req of required) {
-    if (data[req] === undefined || data[req] === null || data[req] === "") {
-      errors.push(`Missing required field: ${req}`);
+  // 4. Array constraints
+  if (Array.isArray(data)) {
+    if (schema.minItems !== undefined && data.length < schema.minItems) {
+      errors.push(`${pointer || "root"}: array contains ${data.length} item(s), expected at least ${schema.minItems}`);
     }
-  }
-
-  const commitRegex = /^[0-9a-f]{7,40}$/i;
-  if (data.commit_sha && !commitRegex.test(data.commit_sha)) {
-    errors.push(`Invalid commit_sha "${data.commit_sha}". Must match pattern ^[0-9a-f]{7,40}$`);
-  }
-
-  const validStatuses = ["DRAFT", "VERIFIED", "OWNER_APPROVED", "PROMOTED", "HELD"];
-  if (data.status && !validStatuses.includes(data.status)) {
-    errors.push(`Invalid status "${data.status}". Must be one of: ${validStatuses.join(", ")}`);
-  }
-
-  if (data.modifications) {
-    if (!Array.isArray(data.modifications)) {
-      errors.push("modifications must be an array.");
-    } else {
-      data.modifications.forEach((mod, idx) => {
-        if (!mod.file || !mod.action || !mod.summary) {
-          errors.push(`modifications[${idx}] missing required property (file, action, or summary).`);
-        }
-        const validActions = ["created", "modified", "deleted"];
-        if (mod.action && !validActions.includes(mod.action)) {
-          errors.push(`modifications[${idx}].action "${mod.action}" invalid. Must be created, modified, or deleted.`);
+    if (schema.maxItems !== undefined && data.length > schema.maxItems) {
+      errors.push(`${pointer || "root"}: array contains ${data.length} item(s), exceeds maxItems ${schema.maxItems}`);
+    }
+    if (schema.items) {
+      data.forEach((item, idx) => {
+        const itemRes = validateAgainstSchema(item, schema.items, `${pointer || "root"}[${idx}]`);
+        if (!itemRes.valid) {
+          errors.push(...itemRes.errors);
         }
       });
     }
   }
 
-  if (data.verification_gates) {
-    const requiredGates = ["classification_guard", "copy_rails", "link_integrity"];
-    const validGateValues = ["PASSED", "FAILED", "SKIPPED"];
-    for (const g of requiredGates) {
-      if (!data.verification_gates[g]) {
-        errors.push(`verification_gates missing "${g}".`);
-      } else if (!validGateValues.includes(data.verification_gates[g])) {
-        errors.push(`verification_gates.${g} invalid value "${data.verification_gates[g]}". Must be PASSED, FAILED, or SKIPPED.`);
+  // 5. Object constraints
+  if (typeof data === "object" && !Array.isArray(data) && data !== null) {
+    if (schema.required && Array.isArray(schema.required)) {
+      for (const req of schema.required) {
+        if (data[req] === undefined || data[req] === null || data[req] === "") {
+          errors.push(`${pointer ? pointer + "." : ""}${req}: missing required field`);
+        }
+      }
+    }
+
+    if (schema.additionalProperties === false && schema.properties) {
+      const allowedKeys = new Set(Object.keys(schema.properties));
+      for (const key of Object.keys(data)) {
+        if (!allowedKeys.has(key)) {
+          errors.push(`${pointer ? pointer + "." : ""}${key}: additional property not allowed`);
+        }
+      }
+    }
+
+    if (schema.properties) {
+      for (const [propName, propSchema] of Object.entries(schema.properties)) {
+        if (data[propName] !== undefined && data[propName] !== null) {
+          const propRes = validateAgainstSchema(data[propName], propSchema, `${pointer ? pointer + "." : ""}${propName}`);
+          if (!propRes.valid) {
+            errors.push(...propRes.errors);
+          }
+        }
       }
     }
   }
 
   return { valid: errors.length === 0, errors };
+}
+
+/**
+ * Helper to locate and load canonical JSON Schema files from candidate directory paths.
+ */
+export function loadSchema(schemaName, customDir = null) {
+  const candidateDirs = [];
+  if (customDir) {
+    candidateDirs.push(customDir);
+    candidateDirs.push(path.join(customDir, "schemas"));
+  }
+  candidateDirs.push(path.join(process.cwd(), "schemas"));
+  candidateDirs.push(path.resolve(__dirname, "..", "schemas"));
+  candidateDirs.push(path.resolve(__dirname, "schemas"));
+
+  for (const dir of candidateDirs) {
+    const fullPath = path.join(dir, schemaName);
+    if (existsSync(fullPath)) {
+      try {
+        return JSON.parse(readFileSync(fullPath, "utf8"));
+      } catch (err) {
+        throw new Error(`Failed to parse schema file ${fullPath}: ${err.message}`);
+      }
+    }
+  }
+  throw new Error(`Schema file "${schemaName}" not found in candidate paths: ${candidateDirs.join(", ")}`);
+}
+
+export function validateManifest(data, searchDir = null) {
+  const schema = loadSchema("gitmoney-manifest.schema.json", searchDir);
+  return validateAgainstSchema(data, schema, "gitmoney.yaml");
+}
+
+export function validateIcmContract(data, searchDir = null) {
+  const schema = loadSchema("icm-contract.schema.json", searchDir);
+  return validateAgainstSchema(data, schema, "icm-contract");
+}
+
+export function validateIcmReceipt(data, searchDir = null) {
+  const schema = loadSchema("icm-receipt.schema.json", searchDir);
+  return validateAgainstSchema(data, schema, "icm-receipt");
 }

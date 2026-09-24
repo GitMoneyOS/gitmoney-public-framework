@@ -112,11 +112,11 @@ try {
   );
   assert(
     downstreamDoctorOutput.includes("ICM Contract schema conformant: TASK-001.json"),
-    "Downstream doctor validates TASK-001.json against Draft-07 schema"
+    "Downstream doctor validates TASK-001.json against canonical Draft-07 schema"
   );
   assert(
     downstreamDoctorOutput.includes("ICM Receipt schema conformant: RECEIPT-001.json"),
-    "Downstream doctor validates RECEIPT-001.json against Draft-07 schema"
+    "Downstream doctor validates RECEIPT-001.json against canonical Draft-07 schema"
   );
 } catch (e) {
   assert(false, `Test 1 encountered exception: ${e.message}`);
@@ -142,11 +142,46 @@ try {
 }
 
 // ----------------------------------------------------
-// TEST 3: Manifest Draft-07 Schema Validation Proof
+// TEST 2B: Collision Preflight Guard (Non-Destructive Proof)
 // ----------------------------------------------------
-console.log("\n--- Test 3: Manifest Draft-07 Schema Validation Proof ---");
+console.log("\n--- Test 2B: Collision Preflight Guard (Non-Destructive Proof) ---");
 try {
-  // Positive Manifest
+  const collisionDir = mkdtempSync(path.join(os.tmpdir(), "gm-collision-"));
+  const sentinelContent = "# SENTINEL: DO NOT TOUCH THIS SENTINEL\nCustom owner rules that must never be overwritten.";
+  writeFileSync(path.join(collisionDir, "AGENTS.md"), sentinelContent, "utf8");
+
+  let abortedAsExpected = false;
+  try {
+    execSync(`node "${GITMONEY_CLI}" init --here`, { cwd: collisionDir, stdio: "pipe" });
+  } catch (err) {
+    abortedAsExpected = true;
+  }
+
+  assert(abortedAsExpected, "init --here aborts when preflight detects collision with existing AGENTS.md");
+  const preservedContent = readFileSync(path.join(collisionDir, "AGENTS.md"), "utf8");
+  assert(preservedContent === sentinelContent, "AGENTS.md preserved byte-for-byte with zero overwrite");
+  assert(!existsSync(path.join(collisionDir, "00_COCKPIT.md")), "No partial starter files written after preflight collision abort");
+
+  // Verify --force allows intentional overwrite when explicitly authorized
+  let forceSucceeded = false;
+  try {
+    execSync(`node "${GITMONEY_CLI}" init --here --force`, { cwd: collisionDir, stdio: "pipe" });
+    forceSucceeded = true;
+  } catch (err) {
+    forceSucceeded = false;
+  }
+  assert(forceSucceeded, "init --here --force succeeds when intentional overwrite is explicitly authorized");
+  assert(existsSync(path.join(collisionDir, "00_COCKPIT.md")), "Files scaffolded after explicit --force authorization");
+} catch (e) {
+  assert(false, `Test 2B encountered exception: ${e.message}`);
+}
+
+// ----------------------------------------------------
+// TEST 3: Manifest Schema-Driven Draft-07 Validation Proof
+// ----------------------------------------------------
+console.log("\n--- Test 3: Manifest Schema-Driven Draft-07 Validation Proof ---");
+try {
+  // Positive Manifest with 0.9.0-beta.1
   const validManifestYaml = `spec_version: "0.9.0-beta.1"
 installed_spec_version: "0.9.0-beta.1"
 owner: "Test Owner"
@@ -160,28 +195,32 @@ required_artifacts:
 `;
   const parsedValid = parseSimpleYaml(validManifestYaml);
   const valResult = validateManifest(parsedValid);
-  assert(valResult.valid, "Valid gitmoney.yaml parses and passes Draft-07 schema validation");
+  assert(valResult.valid, "Valid gitmoney.yaml parses and passes schema-driven Draft-07 validation");
+
+  // Positive: SemVer 2.0 with build metadata
+  const buildMetaManifest = { ...parsedValid, spec_version: "1.0.0+build.42" };
+  const buildMetaRes = validateManifest(buildMetaManifest);
+  assert(buildMetaRes.valid, "SemVer 2.0 with build metadata (1.0.0+build.42) passes schema");
 
   // Negative 3A: Illegal Profile
   const badProfile = { ...parsedValid, profile: "hyper-enterprise-illegal" };
   const badProfileRes = validateManifest(badProfile);
-  assert(!badProfileRes.valid && badProfileRes.errors.some(e => e.includes("Invalid profile")), "Rejects illegal profile enum value");
+  assert(!badProfileRes.valid && badProfileRes.errors.some(e => e.includes("profile")), "Rejects illegal profile enum value against schema");
 
   // Negative 3B: Malformed Semver
   const badSemver = { ...parsedValid, spec_version: "v1.0" };
   const badSemverRes = validateManifest(badSemver);
-  assert(!badSemverRes.valid && badSemverRes.errors.some(e => e.includes("semver")), "Rejects non-semver spec_version pattern");
+  assert(!badSemverRes.valid && badSemverRes.errors.some(e => e.includes("spec_version")), "Rejects non-semver spec_version pattern against schema");
 
   // Negative 3C: Missing Required Field
   const missingField = { ...parsedValid };
   delete missingField.owner;
   const missingFieldRes = validateManifest(missingField);
-  assert(!missingFieldRes.valid && missingFieldRes.errors.some(e => e.includes("Missing required field: owner")), "Rejects manifest missing required property");
+  assert(!missingFieldRes.valid && missingFieldRes.errors.some(e => e.includes("owner")), "Rejects manifest missing required property against schema");
 
   // Negative 3D: Missing on-disk artifact fails doctor
   const testDir = mkdtempSync(path.join(os.tmpdir(), "gm-art-"));
   execSync(`node "${GITMONEY_CLI}" init "${testDir}"`, { stdio: "ignore" });
-  // Add nonexistent artifact to gitmoney.yaml
   const manifestFile = path.join(testDir, "gitmoney.yaml");
   writeFileSync(manifestFile, readFileSync(manifestFile, "utf8") + "  - \"nonexistent_artifact.md\"\n");
   let doctorFailed = false;
@@ -196,9 +235,9 @@ required_artifacts:
 }
 
 // ----------------------------------------------------
-// TEST 4: ICM Contract & Receipt Draft-07 Schema Validation Proof
+// TEST 4: ICM Contract & Receipt Schema-Driven Validation Proof
 // ----------------------------------------------------
-console.log("\n--- Test 4: ICM Contract & Receipt Draft-07 Schema Validation Proof ---");
+console.log("\n--- Test 4: ICM Contract & Receipt Schema-Driven Validation Proof ---");
 try {
   // Positive Contract
   const validContract = {
@@ -212,17 +251,17 @@ try {
     expected_outputs: ["tests/conformance.mjs"]
   };
   const contractRes = validateIcmContract(validContract);
-  assert(contractRes.valid, "Valid contract passes validateIcmContract");
+  assert(contractRes.valid, "Valid contract passes schema-driven validateIcmContract");
 
   // Negative 4A: Malformed Task ID
   const badTaskId = { ...validContract, task_id: "lowercase-bad-id" };
   const badTaskIdRes = validateIcmContract(badTaskId);
-  assert(!badTaskIdRes.valid && badTaskIdRes.errors.some(e => e.includes("Invalid task_id")), "Rejects malformed task_id not matching pattern ^[A-Z0-9]+-[0-9]+$");
+  assert(!badTaskIdRes.valid && badTaskIdRes.errors.some(e => e.includes("task_id")), "Rejects malformed task_id not matching schema pattern ^[A-Z0-9]+-[0-9]+$");
 
   // Negative 4B: Missing Expected Outputs
   const missingOutputs = { ...validContract, expected_outputs: [] };
   const missingOutputsRes = validateIcmContract(missingOutputs);
-  assert(!missingOutputsRes.valid && missingOutputsRes.errors.some(e => e.includes("expected_outputs")), "Rejects contract with empty expected_outputs");
+  assert(!missingOutputsRes.valid && missingOutputsRes.errors.some(e => e.includes("expected_outputs")), "Rejects contract with empty expected_outputs (< minItems 1)");
 
   // Positive Receipt
   const validReceipt = {
@@ -233,7 +272,7 @@ try {
     commit_sha: "8dfa357aa48de2c076b462b439b3e8b4efd72a02",
     status: "VERIFIED",
     modifications: [
-      { file: "scripts/schema-validator.mjs", action: "created", summary: "Added Draft-07 engine" }
+      { file: "scripts/schema-validator.mjs", action: "created", summary: "Added schema-driven engine" }
     ],
     verification_gates: {
       classification_guard: "PASSED",
@@ -242,17 +281,17 @@ try {
     }
   };
   const receiptRes = validateIcmReceipt(validReceipt);
-  assert(receiptRes.valid, "Valid receipt passes validateIcmReceipt");
+  assert(receiptRes.valid, "Valid receipt passes schema-driven validateIcmReceipt");
 
   // Negative 4C: Illegal Status Enum
   const badStatus = { ...validReceipt, status: "UNAUDITED_YOLO" };
   const badStatusRes = validateIcmReceipt(badStatus);
-  assert(!badStatusRes.valid && badStatusRes.errors.some(e => e.includes("Invalid status")), "Rejects illegal receipt status enum");
+  assert(!badStatusRes.valid && badStatusRes.errors.some(e => e.includes("status")), "Rejects illegal receipt status not in schema enum");
 
   // Negative 4D: Malformed Commit SHA
   const badSha = { ...validReceipt, commit_sha: "not-a-sha" };
   const badShaRes = validateIcmReceipt(badSha);
-  assert(!badShaRes.valid && badShaRes.errors.some(e => e.includes("commit_sha")), "Rejects non-hex commit_sha pattern");
+  assert(!badShaRes.valid && badShaRes.errors.some(e => e.includes("commit_sha")), "Rejects non-hex commit_sha not matching schema pattern");
 
   // Negative 4E: Missing Verification Gate
   const missingGate = {
@@ -264,13 +303,13 @@ try {
     }
   };
   const missingGateRes = validateIcmReceipt(missingGate);
-  assert(!missingGateRes.valid && missingGateRes.errors.some(e => e.includes("link_integrity")), "Rejects receipt missing required verification gate");
+  assert(!missingGateRes.valid && missingGateRes.errors.some(e => e.includes("link_integrity")), "Rejects receipt missing required verification gate in schema");
 } catch (e) {
   assert(false, `Test 4 encountered exception: ${e.message}`);
 }
 
 // ----------------------------------------------------
-// TEST 5: Negative Boundary Fixtures (Doctor Enforcements)
+// TEST 5: Negative Boundary Fixtures (Doctor Rejection)
 // ----------------------------------------------------
 console.log("\n--- Test 5: Negative Boundary Fixtures (Doctor Rejection) ---");
 

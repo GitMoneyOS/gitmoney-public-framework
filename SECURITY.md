@@ -6,8 +6,9 @@ Only the latest release of the GitMoney OS Public Framework receives security up
 
 | Version | Supported |
 |---|---|
-| 1.0.x | Yes |
-| < 1.0.0 | No (Deprecated pilot revisions) |
+| 0.9.x beta | Yes, during pre-1.0 hardening |
+| < 0.9.0 | No |
+| 1.0.x | Future stable line |
 
 ## Reporting a Vulnerability
 

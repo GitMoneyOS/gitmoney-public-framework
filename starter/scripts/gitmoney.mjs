@@ -26,6 +26,25 @@ function copyRecursive(src, dest) {
   }
 }
 
+function findCollisions(srcDir, destDir, relPath = "", collisions = []) {
+  if (!existsSync(srcDir)) return collisions;
+  const items = readdirSync(srcDir);
+  for (const item of items) {
+    const srcItem = path.join(srcDir, item);
+    const destItem = path.join(destDir, item);
+    const currentRel = relPath ? path.join(relPath, item) : item;
+    const stats = statSync(srcItem);
+    if (stats.isDirectory()) {
+      findCollisions(srcItem, destItem, currentRel, collisions);
+    } else {
+      if (existsSync(destItem)) {
+        collisions.push(currentRel);
+      }
+    }
+  }
+  return collisions;
+}
+
 function getMdFiles(dir, files = []) {
   if (!existsSync(dir)) return files;
   for (const item of readdirSync(dir)) {
@@ -48,29 +67,57 @@ function getMdFiles(dir, files = []) {
 // ----------------------------------------------------
 // COMMAND: init
 // ----------------------------------------------------
-function runInit(args) {
+export function runInit(args) {
   const isHere = args.includes("--here");
   const withVault = args.includes("--with-vault");
+  const force = args.includes("--force");
   let targetDir = process.cwd();
 
   if (!isHere) {
     const nonFlagArgs = args.filter(a => !a.startsWith("--"));
     if (nonFlagArgs.length === 0) {
-      console.error("Usage: node scripts/gitmoney.mjs init <dir> [--with-vault]");
-      console.error("       node scripts/gitmoney.mjs init --here [--with-vault]");
+      console.error("Usage: node scripts/gitmoney.mjs init <dir> [--with-vault] [--force]");
+      console.error("       node scripts/gitmoney.mjs init --here [--with-vault] [--force]");
       process.exit(1);
     }
     targetDir = path.resolve(process.cwd(), nonFlagArgs[0]);
   }
 
-  console.log(`[GitMoney Init] Initializing self-contained AI Office scaffold in: ${targetDir}`);
-  if (!existsSync(targetDir)) {
-    mkdirSync(targetDir, { recursive: true });
-  }
+  console.log(`[GitMoney Init] Initializing AI Office scaffold in: ${targetDir}`);
 
   const starterSource = existsSync(path.join(REPO_ROOT, "starter"))
     ? path.join(REPO_ROOT, "starter")
     : REPO_ROOT;
+
+  // Preflight collision check for existing destination
+  if (existsSync(targetDir)) {
+    const collisions = findCollisions(starterSource, targetDir);
+    const manifestDest = path.join(targetDir, "gitmoney.yaml");
+    if (existsSync(manifestDest) && !collisions.includes("gitmoney.yaml")) {
+      collisions.push("gitmoney.yaml");
+    }
+
+    if (collisions.length > 0 && !force) {
+      console.error("\n==================================================");
+      console.error("❌ [PREFLIGHT ABORTED: WORKSPACE COLLISION DETECTED]");
+      console.error("==================================================");
+      console.error(`Destination directory "${targetDir}" already contains existing workspace file(s):`);
+      for (const col of collisions) {
+        console.error(`  - ${col}`);
+      }
+      console.error("\nRefusing to overwrite existing files in non-destructive mode.");
+      console.error("Pass --force if you explicitly intend to overwrite existing workspace files.");
+      console.error("==================================================");
+      if (process.env.TEST_HARNESS === "true") {
+        return false;
+      }
+      process.exit(1);
+    }
+  }
+
+  if (!existsSync(targetDir)) {
+    mkdirSync(targetDir, { recursive: true });
+  }
 
   // Copy starter files (including scripts/ and schemas/)
   copyRecursive(starterSource, targetDir);
@@ -144,6 +191,7 @@ required_artifacts:
     console.log("  3. Open the vault/ folder in Obsidian as your private Source Memory.");
   }
   console.log("  4. Run `node scripts/gitmoney.mjs doctor` to verify health locally.");
+  return true;
 }
 
 // ----------------------------------------------------
@@ -202,7 +250,7 @@ export function runDoctor(targetDir = process.cwd()) {
     try {
       const rawText = readFileSync(manifestPath, "utf8");
       const parsedData = parseSimpleYaml(rawText);
-      const valResult = validateManifest(parsedData);
+      const valResult = validateManifest(parsedData, targetDir);
       if (!valResult.valid) {
         for (const err of valResult.errors) {
           console.error(`  [FAIL] ${err}`);
@@ -222,7 +270,7 @@ export function runDoctor(targetDir = process.cwd()) {
         }
       }
     } catch (err) {
-      console.error(`  [FAIL] Error parsing gitmoney.yaml: ${err.message}`);
+      console.error(`  [FAIL] Error validating gitmoney.yaml: ${err.message}`);
       failures++;
     }
   } else {
@@ -241,7 +289,7 @@ export function runDoctor(targetDir = process.cwd()) {
     for (const f of files) {
       try {
         const data = JSON.parse(readFileSync(path.join(contractsDir, f), "utf8"));
-        const res = validateIcmContract(data);
+        const res = validateIcmContract(data, targetDir);
         if (res.valid) {
           console.log(`  [OK] ICM Contract schema conformant: ${f}`);
         } else {
@@ -268,7 +316,7 @@ export function runDoctor(targetDir = process.cwd()) {
     for (const f of files) {
       try {
         const data = JSON.parse(readFileSync(path.join(receiptsDir, f), "utf8"));
-        const res = validateIcmReceipt(data);
+        const res = validateIcmReceipt(data, targetDir);
         if (res.valid) {
           console.log(`  [OK] ICM Receipt schema conformant: ${f}`);
         } else {
@@ -411,9 +459,9 @@ if (!command || command === "--help" || command === "-h") {
   console.log("Usage: node scripts/gitmoney.mjs <command> [options]");
   console.log("");
   console.log("Commands:");
-  console.log("  init <dir> [--with-vault]   Initialize a self-contained AI Office in <dir>");
-  console.log("  init --here [--with-vault]  Initialize an AI Office in the current directory");
-  console.log("  doctor [dir]                Audit repository architecture, boundaries, and health");
+  console.log("  init <dir> [--with-vault] [--force]  Initialize a self-contained AI Office in <dir>");
+  console.log("  init --here [--with-vault] [--force] Initialize an AI Office in the current directory");
+  console.log("  doctor [dir]                         Audit repository architecture, boundaries, and health");
   process.exit(0);
 }
 

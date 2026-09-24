@@ -9,7 +9,7 @@ All notable GitMoney changes for this repo will be tracked here.
 - **Draft-07 Schema Validation:** Added zero-dependency validation engine (`scripts/schema-validator.mjs`) enforcing Draft-07 schemas for `gitmoney.yaml`, ICM contracts, and ICM receipts with 33 automated conformance tests.
 - **Immutable Action Pinning:** Pinned all GitHub Actions workflows to immutable commit SHAs across `.github/workflows/`.
 - **Unified Entrypoint:** Added `scripts/gitmoney.mjs` with `init <dir> [--with-vault]`, `init --here`, and `doctor`.
-- **Framework Manifest:** Pinned `SPEC_VERSION` (1.0.0) and created root `gitmoney.yaml` configuration manifest with Draft-07 schema validation.
+- **Framework Manifest:** Pinned `SPEC_VERSION` (0.9.0-beta.1) and created root `gitmoney.yaml` configuration manifest with Draft-07 schema validation.
 - **Canonical Scaffolds:** Finalized `templates/starter-vault/` (Source Memory private room) and `starter/` (AI Office agent workbench).
 - **Public Operator Skill:** Introduced `gitmoney-public-operator` at `starter/.agents/skills/gitmoney-public-operator/SKILL.md` to operate the open skeleton with zero private skill dependencies.
 - **Boundary Hardening:** Replaced student reference corpus with public protocol stubs; purged proprietary heuristics, scoring, and orchestration logic.

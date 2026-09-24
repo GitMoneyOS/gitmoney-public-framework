@@ -81,6 +81,8 @@ Use this path if you already have an active code or documentation repository:
 node /path/to/gitmoney-public-framework/scripts/gitmoney.mjs init --here
 ```
 
+Preflight collision detection ensures existing files are never overwritten without an explicit `--force` flag.
+
 This non-destructively adds:
 - `AGENTS.md` (agent rules and boundary contract)
 - `00_COCKPIT.md` (owner decision dashboard and WIP limit ledger)
