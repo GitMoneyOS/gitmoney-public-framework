@@ -1,7 +1,7 @@
 ---
 name: gitmoney-public-operator
 version: "0.1.0"
-description: Operate the GitMoney OS open-source skeleton using Source Memory, bounded agent work, owner approval, GitHub records, and verification receipts.
+description: Operate a GitMoney AI Office according to the public Governed AI Work Protocol using Source Memory, bounded agent work, owner approval, and execution receipts.
 type: public-skill
 status: active-public
 classification: public
@@ -12,9 +12,18 @@ license_scope: GitMoneyOS/gitmoney-public-framework
 
 ## Purpose
 
-Help any competent agent operate the public GitMoney OS skeleton safely without requiring access to the private GitMoney skill system.
+Help any competent agent operate a GitMoney AI Office according to the public Governed AI Work Protocol without requiring access to the private GitMoney skill system.
 
-## The Three Layers
+## Positioning Hierarchy
+
+```text
+CATEGORY: Governed AI Work Protocol
+PRODUCT: GitMoney OS
+OPERATING MODEL: AI Office
+PUBLIC MODEL: 3 Rooms / 2 Artifacts / 3 Laws
+```
+
+## The Three Rooms
 
 Source Memory -> Agent Workbench -> Official Record
 

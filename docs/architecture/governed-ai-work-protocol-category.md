@@ -17,11 +17,26 @@ tags:
 
 Define the specific market category and architectural boundary occupied by GitMoney OS within the enterprise AI ecosystem.
 
+## Canonical Hierarchy
+
+```text
+CATEGORY: Governed AI Work Protocol
+PRODUCT: GitMoney OS
+OPERATING MODEL: AI Office
+CONTROL SURFACE: Promotion Boundary
+PUBLIC MODEL: 3 Rooms / 2 Artifacts / 3 Laws
+DEEP SYSTEM: POL -> VSM -> ICM -> IFL
+```
+
+An **AI Office** is a governed operating environment where humans and AI agents can work together without confusing context, capability, authority, evidence, and company truth.
+
+GitMoney OS is the protocol. The AI Office is the operating environment created by that protocol.
+
 ## The Category Blade
 
 GitMoney OS is not an "AI Operating System," an "agent framework," or a "GitHub tutorial kit."
 
-**GitMoney OS is the open protocol for deciding how AI-assisted work becomes legitimate company knowledge.**
+**GitMoney OS is the open-source Governed AI Work Protocol for building AI Offices.** Its technical job is governing how AI-assisted work becomes legitimate company knowledge.
 
 Its core category thesis:
 > **AI agents already have capabilities. Businesses still need a chain of command.**
@@ -55,7 +70,7 @@ GitMoney OS does not compete with adjacent infrastructure. It sits beneath polic
 ## The Promotion Boundary
 
 Access control dictates what an agent may touch. Runtime orchestration dictates how an agent runs.  
-**GitMoney owns the Promotion Boundary:**
+**GitMoney OS is designed around the Promotion Boundary:**
 
 ```text
 PRIVATE THOUGHT (Source Memory)
@@ -73,7 +88,7 @@ OWNER DECISION (Human Approval Gate)
 INSTITUTIONAL RECORD (Official Git History)
 ```
 
-## The Transmissible Transmission: 3 Rooms / 2 Artifacts / 3 Laws
+## The Transmissible Model: 3 Rooms / 2 Artifacts / 3 Laws
 
 The deep cybernetic engine block (POL, VSM, ICM, IFL) remains the internal engine. The transmissible public interface is compressed into three undeniable primitives:
 

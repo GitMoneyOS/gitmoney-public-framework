@@ -16,13 +16,13 @@ tags:
 
 Define the public open-source standard and separate it from private proprietary operating machinery.
 
-The GitMoney OS Public Framework is an open-source skeleton. It exists to create a public category standard for governing AI-assisted business work.
+GitMoney OS is the open-source Governed AI Work Protocol. The public framework exists so organizations can build governed AI Offices using a shared, inspectable standard for AI-assisted business work.
 
 The private GitMoney OS, Mothership, Skills, CAC, Audit, Delivery, SaaS, and client implementation systems remain proprietary operating machinery.
 
 ## Public Protocol vs. Private Operator
 
-GitMoney OS separates the operating standard from the intelligence used to install and run advanced implementations.
+GitMoney OS separates the public protocol from the intelligence used to install and run advanced implementations. The protocol is GitMoney OS; the operating environment it creates is the AI Office.
 
 The public framework teaches:
 
@@ -72,7 +72,7 @@ These assets are open source so founders, operators, and agents can inspect, ado
 
 | Public Layer Component | Purpose | License / Access |
 |---|---|---|
-| Operating Skeleton | Plain-English three-room model | Open source (Apache-2.0) |
+| AI Office Operating Model | Plain-English three-room model | Open source (Apache-2.0) |
 | ICM Templates & Receipts | Bounded task contracts | Open source (Apache-2.0) |
 | Architecture Stack Docs | Theoretical foundations | Open source (Apache-2.0) |
 | Proof Package Index | Inspectable claim boundaries | Open source (Apache-2.0) |
@@ -107,7 +107,7 @@ The skeleton is open.
 The living machine is paid.
 ```
 
-A business may freely adopt the public skeleton to structure its own files. A company pays when it requires:
+A business may freely adopt the public protocol to build and structure its own AI Office. A company pays when it requires:
 
 1. forensic diagnosis of its actual operating constraints;
 2. custom execution contracts and private skill architecture;

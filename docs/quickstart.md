@@ -14,11 +14,11 @@ tags:
 
 ## Purpose
 
-Provide a rapid, step-by-step setup guide for founders, operators, and developers adopting the GitMoney OS open operating skeleton.
+Provide a rapid, step-by-step setup guide for founders, operators, and developers creating a governed AI Office with the GitMoney OS Governed AI Work Protocol.
 
 ## Plain-English Job
 
-Guide a founder from a blank folder to a functioning, governed AI Office with explicit agent boundaries, an owner cockpit, an execution contract, and a verified audit receipt step-by-step.
+Guide a founder from a blank folder to a functioning, governed AI Office with explicit agent boundaries, an owner cockpit, an execution contract, and a verified execution receipt step-by-step.
 
 ## Prerequisites
 
@@ -31,11 +31,15 @@ Before beginning, ensure you have:
 > [!NOTE]
 > Private GitMoney skills are not required to adopt this quickstart. The public framework includes [`starter/.agents/skills/gitmoney-public-operator/`](../starter/.agents/skills/gitmoney-public-operator/SKILL.md), allowing any capable agent to operate the skeleton safely.
 
+**You are about to create an AI Office using the GitMoney OS Governed AI Work Protocol.**
+
+An AI Office is a governed operating environment where humans and AI agents can work together without confusing context, capability, authority, evidence, and company truth.
+
 ## The Mental Model: 3 Rooms / 2 Artifacts / 3 Laws
 
 Before running commands, understand the operating model:
 
-- **3 Rooms:** Source Memory (private thinking room) -> Agent Workbench (bounded execution room) -> Official Record (GitHub institutional canon).
+- **3 Rooms:** Source Memory (thinking) -> Agent Workbench (working) -> Official Record (what the company is willing to call true).
 - **2 Artifacts:** Contract before consequential work; Receipt after consequential work.
 - **3 Laws:** Capability != Authority; Context != Canon; Completion != Proof.
 
@@ -134,9 +138,9 @@ Configure your cockpit with three core sections:
 
 See [`templates/00_COCKPIT.md`](../templates/00_COCKPIT.md) for the ready-to-use template.
 
-## Step 4: Issue Your First Bounded Task with an ICM Contract
+## Step 4: Issue Your First Bounded Task with an Execution Contract
 
-Before prompting an AI agent to execute a non-trivial task, create an **ICM Execution Contract**:
+Before prompting an AI agent to execute a non-trivial task, create an **Execution Contract** using the public ICM template:
 
 1. Copy [`templates/icm-execution-contract.md`](../templates/icm-execution-contract.md) to `02_architecture/contracts/TASK-001.md`.
 2. Fill in:
@@ -177,9 +181,9 @@ Downstream workspaces must strictly prohibit credentials:
 ### Safe Fallback for Complex Tasks
 If task scope cannot be bounded confidently: STOP. Split the job. Escalate to owner. Do not invent authority or orchestration.
 
-## Step 5: Close the Loop with an ICM Receipt
+## Step 5: Close the Loop with an Execution Receipt
 
-When the agent finishes its bounded work:
+When the agent finishes its bounded work, produce the second core artifact: the **Execution Receipt**.
 
 1. Copy [`templates/icm-receipt.md`](../templates/icm-receipt.md) to `03_build/receipts/RECEIPT-001.md`.
 2. Record what changed, which verification checks passed, and any remaining uncertainties.

@@ -16,13 +16,13 @@ tags:
 
 Show the open public skeleton without exposing the private machinery.
 
-The GitMoney OS Public Framework is the open-source skeleton and public standard layer. It is not the whole system, not the paid implementation, and not the advanced private method.
+GitMoney OS is the open-source Governed AI Work Protocol and public standard layer for building governed AI Offices. It is not the whole system, not the paid implementation, and not the advanced private method.
 
 The public repository should create trust through inspection and adoption. It should not leak client data, private doctrine, proprietary delivery machinery, credentials, CAC logic, or commercial control systems.
 
 ## Public Protocol vs. Private Operator
 
-GitMoney OS separates the operating standard from the intelligence used to install and run advanced implementations.
+GitMoney OS separates the public protocol from the intelligence used to install and run advanced implementations. The protocol is GitMoney OS; the operating environment it creates is the AI Office.
 
 The public framework teaches:
 
@@ -105,9 +105,10 @@ Those materials are not withheld because the public layer is weak. They are with
 
 The public framework has three jobs:
 
-1. teach the standard;
-2. prove the operating logic;
-3. create a shared language for serious buyers and builders.
+1. teach the Governed AI Work Protocol;
+2. show how that protocol creates a governed AI Office;
+3. prove the operating logic;
+4. create a shared language for serious buyers and builders.
 
 The paid system has different jobs:
 

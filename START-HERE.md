@@ -4,9 +4,20 @@
 
 Orient a founder, executive, or operator on first reading. Diagnose whether the expensive problem is yours, show how to inspect the public skeleton, and clarify when the operating wound requires the paid private machine.
 
-GitMoney OS is not a prompt pack, Notion template, productivity system, GitHub tutorial, AI automation recipe, or replacement for the retired calculator. It is an open-source public skeleton for governing AI-assisted business work.
+Your company is adding AI faster than it is defining what those systems can decide, change, approve, remember, and make official.
 
-The public framework shows the operating skeleton. The paid work diagnoses and installs the private machinery behind it.
+**GitMoney OS is the open-source Governed AI Work Protocol for building AI Offices.**
+
+GitMoney OS is the product. Governed AI Work Protocol is the category. The **AI Office** is the operating environment it creates: a governed environment where humans and AI agents work together without confusing context, capability, authority, evidence, and company truth.
+
+```text
+CATEGORY: Governed AI Work Protocol
+PRODUCT: GitMoney OS
+OPERATING MODEL: AI Office
+PUBLIC MODEL: 3 Rooms / 2 Artifacts / 3 Laws
+```
+
+The public framework shows the protocol and operating model. The paid work diagnoses and installs the private machinery behind a specific enterprise implementation.
 
 You do not need private GitMoney skills to use the public standard. The skeleton is designed to be operated with [`starter/.agents/skills/gitmoney-public-operator/`](starter/.agents/skills/gitmoney-public-operator/SKILL.md) and any capable agent.
 
@@ -80,7 +91,7 @@ You are probably not in the right place if you only want a cute tool, a free wor
 GitMoney OS proves a plain-language operating pattern:
 
 ```text
-Source Memory (templates/starter-vault/) -> Agent Workbench (starter/) -> GitHub Record (GitHub)
+Source Memory (templates/starter-vault/) -> Agent Workbench (starter/) -> Official Record (GitHub)
 ```
 
 The founder's rough thinking, business doctrine, and source material need a place to live before they become official. AI-assisted work needs a bounded workbench where tasks, context, and outputs can be shaped into reviewable artifacts. The business record needs a place where approved work becomes inspectable through issues, pull requests, commits, checks, and receipts.
@@ -88,14 +99,16 @@ The founder's rough thinking, business doctrine, and source material need a plac
 That three-layer skeleton is governed by a deeper stack:
 
 ```text
-POL -> VSM -> ICM -> IFL -> GitMoney OS
+POL -> VSM -> ICM -> IFL
 ```
 
 Read [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md) to see how the open skeleton is powered by identity commitments, viability functions, bounded context, and forensic diagnosis.
 
+The AI Office has three rooms: one for thinking, one for working, and one for what the company is willing to call true.
+
 The public framework shows:
 
-- how business knowledge can become a record;
+- how business knowledge can become an owner-approved record;
 - how AI-assisted work can be bounded;
 - how POL, VSM, ICM, and IFL govern the skeleton;
 - how approvals can become visible;
@@ -177,7 +190,10 @@ ROLE: Cold reader orientation and wound diagnosis
 PRIMARY_PAID_ENTRY: Identity Forensics Audit ($20,000)
 BOUNDED_PAID_DIAGNOSTIC: Architecture Sprint ($7,500)
 PAID_BUILD: Sovereign Reconstruction (FROM $50,000)
-PUBLIC_SKELETON: Source Memory -> Agent Workbench -> GitHub Record
+CATEGORY: Governed AI Work Protocol
+PRODUCT: GitMoney OS
+OPERATING_MODEL: AI Office
+PUBLIC_SKELETON: Source Memory -> Agent Workbench -> Official Record
 PRIVATE_MACHINE: Proprietary diagnosis, CAC, and delivery infrastructure
 MERGE_AUTHORIZED: NO
 DEPLOYMENT_AUTHORIZED: NO

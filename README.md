@@ -1,8 +1,18 @@
 # GitMoney OS Public Framework
 
-**The open protocol for governed AI-assisted business work.**
+**The open-source Governed AI Work Protocol for building AI Offices.**
 
-GitMoney OS is not an AI operating system, a prompt pack, a Notion template, an agent orchestration framework, or a GitHub tutorial kit. It is an open protocol for deciding how AI-assisted work becomes legitimate company knowledge.
+GitMoney OS is the product. **Governed AI Work Protocol** is the category. An **AI Office** is the governed operating environment GitMoney creates, where humans and AI agents move work from private context to bounded execution to owner-approved institutional record.
+
+GitMoney OS is not an AI operating system, a prompt pack, a Notion template, an agent orchestration framework, or a GitHub tutorial kit. It is an open protocol for governing how AI-assisted work becomes legitimate company knowledge.
+
+```text
+CATEGORY: Governed AI Work Protocol
+PRODUCT: GitMoney OS
+OPERATING MODEL: AI Office
+PUBLIC MODEL: 3 Rooms / 2 Artifacts / 3 Laws
+CONTROL SURFACE: Promotion Boundary
+```
 
 > **AI agents already have capabilities. Businesses still need a chain of command.**  
 > **The goal is not giving AI more memory. The goal is deciding which memory becomes truth.**
@@ -41,7 +51,7 @@ GitMoney OS does not compete with adjacent infrastructure. It sits beneath polic
 - **Microsoft Entra Agent ID & Okta** answer: *Who is the agent and what can it access?*
 - **GitMoney OS answers:** *When does AI-assisted work become official company truth?*
 
-GitMoney owns the **Promotion Boundary**:
+GitMoney OS is designed around the **Promotion Boundary**:
 ```text
 PRIVATE THOUGHT -> CANDIDATE WORK -> EVIDENCE -> OWNER DECISION -> INSTITUTIONAL RECORD
 ```
@@ -93,7 +103,7 @@ Read [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-ic
 
 - [`START-HERE.md`](START-HERE.md): Founder orientation and the 96-Hour Founder Freeze Test.
 - [`docs/quickstart.md`](docs/quickstart.md): Step-by-step setup guide for your governed AI office.
-- [`docs/proof-package/release-integrity-beta2.md`](docs/proof-package/release-integrity-beta2.md): Cryptographic release baseline evidence.
+- [`docs/proof-package/release-integrity-beta3.md`](docs/proof-package/release-integrity-beta2.md): Cryptographic release baseline evidence.
 - [`docs/compatibility-policy.md`](docs/compatibility-policy.md): Pre-1.0 compatibility law and version contracts.
 - [`docs/open-source-boundary.md`](docs/open-source-boundary.md): What is open source, what is not, and why.
 - [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md): Proprietary machine boundaries.
@@ -128,7 +138,10 @@ Review the [Commercial Translation](docs/commercial-translation.md) guide or app
 
 ```text
 ENTITY: GitMoney OS Public Framework
-LAYER: Governed AI Work Protocol / Public Standard Layer
+CATEGORY: Governed AI Work Protocol
+PRODUCT: GitMoney OS
+OPERATING_MODEL: AI Office
+LAYER: Public Standard Layer
 OWNER: Hitsuyo Aku
 STATE: Active public framework (v0.9.0-beta.3)
 PRIMARY_PAID_ENTRY: Identity Forensics Audit ($20,000)
