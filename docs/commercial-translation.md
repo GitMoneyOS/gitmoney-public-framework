@@ -16,9 +16,9 @@ tags:
 
 Translate the public framework into the paid commercial ladder without turning the repo into a sales page wearing a cheap cologne cloud.
 
-GitMoney OS is the open-source public skeleton. It shows how governed AI-assisted work can become inspectable business infrastructure.
+GitMoney OS is the open public skeleton. It shows how governed AI-assisted work can become inspectable business infrastructure.
 
-The paid work applies the private discipline to a specific business.
+The paid work applies that discipline to a specific business.
 
 ## Open skeleton: GitMoney OS Public Framework
 
@@ -31,9 +31,9 @@ GitMoney OS shows how public proof works:
 - public claims need evidence and boundaries;
 - private machinery needs to stay private.
 
-This is the only open public standard worth routing through the buyer journey.
+This is the only open public resource worth routing through the buyer journey.
 
-Reuse rights are governed by the published license. The license applies to this public framework repository, not the private delivery system.
+Reuse rights are governed by the published license. The license does not apply to private GitMoney OS repositories, private Mothership systems, private skills, client work, CAC infrastructure, audit templates, delivery playbooks, or private implementation methods.
 
 ## Paid entry: Identity Forensics Audit
 
@@ -107,7 +107,7 @@ This is for businesses where the system is alive enough to drift.
 
 ## Rule of thumb
 
-If the buyer wants to learn or adopt the standard, send them to GitMoney OS.
+If the buyer wants to learn, send them to GitMoney OS.
 
 If the buyer wants diagnosis, send them to the Identity Forensics Audit.
 
@@ -119,6 +119,6 @@ If the buyer wants the machinery installed, scope it only after evidence.
 
 The open layer is not charity.
 
-It is proof and standard-setting.
+It is proof.
 
 The paid work begins when the buyer wants that proof discipline aimed at their own business.
