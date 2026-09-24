@@ -62,7 +62,7 @@ export function validateManifest(data) {
     }
   }
 
-  const semverRegex = /^[0-9]+\.[0-9]+\.[0-9]+$/;
+  const semverRegex = /^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$/;
   if (data.spec_version && !semverRegex.test(data.spec_version)) {
     errors.push(`Invalid spec_version "${data.spec_version}". Must match semver pattern ^[0-9]+\.[0-9]+\.[0-9]+$`);
   }

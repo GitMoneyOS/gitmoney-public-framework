@@ -1,11 +1,11 @@
 # GitMoney OS Public Framework Manifest
-spec_version: "1.0.0"
-installed_spec_version: "1.0.0"
+spec_version: "0.9.0-beta.1"
+installed_spec_version: "0.9.0-beta.1"
 owner: "Hitsuyo Aku"
 profile: "public-framework"
 source_memory: "templates/starter-vault"
-operator_version: "1.0.0"
-schema_version: "Draft-07"
+operator_version: "0.1.0"
+schema_version: "0.1.0"
 required_artifacts:
   - "AGENTS.md"
   - "templates/00_COCKPIT.md"

@@ -147,13 +147,13 @@ try {
 console.log("\n--- Test 3: Manifest Draft-07 Schema Validation Proof ---");
 try {
   // Positive Manifest
-  const validManifestYaml = `spec_version: "1.0.0"
-installed_spec_version: "1.0.0"
+  const validManifestYaml = `spec_version: "0.9.0-beta.1"
+installed_spec_version: "0.9.0-beta.1"
 owner: "Test Owner"
 profile: "ai-office"
 source_memory: "vault"
-operator_version: "1.0.0"
-schema_version: "Draft-07"
+operator_version: "0.1.0"
+schema_version: "0.1.0"
 required_artifacts:
   - "AGENTS.md"
   - "00_COCKPIT.md"

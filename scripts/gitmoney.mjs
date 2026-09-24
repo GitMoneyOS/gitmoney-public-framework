@@ -78,13 +78,13 @@ function runInit(args) {
   // Configure project manifest
   const manifestDest = path.join(targetDir, "gitmoney.yaml");
   const manifestContent = `# GitMoney AI Office Project Manifest
-spec_version: "1.0.0"
-installed_spec_version: "1.0.0"
+spec_version: "0.9.0-beta.1"
+installed_spec_version: "0.9.0-beta.1"
 owner: "Project Owner"
 profile: "ai-office"
 source_memory: "${withVault ? "vault" : "none"}"
-operator_version: "1.0.0"
-schema_version: "Draft-07"
+operator_version: "0.1.0"
+schema_version: "0.1.0"
 required_artifacts:
   - "AGENTS.md"
   - "00_COCKPIT.md"

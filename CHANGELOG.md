@@ -2,9 +2,9 @@
 
 All notable GitMoney changes for this repo will be tracked here.
 
-## 1.0.0 - 2026-09-24
+## 0.9.0-beta.1 - 2026-09-24
 
-### MVP Convergence & Stable Release Candidate
+### Beta Release: Feature-Complete Operational Skeleton
 - **Self-Contained Downstream Install:** `init` bundles `scripts/` and `schemas/` into the adopter workspace, enabling standalone execution of `node scripts/gitmoney.mjs doctor` without upstream repo dependencies.
 - **Draft-07 Schema Validation:** Added zero-dependency validation engine (`scripts/schema-validator.mjs`) enforcing Draft-07 schemas for `gitmoney.yaml`, ICM contracts, and ICM receipts with 33 automated conformance tests.
 - **Immutable Action Pinning:** Pinned all GitHub Actions workflows to immutable commit SHAs across `.github/workflows/`.
