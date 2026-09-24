@@ -2,6 +2,32 @@
 
 All notable GitMoney changes for this repo will be tracked here.
 
+## 0.9.0-beta.2 - 2026-09-24
+
+### Beta.2 Release: Hardened Public Operational Skeleton
+- **System 5 Owner Gate Resolved:** Historical publication risk formally dispositioned as `OWNER_ACCEPTED` (Decision DEC-001) with zero destructive git history rewrites.
+- **Node.js Compatibility Matrix:** CI evidence gate expanded to test Node 18, 20, and 22 across doctor and conformance test suite.
+- **Executable Version Coherence:** Canonicalized schema versions (`0.1.0`) and operator version (`0.1.0`); doctor enforces version coherence on every run with negative test fixtures.
+- **Pre-1.0 Compatibility Law:** Added `docs/compatibility-policy.md` defining 0.x breaking change contract, version property decoupling, and 1.0+ SemVer commitments.
+- **Deterministic Tracked-File Security Scan:** Added `scripts/repo-security-scan.mjs` auditing all 207 tracked files in CI for zero private sources, 0 configured secret pattern matches, and zero classification leaks.
+- **Telemetry Calibration:** Removed unsupported aspirational time claims across all documentation surfaces.
+- **Version Promotion:** Promoted framework specification from `0.9.0-beta.1` to `0.9.0-beta.2`.
+
+## 0.9.0-beta.1 - 2026-09-24
+
+### Beta Release: Feature-Complete Operational Skeleton
+- **Pre-1.0 Compatibility Law:** Added [`docs/compatibility-policy.md`](docs/compatibility-policy.md) defining version contract layers, breaking change rules, and migration expectations.
+- **Self-Contained Downstream Install:** `init` bundles `scripts/` and `schemas/` into the adopter workspace, enabling standalone execution of `node scripts/gitmoney.mjs doctor` without upstream repo dependencies.
+- **Draft-07 Schema Validation:** Added zero-dependency validation engine (`scripts/schema-validator.mjs`) enforcing Draft-07 schemas for `gitmoney.yaml`, ICM contracts, and ICM receipts with 33 automated conformance tests.
+- **Immutable Action Pinning:** Pinned all GitHub Actions workflows to immutable commit SHAs across `.github/workflows/`.
+- **Unified Entrypoint:** Added `scripts/gitmoney.mjs` with `init <dir> [--with-vault]`, `init --here`, and `doctor`.
+- **Framework Manifest:** Pinned `SPEC_VERSION` (0.9.0-beta.1) and created root `gitmoney.yaml` configuration manifest with Draft-07 schema validation.
+- **Canonical Scaffolds:** Finalized `templates/starter-vault/` (Source Memory private room) and `starter/` (AI Office agent workbench).
+- **Public Operator Skill:** Introduced `gitmoney-public-operator` at `starter/.agents/skills/gitmoney-public-operator/SKILL.md` to operate the open skeleton with zero private skill dependencies.
+- **Boundary Hardening:** Replaced student reference corpus with public protocol stubs; purged proprietary heuristics, scoring, and orchestration logic.
+- **Security Policy:** Added `SECURITY.md` defining supported versions, private reporting channels, and zero-credential invariants.
+- **Two Canonical Adoption Paths:** Unified documentation in `docs/quickstart.md` into New Project and Existing Project paths.
+
 ## 2026-07-13
 
 - Added Week 0 student preparation for the GitBuilt lesson: docs/students/ai-office-source-pack/week-0-agentic-systems-first-principles.md.

@@ -38,7 +38,7 @@ Red Pillar and Hitsuyo Aku, under KnowTheLedge.
 ## Verify The Work
 
 - [ ] Public framework repository exists and is accessible.
-- [ ] Public README explains the thesis within 90 seconds.
+- [ ] Public README explains the thesis clearly on first reading.
 - [ ] Public demo walkthrough exists in `docs/demo/`.
 - [ ] A public issue shows how a business task becomes trackable.
 - [ ] A public PR shows how work becomes an inspectable approval packet.

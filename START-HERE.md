@@ -2,11 +2,13 @@
 
 ## Plain-English Job
 
-Orient a founder, executive, or operator within 90 seconds. Diagnose whether the expensive problem is yours, show how to inspect the public skeleton in 10 minutes, and clarify when the operating wound requires the paid private machine.
+Orient a founder, executive, or operator on first reading. Diagnose whether the expensive problem is yours, show how to inspect the public skeleton, and clarify when the operating wound requires the paid private machine.
 
 GitMoney OS is not a prompt pack, Notion template, productivity system, GitHub tutorial, AI automation recipe, or replacement for the retired calculator. It is an open-source public skeleton for governing AI-assisted business work.
 
 The public framework shows the operating skeleton. The paid work diagnoses and installs the private machinery behind it.
+
+You do not need private GitMoney skills to use the public standard. The skeleton is designed to be operated with [`starter/.agents/skills/gitmoney-public-operator/`](starter/.agents/skills/gitmoney-public-operator/SKILL.md) and any capable agent.
 
 ## The expensive problem
 
@@ -47,7 +49,7 @@ You are probably not in the right place if you only want a cute tool, a free wor
 GitMoney OS proves a plain-language operating pattern:
 
 ```text
-Source Memory -> Agent Workbench -> GitHub Record
+Source Memory (templates/starter-vault/) -> Agent Workbench (starter/) -> GitHub Record (GitHub)
 ```
 
 The founder's rough thinking, business doctrine, and source material need a place to live before they become official. AI-assisted work needs a bounded workbench where tasks, context, and outputs can be shaped into reviewable artifacts. The business record needs a place where approved work becomes inspectable through issues, pull requests, commits, checks, and receipts.
@@ -84,12 +86,13 @@ It does not mean an agent instruction is the same thing as enforced permission.
 
 It does not mean a public framework can diagnose your company without access to your actual records, workflows, owners, exceptions, constraints, and evidence.
 
-## How to inspect it in 10 minutes
+## How to inspect the architecture and evidence
 
 Use this path:
 
 1. Read this file.
-2. Inspect [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md).
+2. Inspect [`templates/starter-vault/`](templates/starter-vault/) (Source Memory) and [`starter/`](starter/) (AI Office).
+3. Inspect [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md).
 3. Inspect [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md).
 4. Review [`docs/open-source-boundary.md`](docs/open-source-boundary.md).
 5. Review [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md).
@@ -102,6 +105,7 @@ If you only want the conceptual spine, read:
 2. [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md)
 3. [`docs/proof-package/README.md`](docs/proof-package/README.md)
 4. [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md)
+5. [`docs/compatibility-policy.md`](docs/compatibility-policy.md)
 
 ## What remains behind the scenes
 

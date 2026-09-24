@@ -22,7 +22,7 @@ Provide an inspectable trail of live GitHub evidence, quality audits, and claim 
 
 GitMoney OS is not a prompt pack, Notion template, AI automation recipe, GitHub tutorial, productivity system, or free calculator replacement. It is an open-source public skeleton for governing AI-assisted business work.
 
-## If you only have 10 minutes
+## Essential Evidence Inspection
 
 Use this inspection path:
 

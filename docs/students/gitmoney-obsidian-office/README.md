@@ -11,6 +11,10 @@ tags:
 
 # GitMoney Obsidian Office
 
+> [!NOTE]
+> This student vault remains as a teaching artifact.
+> The canonical public Source Memory scaffold is now [`templates/starter-vault`](../../../templates/starter-vault).
+
 ## Purpose
 
 Define the private memory layer of the AI Office and provide a starter framework for founders using Obsidian.

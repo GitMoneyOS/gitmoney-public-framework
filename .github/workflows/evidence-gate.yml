@@ -1,4 +1,4 @@
-name: Evidence Gate & Copy Linter
+name: Evidence Gate & Architecture Verification
 
 on:
   pull_request:
@@ -6,38 +6,68 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: read
+
 jobs:
-  lint-and-validate:
+  node-matrix:
+    name: Node Matrix (${{ matrix.node-version }})
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [18, 20, 22]
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        with:
+          node-version: ${{ matrix.node-version }}
 
       - name: Check Copy Rails (No Emojis, No Em-Dashes)
         run: |
           echo "Scanning markdown files for copy rail violations..."
-          
-          # Scan for em-dashes (—) in markdown files
-          EM_DASHES=$(grep -rn "—" docs/ README.md CONTRIBUTING.md 2>/dev/null || true)
+          EM_DASHES=$(grep -rn "—" docs/ README.md CONTRIBUTING.md starter/ templates/ 2>/dev/null || true)
           if [ -n "$EM_DASHES" ]; then
             echo "ERROR: Em-dashes detected! Use hyphens (-), colons (:), or parentheses instead."
             echo "$EM_DASHES"
             exit 1
           fi
-
           echo "Copy rails check passed: 0 em-dashes found."
 
       - name: Check Frontmatter Metadata in Proof Docs
         run: |
           echo "Verifying frontmatter metadata in proof package..."
-          MISSING_FIELDS=0
           for file in docs/proof-package/*.md; do
             if [ -f "$file" ]; then
-              echo "Checking $file..."
-              # Ensure file contains Purpose or frontmatter
               if ! grep -qi "Purpose" "$file" && ! grep -qi "owner" "$file"; then
                 echo "WARNING: $file missing explicit Purpose or Owner metadata."
               fi
             fi
           done
           echo "Frontmatter check completed."
+
+      - name: Run GitMoney Architecture Doctor
+        run: |
+          echo "Running GitMoney Doctor..."
+          node scripts/gitmoney.mjs doctor
+
+      - name: Run Conformance & Negative Fixture Suite
+        run: |
+          echo "Running Conformance Suite..."
+          node tests/conformance.mjs
+
+      - name: Run Deterministic Repository Security & IP Scan
+        run: |
+          echo "Running Deterministic Repository Security & IP Scan..."
+          node scripts/repo-security-scan.mjs
+
+  lint-and-validate:
+    name: lint-and-validate
+    needs: node-matrix
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify Matrix Green
+        run: echo "Node 18, 20, 22 matrix and all evidence gates verified green."

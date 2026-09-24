@@ -1,9 +1,9 @@
 ---
 title: "github-setup-wizard-prompt-engineering-public-artifact"
-type: "vault-memory"
+type: "public-framework"
 owner: "Hitsuyo Aku"
-status: "active-internal"
-classification: "internal"
+status: "active-public"
+classification: "public"
 approval_path: "Hitsuyo Aku"
 tags:
   - vault/memory
@@ -43,7 +43,7 @@ In that session, students were walked through the first real setup actions:
 - Forking repositories
 - Cloning repositories
 - Understanding the difference between forking and cloning
-- Receiving the `gitmoney-ai-office` skill as the next operating layer
+- Receiving the AI Office skill as the next operating layer
 
 That live walkthrough exposed the next friction point: after students created an organization and touched real repositories, they needed a guided follow-through path for admin controls, user settings, permissions, repo governance, and first proof artifacts.
 

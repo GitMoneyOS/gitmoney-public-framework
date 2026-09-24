@@ -20,6 +20,41 @@ The GitMoney OS Public Framework is the open-source skeleton and public standard
 
 The public repository should create trust through inspection and adoption. It should not leak client data, private doctrine, proprietary delivery machinery, credentials, CAC logic, or commercial control systems.
 
+## Public Protocol vs. Private Operator
+
+GitMoney OS separates the operating standard from the intelligence used to install and run advanced implementations.
+
+The public framework teaches:
+
+- what the rooms are;
+- how work moves between them;
+- how authority is bounded;
+- how evidence is recorded;
+- how humans approve promotion.
+
+The private system contains:
+
+- diagnosis;
+- advanced orchestration;
+- specialized skill intelligence;
+- client-specific configuration;
+- proprietary scoring and decision logic;
+- implementation and governance machinery.
+
+You do not need private GitMoney skills to use the public standard.
+
+| Public standard | Private machine |
+|---|---|
+| Three-layer protocol | Production operator |
+| Starter Vault | Private Mothership |
+| Public operator skill | Canonical private skills |
+| Generic ICM contracts | Client-specific ICM compilers |
+| Basic promotion protocol | Advanced promotion intelligence |
+| Simple conformance checks | Private diagnostic rubrics |
+| Public schemas | Proprietary runtime/state logic |
+| Validation scripts | Private orchestration |
+| Examples | Client implementation playbooks |
+
 ## What is public
 
 The public layer includes:
@@ -37,7 +72,9 @@ The public layer exists so the industry can study, reuse, and improve the skelet
 
 | Surface | Public Visibility | Business Function |
 |---|---|---|
-| README & Guides | Public | Orient cold readers within 90 seconds |
+| Starter Vault | Public | Canonical Source Memory starter scaffold (`templates/starter-vault/`) |
+| AI Office Starter | Public | Canonical Agent Workbench folder tree (`starter/`) |
+| README & Guides | Public | Orient cold readers on first reading |
 | Architecture Stack | Public | Explain POL, VSM, ICM, and IFL governance |
 | ICM Templates | Public | Provide bounded pre-work and receipt patterns |
 | Proof Index | Public | Map claims to inspectable GitHub evidence |

@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ICMReceipt",
+  "description": "Schema for validating post-execution audit receipts",
+  "type": "object",
+  "required": [
+    "task_id",
+    "owner",
+    "executor",
+    "date",
+    "commit_sha",
+    "status",
+    "modifications",
+    "verification_gates"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "executor": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "commit_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{7,40}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "VERIFIED",
+        "OWNER_APPROVED",
+        "PROMOTED",
+        "HELD"
+      ]
+    },
+    "modifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "file",
+          "action",
+          "summary"
+        ],
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "created",
+              "modified",
+              "deleted"
+            ]
+          },
+          "summary": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "verification_gates": {
+      "type": "object",
+      "required": [
+        "classification_guard",
+        "copy_rails",
+        "link_integrity"
+      ],
+      "properties": {
+        "classification_guard": {
+          "type": "string",
+          "enum": [
+            "PASSED",
+            "FAILED",
+            "SKIPPED"
+          ]
+        },
+        "copy_rails": {
+          "type": "string",
+          "enum": [
+            "PASSED",
+            "FAILED",
+            "SKIPPED"
+          ]
+        },
+        "link_integrity": {
+          "type": "string",
+          "enum": [
+            "PASSED",
+            "FAILED",
+            "SKIPPED"
+          ]
+        }
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rollback_command": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "x-gitmoney-schema-version": "0.1.0"
+}

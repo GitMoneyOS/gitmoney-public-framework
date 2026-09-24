@@ -1,9 +1,9 @@
 ---
 title: "vault-map"
-type: "vault-memory"
+type: "public-framework"
 owner: "Hitsuyo Aku"
-status: "active-internal"
-classification: "internal"
+status: "active-public"
+classification: "public"
 approval_path: "Hitsuyo Aku"
 tags:
   - vault/memory
@@ -50,3 +50,7 @@ The starter vault has fixed lanes. File into them; do not invent new top-level f
 - Notes: short, plain, searchable. `pricing-objection-answers.md`, not `Untitled 47.md`.
 - Agent briefs: `brief-YYYY-MM-DD-short-job-name.md`.
 - Decisions: `decision-YYYY-MM-DD-short-topic.md`.
+
+## Private Machine Boundary
+
+The private Mothership vault topology, advanced multi-layer classification planes, and sovereign routing infrastructure belong exclusively to the private GitMoney machine.

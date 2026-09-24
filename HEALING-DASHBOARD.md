@@ -90,11 +90,9 @@ Market doctrine fit: this cycle turns scattered AI-assisted effort into governed
 
 Local evidence:
 
-- `GitMoney/gitmoney-ai-office/SKILL.md`
-- `GitMoney/gitmoney-ai-office/references/master-plan.md`
-- `GitMoney/worktrees/gitmoney-os/skills/gitmoney-ai-office/SKILL.md`
-- `GitMoney/worktrees/gitmoney-os/skills/gitmoney-ai-office/references/master-plan.md`
-- `GitMoney/worktrees/gitmoney-os/docs/architecture/three-layer-ai-office-stack.md`
+- Local private machine skills (withheld per private-machine-boundary.md)
+- Local private master plan records (withheld per private-machine-boundary.md)
+- Internal architecture references (withheld per private-machine-boundary.md)
 - `docs/exit-ready-score-self-assessment.md`
 - `HEALING-DASHBOARD.md`
 

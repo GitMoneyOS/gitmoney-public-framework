@@ -8,13 +8,15 @@ This repository is the open-source part of the GitMoney OS ecosystem. It exists 
 
 The public framework defines the open standard. The private GitMoney OS, Mothership, Skills, CAC, Audit, Delivery, SaaS, and client implementation systems remain proprietary operating machinery. A company pays when it needs the advanced private methods applied to its own context, evidence, workflows, people, permissions, and commercial constraints.
 
+Private GitMoney skills are not required to adopt the public framework. Any capable coding or workbench agent (such as Codex, Claude Code, or Antigravity) can operate the open skeleton using [`gitmoney-public-operator`](starter/.agents/skills/gitmoney-public-operator/SKILL.md).
+
 GitMoney OS is one implementation path within Hitsuyo Aku's Enterprise Systems Architecture practice. It helps a founder-led team put source material, decisions, staged work, and reviewable changes where the right people can find them. Each organization must validate its own workflows, controls, permissions, and outcomes.
 
 ## Start here if you are a buyer
 
 If you are a founder, executive, operator, agency owner, or senior builder trying to understand why this matters, read [`START-HERE.md`](START-HERE.md) first.
 
-Within 90 seconds, you should know:
+At a glance, you can determine:
 
 - what expensive problem this framework addresses;
 - whether the wound is yours;
@@ -24,7 +26,7 @@ Within 90 seconds, you should know:
 - what proof you can inspect;
 - what paid step comes next.
 
-Within 10 minutes, inspect:
+To inspect the architecture and evidence:
 
 1. [`START-HERE.md`](START-HERE.md)
 2. [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md)
@@ -78,6 +80,7 @@ Git commits and pull requests can make changes inspectable. They do not make a c
 
 - [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md): how POL, VSM, ICM, and IFL govern the public three-layer skeleton.
 - [`docs/open-source-boundary.md`](docs/open-source-boundary.md): what is open source, what is not, and why.
+- [`docs/compatibility-policy.md`](docs/compatibility-policy.md): pre-1.0 compatibility law, version contracts, and migration expectations.
 - [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md): map founder dependency wounds to the public skeleton and paid path.
 - [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md): claim-to-evidence table.
 - [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md): what is public, what remains private, and why.
@@ -85,6 +88,14 @@ Git commits and pull requests can make changes inspectable. They do not make a c
 - [`docs/templates/icm-receipt.md`](docs/templates/icm-receipt.md): receipt template for work after completion.
 - [`docs/templates/icm-conformance-checklist.md`](docs/templates/icm-conformance-checklist.md): verification checklist for bounded jobs.
 - [`docs/commercial-translation.md`](docs/commercial-translation.md): how the open skeleton connects to the paid ladder.
+- [`docs/quickstart.md`](docs/quickstart.md): step-by-step setup guide for your AI office.
+- [`templates/starter-vault/`](templates/starter-vault/): canonical public Source Memory starter scaffold (private thinking room).
+- [`starter/`](starter/): canonical public AI Office starter scaffold (agent workbench and repository tree).
+- [`starter/.agents/skills/gitmoney-public-operator/`](starter/.agents/skills/gitmoney-public-operator/SKILL.md): thin public operator skill for governing Source Memory, briefs, and GitHub records without private skills.
+- [`templates/`](templates/): copy-paste starter files (AGENTS.md, 00_COCKPIT.md, contracts, receipts).
+- [`examples/fictional-studio-co/`](examples/fictional-studio-co/): end-to-end worked example of an agency using the skeleton.
+- [`schemas/`](schemas/): Draft-07 JSON schemas for contracts, receipts, and decision records.
+- [`scripts/`](scripts/): public CLI validation tools for classification, link integrity, and copy rails.
 
 ## Work with Hitsuyo Aku
 

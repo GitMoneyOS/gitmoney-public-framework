@@ -58,6 +58,8 @@ Source Memory -> Agent Workbench -> GitHub Record
 
 Source Memory is where raw business material starts before it becomes official.
 
+The public framework provides [`templates/starter-vault/`](../../templates/starter-vault/) as the canonical Source Memory starter scaffold for adopters to establish their private thinking room.
+
 Public-safe examples:
 
 - founder thinking;
