@@ -38,6 +38,41 @@ A founder becomes middleware when the business cannot reliably answer:
 
 GitMoney OS gives the buyer a public way to inspect those failure modes before paying for a private diagnosis.
 
+## Founder as Middleware
+
+Before GitMoney, the founder often becomes the toll booth every decision has to pass through:
+
+```text
+Client request
+     |
+     v
+Contractor question -> Founder -> Delivery decision
+Sales exception  ----> Founder -> Pricing decision
+AI output        ----> Founder -> Approval decision
+Ops issue        ----> Founder -> Priority decision
+```
+
+That is not leadership. That is a nervous system pretending to be infrastructure.
+
+A governed record changes the shape of the work:
+
+```text
+Client request
+     |
+     v
+Issue / PR / Receipt
+     |
+     +--> Owner reviews
+     +--> Agent works inside bounds
+     +--> Checks run
+     +--> Decision recorded
+     +--> Handoff survives the founder leaving the room
+```
+
+The founder still owns judgment.
+
+The record stops making the founder carry every handoff in their skull.
+
 ## Pain to proof map
 
 | If your business has this wound | Inspect this public proof | What the proof shows | Paid implication |

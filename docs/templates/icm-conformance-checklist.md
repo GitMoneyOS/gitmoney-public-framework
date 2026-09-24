@@ -13,6 +13,12 @@ tags:
 
 # ICM Conformance Checklist
 
+## Plain-English Job
+
+This checklist catches the difference between real delegation and an AI agent confidently pretending.
+
+It asks whether the task had identity, context, authority, proof, handoff, and rollback before anyone calls it complete.
+
 ## Purpose
 
 Check whether a bounded job actually followed the execution contract.

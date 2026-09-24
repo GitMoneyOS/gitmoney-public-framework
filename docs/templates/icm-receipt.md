@@ -13,6 +13,12 @@ tags:
 
 # ICM Receipt
 
+## Plain-English Job
+
+This receipt proves what actually changed after the work finishes.
+
+If the work has no receipt, "done" is just a noise humans make when they want the problem to leave.
+
 ## Purpose
 
 Record what happened after a bounded job completes.

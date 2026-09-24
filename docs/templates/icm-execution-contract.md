@@ -13,6 +13,12 @@ tags:
 
 # ICM Execution Contract
 
+## Plain-English Job
+
+This contract tells a person or AI agent what it is allowed to touch before the work starts.
+
+If the job has no contract, delegation turns into guessing with better typography.
+
 ## Purpose
 
 Create a bounded execution contract before a person or agent acts.

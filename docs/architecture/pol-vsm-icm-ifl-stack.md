@@ -246,6 +246,14 @@ The Identity Forensics Audit is the primary paid IFL entry point. Reconstruction
 | IFL | Shows evidence-first investigation logic | Performs forensic diagnosis and intervention design | Audit and Reconstruction apply the method |
 | GitMoney OS | Provides the open skeleton and record pattern | Becomes client-specific operating infrastructure | Paid work installs the living machine |
 
+## The Comprehension Ladder
+
+| Reader Layer | Plain Language | Operating Language | Architecture Language |
+|---|---|---|---|
+| 9th-grade reader | Notebook -> Work Desk -> Record Room | Source Memory -> Agent Workbench -> GitHub Record | Work needs meaning, boundaries, and proof. |
+| Founder / owner | Stop being the human router | Route decisions into inspectable records | VSM exposes viability and control gaps. |
+| Operator / executive | Build a court of record | Govern AI-assisted work through contracts and receipts | POL, VSM, ICM, and IFL define the intervention stack. |
+
 ## How the stack moves through the three layers
 
 | Public skeleton layer | POL contribution | VSM contribution | ICM contribution | IFL contribution |

@@ -10,7 +10,7 @@ The reading experience is meant to be inspectable, not exhaustive. A founder sho
 
 The larger thesis is that the next generation of elite businesses will not look like bloated org charts. They will look like small teams with unusually clear memory, unusually disciplined AI delegation, and unusually inspectable records. GitMoneyOS is the operating pattern for that kind of company.
 
-GitMoney OS is not a prompt pack, Notion template, AI automation recipe, GitHub tutorial, productivity system, or free calculator replacement. It is a public proof layer for governing AI-assisted business work.
+GitMoney OS is not a prompt pack, Notion template, AI automation recipe, GitHub tutorial, productivity system, or free calculator replacement. It is an open-source public skeleton for governing AI-assisted business work.
 
 ## If you only have 10 minutes
 
