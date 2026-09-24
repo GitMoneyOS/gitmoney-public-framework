@@ -50,5 +50,6 @@
       }
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "x-gitmoney-schema-version": "0.1.0"
 }

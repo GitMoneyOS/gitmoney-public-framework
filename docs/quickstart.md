@@ -10,7 +10,7 @@ tags:
   - quickstart
 ---
 
-# GitMoney OS Quickstart: Set Up Your AI Office in 20 Minutes
+# GitMoney OS Quickstart: Step-by-Step AI Office Setup Guide
 
 ## Purpose
 
@@ -18,7 +18,7 @@ Provide a rapid, step-by-step setup guide for founders, operators, and developer
 
 ## Plain-English Job
 
-Guide a founder from a blank folder to a functioning, governed AI Office with explicit agent boundaries, an owner cockpit, an execution contract, and a verified audit receipt in 20 minutes.
+Guide a founder from a blank folder to a functioning, governed AI Office with explicit agent boundaries, an owner cockpit, an execution contract, and a verified audit receipt step-by-step.
 
 ## Prerequisites
 
@@ -170,6 +170,8 @@ Run the aggregated governance doctor to verify structure, classification, link i
 node scripts/gitmoney.mjs doctor
 ```
 
+See [`docs/compatibility-policy.md`](compatibility-policy.md) for version evolution, schema versioning, and pre-1.0 migration guidance.
+
 Individual verification tools can also be run directly:
 - `node scripts/classification-guard.mjs`: Verifies zero restricted classification tags.
 - `node scripts/copy-rail-checker.mjs`: Verifies zero em dashes and zero buzzwords.
@@ -197,7 +199,7 @@ Review the [Commercial Translation](commercial-translation.md) guide or apply di
 
 ```text
 ENTITY: quickstart.md
-ROLE: 20-minute setup guide for the open operating skeleton
+ROLE: Step-by-step setup guide for the open operating skeleton
 OWNER: Hitsuyo Aku
 STATUS: active-public
 CLASSIFICATION: public

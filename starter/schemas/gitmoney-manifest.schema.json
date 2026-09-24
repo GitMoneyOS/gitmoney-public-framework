@@ -50,5 +50,6 @@
       "minItems": 1
     }
   },
-  "additionalProperties": true
+  "additionalProperties": true,
+  "x-gitmoney-schema-version": "0.1.0"
 }

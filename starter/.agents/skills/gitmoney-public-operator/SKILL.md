@@ -1,5 +1,6 @@
 ---
 name: gitmoney-public-operator
+version: "0.1.0"
 description: Operate the GitMoney OS open-source skeleton using Source Memory, bounded agent work, owner approval, GitHub records, and verification receipts.
 type: public-skill
 status: active-public

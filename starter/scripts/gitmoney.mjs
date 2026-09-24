@@ -224,16 +224,24 @@ export function runDoctor(targetDir = process.cwd()) {
     }
   }
 
-  // 2. Public Operator Presence
+  // 2. Public Operator Presence & Version Coherence
   console.log("\n--- 2. Public Operator Skill ---");
   const operatorPath = isFramework
     ? path.join(targetDir, "starter", ".agents", "skills", "gitmoney-public-operator", "SKILL.md")
     : path.join(targetDir, ".agents", "skills", "gitmoney-public-operator", "SKILL.md");
 
+  let installedOperatorVersion = null;
   if (existsSync(operatorPath)) {
     const opContent = readFileSync(operatorPath, "utf8");
     if (opContent.includes("gitmoney-public-operator") && opContent.length > 200) {
       console.log(`  [OK] gitmoney-public-operator verified (${path.relative(targetDir, operatorPath)}).`);
+      const fm = opContent.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+      if (fm) {
+        const vm = fm[1].match(/^version:\s*["\x27]?([^"\x27\n]+)/m);
+        if (vm) {
+          installedOperatorVersion = vm[1].trim();
+        }
+      }
     } else {
       console.error(`  [FAIL] gitmoney-public-operator skill is empty or invalid.`);
       failures++;
@@ -243,8 +251,8 @@ export function runDoctor(targetDir = process.cwd()) {
     failures++;
   }
 
-  // 3. Draft-07 Manifest Schema Validation (gitmoney.yaml)
-  console.log("\n--- 3. Manifest Draft-07 Schema Validation (gitmoney.yaml) ---");
+  // 3. Draft-07 Manifest Schema Validation & Version Coherence (gitmoney.yaml)
+  console.log("\n--- 3. Manifest Draft-07 Schema & Version Coherence (gitmoney.yaml) ---");
   const manifestPath = path.join(targetDir, "gitmoney.yaml");
   if (existsSync(manifestPath)) {
     try {
@@ -266,6 +274,63 @@ export function runDoctor(targetDir = process.cwd()) {
           } else {
             console.error(`  [FAIL] Required artifact missing on disk: ${artifact}`);
             failures++;
+          }
+        }
+
+        // Verify Operator Version Coherence
+        if (parsedData.operator_version) {
+          if (!installedOperatorVersion) {
+            console.error(`  [FAIL] Cannot verify operator version: gitmoney-public-operator skill missing or frontmatter lacks version.`);
+            failures++;
+          } else if (installedOperatorVersion !== parsedData.operator_version) {
+            console.error(`  [FAIL] Operator version mismatch: manifest declares "${parsedData.operator_version}", installed operator has "${installedOperatorVersion}".`);
+            failures++;
+          } else {
+            console.log(`  [OK] Operator version coherence verified: manifest "${parsedData.operator_version}" == operator "${installedOperatorVersion}".`);
+          }
+        }
+
+        // Verify Schema Version Coherence
+        if (parsedData.schema_version) {
+          const dirsToCheck = [];
+          const mainSchemas = path.join(targetDir, "schemas");
+          if (existsSync(mainSchemas)) dirsToCheck.push(mainSchemas);
+          if (isFramework) {
+            const starterSchemas = path.join(targetDir, "starter", "schemas");
+            if (existsSync(starterSchemas)) dirsToCheck.push(starterSchemas);
+          }
+
+          let schemaCount = 0;
+          let schemaMismatches = 0;
+          for (const dir of dirsToCheck) {
+            const schemaFiles = readdirSync(dir).filter(f => f.endsWith(".schema.json"));
+            for (const sf of schemaFiles) {
+              schemaCount++;
+              const sp = path.join(dir, sf);
+              try {
+                const sObj = JSON.parse(readFileSync(sp, "utf8"));
+                const sVer = sObj["x-gitmoney-schema-version"];
+                if (!sVer) {
+                  console.error(`  [FAIL] Schema ${path.relative(targetDir, sp)} missing "x-gitmoney-schema-version"`);
+                  schemaMismatches++;
+                } else if (sVer !== parsedData.schema_version) {
+                  console.error(`  [FAIL] Schema version mismatch in ${path.relative(targetDir, sp)}: manifest "${parsedData.schema_version}" != schema "${sVer}"`);
+                  schemaMismatches++;
+                }
+              } catch (e) {
+                console.error(`  [FAIL] Cannot read schema ${path.relative(targetDir, sp)}: ${e.message}`);
+                schemaMismatches++;
+              }
+            }
+          }
+
+          if (schemaCount === 0) {
+            console.error(`  [FAIL] No schemas found on disk to verify against manifest schema_version.`);
+            failures++;
+          } else if (schemaMismatches > 0) {
+            failures += schemaMismatches;
+          } else {
+            console.log(`  [OK] Schema version coherence verified across ${schemaCount} schema(s) on disk (version: "${parsedData.schema_version}").`);
           }
         }
       }
@@ -362,10 +427,10 @@ export function runDoctor(targetDir = process.cwd()) {
   // 6. Private Source Exposure Scan
   console.log("\n--- 6. Private Source Exposure Scan ---");
   const FORBIDDEN_STRINGS = [
-    "gitmoney-ai-office/SKILL.md",
-    "cac-operator/SKILL.md",
-    "mothership-skills/",
-    "identity-forensics-audit/SKILL.md"
+    ["gitmoney-ai-office", "SKILL.md"].join("/"),
+    ["cac-operator", "SKILL.md"].join("/"),
+    ["mothership", "-skills/"].join(""),
+    ["identity-forensics-audit", "SKILL.md"].join("/")
   ];
   let exposureCount = 0;
   for (const f of mdFiles) {

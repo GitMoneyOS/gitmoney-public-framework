@@ -16,7 +16,7 @@ GitMoney OS is one implementation path within Hitsuyo Aku's Enterprise Systems A
 
 If you are a founder, executive, operator, agency owner, or senior builder trying to understand why this matters, read [`START-HERE.md`](START-HERE.md) first.
 
-Within 90 seconds, you should know:
+At a glance, you can determine:
 
 - what expensive problem this framework addresses;
 - whether the wound is yours;
@@ -26,7 +26,7 @@ Within 90 seconds, you should know:
 - what proof you can inspect;
 - what paid step comes next.
 
-Within 10 minutes, inspect:
+To inspect the architecture and evidence:
 
 1. [`START-HERE.md`](START-HERE.md)
 2. [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md)
@@ -80,6 +80,7 @@ Git commits and pull requests can make changes inspectable. They do not make a c
 
 - [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md): how POL, VSM, ICM, and IFL govern the public three-layer skeleton.
 - [`docs/open-source-boundary.md`](docs/open-source-boundary.md): what is open source, what is not, and why.
+- [`docs/compatibility-policy.md`](docs/compatibility-policy.md): pre-1.0 compatibility law, version contracts, and migration expectations.
 - [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md): map founder dependency wounds to the public skeleton and paid path.
 - [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md): claim-to-evidence table.
 - [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md): what is public, what remains private, and why.
@@ -87,7 +88,7 @@ Git commits and pull requests can make changes inspectable. They do not make a c
 - [`docs/templates/icm-receipt.md`](docs/templates/icm-receipt.md): receipt template for work after completion.
 - [`docs/templates/icm-conformance-checklist.md`](docs/templates/icm-conformance-checklist.md): verification checklist for bounded jobs.
 - [`docs/commercial-translation.md`](docs/commercial-translation.md): how the open skeleton connects to the paid ladder.
-- [`docs/quickstart.md`](docs/quickstart.md): set up your AI office in 20 minutes.
+- [`docs/quickstart.md`](docs/quickstart.md): step-by-step setup guide for your AI office.
 - [`templates/starter-vault/`](templates/starter-vault/): canonical public Source Memory starter scaffold (private thinking room).
 - [`starter/`](starter/): canonical public AI Office starter scaffold (agent workbench and repository tree).
 - [`starter/.agents/skills/gitmoney-public-operator/`](starter/.agents/skills/gitmoney-public-operator/SKILL.md): thin public operator skill for governing Source Memory, briefs, and GitHub records without private skills.

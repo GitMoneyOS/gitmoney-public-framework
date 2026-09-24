@@ -74,7 +74,7 @@ The public layer exists so the industry can study, reuse, and improve the skelet
 |---|---|---|
 | Starter Vault | Public | Canonical Source Memory starter scaffold (`templates/starter-vault/`) |
 | AI Office Starter | Public | Canonical Agent Workbench folder tree (`starter/`) |
-| README & Guides | Public | Orient cold readers within 90 seconds |
+| README & Guides | Public | Orient cold readers on first reading |
 | Architecture Stack | Public | Explain POL, VSM, ICM, and IFL governance |
 | ICM Templates | Public | Provide bounded pre-work and receipt patterns |
 | Proof Index | Public | Map claims to inspectable GitHub evidence |

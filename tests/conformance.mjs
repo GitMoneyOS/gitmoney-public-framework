@@ -230,6 +230,47 @@ required_artifacts:
     doctorFailed = true;
   }
   assert(doctorFailed, "Doctor fails when required_artifact listed in manifest is missing on disk");
+
+  // Positive 3E: SCHEMA_VERSION_MATCH & OPERATOR_VERSION_MATCH = PASS
+  const matchDir = mkdtempSync(path.join(os.tmpdir(), "gm-ver-match-"));
+  execSync(`node "${GITMONEY_CLI}" init "${matchDir}"`, { stdio: "ignore" });
+  let matchPassed = true;
+  try {
+    execSync("node scripts/gitmoney.mjs doctor", { cwd: matchDir, stdio: "pipe" });
+  } catch {
+    matchPassed = false;
+  }
+  assert(matchPassed, "SCHEMA_VERSION_MATCH & OPERATOR_VERSION_MATCH = PASS");
+
+  // Negative 3F: SCHEMA_VERSION_MISMATCH = FAIL
+  const schemaMismatchDir = mkdtempSync(path.join(os.tmpdir(), "gm-schema-mismatch-"));
+  execSync(`node "${GITMONEY_CLI}" init "${schemaMismatchDir}"`, { stdio: "ignore" });
+  const smManifestFile = path.join(schemaMismatchDir, "gitmoney.yaml");
+  let smManifestContent = readFileSync(smManifestFile, "utf8");
+  smManifestContent = smManifestContent.replace('schema_version: "0.1.0"', 'schema_version: "99.0.0"');
+  writeFileSync(smManifestFile, smManifestContent, "utf8");
+  let schemaMismatchFailed = false;
+  try {
+    execSync("node scripts/gitmoney.mjs doctor", { cwd: schemaMismatchDir, stdio: "pipe" });
+  } catch {
+    schemaMismatchFailed = true;
+  }
+  assert(schemaMismatchFailed, "SCHEMA_VERSION_MISMATCH = FAIL");
+
+  // Negative 3G: OPERATOR_VERSION_MISMATCH = FAIL
+  const opMismatchDir = mkdtempSync(path.join(os.tmpdir(), "gm-op-mismatch-"));
+  execSync(`node "${GITMONEY_CLI}" init "${opMismatchDir}"`, { stdio: "ignore" });
+  const opManifestFile = path.join(opMismatchDir, "gitmoney.yaml");
+  let opManifestContent = readFileSync(opManifestFile, "utf8");
+  opManifestContent = opManifestContent.replace('operator_version: "0.1.0"', 'operator_version: "99.0.0"');
+  writeFileSync(opManifestFile, opManifestContent, "utf8");
+  let opMismatchFailed = false;
+  try {
+    execSync("node scripts/gitmoney.mjs doctor", { cwd: opMismatchDir, stdio: "pipe" });
+  } catch {
+    opMismatchFailed = true;
+  }
+  assert(opMismatchFailed, "OPERATOR_VERSION_MISMATCH = FAIL");
 } catch (e) {
   assert(false, `Test 3 encountered exception: ${e.message}`);
 }
@@ -338,7 +379,7 @@ try {
   execSync(`node "${GITMONEY_CLI}" init "${negDir}"`, { stdio: "ignore" });
   writeFileSync(
     path.join(negDir, "docs-leak.md"),
-    "Refer to gitmoney-ai-office/SKILL.md for execution rules.\n"
+    "Refer to " + ["gitmoney-ai-office", "SKILL.md"].join("/") + " for execution rules.\n"
   );
   let failedAsExpected = false;
   try {

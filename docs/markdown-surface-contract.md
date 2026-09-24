@@ -39,9 +39,9 @@ Every public Markdown surface must answer these eight questions:
 
 | Surface | Primary Reader | Job | Markdown Techniques | Machine Extraction | Success Criteria |
 |---|---|---|---|---|---|
-| [`README.md`](../README.md) | Cold buyer / operator | Orient and route within 90 seconds | Headings, inspection list, relative links, ASCII folder tree | Status block, commercial ladder parameters | Reader knows where to go in 90 seconds |
+| [`README.md`](../README.md) | Cold buyer / operator | Orient and route on first reading | Headings, inspection list, relative links, ASCII folder tree | Status block, commercial ladder parameters | Reader knows where to go clearly |
 | [`START-HERE.md`](../START-HERE.md) | Cold founder / buyer | Diagnose operating wound | Plain-English job, visceral symptom bullets, 10-minute path | Entity status block, buyer routing | Reader recognizes fit or exits immediately |
-| [`quickstart.md`](quickstart.md) | Founder / builder | Set up AI Office in 20 minutes | 6 sequential steps, folder breakdown, verification commands | Setup checklist, verification commands | Reader builds functioning repository in 20 minutes |
+| [`quickstart.md`](quickstart.md) | Founder / builder | Set up AI Office step-by-step | 6 sequential steps, folder breakdown, verification commands | Setup checklist, verification commands | Reader builds functioning repository following the step-by-step procedure |
 | [`templates/starter-vault/`](../templates/starter-vault/README.md) | Founder / note-taker | Capture private Source Memory | 30-minute win, maturity ladder, agent context contract | Note frontmatter schema, promotion intent | User captures private ideas without public exposure |
 | [`starter/`](../starter/README.md) | Operator / agent | Execute AI Office tasks | 3-room folder tree, WIP limits, bounded execution | Folder invariants, cockpit ledger | Team runs governed AI delegation on GitHub |
 | [`gitmoney-public-operator`](../starter/.agents/skills/gitmoney-public-operator/SKILL.md) | AI Agent / operator | Operate open-source skeleton safely | 3-layer model, bounded rules, explicit permissions | Allowed/forbidden actions, non-authority rules | Agent operates skeleton without private skills |

@@ -97,3 +97,6 @@ jobs:
           console.log("✅ [CLASSIFICATION GUARD PASSED] Zero classified files or quarantined doctrine detected in changeset.");
           process.exit(0);
           '
+
+      - name: Deterministic Repository Security & IP Scan
+        run: node scripts/repo-security-scan.mjs
