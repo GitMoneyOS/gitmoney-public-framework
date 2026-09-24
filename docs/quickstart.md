@@ -146,6 +146,29 @@ Follow all constraints and produce only the specified output in _generated/.
 Do not touch any files outside the allowed context.
 ```
 
+## Essential Human-in-the-Loop GitHub Workflow
+
+The framework uses GitHub as the authoritative inspection surface. Autonomous agents work on branches; only human owners merge:
+
+```text
+1. BRANCH  -> Agent creates isolated topic branch (task/001-setup)
+2. COMMIT  -> Agent commits bounded code/doc changes and ICM receipt
+3. PR      -> Agent opens Pull Request targeting main
+4. REVIEW  -> Human owner inspects diff, checks, and receipt
+5. MERGE   -> Human owner exercises sole merge authority
+```
+
+### Downstream Secret Safety Rules
+
+Downstream workspaces must strictly prohibit credentials:
+- **No credentials in receipts:** Never dump authorization headers, bearer tokens, or password strings into audit receipts.
+- **No tokens in contracts:** Specify context filepaths, never embedded API tokens.
+- **No private keys in proof artifacts:** Keep RSA/SSH keys outside repository bounds.
+- **Zero secrets committed to Git:** Configure your `.gitignore` and run `node scripts/gitmoney.mjs doctor` before opening pull requests.
+
+### Safe Fallback for Complex Tasks
+If task scope cannot be bounded confidently: STOP. Split the job. Escalate to owner. Do not invent authority or orchestration.
+
 ## Step 5: Close the Loop with an ICM Receipt
 
 When the agent finishes its bounded work:

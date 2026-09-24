@@ -18,6 +18,8 @@
 - **Forbidden Context:**
   - No access to secrets, production credentials, or client data.
   - No changes outside specified target directories.
+  - No credentials, tokens, or private keys in receipts, contracts, or proof artifacts.
+  - Safe Fallback: If task scope cannot be bounded confidently: STOP. Split the job. Escalate to owner. Do not invent authority or orchestration.
 
 ## 4. Expected Output Artifacts
 - Target Branch: `task/[task-id]-[slug]`

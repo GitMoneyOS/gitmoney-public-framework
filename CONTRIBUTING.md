@@ -19,6 +19,15 @@ Keep GitMoney OS changes reviewable, plain-English, and connected to business co
 
 This guide tells human contributors and AI agents how to propose improvements to the public framework without breaking classification boundaries or publishing unverified material.
 
+## Support Boundary & Scope
+
+To protect project sustainability and prevent free-support debt:
+
+1. **Public Framework Support:** Community issues and bug reports for the public framework are triaged on GitHub. Open an issue with reproduction steps and local doctor output.
+2. **Implementation Consulting != Free Support:** Questions regarding how to adapt GitMoney OS to your proprietary company architecture, custom tech stack, or commercial workflows are not handled in public GitHub issues.
+3. **Client-Specific Architecture != GitHub Issue:** Issues requesting custom system design, tailored prompt development, or private debugging will be closed with referral to commercial channels.
+4. **Private Machine Configuration = Paid Engagement:** Hands-on forward-deployed engineering, private skill installation, and diagnostic audits are provided exclusively through commercial agreements ($20,000 Identity Forensics Audit / $7,500 Architecture Sprint / from $50,000 Forward-Deployed Builds).
+
 ## Who This Is For
 
 This file is for developers, technical writers, operators, and agents submitting pull requests or issues to the open-source public framework repository.

@@ -46,7 +46,10 @@ Capture -> Brief -> Work -> Evidence -> Owner Review -> Record -> Receipt
 - publish private memory;
 - self-approve;
 - infer authority from folder location;
-- expose secrets or client data;
+- expose secrets, credentials, or client data;
+- place credentials in receipts, tokens in contracts, or private keys in proof artifacts;
+- commit secrets to Git;
+- invent authority when scope is unbounded (safe fallback: if task scope cannot be bounded confidently: STOP. Split the job. Escalate to owner);
 - access private GitMoney machinery;
 - claim access to private skills;
 - perform private audit logic;

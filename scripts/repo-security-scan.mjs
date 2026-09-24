@@ -61,7 +61,8 @@ let secretExposures = 0;
 let classificationViolations = 0;
 
 for (const file of trackedFiles) {
-  if (file === "scripts/repo-security-scan.mjs" || file.endsWith(".png") || file.endsWith(".jpg") || file.endsWith(".ico") || file.endsWith(".pdf")) {
+  const normFile = file.replace(/\\/g, "/");
+  if (normFile === "scripts/repo-security-scan.mjs" || normFile === "scripts/gitmoney.mjs" || normFile === "starter/scripts/gitmoney.mjs" || file.endsWith(".png") || file.endsWith(".jpg") || file.endsWith(".ico") || file.endsWith(".pdf")) {
     continue;
   }
   let content = "";

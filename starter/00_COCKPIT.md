@@ -3,6 +3,11 @@
 **Owner:** [Founder / Principal]  
 **Status:** Operational  
 
+## Operational Rules & Safe Fallback
+- Hard WIP limit of maximum 3 concurrent tasks in execution.
+- Never commit credentials, tokens, or private keys in receipts, contracts, or Git history.
+- Safe Fallback: If task scope cannot be bounded confidently: STOP. Split the job. Escalate to owner. Do not invent authority or orchestration.
+
 ## Owner Decision Queue
 | Decision ID | Summary | Requester | Impact | Ruling |
 |---|---|---|---|---|
