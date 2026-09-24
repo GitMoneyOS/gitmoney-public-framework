@@ -28,6 +28,37 @@ That failure shows up as:
 
 GitMoney OS exists because output without governance becomes operational debt at machine speed.
 
+## The Diagnostic: The 96-Hour Founder Freeze Test
+
+Before buying software, hiring agencies, or adding more agents, ask one diagnostic question:
+
+> **"What breaks in your business if you disappear for four days?"**
+
+When a founder freezes for 96 hours, operational reality surfaces:
+- Where did work stall?
+- Where was judgment trapped?
+- Where was authority ambiguous?
+- Where could nobody prove what happened?
+
+That test turns founder dependency into something observable.
+
+GitMoney OS is the public mechanism for addressing what the freeze exposes:
+
+```text
+96-HOUR FOUNDER FREEZE TEST
+       |
+       v
+Exposes hidden context, trapped judgment, and unreviewed automation
+       |
+       v
+GITMONEY PUBLIC SKELETON (3 Rooms / 2 Artifacts / 3 Laws)
+       |
+       v
+Bounded wound  -> Architecture Sprint ($7,500)
+Systemic wound -> Identity Forensics Audit ($20,000)
+Execution gap  -> Sovereign Reconstruction (FROM $50,000)
+```
+
 ## Who this is for
 
 This framework is for people building serious founder-led companies, AI-assisted teams, agencies, creator-operators, technical service firms, and lean organizations where the business is becoming more complex than its memory system.
