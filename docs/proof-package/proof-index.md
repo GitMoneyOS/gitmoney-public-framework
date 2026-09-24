@@ -73,7 +73,11 @@ Do not claim GitMoney OS proves:
 - acquisition readiness or transaction guarantees;
 - production-grade SaaS readiness;
 - validated third-party client outcomes;
-- fully autonomous operations with zero human judgment.
+- fully autonomous operations with zero human judgment;
+- universal "zero secrets" guarantee (only CONFIGURED_SECRET_PATTERN_MATCHES = 0 against inspected patterns);
+- platform-enforced release immutability (BASELINE_POLICY = FROZEN; GITHUB_RELEASE_IMMUTABILITY_ENFORCED = NO);
+- pilot value preservation across all downstream setups prior to RC-04 testing (PILOT_VALUE_BASELINE = PROVEN; HARDENED_BUILD_REGRESSION = UNVERIFIED_UNTIL_RC04);
+- commercial conversion telemetry (commercial conversion remains HYPOTHESIZED until external pipeline telemetry is collected).
 
 ## Paid implication
 

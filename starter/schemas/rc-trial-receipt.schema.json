@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RCTrialReceipt",
+  "description": "Minimal Draft-07 schema for machine-readable RC trial evidence receipts adapting ICM receipt machinery",
+  "type": "object",
+  "required": [
+    "trial_id",
+    "tester_type",
+    "prior_exposure",
+    "tag",
+    "tag_sha",
+    "start_time",
+    "end_time",
+    "completed",
+    "author_interventions",
+    "failed_commands",
+    "doc_ambiguities",
+    "boundary_violations",
+    "three_layer_comprehension",
+    "valid_contract",
+    "valid_receipt",
+    "owner_authority_understood",
+    "private_skill_required",
+    "data_loss",
+    "silent_overwrite",
+    "regression_found",
+    "status"
+  ],
+  "properties": {
+    "trial_id": {
+      "type": "string",
+      "enum": [
+        "RC-01",
+        "RC-02",
+        "RC-03",
+        "RC-04"
+      ]
+    },
+    "tester_type": {
+      "type": "string",
+      "enum": [
+        "COLD_HUMAN",
+        "COLD_AGENT",
+        "PILOT_COHORT_HUMAN",
+        "BENCHMARK_RUNNER"
+      ]
+    },
+    "prior_exposure": {
+      "type": "string",
+      "enum": [
+        "NONE",
+        "MINIMAL",
+        "PILOT_ADOPTER",
+        "INTERNAL"
+      ]
+    },
+    "tag": {
+      "type": "string",
+      "enum": [
+        "v0.9.0-beta.2"
+      ]
+    },
+    "tag_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{7,40}$"
+    },
+    "start_time": {
+      "type": "string"
+    },
+    "end_time": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "author_interventions": {
+      "type": "integer"
+    },
+    "failed_commands": {
+      "type": "integer"
+    },
+    "doc_ambiguities": {
+      "type": "integer"
+    },
+    "boundary_violations": {
+      "type": "integer"
+    },
+    "three_layer_comprehension": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "PARTIAL",
+        "NO"
+      ]
+    },
+    "valid_contract": {
+      "type": "boolean"
+    },
+    "valid_receipt": {
+      "type": "boolean"
+    },
+    "owner_authority_understood": {
+      "type": "boolean"
+    },
+    "private_skill_required": {
+      "type": "boolean"
+    },
+    "data_loss": {
+      "type": "boolean"
+    },
+    "silent_overwrite": {
+      "type": "boolean"
+    },
+    "regression_found": {
+      "type": "boolean"
+    },
+    "tester_notes": {
+      "type": "string"
+    },
+    "observer_notes": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "UNVERIFIED",
+        "VERIFIED",
+        "REJECTED"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "x-gitmoney-schema-version": "0.1.0"
+}

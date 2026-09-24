@@ -205,3 +205,8 @@ export function validateIcmReceipt(data, searchDir = null) {
   const schema = loadSchema("icm-receipt.schema.json", searchDir);
   return validateAgainstSchema(data, schema, "icm-receipt");
 }
+
+export function validateRcTrialReceipt(data, searchDir = null) {
+  const schema = loadSchema("rc-trial-receipt.schema.json", searchDir);
+  return validateAgainstSchema(data, schema, "rc-trial-receipt");
+}

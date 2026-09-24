@@ -97,6 +97,14 @@ Git commits and pull requests can make changes inspectable. They do not make a c
 - [`schemas/`](schemas/): Draft-07 JSON schemas for contracts, receipts, and decision records.
 - [`scripts/`](scripts/): public CLI validation tools for classification, link integrity, and copy rails.
 
+## Support Boundary & Scope
+
+Community bug reports and framework defect reports are triaged on GitHub.
+
+- **Open Source Scope:** Defect fixes, documentation corrections, schema validation improvements, and compatibility patches.
+- **Paid Engagement Scope:** Implementation consulting, proprietary architecture adaptation, private skill authoring, and forward-deployed installation.
+- **Consulting Inquiries:** For commercial architecture work, see [Work with Hitsuyo Aku](#work-with-hitsuyo-aku) below.
+
 ## Work with Hitsuyo Aku
 
 The **$20,000 Identity Forensics Audit** is the main paid entry to the Enterprise Systems Architecture service. Qualified buyers can [review the Audit and apply directly](https://architect.hitsuyoaku.io/sovereign-brand-os-audit). A separate **$7,500 Architecture Sprint** addresses a narrower immediate architecture question; [ask about its current scope](https://architect.hitsuyoaku.io/contact?tier=v2-diagnose-architecture-sprint). Smaller Diagnostic scopes can be offered where a narrower investigation fits. Sovereign Reconstruction is a contracted build scoped after the Audit, starting at $50,000; ongoing governance is separately contracted.

@@ -277,6 +277,16 @@ export function runDoctor(targetDir = process.cwd()) {
           }
         }
 
+        // Verify Installed Spec Version Coherence
+        if (parsedData.installed_spec_version) {
+          if (parsedData.installed_spec_version !== parsedData.spec_version) {
+            console.error(`  [FAIL] Spec version mismatch: manifest spec_version "${parsedData.spec_version}" != installed_spec_version "${parsedData.installed_spec_version}".`);
+            failures++;
+          } else {
+            console.log(`  [OK] Spec version coherence verified: spec_version "${parsedData.spec_version}" == installed_spec_version "${parsedData.installed_spec_version}".`);
+          }
+        }
+
         // Verify Operator Version Coherence
         if (parsedData.operator_version) {
           if (!installedOperatorVersion) {
@@ -493,6 +503,64 @@ export function runDoctor(targetDir = process.cwd()) {
   } catch {
     console.log("  [WARN] Target is not a git repository.");
     warnings++;
+  }
+
+  // 9. Downstream Secret Safety Scan
+  console.log("\n--- 9. Downstream Secret Safety Scan ---");
+  const SECRET_PATTERNS = [
+    { name: "Private Key", regex: /-----BEGIN [A-Z0-9 ]*PRIVATE KEY-----/ },
+    { name: "GitHub Personal Access Token", regex: /ghp_[0-9a-zA-Z]{36}/ },
+    { name: "GitHub Fine-Grained Token", regex: /github_pat_[0-9a-zA-Z_]{82}/ },
+    { name: "Stripe Live Key", regex: /sk_live_[0-9a-zA-Z]{24}/ },
+    { name: "Slack Token", regex: /xox[baprs]-[0-9a-zA-Z]{10,48}/ }
+  ];
+
+  function getAllScanFiles(dir, fileList = []) {
+    if (!existsSync(dir)) return fileList;
+    for (const item of readdirSync(dir)) {
+      if (item === "node_modules" || item === ".git" || item === "package-lock.json") continue;
+      const full = path.join(dir, item);
+      try {
+        const s = statSync(full);
+        if (s.isDirectory()) {
+          getAllScanFiles(full, fileList);
+        } else {
+          const norm = full.replace(/\\/g, "/");
+          if (
+            !norm.endsWith(".png") &&
+            !norm.endsWith(".jpg") &&
+            !norm.endsWith(".ico") &&
+            !norm.endsWith(".pdf") &&
+            !norm.endsWith("scripts/repo-security-scan.mjs") &&
+            !norm.endsWith("scripts/gitmoney.mjs")
+          ) {
+            fileList.push(full);
+          }
+        }
+      } catch {}
+    }
+    return fileList;
+  }
+
+  const allScanFiles = getAllScanFiles(targetDir);
+  let configuredSecretMatches = 0;
+  for (const f of allScanFiles) {
+    try {
+      const content = readFileSync(f, "utf8");
+      for (const sp of SECRET_PATTERNS) {
+        if (sp.regex.test(content)) {
+          console.error(`  [FAIL] ${sp.name} pattern matched in ${path.relative(targetDir, f)}`);
+          configuredSecretMatches++;
+        }
+      }
+    } catch {}
+  }
+
+  console.log(`  CONFIGURED_SECRET_PATTERN_MATCHES = ${configuredSecretMatches}`);
+  if (configuredSecretMatches === 0) {
+    console.log(`  [OK] Downstream secret scan: 0 matches detected across ${allScanFiles.length} file(s).`);
+  } else {
+    failures += configuredSecretMatches;
   }
 
   // Summary Verdict

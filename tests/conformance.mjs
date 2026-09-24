@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdtempSync, writeFileSync, readFileSync, existsSync } from "fs";
+import { mkdtempSync, writeFileSync, readFileSync, existsSync, mkdirSync } from "fs";
 import path from "path";
 import os from "os";
 import { execSync } from "child_process";
@@ -8,7 +8,8 @@ import {
   parseSimpleYaml,
   validateManifest,
   validateIcmContract,
-  validateIcmReceipt
+  validateIcmReceipt,
+  validateRcTrialReceipt
 } from "../scripts/schema-validator.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -57,7 +58,7 @@ try {
 
   // Add a conformant JSON contract and receipt
   const contractDir = path.join(newProjectDir, "02_architecture", "contracts");
-  execSync(`mkdir -p "${contractDir}"`, { stdio: "ignore" });
+  mkdirSync(contractDir, { recursive: true });
   writeFileSync(
     path.join(contractDir, "TASK-001.json"),
     JSON.stringify({
@@ -73,7 +74,7 @@ try {
   );
 
   const receiptDir = path.join(newProjectDir, "03_build", "receipts");
-  execSync(`mkdir -p "${receiptDir}"`, { stdio: "ignore" });
+  mkdirSync(receiptDir, { recursive: true });
   writeFileSync(
     path.join(receiptDir, "RECEIPT-001.json"),
     JSON.stringify({
@@ -271,6 +272,24 @@ required_artifacts:
     opMismatchFailed = true;
   }
   assert(opMismatchFailed, "OPERATOR_VERSION_MISMATCH = FAIL");
+
+  // Positive 3H: INSTALLED_SPEC_VERSION_MATCH = PASS
+  assert(parsedValid.installed_spec_version === parsedValid.spec_version, "INSTALLED_SPEC_VERSION_MATCH = PASS");
+
+  // Negative 3I: INSTALLED_SPEC_VERSION_MISMATCH = FAIL
+  const specMismatchDir = mkdtempSync(path.join(os.tmpdir(), "gm-spec-mismatch-"));
+  execSync(`node "${GITMONEY_CLI}" init "${specMismatchDir}"`, { stdio: "ignore" });
+  const specManifestFile = path.join(specMismatchDir, "gitmoney.yaml");
+  let specManifestContent = readFileSync(specManifestFile, "utf8");
+  specManifestContent = specManifestContent.replace('installed_spec_version: "0.9.0-beta.2"', 'installed_spec_version: "0.8.0"');
+  writeFileSync(specManifestFile, specManifestContent, "utf8");
+  let specMismatchFailed = false;
+  try {
+    execSync("node scripts/gitmoney.mjs doctor", { cwd: specMismatchDir, stdio: "pipe" });
+  } catch {
+    specMismatchFailed = true;
+  }
+  assert(specMismatchFailed, "INSTALLED_SPEC_VERSION_MISMATCH = FAIL");
 } catch (e) {
   assert(false, `Test 3 encountered exception: ${e.message}`);
 }
@@ -345,6 +364,38 @@ try {
   };
   const missingGateRes = validateIcmReceipt(missingGate);
   assert(!missingGateRes.valid && missingGateRes.errors.some(e => e.includes("link_integrity")), "Rejects receipt missing required verification gate in schema");
+
+  // Positive 4F: RC Trial Receipt Validation
+  const validRcTrial = {
+    trial_id: "RC-01",
+    tester_type: "COLD_HUMAN",
+    prior_exposure: "NONE",
+    tag: "v0.9.0-beta.2",
+    tag_sha: "0d25a7b17b44c2f725ac49bccd409f6b59e3390d",
+    start_time: "2026-09-24T18:00:00Z",
+    end_time: "2026-09-24T18:45:00Z",
+    completed: true,
+    author_interventions: 0,
+    failed_commands: 0,
+    doc_ambiguities: 0,
+    boundary_violations: 0,
+    three_layer_comprehension: "YES",
+    valid_contract: true,
+    valid_receipt: true,
+    owner_authority_understood: true,
+    private_skill_required: false,
+    data_loss: false,
+    silent_overwrite: false,
+    regression_found: false,
+    status: "UNVERIFIED"
+  };
+  const rcValRes = validateRcTrialReceipt(validRcTrial);
+  assert(rcValRes.valid, "Valid RC Trial Receipt passes validateRcTrialReceipt");
+
+  // Negative 4G: Illegal Trial ID in RC Trial Receipt
+  const badRcTrial = { ...validRcTrial, trial_id: "RC-ILLEGAL" };
+  const badRcRes = validateRcTrialReceipt(badRcTrial);
+  assert(!badRcRes.valid && badRcRes.errors.some(e => e.includes("trial_id")), "Rejects illegal trial_id in RC Trial Receipt");
 } catch (e) {
   assert(false, `Test 4 encountered exception: ${e.message}`);
 }
@@ -409,6 +460,29 @@ try {
   assert(failedAsExpected, "Doctor rejects broken relative Markdown link");
 } catch (e) {
   assert(false, `Negative Test 5C encountered error: ${e.message}`);
+}
+
+// Negative 5D: Downstream Secret Pattern Rejection (Private Key in Receipt/Workspace)
+try {
+  const negDir = mkdtempSync(path.join(os.tmpdir(), "gm-neg-secret-"));
+  execSync(`node "${GITMONEY_CLI}" init "${negDir}"`, { stdio: "ignore" });
+  const dummyReceiptWithSecret = path.join(negDir, "leak-receipt.json");
+  writeFileSync(
+    dummyReceiptWithSecret,
+    JSON.stringify({
+      task_id: "TASK-LEAK",
+      secret_dump: "-----BEGIN " + "RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEA0...\n-----END " + "RSA PRIVATE KEY-----"
+    }, null, 2)
+  );
+  let failedAsExpected = false;
+  try {
+    execSync("node scripts/gitmoney.mjs doctor", { cwd: negDir, stdio: "pipe" });
+  } catch {
+    failedAsExpected = true;
+  }
+  assert(failedAsExpected, "Doctor rejects configured secret pattern matches (Private Key)");
+} catch (e) {
+  assert(false, `Negative Test 5D encountered error: ${e.message}`);
 }
 
 // ----------------------------------------------------
