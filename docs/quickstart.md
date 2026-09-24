@@ -31,6 +31,14 @@ Before beginning, ensure you have:
 > [!NOTE]
 > Private GitMoney skills are not required to adopt this quickstart. The public framework includes [`starter/.agents/skills/gitmoney-public-operator/`](../starter/.agents/skills/gitmoney-public-operator/SKILL.md), allowing any capable agent to operate the skeleton safely.
 
+## The Mental Model: 3 Rooms / 2 Artifacts / 3 Laws
+
+Before running commands, understand the operating model:
+
+- **3 Rooms:** Source Memory (private thinking room) -> Agent Workbench (bounded execution room) -> Official Record (GitHub institutional canon).
+- **2 Artifacts:** Contract before consequential work; Receipt after consequential work.
+- **3 Laws:** Capability != Authority; Context != Canon; Completion != Proof.
+
 ## Two Canonical Adoption Paths
 
 The GitMoney OS framework provides two explicit paths to adopt the open operating skeleton:

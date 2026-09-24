@@ -1,101 +1,109 @@
 # GitMoney OS Public Framework
 
-**An open-source public skeleton for governing AI-assisted business work.**
+**The open protocol for governed AI-assisted business work.**
 
-GitMoney OS is not a prompt pack, Notion template, AI automation recipe, GitHub tutorial, productivity system, or free calculator replacement. It is a plain-language operating pattern for turning source material, agent work, decisions, approvals, and receipts into inspectable business records.
+GitMoney OS is not an AI operating system, a prompt pack, a Notion template, an agent orchestration framework, or a GitHub tutorial kit. It is an open protocol for deciding how AI-assisted work becomes legitimate company knowledge.
 
-This repository is the open-source part of the GitMoney OS ecosystem. It exists so the industry has a shared skeleton for governed AI-assisted business work. Reuse rights for this repository are governed by the published [`LICENSE`](LICENSE).
+> **AI agents already have capabilities. Businesses still need a chain of command.**  
+> **The goal is not giving AI more memory. The goal is deciding which memory becomes truth.**
 
-The public framework defines the open standard. The private GitMoney OS, Mothership, Skills, CAC, Audit, Delivery, SaaS, and client implementation systems remain proprietary operating machinery. A company pays when it needs the advanced private methods applied to its own context, evidence, workflows, people, permissions, and commercial constraints.
+---
 
-Private GitMoney skills are not required to adopt the public framework. Any capable coding or workbench agent (such as Codex, Claude Code, or Antigravity) can operate the open skeleton using [`gitmoney-public-operator`](starter/.agents/skills/gitmoney-public-operator/SKILL.md).
+## The Transmissible Standard: 3 Rooms / 2 Artifacts / 3 Laws
 
-GitMoney OS is one implementation path within Hitsuyo Aku's Enterprise Systems Architecture practice. It helps a founder-led team put source material, decisions, staged work, and reviewable changes where the right people can find them. Each organization must validate its own workflows, controls, permissions, and outcomes.
+GitMoney OS compresses enterprise agent governance into three undeniable primitives:
 
-## Start here if you are a buyer
+### Three Rooms
+- **Source Memory (`templates/starter-vault/`):** Private thinking room. Rough notes, unverified drafts, and founder doctrine. Private by default.
+- **Agent Workbench (`starter/`):** Bounded execution room. Scaffolds, execution contracts, tools, and test suites. Where candidate work is shaped.
+- **Official Record (GitHub):** Institutional canon. Commits, pull requests, owner reviews, and verified receipts. Where work becomes legitimate company knowledge.
 
-If you are a founder, executive, operator, agency owner, or senior builder trying to understand why this matters, read [`START-HERE.md`](START-HERE.md) first.
+### Two Artifacts
+- **Contract before work:** [`templates/icm-execution-contract.md`](templates/icm-execution-contract.md) defines scope, owner, allowed inputs, and non-goals before execution begins.
+- **Receipt after work:** [`templates/icm-receipt.md`](templates/icm-receipt.md) records what changed, passed verification gates, remaining exceptions, and owner sign-off after execution completes.
 
-At a glance, you can determine:
+### Three Laws
+1. **Capability != Authority:** Possession of tool access does not equal permission to execute.
+2. **Context != Canon:** Background information provided to an agent does not equal binding company truth.
+3. **Completion != Proof:** Reporting a task complete does not prove an enterprise state transition occurred.
 
-- what expensive problem this framework addresses;
-- whether the wound is yours;
-- why GitMoney OS is the open public skeleton;
-- what architecture governs the skeleton;
-- what remains private;
-- what proof you can inspect;
-- what paid step comes next.
+---
 
-To inspect the architecture and evidence:
+## Where GitMoney Sits in the Agent Stack
 
-1. [`START-HERE.md`](START-HERE.md)
-2. [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md)
-3. [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md)
-4. [`docs/open-source-boundary.md`](docs/open-source-boundary.md)
-5. [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md)
-6. [`docs/proof-package/founder-verification-checklist.md`](docs/proof-package/founder-verification-checklist.md)
-7. [`CONSULTING.md`](CONSULTING.md)
+GitMoney OS does not compete with adjacent infrastructure. It sits beneath policy and above individual agent execution:
 
-The skeleton is open. The living machine is paid.
+- **MCP** answers: *What can the agent connect to?*
+- **AGENTS.md** answers: *What should the agent know?*
+- **Anthropic Agent Skills** answer: *How should the agent perform a procedure?*
+- **GitHub Spec Kit & Kiro** answer: *What should be built and how should work progress?*
+- **GitHub Agentic Workflows & OpenAI SDK** answer: *How does the agent execute?*
+- **Microsoft Entra Agent ID & Okta** answer: *Who is the agent and what can it access?*
+- **GitMoney OS answers:** *When does AI-assisted work become official company truth?*
 
-## The architecture it serves
-
-1. **Primal Ontological Loop (POL):** state what the business is, what it commits to, and how it learns from its own work.
-2. **Viable System Model (VSM):** identify operating functions, accountable owners, coordination, control, future intelligence, and policy authority.
-3. **Interpretable Context Methodology (ICM):** organize the context, stage contracts, artifacts, and handoffs an agent or person needs for a bounded job.
-4. **Identity Forensics Lab (IFL):** investigate evidence, design interventions, and compare results with the prior state.
-
-The public three-layer skeleton is governed by this deeper stack. Read [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md) for the operational map.
-
-**Interpretable Context Methodology is Jake Van Clief's work.** See the [original methodology repository](https://github.com/RinDig/Interpretable-Context-Methodology) and [paper](https://arxiv.org/html/2603.16021v2). Hitsuyo Aku used related files-in-folders logic before formally naming ICM as a component of this integrated architecture. Those earlier practices and this later adoption should not be mistaken for authorship of ICM.
-
-## A working repository pattern
-
+GitMoney owns the **Promotion Boundary**:
 ```text
-your-ai-office/
-├── AGENTS.md             # Task and behavior guidance
-├── 00_COCKPIT.md         # Owner decisions and current work
-├── 01_research/          # Sources, questions, and evidence
-├── 02_architecture/      # Decisions, interfaces, and plans
-├── 03_build/             # Bounded implementation work
-├── .agents/skills/       # Reusable instructions, where installed
-└── _generated/           # Draft outputs awaiting review
+PRIVATE THOUGHT -> CANDIDATE WORK -> EVIDENCE -> OWNER DECISION -> INSTITUTIONAL RECORD
 ```
 
-This is an example of context organization, not a security perimeter or a universal required folder tree. File placement can help an agent select relevant material. Technical access depends on separately configured repository permissions, tool capabilities, runtime authorization, and data boundaries. A written instruction can say what an agent should do; a separate control must limit what it can actually do.
+---
 
-## One bounded change
+## Three Core Principles
 
-For a consequential task, record:
+1. **Authority:** The agent can do it. That does not mean the agent is allowed to.
+2. **Institutional Memory:** Your AI does not need more memory. Your business needs a way to decide which memory becomes truth. Memory without authority is just organized context.
+3. **Proof:** Completion is not proof. AI does not remove organizational dysfunction. It industrializes it.
 
-1. **Source and problem:** what was observed, where it came from, and what remains uncertain.
-2. **Owner and authority:** who can decide, who can act, and which approval applies to this exact change.
-3. **Stage and handoff:** what input is allowed, what output is expected, and who receives it next.
-4. **Implementation and check:** the smallest relevant change, the checks appropriate to the repository, and what those checks actually cover.
-5. **Receipt:** the version, result, exceptions, rollback path, and next decision.
+---
 
-Git commits and pull requests can make changes inspectable. They do not make a claim true, a deployment safe, or client material publishable on their own. A separate reviewer and owner decision are needed where the work warrants them.
+## Two Canonical Adoption Paths
 
-## What to inspect
+```text
+PATH A: NEW PROJECT (Start Fresh)
+node scripts/gitmoney.mjs init <dir> [--with-vault]
+       |
+       v
+Complete AI Office scaffold + optional private Source Memory vault
 
-- [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md): how POL, VSM, ICM, and IFL govern the public three-layer skeleton.
-- [`docs/open-source-boundary.md`](docs/open-source-boundary.md): what is open source, what is not, and why.
-- [`docs/compatibility-policy.md`](docs/compatibility-policy.md): pre-1.0 compatibility law, version contracts, and migration expectations.
-- [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md): map founder dependency wounds to the public skeleton and paid path.
-- [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md): claim-to-evidence table.
-- [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md): what is public, what remains private, and why.
-- [`docs/templates/icm-execution-contract.md`](docs/templates/icm-execution-contract.md): bounded execution contract.
-- [`docs/templates/icm-receipt.md`](docs/templates/icm-receipt.md): receipt template for work after completion.
-- [`docs/templates/icm-conformance-checklist.md`](docs/templates/icm-conformance-checklist.md): verification checklist for bounded jobs.
-- [`docs/commercial-translation.md`](docs/commercial-translation.md): how the open skeleton connects to the paid ladder.
-- [`docs/quickstart.md`](docs/quickstart.md): step-by-step setup guide for your AI office.
-- [`templates/starter-vault/`](templates/starter-vault/): canonical public Source Memory starter scaffold (private thinking room).
-- [`starter/`](starter/): canonical public AI Office starter scaffold (agent workbench and repository tree).
-- [`starter/.agents/skills/gitmoney-public-operator/`](starter/.agents/skills/gitmoney-public-operator/SKILL.md): thin public operator skill for governing Source Memory, briefs, and GitHub records without private skills.
-- [`templates/`](templates/): copy-paste starter files (AGENTS.md, 00_COCKPIT.md, contracts, receipts).
-- [`examples/fictional-studio-co/`](examples/fictional-studio-co/): end-to-end worked example of an agency using the skeleton.
-- [`schemas/`](schemas/): Draft-07 JSON schemas for contracts, receipts, and decision records.
-- [`scripts/`](scripts/): public CLI validation tools for classification, link integrity, and copy rails.
+PATH B: EXISTING PROJECT (Adopt into Existing Repo)
+cd your-existing-project/
+node path/to/scripts/gitmoney.mjs init --here
+       |
+       v
+Adds AGENTS.md, 00_COCKPIT.md, gitmoney.yaml, and public operator non-destructively
+```
+
+Read [`docs/quickstart.md`](docs/quickstart.md) for the step-by-step adoption guide.
+
+---
+
+## The Underlying Architecture
+
+The public three-layer skeleton is governed by an integrated cybernetic stack:
+1. **Primal Ontological Loop (POL):** State what the business commits to and how it learns from its own work.
+2. **Viable System Model (VSM):** Define operating functions, accountable owners, coordination, control, intelligence, and policy authority.
+3. **Interpretable Context Methodology (ICM):** Organize context, stage contracts, artifacts, and handoffs for bounded jobs.
+4. **Identity Forensics Lab (IFL):** Investigate evidence, design interventions, and compare results with prior states.
+
+Read [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md) and [`docs/architecture/governed-ai-work-protocol-category.md`](docs/architecture/governed-ai-work-protocol-category.md) for the complete operational map.
+
+---
+
+## What to Inspect
+
+- [`START-HERE.md`](START-HERE.md): Founder orientation and the 96-Hour Founder Freeze Test.
+- [`docs/quickstart.md`](docs/quickstart.md): Step-by-step setup guide for your governed AI office.
+- [`docs/proof-package/release-integrity-beta2.md`](docs/proof-package/release-integrity-beta2.md): Cryptographic release baseline evidence.
+- [`docs/compatibility-policy.md`](docs/compatibility-policy.md): Pre-1.0 compatibility law and version contracts.
+- [`docs/open-source-boundary.md`](docs/open-source-boundary.md): What is open source, what is not, and why.
+- [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md): Proprietary machine boundaries.
+- [`templates/starter-vault/`](templates/starter-vault/): Canonical public Source Memory starter scaffold.
+- [`starter/`](starter/): Canonical public AI Office starter scaffold.
+- [`starter/.agents/skills/gitmoney-public-operator/`](starter/.agents/skills/gitmoney-public-operator/SKILL.md): Thin public operator skill.
+- [`schemas/`](schemas/): Draft-07 JSON schemas for contracts, receipts, and RC trials.
+- [`scripts/`](scripts/): Public CLI validation tools for doctor, security, and conformance.
+
+---
 
 ## Support Boundary & Scope
 
@@ -105,23 +113,29 @@ Community bug reports and framework defect reports are triaged on GitHub.
 - **Paid Engagement Scope:** Implementation consulting, proprietary architecture adaptation, private skill authoring, and forward-deployed installation.
 - **Consulting Inquiries:** For commercial architecture work, see [Work with Hitsuyo Aku](#work-with-hitsuyo-aku) below.
 
+---
+
 ## Work with Hitsuyo Aku
 
-The **$20,000 Identity Forensics Audit** is the main paid entry to the Enterprise Systems Architecture service. Qualified buyers can [review the Audit and apply directly](https://architect.hitsuyoaku.io/sovereign-brand-os-audit). A separate **$7,500 Architecture Sprint** addresses a narrower immediate architecture question; [ask about its current scope](https://architect.hitsuyoaku.io/contact?tier=v2-diagnose-architecture-sprint). Smaller Diagnostic scopes can be offered where a narrower investigation fits. Sovereign Reconstruction is a contracted build scoped after the Audit, starting at $50,000; ongoing governance is separately contracted.
+The public framework defines the open standard. When an enterprise requires private diagnostic and execution infrastructure:
 
-This framework is the open skeleton for learning how the architecture organizes governed AI-assisted business work. Reading or adopting it does not by itself establish a financial return, security guarantee, legal conclusion, investment claim, acquisition readiness, or client outcome.
+- **Identity Forensics Audit ($20,000):** Comprehensive forensic investigation of founder bottlenecks and operational memory leaks.
+- **Architecture Sprint ($7,500):** Narrow, bounded resolution of a single architectural question.
+- **Sovereign Reconstruction (from $50,000):** Contracted forward-deployed build scoped after diagnostic evidence.
+- **Signal & Dependency Governance ($10,000/mo):** Ongoing cybernetic governance and drift control.
+
+Review the [Commercial Translation](docs/commercial-translation.md) guide or apply directly at [https://architect.hitsuyoaku.io](https://architect.hitsuyoaku.io/sovereign-brand-os-audit).
 
 ```text
 ENTITY: GitMoney OS Public Framework
-LAYER: Open-source skeleton / public standard layer
+LAYER: Governed AI Work Protocol / Public Standard Layer
 OWNER: Hitsuyo Aku
-STATE: Active public framework
+STATE: Active public framework (v0.9.0-beta.2)
 PRIMARY_PAID_ENTRY: Identity Forensics Audit ($20,000)
 BOUNDED_PAID_DIAGNOSTIC: Architecture Sprint ($7,500)
 PAID_BUILD: Sovereign Reconstruction (FROM $50,000)
 ONGOING_GOVERNANCE: Signal & Dependency Governance ($10,000/mo)
 MERGE_AUTHORIZED: NO
 DEPLOYMENT_AUTHORIZED: NO
-EVIDENCE: Inspectable GitHub issues, pull requests, checks, and receipts
 LICENSE_BOUNDARY: Apache-2.0 applies strictly to GitMoneyOS/gitmoney-public-framework
 ```
