@@ -2,7 +2,7 @@
 
 If you are a founder, executive, operator, agency owner, or senior builder trying to understand why GitMoney OS matters, start here.
 
-GitMoney OS is not a prompt pack, Notion template, productivity system, GitHub tutorial, AI automation recipe, or replacement for the retired calculator. It is a public proof layer for governing AI-assisted business work.
+GitMoney OS is not a prompt pack, Notion template, productivity system, GitHub tutorial, AI automation recipe, or replacement for the retired calculator. It is an open-source public skeleton for governing AI-assisted business work.
 
 The public framework shows the operating skeleton. The paid work diagnoses and installs the private machinery behind it.
 
@@ -57,13 +57,13 @@ The public framework shows:
 - how approvals can become visible;
 - how proof can be separated from claims;
 - how public-safe artifacts can demonstrate the system without exposing the private machine;
-- how the free layer can educate the market without pretending to be the paid installation.
+- how the open layer can educate the market without pretending to be the paid installation.
 
 ## What this does not prove
 
 This repository does not prove legal, financial, security, investment, acquisition, SaaS, or client-outcome readiness.
 
-It does not give permission to copy, adapt, or redistribute the material unless a published license later grants those rights.
+Reuse rights are governed by the published [`LICENSE`](LICENSE).
 
 It does not replace a client-specific audit.
 
@@ -79,9 +79,10 @@ Use this path:
 
 1. Read this file.
 2. Inspect [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md).
-3. Open [`docs/proof-package/founder-verification-checklist.md`](docs/proof-package/founder-verification-checklist.md).
+3. Review [`docs/open-source-boundary.md`](docs/open-source-boundary.md).
 4. Review [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md).
-5. Read [`CONSULTING.md`](CONSULTING.md) if the wound is expensive enough to require help.
+5. Open [`docs/proof-package/founder-verification-checklist.md`](docs/proof-package/founder-verification-checklist.md).
+6. Read [`CONSULTING.md`](CONSULTING.md) if the wound is expensive enough to require help.
 
 If you only want the conceptual spine, read:
 
@@ -95,7 +96,7 @@ The public repository shows the skeleton. It does not expose the private operati
 
 The private layer includes client diagnosis protocols, CAC logic, private agent orchestration, Mothership governance, paid audit templates, implementation playbooks, proposal and SOW machinery, commercial decision systems, internal proof gates, and client-specific reconstruction work.
 
-That boundary matters. The public layer should be inspectable enough to trust and bounded enough to make clear that the paid system is not being given away for free.
+That boundary matters. The public layer should be open enough to become a standard and bounded enough to make clear that the paid system is not being given away for free.
 
 ## When to apply for paid work
 
@@ -118,6 +119,6 @@ A separate **$7,500 Architecture Sprint** can address a narrower immediate archi
 
 ## The blade
 
-The public framework is the proof layer.
+The public framework is the open skeleton.
 
 If you want the machinery behind it pointed at your business, that starts with an audit.
