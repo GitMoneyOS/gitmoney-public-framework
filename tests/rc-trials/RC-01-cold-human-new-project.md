@@ -4,7 +4,7 @@ type: "rc-evidence-kit"
 trial_id: "RC-01"
 status: "prepared-unverified"
 classification: "public"
-target_tag: "v0.9.0-beta.2"
+target_tag: "v0.9.0-beta.3"
 target_sha: "0d25a7b17b44c2f725ac49bccd409f6b59e3390d"
 ---
 
@@ -24,7 +24,7 @@ Evaluate whether an external software engineer or technical founder with zero pr
 
 ## ALLOWED_INPUTS
 
-- Public GitMoney OS repository at tag `v0.9.0-beta.2` (`0d25a7b17b44c2f725ac49bccd409f6b59e3390d`).
+- Public GitMoney OS repository at tag `v0.9.0-beta.3`.
 - `docs/quickstart.md`.
 - `START-HERE.md` and `README.md`.
 - CLI help: `node scripts/gitmoney.mjs --help`.
@@ -40,7 +40,7 @@ Evaluate whether an external software engineer or technical founder with zero pr
 ## JTBD
 
 Establish a fully functioning, self-contained AI Office from scratch:
-1. Clone the framework at tag `v0.9.0-beta.2`.
+1. Clone the framework at tag `v0.9.0-beta.3`.
 2. Run `node scripts/gitmoney.mjs init ../my-office --with-vault`.
 3. Verify the generated downstream directory is self-contained.
 4. Customize `AGENTS.md` boundaries and `00_COCKPIT.md` active priorities.
@@ -85,7 +85,7 @@ Record verbatim terminal logs, created contract file, created receipt file, git 
   "trial_id": "RC-01",
   "tester_type": "COLD_HUMAN",
   "prior_exposure": "NONE",
-  "tag": "v0.9.0-beta.2",
+  "tag": "v0.9.0-beta.3",
   "tag_sha": "0d25a7b17b44c2f725ac49bccd409f6b59e3390d",
   "start_time": "UNVERIFIED",
   "end_time": "UNVERIFIED",

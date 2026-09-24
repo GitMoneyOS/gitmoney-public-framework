@@ -1,6 +1,6 @@
 # GitMoney OS Public Framework Manifest
-spec_version: "0.9.0-beta.2"
-installed_spec_version: "0.9.0-beta.2"
+spec_version: "0.9.0-beta.3"
+installed_spec_version: "0.9.0-beta.3"
 owner: "Hitsuyo Aku"
 profile: "public-framework"
 source_memory: "templates/starter-vault"

@@ -182,9 +182,9 @@ try {
 // ----------------------------------------------------
 console.log("\n--- Test 3: Manifest Schema-Driven Draft-07 Validation Proof ---");
 try {
-  // Positive Manifest with 0.9.0-beta.2
-  const validManifestYaml = `spec_version: "0.9.0-beta.2"
-installed_spec_version: "0.9.0-beta.2"
+  // Positive Manifest with 0.9.0-beta.3
+  const validManifestYaml = `spec_version: "0.9.0-beta.3"
+installed_spec_version: "0.9.0-beta.3"
 owner: "Test Owner"
 profile: "ai-office"
 source_memory: "vault"
@@ -281,7 +281,7 @@ required_artifacts:
   execSync(`node "${GITMONEY_CLI}" init "${specMismatchDir}"`, { stdio: "ignore" });
   const specManifestFile = path.join(specMismatchDir, "gitmoney.yaml");
   let specManifestContent = readFileSync(specManifestFile, "utf8");
-  specManifestContent = specManifestContent.replace('installed_spec_version: "0.9.0-beta.2"', 'installed_spec_version: "0.8.0"');
+  specManifestContent = specManifestContent.replace('installed_spec_version: "0.9.0-beta.3"', 'installed_spec_version: "0.8.0"');
   writeFileSync(specManifestFile, specManifestContent, "utf8");
   let specMismatchFailed = false;
   try {
@@ -370,7 +370,7 @@ try {
     trial_id: "RC-01",
     tester_type: "COLD_HUMAN",
     prior_exposure: "NONE",
-    tag: "v0.9.0-beta.2",
+    tag: "v0.9.0-beta.3",
     tag_sha: "0d25a7b17b44c2f725ac49bccd409f6b59e3390d",
     start_time: "2026-09-24T18:00:00Z",
     end_time: "2026-09-24T18:45:00Z",

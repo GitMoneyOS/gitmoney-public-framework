@@ -4,7 +4,7 @@ type: "rc-evidence-kit"
 trial_id: "RC-04"
 status: "prepared-unverified"
 classification: "public"
-target_tag: "v0.9.0-beta.2"
+target_tag: "v0.9.0-beta.3"
 target_sha: "0d25a7b17b44c2f725ac49bccd409f6b59e3390d"
 ---
 
@@ -12,7 +12,7 @@ target_sha: "0d25a7b17b44c2f725ac49bccd409f6b59e3390d"
 
 ## TRIAL_BRIEF
 
-Evaluate whether the hardened `v0.9.0-beta.2` build preserves 100% of pilot value and operational utility established during early pilot deployments (e.g. Fictional Studio Co. and pilot student packs) while resolving all identified structural and verification defects.
+Evaluate whether the hardened `v0.9.0-beta.3` build preserves 100% of pilot value and operational utility established during early pilot deployments (e.g. Fictional Studio Co. and pilot student packs) while resolving all identified structural and verification defects.
 
 ## START_STATE
 
@@ -30,7 +30,7 @@ Evaluate whether the hardened `v0.9.0-beta.2` build preserves 100% of pilot valu
 
 ## JTBD
 
-1. Update or audit the pilot workspace using `v0.9.0-beta.2` tooling.
+1. Update or audit the pilot workspace using `v0.9.0-beta.3` tooling.
 2. Run `node scripts/gitmoney.mjs doctor` in pilot workspace.
 3. Verify all pilot workflows (briefing, bounded work, receipt generation) remain operable.
 4. Verify no regression in readability, plain-language comprehension, or founder utility.
@@ -67,7 +67,7 @@ Pilot workspace audit log, doctor output, diff comparison against pilot baseline
   "trial_id": "RC-04",
   "tester_type": "PILOT_COHORT_HUMAN",
   "prior_exposure": "PILOT_ADOPTER",
-  "tag": "v0.9.0-beta.2",
+  "tag": "v0.9.0-beta.3",
   "tag_sha": "0d25a7b17b44c2f725ac49bccd409f6b59e3390d",
   "start_time": "UNVERIFIED",
   "end_time": "UNVERIFIED",

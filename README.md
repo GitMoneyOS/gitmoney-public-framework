@@ -130,7 +130,7 @@ Review the [Commercial Translation](docs/commercial-translation.md) guide or app
 ENTITY: GitMoney OS Public Framework
 LAYER: Governed AI Work Protocol / Public Standard Layer
 OWNER: Hitsuyo Aku
-STATE: Active public framework (v0.9.0-beta.2)
+STATE: Active public framework (v0.9.0-beta.3)
 PRIMARY_PAID_ENTRY: Identity Forensics Audit ($20,000)
 BOUNDED_PAID_DIAGNOSTIC: Architecture Sprint ($7,500)
 PAID_BUILD: Sovereign Reconstruction (FROM $50,000)

@@ -4,7 +4,7 @@ type: "rc-evidence-kit"
 trial_id: "RC-02"
 status: "prepared-unverified"
 classification: "public"
-target_tag: "v0.9.0-beta.2"
+target_tag: "v0.9.0-beta.3"
 target_sha: "0d25a7b17b44c2f725ac49bccd409f6b59e3390d"
 ---
 
@@ -21,7 +21,7 @@ Evaluate whether an external developer adopting GitMoney OS into a pre-existing 
 
 ## ALLOWED_INPUTS
 
-- Public GitMoney OS framework at tag `v0.9.0-beta.2`.
+- Public GitMoney OS framework at tag `v0.9.0-beta.3`.
 - `docs/quickstart.md` (Path B section).
 - Downstream CLI command: `node path/to/scripts/gitmoney.mjs init --here`.
 
@@ -70,7 +70,7 @@ Git diff of host repo before and after adoption, terminal output of collision pr
   "trial_id": "RC-02",
   "tester_type": "COLD_HUMAN",
   "prior_exposure": "NONE",
-  "tag": "v0.9.0-beta.2",
+  "tag": "v0.9.0-beta.3",
   "tag_sha": "0d25a7b17b44c2f725ac49bccd409f6b59e3390d",
   "start_time": "UNVERIFIED",
   "end_time": "UNVERIFIED",

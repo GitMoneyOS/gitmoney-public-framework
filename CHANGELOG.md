@@ -2,6 +2,17 @@
 
 All notable GitMoney changes for this repo will be tracked here.
 
+## 0.9.0-beta.3 - 2026-09-24
+
+### Beta.3 Release: Pre-RC Gap Closure, Windows Portability & Governed AI Work Protocol
+- **Windows Portability Hardening:** Normalized path handling across `scripts/gitmoney.mjs`, `scripts/repo-security-scan.mjs`, and conformance tests to POSIX standards; added `windows-latest` runner to GitHub Actions CI matrix.
+- **OpenSSF Scorecard Remediation:** Resolved default branch scanning failure by bumping Scorecard action to `v2.4.4` and enabling default-branch push events with zero-token public analysis.
+- **Downstream Secret Guard:** Added sensitive path and token pattern detection into `starter/scripts/gitmoney.mjs` and adopter doctor audits.
+- **RC Trial Evidence Machinery:** Created Draft-07 machine receipt schema (`schemas/rc-trial-receipt.schema.json`) and four standardized trial kits (`tests/rc-trials/RC-01` through `RC-04`) for empirical validation.
+- **Support & Commercial Boundaries:** Documented clear open-source versus paid commercial support boundaries in `SECURITY.md` and `docs/quickstart.md`.
+- **Governed AI Work Protocol Positioning:** Reframed framework entry point around 3 Rooms (Source Memory, Agent Workbench, Official Record), 2 Artifacts (Action Envelope Contract, Execution Receipt), and 3 Laws (Capability != Authority, Context != Canon, Completion != Proof) with the 96-Hour Founder Freeze Test.
+- **Version Promotion:** Promoted framework specification from `0.9.0-beta.2` to `0.9.0-beta.3`.
+
 ## 0.9.0-beta.2 - 2026-09-24
 
 ### Beta.2 Release: Hardened Public Operational Skeleton
