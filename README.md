@@ -1,10 +1,35 @@
 # GitMoney OS Public Framework
 
-**A plain-language pattern for governing AI-assisted business work in GitHub.**
+**A public proof layer for governing AI-assisted business work.**
+
+GitMoney OS is not a prompt pack, Notion template, AI automation recipe, GitHub tutorial, productivity system, or free calculator replacement. It is a plain-language operating pattern for turning source material, agent work, decisions, and approvals into inspectable business records.
 
 This repository is free to read. A public repository can show how the framework is organized; it does not by itself grant permission to copy, adapt, or redistribute the material. Consult a published license for those rights if one is added.
 
 GitMoney OS is one implementation path within Hitsuyo Aku's Enterprise Systems Architecture practice. It helps a founder-led team put source material, decisions, staged work, and reviewable changes where the right people can find them. The framework has been developed through Hitsuyo Aku's own operating system and bounded pilot work. Each new organization must validate its own workflows, security controls, permissions, and outcomes.
+
+## Start here if you are a buyer
+
+If you are a founder, executive, operator, agency owner, or senior builder trying to understand why this matters, read [`START-HERE.md`](START-HERE.md) first.
+
+Within 90 seconds, you should know:
+
+- what expensive problem this framework addresses;
+- whether the wound is yours;
+- why GitMoney OS is the free proof layer;
+- what remains private;
+- what proof you can inspect;
+- what paid step comes next.
+
+Within 10 minutes, inspect:
+
+1. [`START-HERE.md`](START-HERE.md)
+2. [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md)
+3. [`docs/proof-package/founder-verification-checklist.md`](docs/proof-package/founder-verification-checklist.md)
+4. [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md)
+5. [`CONSULTING.md`](CONSULTING.md)
+
+The free layer is the proof package. The paid work is the private operating transformation.
 
 ## The architecture it serves
 
@@ -41,6 +66,16 @@ For a consequential task, record:
 5. **Receipt:** the version, result, exceptions, rollback path, and next decision.
 
 Git commits and pull requests can make changes inspectable. They do not make a claim true, a deployment safe, or client material publishable on their own. A separate reviewer and owner decision are needed where the work warrants them.
+
+## What to inspect
+
+- [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md): map founder dependency wounds to the public proof and paid path.
+- [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md): claim-to-evidence table.
+- [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md): what is public, what remains private, and why.
+- [`docs/templates/icm-execution-contract.md`](docs/templates/icm-execution-contract.md): bounded execution contract.
+- [`docs/templates/icm-receipt.md`](docs/templates/icm-receipt.md): receipt template for work after completion.
+- [`docs/templates/icm-conformance-checklist.md`](docs/templates/icm-conformance-checklist.md): verification checklist for bounded jobs.
+- [`docs/commercial-translation.md`](docs/commercial-translation.md): how the public proof layer connects to the paid ladder.
 
 ## Work with Hitsuyo Aku
 
