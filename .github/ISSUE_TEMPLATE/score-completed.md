@@ -1,16 +1,18 @@
 ---
 name: Exit-Ready Score Completed
-about: File your completed Exit-Ready Score as a receipt (no private data)
+about: Share an intentionally public or fictional score example only
 title: '[Score] __/40'
 labels: signal:score-completed
 type: vault-memory
 owner: Hitsuyo Aku
-status: active-internal
-classification: internal
+status: active-public
+classification: public
 ---
 ## Total Score
 
 `__/40`
+
+This public issue is optional. Keep real business scores, risks, access details, and evidence in a private record. Use this template only for a fictional example or information you are authorized to make public.
 
 ## Band
 
@@ -27,10 +29,11 @@ Mostly observed / mostly inferred
 
 ## Top Risk In Plain English
 
-## Next Step You Chose
+## Learning Action You Chose
 
-The worksheet routes each band to one next step. Which one did you pick?
+The worksheet does not assign a service or next step from a score. What did you decide to inspect or improve?
 
 ## Data Boundary Check
 
-- [ ] No client names, credentials, private URLs, screenshots, or confidential details are included in this issue.
+- [ ] This is fictional or intentionally public, and I am authorized to share it.
+- [ ] No client names, credentials, private URLs, access details, screenshots, or confidential business risks are included.

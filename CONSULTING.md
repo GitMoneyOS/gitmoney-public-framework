@@ -1,140 +1,36 @@
----
-title: "GitMoney OS Commercial Offer Ladder & Advisory Services"
-type: "commercial-doctrine"
-owner: "Hitsuyo Aku"
-status: "active-commercial"
-classification: "public"
-standard: "IFL-COMM-V2-2026-09-01"
-margin_floor: ">= 70%"
-created: "2026-09-22"
-updated: "2026-09-22"
----
+# Enterprise Systems Architecture with Hitsuyo Aku
 
-# GitMoney OS Commercial Services & Advisory Ladder
+GitMoney OS is a public way to inspect part of Hitsuyo Aku's Enterprise Systems Architecture practice. The paid work addresses a different question: where does a founder-led business depend on one person's memory, judgment, or intervention, and what architecture would let the work operate with clearer ownership and evidence?
 
-**Standard:** `IFL-COMM-V2-2026-09-01`  
-**Operating Authority:** Hitsuyo Aku (System 5)  
-**Economic Invariant:** Target Gross Margin >= 70% Across All Tiers  
+Hitsuyo Aku works as an **Enterprise Systems Architect and Forward-Deployed Business Engineer**. Identity Forensics Lab is the investigative and intervention practice behind the engagement. GitMoney OS is one possible implementation surface, not a mandatory platform for every client.
 
----
+## The main offer: Identity Forensics Audit
 
-## 1. The Core Commercial Thesis
+**$20,000. Qualified buyers may apply directly.**
 
-GitMoney OS does not sell software subscriptions to empty tools, generic prompt bundles, or theoretical courses.
+The Audit examines a defined business workflow or operating constraint. It identifies the relevant identity and value commitments, viable-system functions and decision owners, context and handoff stages, separately enforced permissions, available evidence, and the next intervention that the records support. The engagement closes with a decision-grade architecture and an explicit list of remaining uncertainties. Scope, schedule, source access, confidentiality, payment terms, and acceptance criteria are set in the client agreement.
 
-We diagnose and eliminate the **Enterprise Liability Void**:
-1. When autonomous AI agents produce faulty code, breach data boundaries, or hallucinate business logic, the company absorbs 100% of the legal and operational damages.
-2. Founder-led businesses suffer from catastrophic founder dependency: every routine decision, client delivery handoff, and quality check halts the moment the founder steps away.
-3. Complex agent frameworks (LangChain, CrewAI, AutoGen) collapse in production due to context rot, hidden state, and synchronization debt.
+[Review the Audit and apply](https://architect.hitsuyoaku.io/sovereign-brand-os-audit).
 
-We turn GitHub into your company's **Cryptographic Court of Record** through **Interpretable Context Methodology (ICM: arXiv:2603.16021v2)** and the **Skills-as-Architecture Law**:
-- Architecture is never taught through syntax lectures; it is enforced through agent skill boundaries and folder structure.
-- Non-technical operators govern autonomous agents with military precision using human-in-the-loop Pull Requests and immutable commit receipts.
+## A separate bounded option: Architecture Sprint
 
----
+The **$7,500 Architecture Sprint** is a bounded paid diagnostic for one immediate architecture question. It is a separate path, not a required purchase before the Audit. Current availability, duration, payment terms, and deliverables are confirmed in the specific offer and contract before a buyer commits.
 
-## 2. Canonical Commercial Offer Ladder
+[Ask about the Architecture Sprint](https://architect.hitsuyoaku.io/contact?tier=v2-diagnose-architecture-sprint).
 
-All client engagements adhere strictly to `IFL-COMM-V2-2026-09-01`:
+## Other scopes
 
-```text
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ FOUNDER DEPENDENCY DIAGNOSTIC                                                          │
-│ - Single Vector ($1,500): Single dependency vector deep-dive, FDBR score, memo         │
-│ - Full Executive ($3,500): Full 6-vector diagnostic assessment and 96-hour freeze test │
-│ - 1-Day Sprint ($7,500): 1-day executive diagnostic sprint, full operational mapping   │
-├────────────────────────────────────────────────────────────────────────────────────────┤
-│ IDENTITY FORENSICS AUDIT ($20,000)                                                     │
-│ Scope: Comprehensive Viable System Model (VSM) S1-S5 and S3* audit, liability matrix   │
-├────────────────────────────────────────────────────────────────────────────────────────┤
-│ SOVEREIGN RECONSTRUCTION (FROM $50,000 ENTRY FLOOR)                                    │
-│ Scope: Full custom systems transformation, 5-layer ICM structure, production software  │
-├────────────────────────────────────────────────────────────────────────────────────────┤
-│ SIGNAL & DEPENDENCY GOVERNANCE ($10,000 / MONTH)                                       │
-│ Scope: Standing monthly cybernetic governance, drift monitoring, skill updates, reviews│
-└────────────────────────────────────────────────────────────────────────────────────────┘
-```
+- **Focused Diagnostic, $1,500:** a narrower investigation when the question does not require the full Audit.
+- **Executive Diagnostic, $3,500:** a broader but still bounded diagnostic scope.
+- **Sovereign Reconstruction, starting at $50,000:** a contracted build scoped after the Audit defines the work, owners, interfaces, controls, and acceptance evidence.
+- **Signal & Dependency Governance, $10,000 per month:** separately contracted ongoing review and adaptation where needed.
 
----
+No diagnostic is a prerequisite to a qualified buyer applying for the Audit. Exact timing, payment, and acceptance terms are set in the written agreement.
 
-### Tier 1: Founder Dependency Diagnostic ($1,500 / $3,500 / $7,500)
+## How the architecture works
 
-The diagnostic front door quantifies operational vulnerability and exposes single points of failure.
+**Primal Ontological Loop → Viable System Model → Interpretable Context Methodology → Identity Forensics Lab.** POL makes identity and value commitments explicit. VSM identifies operating functions and authority. ICM structures context, artifacts, stages, and handoffs. IFL investigates evidence, guides an intervention, and compares the result with the baseline. [Jake Van Clief created Interpretable Context Methodology](https://github.com/RinDig/Interpretable-Context-Methodology); Hitsuyo Aku's earlier files-in-folders practices and later application of ICM have a distinct lineage.
 
-#### Variant A: Single Vector ($1,500)
-- **Scope:** Deep-dive examination into a single operational dependency vector (e.g. sales fulfillment, client onboarding, or code deployment).
-- **Target Turnaround:** 48 hours from intake session.
-- **Deliverables:**
-  - Quantified Founder Dependency Bottleneck Rate (FDBR) for the target vector.
-  - 96-Hour Freeze simulation results.
-  - Actionable executive remediation memo.
+Folders and written agent instructions can improve context selection. They do not enforce technical permissions. Repository access, tool grants, sandboxing, application authorization, review rules, and client-specific approval are separate controls. A workflow's value is evaluated from its actual operation and evidence, not assumed from its diagram.
 
-#### Variant B: Full Executive ($3,500)
-- **Scope:** Full 6-vector diagnostic assessment across authority, memory, logic, verification, tool routing, and customer handoff.
-- **Target Turnaround:** 5 business days.
-- **Deliverables:**
-  - Complete multi-vector FDBR scorecard.
-  - Context Rot audit of scattered documentation across Slack, Google Drive, and local hard drives.
-  - Comprehensive structural remediation roadmap.
-
-#### Variant C: 1-Day Sprint ($7,500)
-- **Scope:** High-velocity, 1-day executive diagnostic sprint conducted with founder and leadership team.
-- **Target Turnaround:** Same-day delivery + 24-hour final documentation synthesis.
-- **Deliverables:**
-  - Live operational stress-testing and bottleneck mapping.
-  - Formal Architecture Decision Record (ADR) draft.
-  - Priority migration matrix for converting fragile manual workflows into governed GitHub repositories.
-
----
-
-### Tier 2: Identity Forensics Audit ($20,000)
-
-**Format:** Comprehensive forensic discovery and systems audit across your operational organization.  
-**Target Turnaround:** 10 business days.  
-**Deliverables:**
-- **Viable System Model (VSM) S1-S5 & S3* Inspection:** Full organizational audit inspecting primary operations (S1), coordination (S2), operational control (S3), System 3* forensic audit channel, forward-looking intelligence (S4), and executive policy (S5).
-- **Agent Liability Matrix:** Identification of all unmonitored AI touchpoints, API credentials leaks, and unverified autonomous mutations.
-- **Three Mutation Invariants Evaluation:** Comprehensive assessment of workflows against the Atomic, Inspectable, and Reversible invariants.
-- **Formal Audit Report & Cryptographic Court Blueprint:** Decision-grade audit findings and architectural specification for full systems reconstruction.
-
----
-
-### Tier 3: Sovereign Reconstruction (FROM $50,000 Entry Floor)
-
-**Format:** Forward-deployed engineering engagement. Turnkey systems transformation and production deployment.  
-**Price Floor Law:** "FROM $50,000" is an entry floor, NEVER an upper ceiling. Enterprise transformations scale according to scope and organizational complexity.  
-**Deliverables:**
-- **5-Layer ICM Organization Scaffolding:** Complete deployment of Layers 0 through 4 into your company GitHub organization.
-- **Layer 0 Identity & Authority Configuration:** Hardened `AGENTS.md` and `00_COCKPIT.md` establishing executive authority and operational boundaries.
-- **Layer 3 Skill Factory Installation:** Authoring and mounting of verified engineering, marketing, and operational skills inside `.agents/skills/`.
-- **Three Mutation Invariants Enforcement:** Configuration of branch protection rules, GitHub Actions automated verification gates, and machine-only write lanes (`_generated/**`).
-- **Production Software & Data Systems:** Custom autonomous agent infrastructure, private data connectors, automated compliance loops, and production application builds.
-- **Executive & Team Enablement:** Plain-English training for leadership and operators on the 60-second PR review workflow.
-
----
-
-### Tier 4: Signal & Dependency Governance ($10,000 / Month Retainer)
-
-**Format:** Standing monthly cybernetic governance retainer.  
-**Capacity:** Strictly capped at 5 concurrent client partnerships per quarter.  
-**Deliverables:**
-- **Weekly Agent Drift Monitoring:** Auditing agent mutations to ensure zero unauthorized writes outside designated lanes.
-- **Monthly Skill Library Updates:** Hardening Layer 3 skills against emerging edge cases and API deprecations.
-- **Executive Court of Record Reviews:** Monthly review of merged pull requests, verified proof receipts, and operational velocity.
-- **Quarterly Architecture Annealing:** Systemic updates to the company context hierarchy to support new product lines or organizational changes.
-
----
-
-## 3. How to Engage
-
-We do not accept client engagements without preliminary diagnostic verification.
-
-1. **Step 1: Schedule Your Diagnostic**  
-   Apply for your Founder Dependency Diagnostic ($1,500 / $3,500 / $7,500):  
-   `https://architect.hitsuyoaku.io/contact?tier=v2-diagnose`
-
-2. **Step 2: Review Your Scorecard**  
-   Receive your FDBR score, context rot assessment, and executive remediation memo.
-
-3. **Step 3: Systems Transformation**  
-   Apply 100% of your diagnostic fee toward full Sovereign Reconstruction upon mutual qualification.
+[Read the GitMoney OS Public Framework](https://github.com/GitMoneyOS/gitmoney-public-framework) as the free resource. Public viewing does not establish reuse rights; check the repository's published license if one is added.

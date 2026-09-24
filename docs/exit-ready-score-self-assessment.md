@@ -11,18 +11,18 @@ tags:
 
 # Exit-Ready Score Self-Assessment
 
-Status: draft public-safe worksheet
+Status: optional public framework exercise; scoring model not outcome-validated
 Classification: Public
 Owner: Red Pillar and Hitsuyo Aku, under KnowTheLedge
 Update cadence: monthly, or after a material workflow, access, repo, or AI-agent change
 Approval path: issue and pull request before this becomes official public doctrine
-Related offer: AI Office Audit
+Related service: Enterprise Systems Architecture. This worksheet does not qualify a buyer or assign an offer.
 
 ## Purpose
 
 Help a founder see whether important business knowledge is easy to find, approve, protect, hand off, and improve.
 
-Plain-English translation: this is not a valuation report. It is a visibility check. The score shows where the business record is clear and where important work still depends on memory, scattered tools, or unapproved AI output.
+Plain-English translation: this is not a valuation report. It is a visibility check. The score helps a team discuss where its records are clear and where work still depends on memory, scattered tools, or unapproved AI output. Its weights and bands are a working exercise, not a validated prediction of business value or risk.
 
 ## What This Creates
 
@@ -66,23 +66,23 @@ Use observed evidence first. If you are guessing, write "inferred" and lower the
 | 31-36 | Strong operating shell. The system is becoming handoff-readable, with specific gaps left to close. |
 | 37-40 | Highly inspectable. The business record is unusually clear, but still needs ongoing review. |
 
-## What Your Score Routes To
+## What Your Score Helps You Review
 
-The score is a diagnostic, not a pitch. Each band has exactly one next step:
+The score is a discussion prompt, not a diagnostic result or an automatic sales route. Use the weakest dimension and its underlying evidence to choose a next action. These examples are illustrative; a score alone cannot determine which service, if any, a business needs.
 
-| Total | Next Step | Why |
+| Total | Possible review question | Example next action |
 | ---: | --- | --- |
-| 0-10 | AI Work Governance Signal Audit | Before building anything, name the control failures already costing you. A short diagnostic conversation, not a project. |
-| 11-20 | AI Office Audit | The gaps are recoverable. A full audit maps your workflows, risks, and a 30-day roadmap. |
-| 21-30 | GitOps Setup Sprint | The core assets are visible. A 2-4 week buildout gives them a governed home. |
-| 31-36 | Fractional GitOps Operator | The shell is strong. Monthly governance keeps it strong and closes the named gaps. |
-| 37-40 | Keep the cadence | Run the monthly Governor Review yourself. If your story would help other founders, consider a public-safe case file. |
+| 0-10 | Which important decision or record cannot be found? | Name one owner and locate the source material before adding software. |
+| 11-20 | Which handoff relies on someone's memory? | Write the current steps and identify where approval or evidence is missing. |
+| 21-30 | Which documented workflow still lacks a reliable owner or control? | Compare the written process with actual access, review, and delivery behavior. |
+| 31-36 | Which exception would break the current handoff? | Review one recent change and its receipt; record the failure path. |
+| 37-40 | Does the evidence still match current operation? | Recheck ownership, permissions, and outcomes after a material change. |
 
-Offer details live in [CONSULTING.md](../CONSULTING.md).
+For paid help, the [Identity Forensics Audit](../CONSULTING.md) is the main $20,000 application route for a qualified enterprise buyer. A separate $7,500 Architecture Sprint addresses a narrower immediate architecture question. Neither path is assigned by this worksheet's score; scope and terms require a separate review.
 
 ## File Your Receipt
 
-When you finish scoring, open an issue with the **Exit-Ready Score Completed** template in this repository. Your score, band, and top risk - no private details. That receipt is your first entry in the same evidence habit this whole framework teaches.
+Keep a completed score and its evidence in a private business record. The public **Exit-Ready Score Completed** issue template is only for an intentionally public, fictional, or fully sanitized example. Do not file a real business risk, access detail, client fact, or confidential score in a public issue. Sharing is optional and is not required to use the framework or apply for a service.
 
 ## The Eight Dimensions
 
@@ -172,4 +172,3 @@ Keep private or client-owned details out of this worksheet before sharing it pub
 - The next three actions are small enough to start.
 - The first official asset has an owner, approval path, evidence field, reuse path, and lifecycle.
 - Any private, client-owned, restricted, or secret material has been removed or summarized safely.
-

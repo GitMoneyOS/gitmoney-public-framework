@@ -5,8 +5,8 @@ title: '[Risk] '
 labels: risk:ip
 type: vault-memory
 owner: Hitsuyo Aku
-status: active-internal
-classification: internal
+status: active-public
+classification: public
 ---
 ## Summary
 
@@ -32,4 +32,8 @@ What is observed, and what is inferred?
 
 ## Done When
 
-- [ ] 
+- [ ]
+
+## Data Boundary Check
+
+- [ ] No client names, credentials, private URLs, or confidential business details are included in this issue.

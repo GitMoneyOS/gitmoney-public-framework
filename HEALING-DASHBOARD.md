@@ -2,14 +2,20 @@
 title: "HEALING-DASHBOARD"
 type: "vault-memory"
 owner: "Hitsuyo Aku"
-status: "active-internal"
-classification: "internal"
+status: "archival-historical-log"
+classification: "historical-record"
 approval_path: "Hitsuyo Aku"
 tags:
   - vault/memory
+  - archive/historical-log
 ---
 
 # GitMoneyOS Real-Time Healing Dashboard
+
+> [!NOTE]
+> **ARCHIVAL / HISTORICAL LOG**
+> **PAST OPERATING STATE - NOT CURRENT COMMERCIAL OR GOVERNANCE DOCTRINE**
+> This document preserves the July 3, 2026 self-healing run record verbatim as historical operating evidence. For current commercial doctrine and active offer architecture, refer to `CONSULTING.md`. For current governance rules, refer to `AGENTS.md`.
 
 Status: draft public-safe dashboard
 Classification: Public
