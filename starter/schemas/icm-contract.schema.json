@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ICMExecutionContract",
+  "description": "Schema for validating Interpretable Context Methodology task execution contracts",
+  "type": "object",
+  "required": [
+    "task_id",
+    "title",
+    "job_to_be_done",
+    "business_reason",
+    "owner",
+    "executor",
+    "allowed_inputs",
+    "expected_outputs"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]+-[0-9]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5
+    },
+    "job_to_be_done": {
+      "type": "string",
+      "minLength": 10
+    },
+    "business_reason": {
+      "type": "string",
+      "minLength": 10
+    },
+    "owner": {
+      "type": "string"
+    },
+    "executor": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "allowed_inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "forbidden_boundaries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": true
+}

@@ -8,7 +8,7 @@ operator_version: "1.0.0"
 schema_version: "Draft-07"
 required_artifacts:
   - "AGENTS.md"
-  - "00_COCKPIT.md"
+  - "templates/00_COCKPIT.md"
   - "starter/.agents/skills/gitmoney-public-operator/SKILL.md"
   - "templates/icm-execution-contract.md"
   - "templates/icm-receipt.md"

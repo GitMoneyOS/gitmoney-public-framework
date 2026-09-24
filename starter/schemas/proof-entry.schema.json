@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProofEntry",
+  "description": "Schema for validating proof package claim-to-evidence entries",
+  "type": "object",
+  "required": [
+    "claim",
+    "evidence",
+    "proof_level",
+    "what_this_proves",
+    "what_this_does_not_prove",
+    "paid_implication"
+  ],
+  "properties": {
+    "claim": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "proof_level": {
+      "type": "string",
+      "enum": [
+        "Concept Proof",
+        "Operating Proof",
+        "Quality Proof",
+        "Boundary Proof",
+        "Architecture Proof",
+        "Remediation Proof",
+        "Commercial Proof"
+      ]
+    },
+    "what_this_proves": {
+      "type": "string"
+    },
+    "what_this_does_not_prove": {
+      "type": "string"
+    },
+    "paid_implication": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
