@@ -2,8 +2,8 @@
 title: "README"
 type: "vault-memory"
 owner: "Hitsuyo Aku"
-status: "active-internal"
-classification: "internal"
+status: "active-public"
+classification: "public"
 approval_path: "Hitsuyo Aku"
 tags:
   - vault/memory
@@ -25,7 +25,7 @@ Layer classification: GitHub record.
 
 ## What This Is
 
-GitMoney Obsidian Office is the Week 2 unlock. It is not an Obsidian template. It is the missing staging ground between raw student thought and the official business record.
+GitMoney Obsidian Office is the Week 2 milestone. It is not an Obsidian template. It is the missing staging ground between raw student thought and the official business record.
 
 The three layers, in plain English:
 

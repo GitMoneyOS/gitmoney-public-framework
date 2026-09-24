@@ -1,12 +1,13 @@
 ---
 title: "onboarding-curriculum-path"
-type: "vault-memory"
+type: "public-proof"
 owner: "Hitsuyo Aku"
-status: "active-internal"
-classification: "internal"
+status: "active-public"
+classification: "public"
 approval_path: "Hitsuyo Aku"
 tags:
-  - vault/memory
+  - gitmoney/public-framework
+  - gitmoney/proof
 ---
 
 # Onboarding Curriculum Path

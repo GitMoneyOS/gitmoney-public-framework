@@ -3,10 +3,10 @@ name: Self-Heal Check Run
 about: File the receipt for a governance self-heal check on your own vault or workspace
 title: '[Self-Heal] '
 labels: signal:self-heal-run
-type: vault-memory
+type: public-proof
 owner: Hitsuyo Aku
-status: active-internal
-classification: internal
+status: active-public
+classification: public
 ---
 ## Gaps Found
 
