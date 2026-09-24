@@ -41,6 +41,8 @@ It is useful because it turns vague concern into an inspectable record:
 
 This is not legal, financial, security, investment, or acquisition advice. A high score does not prove that a company is ready for diligence, a transaction, or a security review. It only shows that the business has stronger evidence, ownership, and handoff discipline than it had before.
 
+The score does not qualify a buyer, assign an offer, or tell anyone to buy a service. That kind of fake diagnostic theater can stay in the internet swamp where it belongs.
+
 ## How To Score
 
 Score each dimension from `0` to `5`.
@@ -77,6 +79,21 @@ The score is a discussion prompt, not a diagnostic result or an automatic sales 
 | 21-30 | Which documented workflow still lacks a reliable owner or control? | Compare the written process with actual access, review, and delivery behavior. |
 | 31-36 | Which exception would break the current handoff? | Review one recent change and its receipt; record the failure path. |
 | 37-40 | Does the evidence still match current operation? | Recheck ownership, permissions, and outcomes after a material change. |
+
+## What your score should make you ask
+
+Use the worksheet to ask sharper questions:
+
+- Which business function still depends on founder memory?
+- Which approval path is implied, fake, or missing?
+- Which AI workflow cannot prove completion?
+- Which handoff would fail if the founder disappeared for two weeks?
+- Which asset has no owner, lifecycle, or reuse path?
+- Which exception would reveal that the process only works when one person is watching it?
+- Which piece of context is too important to live in chat history?
+- Which record would a new operator need before they could act without guessing?
+
+If the answer reveals a costly operating constraint, review the paid paths. The score alone does not assign one.
 
 For paid help, the [Identity Forensics Audit](../CONSULTING.md) is the main $20,000 application route for a qualified enterprise buyer. A separate $7,500 Architecture Sprint addresses a narrower immediate architecture question. Neither path is assigned by this worksheet's score; scope and terms require a separate review.
 
