@@ -14,11 +14,11 @@ tags:
 
 ## Purpose
 
-Show the public operating skeleton without exposing the private machinery.
+Show the open public skeleton without exposing the private machinery.
 
-GitMoney OS is the free public proof layer. It is not the whole system, not the paid implementation, and not a permission slip to copy the architecture.
+GitMoney OS Public Framework is the open-source skeleton and public standard layer. It is not the whole system, not the paid implementation, and not the advanced private method.
 
-The public repository should create trust through inspection. It should not leak client data, private doctrine, proprietary delivery machinery, credentials, or commercial control logic.
+The public repository should create trust through inspection and adoption. It should not leak client data, private doctrine, proprietary delivery machinery, credentials, CAC logic, or commercial control systems.
 
 ## What is public
 
@@ -29,6 +29,7 @@ The public layer may include:
 - plain-English GitOps explanations;
 - safe issue and pull request patterns;
 - public templates and checklists;
+- public ICM-inspired execution contracts;
 - self-audit summaries;
 - claim boundaries;
 - evidence examples;
@@ -37,7 +38,7 @@ The public layer may include:
 - source attribution and lineage notes;
 - examples that are fictional, sanitized, or explicitly public.
 
-The public layer exists so a serious buyer can inspect the operating thesis before paying.
+The public layer exists so the industry can study, reuse, and improve the skeleton under the published license.
 
 ## What is not public
 
@@ -58,7 +59,8 @@ The private machine includes:
 - access maps;
 - credentials, secrets, or tokens;
 - internal operating ledgers;
-- privileged context used for delivery.
+- privileged context used for delivery;
+- private skill source bytes.
 
 Those materials are not withheld because the public layer is weak. They are withheld because serious infrastructure has boundaries. Shocking development: not every organ belongs in the showroom.
 
@@ -66,9 +68,9 @@ Those materials are not withheld because the public layer is weak. They are with
 
 The public framework has three jobs:
 
-1. educate the market;
+1. teach the standard;
 2. prove the operating logic;
-3. qualify serious buyers.
+3. create a shared language for serious buyers and builders.
 
 The paid system has different jobs:
 
@@ -80,9 +82,9 @@ The paid system has different jobs:
 
 Confusing those layers weakens both of them.
 
-If the free layer exposes too little, buyers cannot trust the work.
+If the open layer exposes too little, the category cannot learn.
 
-If the free layer exposes too much, the paid machine becomes undisciplined theater.
+If the open layer exposes too much, the paid machine becomes undisciplined theater.
 
 The boundary is the product logic.
 
@@ -115,7 +117,7 @@ A public-safe example must not include:
 
 The buyer should feel three things:
 
-1. the public layer is unusually inspectable;
+1. the public skeleton is unusually inspectable;
 2. the private layer is materially more powerful;
 3. their own business probably lacks this level of record, boundary, and proof discipline.
 
@@ -123,11 +125,11 @@ That is the commercial function of the framework.
 
 Not hype. Not a toy. Not a lead magnet with a little bow on it.
 
-Proof outside. Machinery inside.
+Skeleton outside. Machinery inside.
 
 ## Paid boundary
 
-Reading GitMoney OS can help a founder understand the pattern.
+Using GitMoney OS can help a founder understand the pattern.
 
 It cannot diagnose their company.
 
@@ -139,7 +141,7 @@ The **$7,500 Architecture Sprint** exists for narrower architecture questions.
 
 ## Boundary rule
 
-Show the skeleton.
+Open the skeleton.
 
 Protect the nervous system.
 
