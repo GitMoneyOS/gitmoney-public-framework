@@ -1,0 +1,17 @@
+# GitMoney OS Public Framework Manifest
+spec_version: "1.0.0"
+installed_spec_version: "1.0.0"
+owner: "Hitsuyo Aku"
+profile: "public-framework"
+source_memory: "templates/starter-vault"
+operator_version: "1.0.0"
+schema_version: "Draft-07"
+required_artifacts:
+  - "AGENTS.md"
+  - "00_COCKPIT.md"
+  - "starter/.agents/skills/gitmoney-public-operator/SKILL.md"
+  - "templates/icm-execution-contract.md"
+  - "templates/icm-receipt.md"
+  - "schemas/icm-contract.schema.json"
+  - "schemas/icm-receipt.schema.json"
+  - "scripts/gitmoney.mjs"

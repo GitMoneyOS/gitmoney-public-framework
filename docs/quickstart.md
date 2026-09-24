@@ -31,44 +31,62 @@ Before beginning, ensure you have:
 > [!NOTE]
 > Private GitMoney skills are not required to adopt this quickstart. The public framework includes [`starter/.agents/skills/gitmoney-public-operator/`](../starter/.agents/skills/gitmoney-public-operator/SKILL.md), allowing any capable agent to operate the skeleton safely.
 
-## Optional Pre-Step: Start with Source Memory
+## Two Canonical Adoption Paths
 
-If you need a private thinking and knowledge layer before creating your GitHub AI Office, begin with the **Canonical Starter Vault**:
+The GitMoney OS framework provides two explicit paths to adopt the open operating skeleton:
 
 ```text
-OPTIONAL PRIVATE SOURCE MEMORY
-templates/starter-vault/
+PATH A: NEW PROJECT (Start Fresh)
+node scripts/gitmoney.mjs init <dir> [--with-vault]
+       |
+       v
+Complete AI Office scaffold + optional private Source Memory vault
 
-        |
-        v (promotion intent)
-
-GOVERNED AI OFFICE
-starter/
-
-        |
-        v (human approval & receipts)
-
-OFFICIAL BUSINESS RECORD
-GitHub
+PATH B: EXISTING PROJECT (Adopt into Existing Repo)
+cd your-existing-project/
+node path/to/scripts/gitmoney.mjs init --here
+       |
+       v
+Adds AGENTS.md, 00_COCKPIT.md, gitmoney.yaml, and public operator
 ```
 
-Copy [`../templates/starter-vault/`](../templates/starter-vault/) into Obsidian or your local markdown editor to establish your private Source Memory room. Use it to capture rough ideas, notes, and raw doctrine without making them public.
+---
 
-When a note matures to `ready-to-promote`, transition into Step 1 below to build its governed AI Office record.
+### Path A: New Project (Start Fresh)
 
-## Step 1: Copy the Starter Scaffold
-
-Clone or download the bare-metal starter directory from this repository:
+Use this path if you are building an AI Office from scratch:
 
 ```bash
 # Clone the public framework
 git clone https://github.com/GitMoneyOS/gitmoney-public-framework.git
+cd gitmoney-public-framework
 
-# Copy the starter folder tree to your new project repository
-cp -R gitmoney-public-framework/starter/ my-ai-office/
-cd my-ai-office/
-git init
+# Initialize a new project directory with optional Source Memory vault
+node scripts/gitmoney.mjs init ../my-ai-office --with-vault
+cd ../my-ai-office
 ```
+
+This scaffolds the full three-room architecture:
+- `vault/`: Obsidian-compatible private thinking room (Source Memory).
+- `.`: Governed AI Office workbench repository.
+
+---
+
+### Path B: Existing Project (Adopt in Existing Repo)
+
+Use this path if you already have an active code or documentation repository:
+
+```bash
+# From within your existing repository root
+node /path/to/gitmoney-public-framework/scripts/gitmoney.mjs init --here
+```
+
+This non-destructively adds:
+- `AGENTS.md` (agent rules and boundary contract)
+- `00_COCKPIT.md` (owner decision dashboard and WIP limit ledger)
+- `gitmoney.yaml` (pinned project manifest)
+- `.agents/skills/gitmoney-public-operator/SKILL.md` (thin public operator)
+- `01_research/`, `02_architecture/`, `03_build/`, `_generated/` (governed lanes)
 
 The resulting folder structure organizes work into distinct rooms:
 
@@ -141,16 +159,19 @@ git commit -m "feat(workflow): implement task 001 with verified receipt"
 git push origin task/001-initial-workflow
 ```
 
-## Step 6: Run Local Verification Scripts
+## Step 6: Run Repository Doctor
 
-Validate that your repository maintains clean boundaries before merging:
+Run the aggregated governance doctor to verify structure, classification, link integrity, and manifest health:
 
 ```bash
-# Run the public validation tools from the scripts/ directory
-node scripts/classification-guard.mjs
-node scripts/copy-rail-checker.mjs
-node scripts/link-checker.mjs
+# Run the unified GitMoney doctor
+node scripts/gitmoney.mjs doctor
 ```
+
+Individual verification tools can also be run directly:
+- `node scripts/classification-guard.mjs`: Verifies zero restricted classification tags.
+- `node scripts/copy-rail-checker.mjs`: Verifies zero em dashes and zero buzzwords.
+- `node scripts/link-checker.mjs`: Verifies all relative links resolve.
 
 ## Summary Checklist
 

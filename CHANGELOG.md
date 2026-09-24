@@ -2,6 +2,17 @@
 
 All notable GitMoney changes for this repo will be tracked here.
 
+## 1.0.0 - 2026-09-24
+
+### MVP Convergence & Stable Release Candidate
+- **Unified Entrypoint:** Added `scripts/gitmoney.mjs` with `init <dir> [--with-vault]`, `init --here`, and `doctor`.
+- **Framework Manifest:** Pinned `SPEC_VERSION` (1.0.0) and created root `gitmoney.yaml` configuration manifest with Draft-07 schema validation.
+- **Canonical Scaffolds:** Finalized `templates/starter-vault/` (Source Memory private room) and `starter/` (AI Office agent workbench).
+- **Public Operator Skill:** Introduced `gitmoney-public-operator` at `starter/.agents/skills/gitmoney-public-operator/SKILL.md` to operate the open skeleton with zero private skill dependencies.
+- **Boundary Hardening:** Replaced student reference corpus with public protocol stubs; purged proprietary heuristics, scoring, and orchestration logic.
+- **Security Policy:** Added `SECURITY.md` defining supported versions, private reporting channels, and zero-credential invariants.
+- **Two Canonical Adoption Paths:** Unified documentation in `docs/quickstart.md` into New Project and Existing Project paths.
+
 ## 2026-07-13
 
 - Added Week 0 student preparation for the GitBuilt lesson: docs/students/ai-office-source-pack/week-0-agentic-systems-first-principles.md.
