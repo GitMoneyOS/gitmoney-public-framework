@@ -1,12 +1,14 @@
 # GitMoney OS Public Framework
 
-**A public proof layer for governing AI-assisted business work.**
+**An open-source public skeleton for governing AI-assisted business work.**
 
-GitMoney OS is not a prompt pack, Notion template, AI automation recipe, GitHub tutorial, productivity system, or free calculator replacement. It is a plain-language operating pattern for turning source material, agent work, decisions, and approvals into inspectable business records.
+GitMoney OS is not a prompt pack, Notion template, AI automation recipe, GitHub tutorial, productivity system, or free calculator replacement. It is a plain-language operating pattern for turning source material, agent work, decisions, approvals, and receipts into inspectable business records.
 
-This repository is free to read. A public repository can show how the framework is organized; it does not by itself grant permission to copy, adapt, or redistribute the material. Consult a published license for those rights if one is added.
+This repository is the open-source part of the GitMoney OS ecosystem. It exists so the industry has a shared skeleton for governed AI-assisted business work. Reuse rights for this repository are governed by the published [`LICENSE`](LICENSE).
 
-GitMoney OS is one implementation path within Hitsuyo Aku's Enterprise Systems Architecture practice. It helps a founder-led team put source material, decisions, staged work, and reviewable changes where the right people can find them. The framework has been developed through Hitsuyo Aku's own operating system and bounded pilot work. Each new organization must validate its own workflows, security controls, permissions, and outcomes.
+The public framework defines the open standard. The private GitMoney OS, Mothership, Skills, CAC, Audit, Delivery, SaaS, and client implementation systems remain proprietary operating machinery. A company pays when it needs the advanced private methods applied to its own context, evidence, workflows, people, permissions, and commercial constraints.
+
+GitMoney OS is one implementation path within Hitsuyo Aku's Enterprise Systems Architecture practice. It helps a founder-led team put source material, decisions, staged work, and reviewable changes where the right people can find them. Each organization must validate its own workflows, controls, permissions, and outcomes.
 
 ## Start here if you are a buyer
 
@@ -16,7 +18,7 @@ Within 90 seconds, you should know:
 
 - what expensive problem this framework addresses;
 - whether the wound is yours;
-- why GitMoney OS is the free proof layer;
+- why GitMoney OS is the open public skeleton;
 - what remains private;
 - what proof you can inspect;
 - what paid step comes next.
@@ -25,11 +27,12 @@ Within 10 minutes, inspect:
 
 1. [`START-HERE.md`](START-HERE.md)
 2. [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md)
-3. [`docs/proof-package/founder-verification-checklist.md`](docs/proof-package/founder-verification-checklist.md)
+3. [`docs/open-source-boundary.md`](docs/open-source-boundary.md)
 4. [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md)
-5. [`CONSULTING.md`](CONSULTING.md)
+5. [`docs/proof-package/founder-verification-checklist.md`](docs/proof-package/founder-verification-checklist.md)
+6. [`CONSULTING.md`](CONSULTING.md)
 
-The free layer is the proof package. The paid work is the private operating transformation.
+The skeleton is open. The living machine is paid.
 
 ## The architecture it serves
 
@@ -53,7 +56,7 @@ your-ai-office/
 └── _generated/           # Draft outputs awaiting review
 ```
 
-This is an **example of context organization**, not a security perimeter or a universal required folder tree. File placement can help an agent select relevant material. Technical access depends on separately configured repository permissions, tool capabilities, runtime authorization, and data boundaries. A written instruction can say what an agent should do; a separate control must limit what it can actually do.
+This is an example of context organization, not a security perimeter or a universal required folder tree. File placement can help an agent select relevant material. Technical access depends on separately configured repository permissions, tool capabilities, runtime authorization, and data boundaries. A written instruction can say what an agent should do; a separate control must limit what it can actually do.
 
 ## One bounded change
 
@@ -69,16 +72,17 @@ Git commits and pull requests can make changes inspectable. They do not make a c
 
 ## What to inspect
 
-- [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md): map founder dependency wounds to the public proof and paid path.
+- [`docs/open-source-boundary.md`](docs/open-source-boundary.md): what is open source, what is not, and why.
+- [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md): map founder dependency wounds to the public skeleton and paid path.
 - [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md): claim-to-evidence table.
 - [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md): what is public, what remains private, and why.
 - [`docs/templates/icm-execution-contract.md`](docs/templates/icm-execution-contract.md): bounded execution contract.
 - [`docs/templates/icm-receipt.md`](docs/templates/icm-receipt.md): receipt template for work after completion.
 - [`docs/templates/icm-conformance-checklist.md`](docs/templates/icm-conformance-checklist.md): verification checklist for bounded jobs.
-- [`docs/commercial-translation.md`](docs/commercial-translation.md): how the public proof layer connects to the paid ladder.
+- [`docs/commercial-translation.md`](docs/commercial-translation.md): how the public skeleton connects to the paid ladder.
 
 ## Work with Hitsuyo Aku
 
 The **$20,000 Identity Forensics Audit** is the main paid entry to the Enterprise Systems Architecture service. Qualified buyers can [review the Audit and apply directly](https://architect.hitsuyoaku.io/sovereign-brand-os-audit). A separate **$7,500 Architecture Sprint** addresses a narrower immediate architecture question; [ask about its current scope](https://architect.hitsuyoaku.io/contact?tier=v2-diagnose-architecture-sprint). Smaller Diagnostic scopes can be offered where a narrower investigation fits. Sovereign Reconstruction is a contracted build scoped after the Audit, starting at $50,000; ongoing governance is separately contracted.
 
-This framework is the free resource for learning how the architecture organizes work. Reading or adopting it does not by itself establish a financial return or security guarantee.
+This open-source framework teaches the standard. The paid work applies private judgment, diagnosis, implementation, integration, governance, and adaptation to a specific business.
