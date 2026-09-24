@@ -28,6 +28,31 @@ Before beginning, ensure you have:
 2. A local terminal with `git` and `node` (v18+) installed.
 3. Your preferred AI coding assistant or workbench (Codex, Antigravity 2, or Claude Code).
 
+## Optional Pre-Step: Start with Source Memory
+
+If you need a private thinking and knowledge layer before creating your GitHub AI Office, begin with the **Canonical Starter Vault**:
+
+```text
+OPTIONAL PRIVATE SOURCE MEMORY
+templates/starter-vault/
+
+        |
+        v (promotion intent)
+
+GOVERNED AI OFFICE
+starter/
+
+        |
+        v (human approval & receipts)
+
+OFFICIAL BUSINESS RECORD
+GitHub
+```
+
+Copy [`../templates/starter-vault/`](../templates/starter-vault/) into Obsidian or your local markdown editor to establish your private Source Memory room. Use it to capture rough ideas, notes, and raw doctrine without making them public.
+
+When a note matures to `ready-to-promote`, transition into Step 1 below to build its governed AI Office record.
+
 ## Step 1: Copy the Starter Scaffold
 
 Clone or download the bare-metal starter directory from this repository:

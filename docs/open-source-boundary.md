@@ -24,13 +24,14 @@ The private GitMoney OS, Mothership, Skills, CAC, Audit, Delivery, SaaS, and cli
 
 The open-source public framework encompasses:
 
-- the three-layer operating skeleton (Source Memory, Agent Workbench, GitHub Record);
-- public ICM execution templates and receipts;
-- public architecture stack documentation (POL, VSM, ICM, IFL);
-- claim-to-evidence proof indices;
-- founder dependency diagnostic maps;
-- exit-ready self-assessment worksheets;
-- pull request and issue governance templates.
+- Canonical Starter Vault (`templates/starter-vault/`): the Source Memory starter scaffold;
+- AI Office Starter Scaffold (`starter/`): the bare-metal agent workbench and repository tree;
+- ICM Execution Templates (`templates/`): reusable task contracts, receipts, and checklists;
+- Public JSON Schemas (`schemas/`): machine-validatable contract definitions;
+- Public Validation Scripts (`scripts/`): classification, copy rail, link, and receipt tooling;
+- Quickstart Guide (`docs/quickstart.md`): the 20-minute adoption path;
+- Proof Package (`docs/proof-package/`): claim-to-evidence indices and quality bars;
+- Architecture Documentation (`docs/architecture/`): theoretical foundations (POL, VSM, ICM, IFL).
 
 These assets are open source so founders, operators, and agents can inspect, adopt, and build upon a shared standard.
 

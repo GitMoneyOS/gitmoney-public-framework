@@ -47,7 +47,7 @@ You are probably not in the right place if you only want a cute tool, a free wor
 GitMoney OS proves a plain-language operating pattern:
 
 ```text
-Source Memory -> Agent Workbench -> GitHub Record
+Source Memory (templates/starter-vault/) -> Agent Workbench (starter/) -> GitHub Record (GitHub)
 ```
 
 The founder's rough thinking, business doctrine, and source material need a place to live before they become official. AI-assisted work needs a bounded workbench where tasks, context, and outputs can be shaped into reviewable artifacts. The business record needs a place where approved work becomes inspectable through issues, pull requests, commits, checks, and receipts.
@@ -89,7 +89,8 @@ It does not mean a public framework can diagnose your company without access to 
 Use this path:
 
 1. Read this file.
-2. Inspect [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md).
+2. Inspect [`templates/starter-vault/`](templates/starter-vault/) (Source Memory) and [`starter/`](starter/) (AI Office).
+3. Inspect [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md).
 3. Inspect [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md).
 4. Review [`docs/open-source-boundary.md`](docs/open-source-boundary.md).
 5. Review [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md).
