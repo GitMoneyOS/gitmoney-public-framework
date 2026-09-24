@@ -50,10 +50,19 @@ Source Memory -> Agent Workbench -> GitHub Record
 
 The founder's rough thinking, business doctrine, and source material need a place to live before they become official. AI-assisted work needs a bounded workbench where tasks, context, and outputs can be shaped into reviewable artifacts. The business record needs a place where approved work becomes inspectable through issues, pull requests, commits, checks, and receipts.
 
+That three-layer skeleton is governed by a deeper stack:
+
+```text
+POL -> VSM -> ICM -> IFL -> GitMoney OS
+```
+
+Read [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md) to see how the open skeleton is powered by identity commitments, viability functions, bounded context, and forensic diagnosis.
+
 The public framework shows:
 
 - how business knowledge can become a record;
 - how AI-assisted work can be bounded;
+- how POL, VSM, ICM, and IFL govern the skeleton;
 - how approvals can become visible;
 - how proof can be separated from claims;
 - how public-safe artifacts can demonstrate the system without exposing the private machine;
@@ -78,17 +87,19 @@ It does not mean a public framework can diagnose your company without access to 
 Use this path:
 
 1. Read this file.
-2. Inspect [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md).
-3. Review [`docs/open-source-boundary.md`](docs/open-source-boundary.md).
-4. Review [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md).
-5. Open [`docs/proof-package/founder-verification-checklist.md`](docs/proof-package/founder-verification-checklist.md).
-6. Read [`CONSULTING.md`](CONSULTING.md) if the wound is expensive enough to require help.
+2. Inspect [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md).
+3. Inspect [`docs/proof-package/proof-index.md`](docs/proof-package/proof-index.md).
+4. Review [`docs/open-source-boundary.md`](docs/open-source-boundary.md).
+5. Review [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md).
+6. Open [`docs/proof-package/founder-verification-checklist.md`](docs/proof-package/founder-verification-checklist.md).
+7. Read [`CONSULTING.md`](CONSULTING.md) if the wound is expensive enough to require help.
 
 If you only want the conceptual spine, read:
 
 1. [`README.md`](README.md)
-2. [`docs/proof-package/README.md`](docs/proof-package/README.md)
-3. [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md)
+2. [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-icm-ifl-stack.md)
+3. [`docs/proof-package/README.md`](docs/proof-package/README.md)
+4. [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md)
 
 ## What remains behind the scenes
 
