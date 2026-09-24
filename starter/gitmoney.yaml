@@ -1,6 +1,6 @@
 # GitMoney AI Office Project Manifest
-spec_version: "0.9.0-beta.1"
-installed_spec_version: "0.9.0-beta.1"
+spec_version: "0.9.0-beta.2"
+installed_spec_version: "0.9.0-beta.2"
 owner: "Project Owner"
 profile: "ai-office"
 source_memory: "none"

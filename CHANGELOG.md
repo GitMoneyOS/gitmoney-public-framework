@@ -2,6 +2,17 @@
 
 All notable GitMoney changes for this repo will be tracked here.
 
+## 0.9.0-beta.2 - 2026-09-24
+
+### Beta.2 Release: Hardened Public Operational Skeleton
+- **System 5 Owner Gate Resolved:** Historical publication risk formally dispositioned as `OWNER_ACCEPTED` (Decision DEC-001) with zero destructive git history rewrites.
+- **Node.js Compatibility Matrix:** CI evidence gate expanded to test Node 18, 20, and 22 across doctor and conformance test suite.
+- **Executable Version Coherence:** Canonicalized schema versions (`0.1.0`) and operator version (`0.1.0`); doctor enforces version coherence on every run with negative test fixtures.
+- **Pre-1.0 Compatibility Law:** Added `docs/compatibility-policy.md` defining 0.x breaking change contract, version property decoupling, and 1.0+ SemVer commitments.
+- **Deterministic Tracked-File Security Scan:** Added `scripts/repo-security-scan.mjs` auditing all 207 tracked files in CI for zero private sources, 0 configured secret pattern matches, and zero classification leaks.
+- **Telemetry Calibration:** Removed unsupported aspirational time claims across all documentation surfaces.
+- **Version Promotion:** Promoted framework specification from `0.9.0-beta.1` to `0.9.0-beta.2`.
+
 ## 0.9.0-beta.1 - 2026-09-24
 
 ### Beta Release: Feature-Complete Operational Skeleton

@@ -181,9 +181,9 @@ try {
 // ----------------------------------------------------
 console.log("\n--- Test 3: Manifest Schema-Driven Draft-07 Validation Proof ---");
 try {
-  // Positive Manifest with 0.9.0-beta.1
-  const validManifestYaml = `spec_version: "0.9.0-beta.1"
-installed_spec_version: "0.9.0-beta.1"
+  // Positive Manifest with 0.9.0-beta.2
+  const validManifestYaml = `spec_version: "0.9.0-beta.2"
+installed_spec_version: "0.9.0-beta.2"
 owner: "Test Owner"
 profile: "ai-office"
 source_memory: "vault"
