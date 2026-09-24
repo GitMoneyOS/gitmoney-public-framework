@@ -102,12 +102,12 @@ for (const file of trackedFiles) {
 
 console.log("--------------------------------------------------");
 console.log("HEAD_PRIVATE_SOURCE_EXPOSURE = " + privateExposures);
-console.log("HEAD_SECRET_EXPOSURE = " + secretExposures);
+console.log("CONFIGURED_SECRET_PATTERN_MATCHES = " + secretExposures);
 console.log("RESTRICTED_CLASSIFICATION_LEAKS = " + classificationViolations);
 console.log("--------------------------------------------------");
 
 if (violations === 0) {
-  console.log("✅ [SECURITY SCAN PASSED] Zero private sources, zero secrets, zero classification leaks.");
+  console.log("✅ [SECURITY SCAN PASSED] Zero private sources, zero configured secret pattern matches, zero classification leaks.");
   console.log("==================================================");
   process.exit(0);
 } else {
