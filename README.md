@@ -85,6 +85,12 @@ Git commits and pull requests can make changes inspectable. They do not make a c
 - [`docs/templates/icm-receipt.md`](docs/templates/icm-receipt.md): receipt template for work after completion.
 - [`docs/templates/icm-conformance-checklist.md`](docs/templates/icm-conformance-checklist.md): verification checklist for bounded jobs.
 - [`docs/commercial-translation.md`](docs/commercial-translation.md): how the open skeleton connects to the paid ladder.
+- [`docs/quickstart.md`](docs/quickstart.md): set up your AI office in 20 minutes.
+- [`starter/`](starter/): ready-to-fork bare-metal AI office folder tree.
+- [`templates/`](templates/): copy-paste starter files (AGENTS.md, 00_COCKPIT.md, contracts, receipts).
+- [`examples/fictional-studio-co/`](examples/fictional-studio-co/): end-to-end worked example of an agency using the skeleton.
+- [`schemas/`](schemas/): Draft-07 JSON schemas for contracts, receipts, and decision records.
+- [`scripts/`](scripts/): public CLI validation tools for classification, link integrity, and copy rails.
 
 ## Work with Hitsuyo Aku
 

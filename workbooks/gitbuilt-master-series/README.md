@@ -1,9 +1,9 @@
 ---
 id: GUIDE-GITBUILT-WORKBOOKS-001
 type: guide
-status: active-internal
+status: active-public
 owner: "@Hitsuyo"
-classification: internal
+classification: public
 created: 2026-07-26
 updated: 2026-07-26
 ---
