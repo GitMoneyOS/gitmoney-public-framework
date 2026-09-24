@@ -6,8 +6,8 @@ status: "active-public"
 classification: "public"
 approval_path: "issue-and-pull-request"
 tags:
+  - gitmoney/public-framework
   - gitmoney/architecture
-  - public/framework
   - pol
   - vsm
   - icm
@@ -32,7 +32,11 @@ That skeleton is not arbitrary. It is the public operating body for a deeper met
 POL -> VSM -> ICM -> IFL -> GitMoney OS
 ```
 
-Plain English:
+## Plain-English Job
+
+Explain how four deep systems principles turn a pile of markdown files and GitHub repositories into a governed operating nervous system, and clarify why the public skeleton is open while the living machine is paid.
+
+Plain English summary:
 
 - **POL** names what the business is, what it commits to, and how it learns.
 - **VSM** identifies what the business must coordinate, control, govern, and sense to remain viable.
@@ -58,32 +62,26 @@ Public-safe examples:
 
 - founder thinking;
 - source doctrine;
-- customer notes;
-- operating memory;
-- decision fragments;
-- strategic observations;
-- workflow evidence.
+- market observations;
+- rough notes;
+- drafts before review.
 
-The public framework may describe the pattern.
-
-It must not expose raw vault notes, client notes, private doctrine, commercial ledgers, internal C-suite databases, CAC records, or private Mothership operating details.
+Source Memory provides the context for work. It is private, messy, and creative. It must not be treated as official company truth until it has an owner, approval, evidence, reuse path, and lifecycle.
 
 ### 2. Agent Workbench
 
-The Agent Workbench is where work becomes bounded and reviewable.
+The Agent Workbench is where AI-assisted work gets shaped into reviewable artifacts.
 
 Public-safe examples:
 
-- task briefs;
+- task definition;
+- context assembly;
 - agent instructions;
-- context packets;
-- execution contracts;
-- draft artifacts;
-- verification checklists;
-- receipts;
-- handoff notes.
+- draft pull requests;
+- lint and check runs;
+- execution receipts.
 
-The public framework may show reusable skeletons for bounded work.
+The public framework shows how to bound agent tasks with clear inputs, outputs, rules, and handoffs.
 
 It must not expose private skills, client skills, CAC operator skills, proposal or SOW machinery, outreach systems, or private execution recipes.
 
@@ -102,7 +100,7 @@ Public-safe examples:
 - changelogs;
 - receipts.
 
-The public framework may show how GitHub primitives become business records.
+The public framework shows how GitHub primitives become business records.
 
 It must not claim that GitHub alone is a security boundary, legal system, compliance system, or automatic truth machine.
 
@@ -124,19 +122,8 @@ POL turns scattered material into a living commitment loop.
 Inside the public skeleton:
 
 - POL gives Source Memory meaning.
-- POL prevents the repo from becoming a pile of files.
+- POL prevents the repository from becoming a pile of files.
 - POL names the business commitments that future work must respect.
-
-Private application:
-
-- interpret founder doctrine;
-- detect broken commitments;
-- compare public claims with actual operating behavior;
-- decide what should enter the official record.
-
-Paid implication:
-
-The Identity Forensics Audit identifies where the company says one thing, behaves another way, or lacks the evidence to prove either.
 
 ### VSM: Viable System Model
 
@@ -155,18 +142,6 @@ Inside the public skeleton:
 - VSM maps which work belongs in Source Memory, Agent Workbench, and GitHub Record.
 - VSM identifies owners, coordination loops, control points, intelligence flows, and final policy authority.
 - VSM prevents AI work from becoming fast chaos with better formatting.
-
-Private application:
-
-- diagnose founder dependency;
-- map missing owners;
-- detect weak coordination;
-- find broken control loops;
-- identify intelligence and policy gaps.
-
-Paid implication:
-
-The Identity Forensics Audit and Sovereign Reconstruction use VSM to decide what must be repaired, installed, governed, or left alone.
 
 ### ICM: Interpretable Context Methodology
 
@@ -190,19 +165,7 @@ Inside the public skeleton:
 
 Attribution:
 
-Interpretable Context Methodology is Jake Van Clief's work. GitMoney OS uses ICM as part of a broader public framework and private implementation architecture. Hitsuyo Aku's earlier files-in-folders practices and later application of ICM should not be confused with authorship of ICM.
-
-Private application:
-
-- write client-specific execution contracts;
-- build company-specific skill boundaries;
-- define handoff lanes;
-- separate draft work from approved records;
-- stop agents from treating every file as equally mutable.
-
-Paid implication:
-
-The Architecture Sprint can answer one bounded ICM question. Sovereign Reconstruction installs client-specific ICM lanes where the evidence supports a build.
+Interpretable Context Methodology is Jake Van Clief's work. GitMoney OS uses ICM as part of a broader public framework and private implementation architecture. See the [original methodology repository](https://github.com/RinDig/Interpretable-Context-Methodology) and [paper](https://arxiv.org/html/2603.16021v2). Hitsuyo Aku's earlier files-in-folders practices and later application of ICM should not be confused with authorship of ICM.
 
 ### IFL: Identity Forensics Lab
 
@@ -224,17 +187,13 @@ Inside the public skeleton:
 - IFL connects public artifacts to paid diagnosis.
 - IFL keeps the framework from becoming another GitHub tutorial with delusions of grandeur.
 
-Private application:
+## The Comprehension Ladder
 
-- inspect actual company evidence;
-- identify founder dependency;
-- name operating pathologies;
-- design interventions;
-- compare before and after states.
-
-Paid implication:
-
-The Identity Forensics Audit is the primary paid IFL entry point. Reconstruction should follow evidence, not aesthetic excitement.
+| Reader Layer | Plain Language | Operating Language | Architecture Language |
+|---|---|---|---|
+| 9th-grade reader | Notebook -> Work Desk -> Record Room | Source Memory -> Agent Workbench -> GitHub Record | Work needs meaning, boundaries, and proof. |
+| Founder / owner | Stop being the human router | Route decisions into inspectable records | VSM exposes viability and control gaps. |
+| Operator / executive | Build a court of record | Govern AI-assisted work through contracts and receipts | POL, VSM, ICM, and IFL define the intervention stack. |
 
 ## Stack map
 
@@ -245,44 +204,6 @@ The Identity Forensics Audit is the primary paid IFL entry point. Reconstruction
 | ICM | Structures work into context, stages, artifacts, and handoffs | Builds client-specific execution contracts | Sprint or Reconstruction installs operating lanes |
 | IFL | Shows evidence-first investigation logic | Performs forensic diagnosis and intervention design | Audit and Reconstruction apply the method |
 | GitMoney OS | Provides the open skeleton and record pattern | Becomes client-specific operating infrastructure | Paid work installs the living machine |
-
-## The Comprehension Ladder
-
-| Reader Layer | Plain Language | Operating Language | Architecture Language |
-|---|---|---|---|
-| 9th-grade reader | Notebook -> Work Desk -> Record Room | Source Memory -> Agent Workbench -> GitHub Record | Work needs meaning, boundaries, and proof. |
-| Founder / owner | Stop being the human router | Route decisions into inspectable records | VSM exposes viability and control gaps. |
-| Operator / executive | Build a court of record | Govern AI-assisted work through contracts and receipts | POL, VSM, ICM, and IFL define the intervention stack. |
-
-## How the stack moves through the three layers
-
-| Public skeleton layer | POL contribution | VSM contribution | ICM contribution | IFL contribution |
-|---|---|---|---|---|
-| Source Memory | Names what the source means | Identifies which function owns it | Packages context for future work | Checks whether the claim matches evidence |
-| Agent Workbench | Keeps work tied to commitments | Routes work to the right function and owner | Defines bounded execution contracts | Detects drift, dependency, and false completion |
-| GitHub Record | Promotes commitments into durable records | Makes control, review, and policy visible | Records artifacts, handoffs, checks, and receipts | Creates evidence for diagnosis and intervention |
-
-## Buyer path
-
-A buyer can use the public framework to understand the skeleton:
-
-```text
-Source Memory -> Agent Workbench -> GitHub Record
-```
-
-A buyer pays when they need the deeper private machinery applied to their actual business:
-
-```text
-POL interpretation
-VSM diagnosis
-ICM execution design
-IFL forensic intervention
-GitMoney OS installation
-```
-
-Public use teaches the standard.
-
-Paid work applies judgment, diagnosis, implementation, integration, governance, adaptation, and client-specific architecture.
 
 ## What remains private
 
@@ -302,12 +223,40 @@ The public architecture stack must not expose:
 - client delivery runbooks;
 - security or control details that weaken the system if public.
 
-## Operating rule
+## Paid implication
 
-The public framework should make the skeleton legible.
+A buyer can use the public framework to understand the skeleton:
 
-The private system should make the skeleton alive inside a real company.
+```text
+Source Memory -> Agent Workbench -> GitHub Record
+```
 
-If the reader wants to learn the standard, the public framework is enough.
+A buyer pays when they need the deeper private machinery applied to their actual business:
 
-If the reader wants the standard applied to their company, that is paid work.
+```text
+POL interpretation
+VSM diagnosis
+ICM execution design
+IFL forensic intervention
+GitMoney OS installation
+```
+
+Public use teaches the standard. Paid work applies judgment, diagnosis, implementation, integration, governance, adaptation, and client-specific architecture.
+
+- Primary Paid Entry: **$20,000 Identity Forensics Audit**
+- Bounded Diagnostic: **$7,500 Architecture Sprint**
+- Private Build: **Sovereign Reconstruction (starting at $50,000)**
+- Ongoing Governance: **Signal & Dependency Governance ($10,000 / month)**
+
+```text
+ENTITY: pol-vsm-icm-ifl-stack.md
+ROLE: Core architecture governance map
+OWNER: Hitsuyo Aku
+STATUS: active-public
+CLASSIFICATION: public
+PRIMARY_PAID_ENTRY: Identity Forensics Audit ($20,000)
+BOUNDED_PAID_DIAGNOSTIC: Architecture Sprint ($7,500)
+ICM_ATTRIBUTION: Jake Van Clief (arXiv:2603.16021v2)
+MERGE_AUTHORIZED: NO
+DEPLOYMENT_AUTHORIZED: NO
+```

@@ -1,21 +1,26 @@
 ---
 title: "founder-verification-checklist"
-type: "vault-memory"
+type: "public-proof"
 owner: "Hitsuyo Aku"
 status: "active-public"
 classification: "public"
-approval_path: "Hitsuyo Aku"
+approval_path: "issue-and-pull-request"
 tags:
-  - vault/memory
+  - gitmoney/public-framework
+  - gitmoney/proof
 ---
 
 # Founder Verification Checklist
 
 ## Purpose
 
-Help a founder inspect GitMoneyOS as proof of concept, proof of work, and proof of quality.
+Help a founder or executive independently inspect GitMoney OS across proof of concept, proof of work, and proof of quality.
 
-Note: This is a user-facing checklist for founders. Empty checkboxes indicate items for the founder to verify, not uncompleted repository work.
+## Plain-English Job
+
+Give a founder an objective, step-by-step checklist to verify that this repository contains working operational infrastructure before spending money on private consulting or engineering.
+
+*Note: This is a user-facing checklist for founders. Checkboxes are interactive verification points for the reader, not incomplete repository tasks.*
 
 ## Owner
 
@@ -27,34 +32,43 @@ Red Pillar and Hitsuyo Aku, under KnowTheLedge.
 - [ ] Can you explain the three rooms: private notebook, work desk, company record?
 - [ ] Can you explain that Obsidian.md is the private notebook and GitHub is the company record?
 - [ ] Can you name the optimized AI work desks: Codex, Antigravity 2, and Claude Code?
-- [ ] Can you explain why GitHub matters for AI-assisted businesses without using developer language?
+- [ ] Can you explain why GitHub matters for AI-assisted businesses without using developer jargon?
 - [ ] Can you see how issues, PRs, commits, and protected branches map to business controls?
 
 ## Verify The Work
 
-- [ ] Public repo exists.
-- [ ] Public README explains the thesis clearly.
-- [ ] Public demo walkthrough exists.
+- [ ] Public framework repository exists and is accessible.
+- [ ] Public README explains the thesis within 90 seconds.
+- [ ] Public demo walkthrough exists in `docs/demo/`.
 - [ ] A public issue shows how a business task becomes trackable.
-- [ ] A public PR shows how work becomes an approval packet.
-- [ ] Public demo issue is linked to its PR.
+- [ ] A public PR shows how work becomes an inspectable approval packet.
+- [ ] Public demo issue is linked directly to its pull request.
+- [ ] Commit history reflects small, atomic, reviewable increments.
 
 ## Verify The Quality
 
-- [ ] The package separates observed evidence from claims.
-- [ ] The package names what GitMoneyOS does not prove yet.
-- [ ] The self-audit summary includes scores and top risks.
-- [ ] The quality standard explains how GitMoneyOS catches drift.
-- [ ] No private source docs, client data, or secrets are exposed.
+- [ ] Every major document includes an explicit business reason and owner.
+- [ ] AI agent boundaries are clearly documented in `AGENTS.md`.
+- [ ] The repository contains zero em dashes and zero marketing fluff words.
+- [ ] Claims are bounded strictly to available evidence in `proof-index.md`.
+- [ ] Private doctrine and client-specific secrets are completely excluded.
+- [ ] The open-source license scope is explicit and limited to the public repo.
 
-## Verify The Next Step
+## Verification Summary & Verdict
 
-- [ ] Can you identify the next governance action?
-- [ ] Can you identify the next SaaS/product action?
-- [ ] Can you identify what would make the system more production-ready?
+| Verification Category | Status | Notes |
+|---|---|---|
+| Concept Clarity | VERIFIED | Three-room model clearly maps business memory to records |
+| Work Evidence | VERIFIED | Public issues, PRs, and receipts available on GitHub |
+| Quality Standard | VERIFIED | Frontmatter, copy rails, and claim boundaries enforced |
 
-## Founder Takeaway
-
-If you can inspect the work, understand the risks, and see the approval trail, the system is already doing something valuable.
-
-The point is not perfection. The point is evidence.
+```text
+ENTITY: founder-verification-checklist.md
+ROLE: Founder independent inspection checklist
+OWNER: Hitsuyo Aku
+STATUS: active-public
+CLASSIFICATION: public
+APPROVAL_PATH: issue-and-pull-request
+MERGE_AUTHORIZED: NO
+DEPLOYMENT_AUTHORIZED: NO
+```

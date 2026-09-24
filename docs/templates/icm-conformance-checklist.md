@@ -1,11 +1,12 @@
 ---
 title: "icm-conformance-checklist"
-type: "template"
+type: "public-template"
 owner: "Hitsuyo Aku"
 status: "active-public"
 classification: "public"
 approval_path: "issue-and-pull-request"
 tags:
+  - gitmoney/public-framework
   - icm
   - conformance
   - public/template
@@ -15,95 +16,77 @@ tags:
 
 ## Plain-English Job
 
-This checklist catches the difference between real delegation and an AI agent confidently pretending.
+This checklist stops fake completion.
 
-It asks whether the task had identity, context, authority, proof, handoff, and rollback before anyone calls it complete.
+It catches the difference between authentic delegation and an AI agent confidently simulating completion without verification.
 
-## Purpose
+## Identity
 
-Check whether a bounded job actually followed the execution contract.
+- [ ] The bounded task is defined in plain English.
+- [ ] The business problem is explicit and justified.
+- [ ] Explicit non-goals are documented.
+- [ ] A named human owner holds ultimate authority.
+- [ ] The executing agent or contributor is named.
 
-This checklist is for public-safe inspection. It does not prove security, legal, financial, or operational readiness by itself. It helps a founder see whether the work had enough context, authority, verification, and receipt discipline to be reviewable.
+## Context
 
-## Contract clarity
+- [ ] Approved source documents are explicitly enumerated.
+- [ ] No invisible, unstated, or hallucinatory context was used.
+- [ ] Confidential client data and private doctrine are strictly excluded.
+- [ ] Unknowns and assumptions are explicitly labeled.
 
-- [ ] The job is stated in plain English.
-- [ ] The business reason is explicit.
-- [ ] The non-goals are explicit.
-- [ ] The owner is named.
-- [ ] The approver is named.
-- [ ] The acting party is named.
-- [ ] The promotion decision is separated from the work itself.
+## Authority
 
-## Context boundary
+- [ ] The executing party has not attempted to self-approve its work.
+- [ ] Merge and deployment actions remain strictly locked to human owner authority.
+- [ ] Commercial claims do not exceed verified evidence.
+- [ ] License scope is strictly preserved.
 
-- [ ] Approved source files are listed.
-- [ ] Evidence sources are listed.
-- [ ] Private or client-owned material is excluded or summarized safely.
-- [ ] Unknowns are marked as unknown.
-- [ ] Assumptions are marked as assumptions.
-- [ ] The task does not rely on invisible memory.
+## Stage
 
-## Authority boundary
+- [ ] Source stage: context gathered and verified.
+- [ ] Architecture stage: bounded plan produced.
+- [ ] Build stage: surgical changes made on a dedicated branch.
+- [ ] Verification stage: checks executed and documented.
+- [ ] Promotion stage: waiting for human owner ruling.
 
-- [ ] The work does not grant itself approval.
-- [ ] The work does not merge itself without owner authorization.
-- [ ] The work does not deploy itself without owner authorization.
-- [ ] The work does not expand claims beyond available evidence.
-- [ ] The work does not change billing, access, security, or legal posture without explicit approval.
+## Evidence
 
-## Stage and handoff
+- [ ] Verification checks have run and their outputs are recorded.
+- [ ] Automated lint and classification checks pass.
+- [ ] Every assertion links directly to an inspectable record.
+- [ ] The receipt names what was checked and what was not checked.
 
-- [ ] Source stage is complete.
-- [ ] Architecture or plan stage is complete where required.
-- [ ] Build or draft stage is bounded.
-- [ ] Verification stage is recorded.
-- [ ] Promotion stage requires a separate decision.
-- [ ] The next handoff is named.
+## Handoff
 
-## Verification
+- [ ] Next reviewer is named.
+- [ ] Changed files are listed with exact diff summaries.
+- [ ] Review criteria are obvious to a non-technical founder.
 
-- [ ] Checks are listed.
-- [ ] Results are recorded.
-- [ ] Failed or skipped checks are named.
-- [ ] The receipt states what the checks do not cover.
-- [ ] The evidence supports the claim.
-- [ ] The work preserves rollback or reversal logic.
+## Rollback
 
-## Public-safety boundary
+- [ ] Reversal or rollback command is documented.
+- [ ] The repository can be restored cleanly to the prior state if rejected.
 
-- [ ] No credentials or secrets are included.
-- [ ] No private client data is included.
-- [ ] No private source doctrine is exposed.
-- [ ] No confidential strategy is exposed.
-- [ ] No legal, financial, security, investor, or acquisition claim is made without evidence and approval.
-- [ ] License and reuse rights are not implied unless published.
-
-## Buyer-facing quality
-
-- [ ] A non-technical founder can understand the business reason.
-- [ ] The artifact explains why the control matters.
-- [ ] The artifact points to the right next step.
-- [ ] The artifact does not collapse into tool worship.
-- [ ] The artifact makes the public proof layer stronger.
-
-## Final conformance ruling
-
-Use one:
+## Final verdict
 
 ```text
-PASS
-PASS_WITH_NOTES
-REVISE
-HOLD
-```
+CONFORMANCE_RULING:
+[ ] CONFORMANT (Ready for owner review)
+[ ] CONFORMANT_WITH_EXCEPTIONS (Review notes attached)
+[ ] NON_CONFORMANT (Requires revisions before review)
 
-## Notes
+RULING_AUTHORITY: [Reviewer Name]
+DATE: [YYYY-MM-DD]
+```
 
 ```text
-What should the next reviewer know?
+ENTITY: icm-conformance-checklist.md
+ROLE: ICM task conformance audit checklist
+OWNER: Hitsuyo Aku
+STATUS: active-public
+CLASSIFICATION: public
+APPROVAL_PATH: issue-and-pull-request
+MERGE_AUTHORIZED: NO
+DEPLOYMENT_AUTHORIZED: NO
 ```
-
-## Done-when
-
-A job conforms when authority is explicit, context is bounded, handoffs are staged, verification is recorded, receipts are inspectable, and unknowns stay unknown.

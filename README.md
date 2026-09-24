@@ -91,3 +91,18 @@ Git commits and pull requests can make changes inspectable. They do not make a c
 The **$20,000 Identity Forensics Audit** is the main paid entry to the Enterprise Systems Architecture service. Qualified buyers can [review the Audit and apply directly](https://architect.hitsuyoaku.io/sovereign-brand-os-audit). A separate **$7,500 Architecture Sprint** addresses a narrower immediate architecture question; [ask about its current scope](https://architect.hitsuyoaku.io/contact?tier=v2-diagnose-architecture-sprint). Smaller Diagnostic scopes can be offered where a narrower investigation fits. Sovereign Reconstruction is a contracted build scoped after the Audit, starting at $50,000; ongoing governance is separately contracted.
 
 This framework is the open skeleton for learning how the architecture organizes governed AI-assisted business work. Reading or adopting it does not by itself establish a financial return, security guarantee, legal conclusion, investment claim, acquisition readiness, or client outcome.
+
+```text
+ENTITY: GitMoney OS Public Framework
+LAYER: Open-source skeleton / public standard layer
+OWNER: Hitsuyo Aku
+STATE: Active public framework
+PRIMARY_PAID_ENTRY: Identity Forensics Audit ($20,000)
+BOUNDED_PAID_DIAGNOSTIC: Architecture Sprint ($7,500)
+PAID_BUILD: Sovereign Reconstruction (FROM $50,000)
+ONGOING_GOVERNANCE: Signal & Dependency Governance ($10,000/mo)
+MERGE_AUTHORIZED: NO
+DEPLOYMENT_AUTHORIZED: NO
+EVIDENCE: Inspectable GitHub issues, pull requests, checks, and receipts
+LICENSE_BOUNDARY: Apache-2.0 applies strictly to GitMoneyOS/gitmoney-public-framework
+```

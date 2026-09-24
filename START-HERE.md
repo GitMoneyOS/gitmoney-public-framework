@@ -1,6 +1,8 @@
 # Start Here
 
-If you are a founder, executive, operator, agency owner, or senior builder trying to understand why GitMoney OS matters, start here.
+## Plain-English Job
+
+Orient a founder, executive, or operator within 90 seconds. Diagnose whether the expensive problem is yours, show how to inspect the public skeleton in 10 minutes, and clarify when the operating wound requires the paid private machine.
 
 GitMoney OS is not a prompt pack, Notion template, productivity system, GitHub tutorial, AI automation recipe, or replacement for the retired calculator. It is an open-source public skeleton for governing AI-assisted business work.
 
@@ -133,3 +135,15 @@ A separate **$7,500 Architecture Sprint** can address a narrower immediate archi
 The public framework is the open skeleton.
 
 If you want the machinery behind it pointed at your business, that starts with an audit.
+
+```text
+ENTITY: START-HERE.md
+ROLE: Cold reader orientation and wound diagnosis
+PRIMARY_PAID_ENTRY: Identity Forensics Audit ($20,000)
+BOUNDED_PAID_DIAGNOSTIC: Architecture Sprint ($7,500)
+PAID_BUILD: Sovereign Reconstruction (FROM $50,000)
+PUBLIC_SKELETON: Source Memory -> Agent Workbench -> GitHub Record
+PRIVATE_MACHINE: Proprietary diagnosis, CAC, and delivery infrastructure
+MERGE_AUTHORIZED: NO
+DEPLOYMENT_AUTHORIZED: NO
+```

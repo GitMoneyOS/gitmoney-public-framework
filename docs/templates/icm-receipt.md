@@ -1,11 +1,12 @@
 ---
 title: "icm-receipt"
-type: "template"
+type: "public-template"
 owner: "Hitsuyo Aku"
 status: "active-public"
 classification: "public"
 approval_path: "issue-and-pull-request"
 tags:
+  - gitmoney/public-framework
   - icm
   - receipt
   - public/template
@@ -15,135 +16,88 @@ tags:
 
 ## Plain-English Job
 
-This receipt proves what actually changed after the work finishes.
+This receipt proves what actually changed after an AI agent or contributor finishes a task.
 
-If the work has no receipt, "done" is just a noise humans make when they want the problem to leave.
+If work produces no receipt, "complete" is merely an assumption without evidence.
 
-## Purpose
+## When to use this
 
-Record what happened after a bounded job completes.
+File an ICM receipt upon completing any pull request, code refactor, documentation architecture pass, or automated task before submitting it to the human owner for review.
 
-A receipt is not a vibe, a status update, or an agent saying "done" because it got tired. A receipt is the business record of the change, the evidence, the checks, the exceptions, and the next decision.
+A receipt is not a casual status update. It is an immutable business record documenting what changed, which checks passed, which failed, and what decision comes next.
 
-## Receipt header
-
-**Artifact:**
-
-**Job:**
-
-**Owner:**
-
-**Approver:**
-
-**Date:**
-
-**Version / commit / PR:**
-
-**Status:** draft / verified / owner-approved / promoted / held
-
-## 1. Original job
+## Receipt fields
 
 ```text
-What was the bounded job?
+RECEIPT_HEADER:
+  Artifact: [Name of artifact or feature]
+  Job: [Summary of bounded task]
+  Owner: [Accountable human executive]
+  Executor: [Acting agent or developer]
+  Date: [YYYY-MM-DD]
+  Commit_SHA: [Git commit hash]
+  Pull_Request: [PR URL or number]
+  Status: [DRAFT | VERIFIED | OWNER_APPROVED | PROMOTED | HELD]
 ```
 
-## 2. Source context used
+## What changed
 
-List the approved inputs:
-
-- files;
-- issues;
-- PRs;
-- owner notes;
-- evidence packets;
-- constraints;
-- public-safe references.
-
-## 3. What changed
-
-| Surface | Change | Reason | Owner impact |
+| File / Surface | Modification Summary | Business Reason | Reviewer Impact |
 |---|---|---|---|
-|  |  |  |  |
+| [Target File 1] | [What was added, modified, or removed] | [Operational justification] | [What to inspect] |
+| [Target File 2] | [What was added, modified, or removed] | [Operational justification] | [What to inspect] |
 
-## 4. What did not change
+## What passed
 
-Record important boundaries:
+Document all verification gates that succeeded:
 
-- deployment not authorized;
-- merge not authorized;
-- client data not touched;
-- private source not exposed;
-- claims not expanded;
-- license/reuse rights not changed;
-- owner decision not self-adopted.
+- [ ] Classification Guard: All modified files declare `classification: "public"`.
+- [ ] Copy Rails: Zero em dashes and zero prohibited AI buzzwords.
+- [ ] Link Integrity: 100% of relative markdown links resolve correctly.
+- [ ] Frontmatter Schema: Valid YAML frontmatter present on all docs.
+- [ ] Machine Extraction: Structured entity blocks present in all major files.
 
-## 5. Verification performed
+## What failed
 
-| Check | Result | What it covers | What it does not cover |
-|---|---|---|---|
-|  |  |  |  |
-
-## 6. Evidence
-
-Include exact evidence:
-
-- commit SHA;
-- patch SHA;
-- PR URL;
-- test results;
-- file hashes;
-- screenshots where safe;
-- link checks;
-- claim review notes;
-- owner ruling.
-
-## 7. Exceptions and unresolved questions
-
-| Item | Status | Decision needed |
-|---|---|---|
-|  |  |  |
-
-## 8. Risk boundary
-
-Safe claims:
+Record any skipped checks, warnings, or failed assertions:
 
 ```text
-What the artifact can now claim.
+FAILURES_AND_WARNINGS:
+- None. (If any, record exact error message and rationale)
 ```
 
-Unsafe claims:
+## What remains uncertain
+
+Document any unresolved questions, assumptions, or items requiring human judgment:
 
 ```text
-What the artifact still cannot claim.
+REMAINING_UNCERTAINTIES:
+- Owner acceptance of the proposed copy framing.
+- Confirmation of downstream repository compatibility.
 ```
 
-## 9. Next decision
+## Next decision
 
-One of:
+Select the required human owner action:
 
 ```text
-OWNER_REVIEW
-REVISE
-PROMOTE
-MERGE
-DEPLOYMENT_PREP
-HOLD
-```
+NEXT_OWNER_DECISION:
+[ ] APPROVE_AND_MERGE
+[ ] REQUEST_REVISIONS
+[ ] HOLD_FOR_DUE_DILIGENCE
+[ ] REVERT_AND_CLOSE
 
-## 10. Rollback or reversal path
+ROLLBACK_FIELD:
+Command: git revert [COMMIT_SHA] -m 1
+```
 
 ```text
-How do we undo or supersede this if needed?
+ENTITY: icm-receipt.md
+ROLE: Post-work verification and audit receipt template
+OWNER: Hitsuyo Aku
+STATUS: active-public
+CLASSIFICATION: public
+APPROVAL_PATH: issue-and-pull-request
+MERGE_AUTHORIZED: NO
+DEPLOYMENT_AUTHORIZED: NO
 ```
-
-## Done-when
-
-A receipt is complete when a future operator can answer:
-
-- what changed;
-- why it changed;
-- who approved it;
-- what proof exists;
-- what remains uncertain;
-- what decision comes next;
-- what must not be inferred from the change.

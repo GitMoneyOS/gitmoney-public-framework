@@ -3,10 +3,10 @@ name: Business Task
 about: Track a business task or operational change
 title: '[Task] '
 labels: type:setup
-type: vault-memory
+type: public-proof
 owner: Hitsuyo Aku
-status: active-internal
-classification: internal
+status: active-public
+classification: public
 ---
 ## Summary
 

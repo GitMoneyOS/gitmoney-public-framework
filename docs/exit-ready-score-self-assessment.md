@@ -1,18 +1,18 @@
 ---
 title: "exit-ready-score-self-assessment"
-type: "vault-memory"
+type: "public-framework"
 owner: "Hitsuyo Aku"
 status: "active-public"
 classification: "public"
-approval_path: "Hitsuyo Aku"
+approval_path: "issue-and-pull-request"
 tags:
-  - vault/memory
+  - gitmoney/public-framework
 ---
 
 # Exit-Ready Score Self-Assessment
 
 Status: optional public framework exercise; scoring model not outcome-validated
-Classification: Public
+Classification: public
 Owner: Red Pillar and Hitsuyo Aku, under KnowTheLedge
 Update cadence: monthly, or after a material workflow, access, repo, or AI-agent change
 Approval path: issue and pull request before this becomes official public doctrine
@@ -20,9 +20,11 @@ Related service: Enterprise Systems Architecture. This worksheet does not qualif
 
 ## Purpose
 
-Help a founder see whether important business knowledge is easy to find, approve, protect, hand off, and improve.
+Help a founder evaluate whether important business knowledge is findable, approved, protected, transferable, and continuously improved.
 
-Plain-English translation: this is not a valuation report. It is a visibility check. The score helps a team discuss where its records are clear and where work still depends on memory, scattered tools, or unapproved AI output. Its weights and bands are a working exercise, not a validated prediction of business value or risk.
+## Plain-English Job
+
+Give a founder an objective self-audit to determine whether business knowledge is governed in inspectable records or trapped in human memory and scattered chat logs.
 
 ## What This Creates
 
@@ -30,18 +32,18 @@ The completed worksheet can become the founder's first official asset: a scored 
 
 It is useful because it turns vague concern into an inspectable record:
 
-- what knowledge matters
-- who owns it
-- where it lives
-- how it gets approved
-- how it becomes reusable
-- what still creates risk
+- what knowledge matters;
+- who owns it;
+- where it lives;
+- how it gets approved;
+- how it becomes reusable;
+- what still creates operational risk.
 
 ## What This Is Not
 
-This is not legal, financial, security, investment, or acquisition advice. A high score does not prove that a company is ready for diligence, a transaction, or a security review. It only shows that the business has stronger evidence, ownership, and handoff discipline than it had before.
+This is not legal, financial, security, investment, or acquisition advice. A high score does not prove that a company is ready for diligence, a transaction, or a security audit. It only shows that the business has stronger evidence, ownership, and handoff discipline than it had before.
 
-The score does not qualify a buyer, assign an offer, or tell anyone to buy a service. That kind of fake diagnostic theater can stay in the internet swamp where it belongs.
+The score does not qualify a buyer, assign an offer, or force anyone to buy a service.
 
 ## How To Score
 
@@ -70,7 +72,7 @@ Use observed evidence first. If you are guessing, write "inferred" and lower the
 
 ## What Your Score Helps You Review
 
-The score is a discussion prompt, not a diagnostic result or an automatic sales route. Use the weakest dimension and its underlying evidence to choose a next action. These examples are illustrative; a score alone cannot determine which service, if any, a business needs.
+The score is a discussion prompt, not a diagnostic result or an automatic sales route. Use the weakest dimension and its underlying evidence to choose a next action.
 
 | Total | Possible review question | Example next action |
 | ---: | --- | --- |
@@ -95,11 +97,7 @@ Use the worksheet to ask sharper questions:
 
 If the answer reveals a costly operating constraint, review the paid paths. The score alone does not assign one.
 
-For paid help, the [Identity Forensics Audit](../CONSULTING.md) is the main $20,000 application route for a qualified enterprise buyer. A separate $7,500 Architecture Sprint addresses a narrower immediate architecture question. Neither path is assigned by this worksheet's score; scope and terms require a separate review.
-
-## File Your Receipt
-
-Keep a completed score and its evidence in a private business record. The public **Exit-Ready Score Completed** issue template is only for an intentionally public, fictional, or fully sanitized example. Do not file a real business risk, access detail, client fact, or confidential score in a public issue. Sharing is optional and is not required to use the framework or apply for a service.
+For paid help, the [Identity Forensics Audit](../CONSULTING.md) is the main $20,000 application route for a qualified enterprise buyer. A separate $7,500 Architecture Sprint addresses a narrower immediate architecture question.
 
 ## The Eight Dimensions
 
@@ -118,33 +116,27 @@ Total: `__/40`
 
 ## Top 3 Risks
 
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ## Next 3 Actions
 
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ## First Official Asset
 
 Name the first asset this worksheet should create or upgrade.
 
-Asset:
-
-Owner:
-
-Current location:
-
-Approval path:
-
-Evidence:
-
-Reuse path:
-
-Lifecycle:
+- Asset:
+- Owner:
+- Current location:
+- Approval path:
+- Evidence:
+- Reuse path:
+- Lifecycle:
 
 ## Fictional Example
 
@@ -189,3 +181,15 @@ Keep private or client-owned details out of this worksheet before sharing it pub
 - The next three actions are small enough to start.
 - The first official asset has an owner, approval path, evidence field, reuse path, and lifecycle.
 - Any private, client-owned, restricted, or secret material has been removed or summarized safely.
+
+```text
+ENTITY: exit-ready-score-self-assessment.md
+ROLE: Founder self-audit readiness worksheet
+OWNER: Hitsuyo Aku
+STATUS: active-public
+CLASSIFICATION: public
+PRIMARY_PAID_ENTRY: Identity Forensics Audit ($20,000)
+BOUNDED_PAID_DIAGNOSTIC: Architecture Sprint ($7,500)
+MERGE_AUTHORIZED: NO
+DEPLOYMENT_AUTHORIZED: NO
+```

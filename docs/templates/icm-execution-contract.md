@@ -1,11 +1,12 @@
 ---
 title: "icm-execution-contract"
-type: "template"
+type: "public-template"
 owner: "Hitsuyo Aku"
 status: "active-public"
 classification: "public"
 approval_path: "issue-and-pull-request"
 tags:
+  - gitmoney/public-framework
   - icm
   - execution-contract
   - public/template
@@ -15,156 +16,98 @@ tags:
 
 ## Plain-English Job
 
-This contract tells a person or AI agent what it is allowed to touch before the work starts.
+This contract tells a person or AI agent exactly what it is allowed to touch before any work begins.
 
-If the job has no contract, delegation turns into guessing with better typography.
+If a task lacks an execution contract, delegation rapidly degrades into unreviewed guessing.
 
-## Purpose
+## When to use this
 
-Create a bounded execution contract before a person or agent acts.
+Use this contract before delegating any multi-step task, architectural change, documentation update, or automated code modification to an AI agent or human contributor.
 
-Interpretable Context Methodology organizes context, stage contracts, artifacts, and handoffs for a bounded job. This template is a public-safe implementation pattern. It does not grant access, override technical permissions, or replace human approval.
+Interpretable Context Methodology (ICM) organizes context, stage contracts, artifacts, and handoffs for a bounded job. This template is a public-safe implementation pattern. It does not grant system access, override technical permissions, or replace human executive approval.
 
-## 1. Job to be done
+## Contract fields
 
-**Plain-English job:**
+| Field | Purpose | Example |
+|---|---|---|
+| Job to be Done | Clear, plain-English objective | Update README navigation links |
+| Business Reason | Why this matters to operations | Reduce cold-reader bounce rate |
+| Designated Owner | Accountable human executive | Hitsuyo Aku |
+| Acting Party | Who executes the change | Codex / Subagent |
+| Allowed Context | Explicit source documents permitted | `README.md`, `START-HERE.md` |
+| Forbidden Boundaries | Strict non-goals and off-limit files | No credential changes, no edits outside docs |
+| Expected Output | Deliverable format | Pull request with verified links |
+| Verification Criteria | Checks required before handoff | 0 broken links, 0 em dashes |
 
-```text
-What needs to happen?
-```
+## Authorized changes
 
-**Business reason:**
-
-```text
-Why does this matter now?
-```
-
-**Not the job:**
-
-```text
-What is explicitly out of scope?
-```
-
-## 2. Authority
-
-**Requester:**
-
-**Owner:**
-
-**Approver:**
-
-**Who may act:**
-
-**Who may not act:**
-
-**Decision required before promotion:**
+Fill in the permitted actions:
 
 ```text
-No change becomes official just because it was generated.
+ALLOWED_OPERATIONS:
+- Propose documentation updates via branch pull requests.
+- Run local lint, check, and verification commands.
+- Summarize public evidence from approved source files.
+- Add machine-readable extraction blocks.
 ```
 
-## 3. Allowed context
-
-Use only:
-
-- approved source files;
-- linked issues or PRs;
-- named evidence packets;
-- public-safe examples;
-- owner-provided constraints;
-- repo-local instructions.
-
-Do not use:
-
-- secrets;
-- client data;
-- private source doctrine;
-- unapproved claims;
-- unstated assumptions;
-- inaccessible memory;
-- screenshots or documents not included in the task.
-
-## 4. Stage contract
-
-| Stage | Input | Work allowed | Output | Reviewer |
-|---|---|---|---|---|
-| Source | observed problem, request, evidence | clarify scope and authority | execution contract | owner |
-| Architecture | approved context | propose smallest safe plan | plan/spec | owner or reviewer |
-| Build | approved plan | make bounded change | draft artifact or branch | reviewer |
-| Verification | changed artifact | run checks and inspect claims | receipt | System 3* / reviewer |
-| Promotion | verified artifact | request decision | owner ruling | System 5 / owner |
-
-## 5. Constraints
-
-**Must preserve:**
-
-- claim boundaries;
-- source attribution;
-- data boundaries;
-- license/reuse boundaries;
-- owner decision rights;
-- rollback path.
-
-**Must not:**
-
-- invent evidence;
-- expose private material;
-- convert draft to official without approval;
-- merge, deploy, or publish without explicit authorization;
-- treat a tool result as a business decision.
-
-## 6. Expected output
-
-Output format:
+## Forbidden changes
 
 ```text
-What artifact should exist when the job is complete?
+FORBIDDEN_OPERATIONS:
+- No commits directly to the main protected branch.
+- No inclusion of credentials, tokens, or private keys.
+- No publication of confidential client data.
+- No unilateral claim expansion or license alteration.
+- No deployment or external webhook execution.
 ```
 
-Acceptance criteria:
+## Inputs
+
+List the approved context files:
 
 ```text
-What must be true before this is accepted?
+APPROVED_CONTEXT_INPUTS:
+- File 1: [path to input file]
+- File 2: [path to input file]
+- Constraints: [owner-defined limits]
 ```
 
-Evidence required:
+## Outputs
 
 ```text
-What will prove the work was done?
+EXPECTED_OUTPUT_ARTIFACTS:
+- Pull Request: [Branch name]
+- Changed Files: [List of target files]
+- Execution Receipt: [Link or text of completed ICM receipt]
 ```
 
-## 7. Verification
+## Handoff
 
-Checks to run:
+```text
+NEXT_REVIEWER: [Owner / Executive Reviewer]
+NEXT_STAGE: [Verification -> Owner Decision]
+ROLLBACK_PLAN: [Git revert / branch deletion command]
+```
 
-- content claim review;
-- data boundary review;
-- link/path review;
-- classification/frontmatter review;
-- test or lint checks where applicable;
-- owner-decision boundary review.
+## Verification
 
-Verification must state what the checks cover and what they do not cover.
+Run the following checks before requesting owner review:
 
-## 8. Receipt
+- [ ] Content claim review: claims match evidence.
+- [ ] Data boundary review: no private or confidential data exposed.
+- [ ] Link integrity check: all relative links resolve.
+- [ ] Classification review: frontmatter classification is `public`.
+- [ ] Copy rails check: zero em dashes and zero marketing fluff.
+- [ ] Automated CI checks: passing locally.
 
-The final receipt must include:
-
-- artifact name;
-- version or commit;
-- changed files;
-- evidence used;
-- checks run;
-- exceptions;
-- remaining risk;
-- next decision;
-- rollback or reversal path.
-
-## Done-when
-
-- Authority is explicit.
-- Context is bounded.
-- Handoffs are named.
-- Verification is recorded.
-- Unknowns remain visible.
-- Promotion requires a separate owner decision.
+```text
+ENTITY: icm-execution-contract.md
+ROLE: Pre-work execution boundary and delegation contract
+OWNER: Hitsuyo Aku
+STATUS: active-public
+CLASSIFICATION: public
+APPROVAL_PATH: issue-and-pull-request
+MERGE_AUTHORIZED: NO
+DEPLOYMENT_AUTHORIZED: NO
+```

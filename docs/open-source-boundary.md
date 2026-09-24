@@ -6,126 +6,105 @@ status: "active-public"
 classification: "public"
 approval_path: "issue-and-pull-request"
 tags:
+  - gitmoney/public-framework
   - gitmoney/open-source
-  - public/framework
 ---
 
 # Open Source Boundary
 
 ## Purpose
 
-Define the public and private boundary for GitMoney OS.
+Define the public open-source standard and separate it from private proprietary operating machinery.
 
-The GitMoney OS Public Framework is the open-source skeleton. It exists to create a public standard around governed AI-assisted business work.
+The GitMoney OS Public Framework is an open-source skeleton. It exists to create a public category standard for governing AI-assisted business work.
 
-The private GitMoney OS, Mothership, Skills, CAC, Audit, Delivery, SaaS, proof sprint, and client implementation systems remain proprietary operating machinery.
+The private GitMoney OS, Mothership, Skills, CAC, Audit, Delivery, SaaS, and client implementation systems remain proprietary operating machinery.
 
-## Core ruling
+## What is open source
 
-```text
-Public framework = open-source skeleton / industry standard layer
-Private GitMoney + Mothership + Skills + CAC + delivery methods = proprietary advanced implementation layer
-Paid work = applying the private machinery directly to a real company
-```
+The open-source public framework encompasses:
 
-## Public layer
+- the three-layer operating skeleton (Source Memory, Agent Workbench, GitHub Record);
+- public ICM execution templates and receipts;
+- public architecture stack documentation (POL, VSM, ICM, IFL);
+- claim-to-evidence proof indices;
+- founder dependency diagnostic maps;
+- exit-ready self-assessment worksheets;
+- pull request and issue governance templates.
 
-The public framework exists to:
+These assets are open source so founders, operators, and agents can inspect, adopt, and build upon a shared standard.
 
-- teach the standard;
-- name the problem;
-- show the skeleton;
-- create public trust;
-- give the market shared language;
-- prove architectural seriousness;
-- attract serious operators;
-- raise the floor of the industry.
+| Public Layer Component | Purpose | License / Access |
+|---|---|---|
+| Operating Skeleton | Plain-English three-room model | Open source (Apache-2.0) |
+| ICM Templates & Receipts | Bounded task contracts | Open source (Apache-2.0) |
+| Architecture Stack Docs | Theoretical foundations | Open source (Apache-2.0) |
+| Proof Package Index | Inspectable claim boundaries | Open source (Apache-2.0) |
+| Self-Assessment Worksheets | Informal diagnostic tools | Open source (Apache-2.0) |
 
-The public framework is allowed to be open source because its job is adoption.
+## What is not open source
 
-## Private layer
+The private machine contains the organs that perform live transformation:
 
-The private system exists to:
+| Private Asset | Function | Status |
+|---|---|---|
+| Identity Forensics Audit Engine | Full enterprise viability diagnostics | Proprietary |
+| Mothership Cybernetic Memory | Private executive doctrine and policy | Proprietary |
+| CAC & Market Signal Machinery | Commercial acquisition and lead intelligence | Proprietary |
+| Agent Skill Canonical Bytes | Executable production skills and harnesses | Proprietary |
+| Proposal & SOW Compilers | Commercial contract and margin calculators | Proprietary |
+| Client Implementation Playbooks | Forward-deployed delivery runbooks | Proprietary |
 
-- diagnose real companies;
-- map founder dependency;
-- inspect operating evidence;
-- install client-specific architecture;
-- write private skills;
-- govern agent behavior;
-- route CAC and commercial intelligence;
-- build delivery infrastructure;
-- enforce review and approval gates;
-- adapt the system over time.
+## License scope
 
-The private machinery is not open source because its job is transformation.
+The open-source license ([`Apache-2.0`](../LICENSE)) applies strictly to the contents of the `GitMoneyOS/gitmoney-public-framework` repository.
 
-## What is open
-
-The public framework may include:
-
-- plain-English GitOps patterns;
-- public folder architecture;
-- public ICM-inspired execution templates;
-- proof index;
-- buyer inspection path;
-- public metrics definitions;
-- public topology maps;
-- public-safe reconstruction silhouettes;
-- public Skills-as-Architecture explanation;
-- license file;
-- contribution guide;
-- issue and pull request templates.
-
-## What remains proprietary
-
-Do not open source:
-
-- CAC engine internals;
-- lead scoring formulas;
-- outbound sequences;
-- client audit templates;
-- active or historical client records;
-- private Mothership doctrine;
-- raw vault notes;
-- proposal or SOW machinery;
-- pricing floor math beyond approved public offer language;
-- private skill source bytes;
-- implementation playbooks;
-- client delivery runbooks;
-- security or control details that would weaken the system if public.
-
-## Buyer-facing explanation
-
-GitMoney OS makes the public framework open source because the category needs a shared standard for governing AI-assisted business work.
-
-The framework shows the skeleton.
-
-The paid work applies the advanced private methods to a real company's operating system.
-
-A founder can study, use, and adapt the public framework under the published license.
-
-A company pays when it needs the private machinery pointed at its own context, evidence, workflows, people, permissions, and commercial constraints.
+> [!IMPORTANT]
+> The publication of this framework under Apache-2.0 does not grant, license, or convey rights to any private GitMoney OS repository, Mothership vault, proprietary skill directory, or client engagement asset.
 
 ## Commercial boundary
 
-The free and open layer is the skeleton.
+The open-source framework is the skeleton. The paid engagement is the living machine.
 
-The paid layer is:
-
-- judgment;
-- diagnosis;
-- implementation;
-- integration;
-- governance;
-- adaptation;
-- private method;
-- client-specific architecture.
-
-## Positioning line
-
-GitMoney OS is open source where the industry needs a standard and private where the client needs transformation.
-
-The skeleton is free.
-
+```text
+The skeleton is open.
 The living machine is paid.
+```
+
+A business may freely adopt the public skeleton to structure its own files. A company pays when it requires:
+
+1. forensic diagnosis of its actual operating constraints;
+2. custom execution contracts and private skill architecture;
+3. hands-on installation of the forward-deployed operating system;
+4. ongoing cybernetic governance and drift control.
+
+## Safe reuse
+
+You may safely:
+
+- fork and clone this public framework;
+- adapt the folder conventions and templates for internal use;
+- study the POL, VSM, ICM, and IFL architecture maps;
+- reference the public framework as an operating standard.
+
+You must not:
+
+- represent public adoption as a formal endorsement by Hitsuyo Aku;
+- make unsubstantiated claims of diligence readiness based solely on template usage;
+- copy or attempt to de-anonymize private client data.
+
+## What remains proprietary
+
+All advanced implementation methods, diagnostic algorithms, proprietary skills, and commercial engines remain protected. The public framework provides the showroom; the private practice delivers the enterprise transformation.
+
+```text
+ENTITY: open-source-boundary.md
+ROLE: License scope and commercial boundary definition
+OWNER: Hitsuyo Aku
+STATUS: active-public
+CLASSIFICATION: public
+LICENSE: Apache-2.0 (restricted strictly to gitmoney-public-framework)
+PRIMARY_PAID_ENTRY: Identity Forensics Audit ($20,000)
+MERGE_AUTHORIZED: NO
+DEPLOYMENT_AUTHORIZED: NO
+```
