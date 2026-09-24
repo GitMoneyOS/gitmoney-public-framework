@@ -1,10 +1,10 @@
 # Enterprise Systems Architecture with Hitsuyo Aku
 
-GitMoney OS is a public way to inspect part of Hitsuyo Aku's Enterprise Systems Architecture practice. The paid work addresses a different question: where does a founder-led business depend on one person's memory, judgment, context, authority, or intervention, and what architecture would let the work operate with clearer ownership and evidence?
+GitMoney OS is the open-source public framework layer inside Hitsuyo Aku's Enterprise Systems Architecture practice. The paid work addresses a different question: where does a founder-led business depend on one person's memory, judgment, context, authority, or intervention, and what architecture would let the work operate with clearer ownership and evidence?
 
 Hitsuyo Aku works as an **Enterprise Systems Architect and Forward-Deployed Business Engineer**. Identity Forensics Lab is the investigative and intervention practice behind the engagement. GitMoney OS is one possible implementation surface, not a mandatory platform for every client.
 
-The public framework is the free proof layer. The paid work is the private operating transformation.
+The public framework is the open skeleton. The paid work is the private operating transformation.
 
 ## When this is your problem
 
@@ -19,7 +19,7 @@ This work is relevant when:
 - automation says complete without proving what happened;
 - the business needs a decision-grade architecture before building more machinery.
 
-GitMoney OS lets a buyer inspect the public pattern. The engagement applies the discipline to the buyer's actual records, constraints, workflows, and authority structure.
+GitMoney OS lets a buyer inspect and use the public skeleton. The engagement applies the private discipline to the buyer's actual records, constraints, workflows, and authority structure.
 
 ## The main offer: Identity Forensics Audit
 
@@ -54,10 +54,10 @@ Folders and written agent instructions can improve context selection. They do no
 
 ## Commercial translation
 
-- GitMoney OS shows how public proof works.
+- GitMoney OS shows the open standard.
 - Identity Forensics Audit finds where your company lacks proof.
 - Architecture Sprint answers one bounded architecture question.
 - Sovereign Reconstruction installs the private operating architecture after evidence supports a build.
 - Governance keeps the system learning where ongoing review is needed.
 
-[Read the GitMoney OS Public Framework](https://github.com/GitMoneyOS/gitmoney-public-framework) as the free resource. Public viewing does not establish reuse rights; check the repository's published license if one is added.
+[Read the GitMoney OS Public Framework](https://github.com/GitMoneyOS/gitmoney-public-framework) as the open-source skeleton. Reuse rights for that repository are governed by its published license. Private GitMoney OS methods, delivery machinery, skills, CAC systems, and client implementation systems remain proprietary unless a separate repository explicitly says otherwise.
