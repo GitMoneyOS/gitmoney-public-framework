@@ -10,6 +10,20 @@ The reading experience is meant to be inspectable, not exhaustive. A founder sho
 
 The larger thesis is that the next generation of elite businesses will not look like bloated org charts. They will look like small teams with unusually clear memory, unusually disciplined AI delegation, and unusually inspectable records. GitMoneyOS is the operating pattern for that kind of company.
 
+GitMoney OS is not a prompt pack, Notion template, AI automation recipe, GitHub tutorial, productivity system, or free calculator replacement. It is a public proof layer for governing AI-assisted business work.
+
+## If you only have 10 minutes
+
+Use this inspection path:
+
+1. [`START-HERE.md`](../../START-HERE.md)
+2. [`proof-index.md`](proof-index.md)
+3. [`founder-verification-checklist.md`](founder-verification-checklist.md)
+4. [`../private-machine-boundary.md`](../private-machine-boundary.md)
+5. [`../../CONSULTING.md`](../../CONSULTING.md)
+
+The goal is not to read every file. The goal is to see whether the system has doctrine, boundaries, receipts, claim discipline, and a paid path that makes sense for a serious operating wound.
+
 ## Read This First If The Tools Are New
 
 GitMoneyOS uses tool names, but the model is plain:
@@ -63,19 +77,20 @@ That is why this matters for serious scale. A solo operator or small team can on
 
 ## Start Here
 
-1. [Brand Narrative](brand-narrative.md)
-2. [Founder Presentation Runbook](founder-presentation-runbook.md)
-3. [Proof of Concept](proof-of-concept.md)
-4. [Three-Layer Glass House](three-layer-glass-house.md)
-5. [Proof of Work](proof-of-work.md)
-6. [Proof of Quality](proof-of-quality.md)
-7. [Public-Safe Self-Audit Summary](self-audit-summary.md)
-8. [Coherence Map](coherence-map.md)
-9. [Onboarding Curriculum Path](onboarding-curriculum-path.md)
-10. [Founder Verification Checklist](founder-verification-checklist.md)
-11. [Source Doctrine Alignment](source-doctrine-alignment.md)
-12. [QMM - Proof You Can Inspect](gitbuilt-qmm-proof-packet.md) *(public-review candidate)*
-13. [GitMoney OS v1 Source Document](../source-doctrine/GitMoney_OS_v1.docx)
+1. [Proof Index](proof-index.md)
+2. [Brand Narrative](brand-narrative.md)
+3. [Founder Presentation Runbook](founder-presentation-runbook.md)
+4. [Proof of Concept](proof-of-concept.md)
+5. [Three-Layer Glass House](three-layer-glass-house.md)
+6. [Proof of Work](proof-of-work.md)
+7. [Proof of Quality](proof-of-quality.md)
+8. [Public-Safe Self-Audit Summary](self-audit-summary.md)
+9. [Coherence Map](coherence-map.md)
+10. [Onboarding Curriculum Path](onboarding-curriculum-path.md)
+11. [Founder Verification Checklist](founder-verification-checklist.md)
+12. [Source Doctrine Alignment](source-doctrine-alignment.md)
+13. [QMM - Proof You Can Inspect](gitbuilt-qmm-proof-packet.md) *(public-review candidate)*
+14. [GitMoney OS v1 Source Document](../source-doctrine/GitMoney_OS_v1.docx)
 
 ## Coherence Rule
 
