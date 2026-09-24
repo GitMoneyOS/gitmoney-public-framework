@@ -2,13 +2,14 @@
 
 ## Header
 - **Task ID:** TASK-001
+- **Job:** Standardize client onboarding workflow into a repeatable SOP
 - **Executor:** Claude Code / Assistant
 - **Owner:** Sarah Connor
 - **Date:** 2026-09-20
 - **Commit SHA:** 4a7c81f
 - **Status:** OWNER_APPROVED
 
-## 1. Modifications Executed
+## 1. What changed (Modifications Executed)
 | File | Action | Summary |
 |---|---|---|
 | `deliverables/client-onboarding-sop.md` | Created | Complete 5-phase client onboarding SOP |

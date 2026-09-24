@@ -50,3 +50,7 @@ The starter vault has fixed lanes. File into them; do not invent new top-level f
 - Notes: short, plain, searchable. `pricing-objection-answers.md`, not `Untitled 47.md`.
 - Agent briefs: `brief-YYYY-MM-DD-short-job-name.md`.
 - Decisions: `decision-YYYY-MM-DD-short-topic.md`.
+
+## Private Machine Boundary
+
+The private Mothership vault topology, advanced multi-layer classification planes, and sovereign routing infrastructure belong exclusively to the private GitMoney machine.

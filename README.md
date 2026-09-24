@@ -8,6 +8,8 @@ This repository is the open-source part of the GitMoney OS ecosystem. It exists 
 
 The public framework defines the open standard. The private GitMoney OS, Mothership, Skills, CAC, Audit, Delivery, SaaS, and client implementation systems remain proprietary operating machinery. A company pays when it needs the advanced private methods applied to its own context, evidence, workflows, people, permissions, and commercial constraints.
 
+Private GitMoney skills are not required to adopt the public framework. Any capable coding or workbench agent (such as Codex, Claude Code, or Antigravity) can operate the open skeleton using [`gitmoney-public-operator`](starter/.agents/skills/gitmoney-public-operator/SKILL.md).
+
 GitMoney OS is one implementation path within Hitsuyo Aku's Enterprise Systems Architecture practice. It helps a founder-led team put source material, decisions, staged work, and reviewable changes where the right people can find them. Each organization must validate its own workflows, controls, permissions, and outcomes.
 
 ## Start here if you are a buyer
@@ -88,6 +90,7 @@ Git commits and pull requests can make changes inspectable. They do not make a c
 - [`docs/quickstart.md`](docs/quickstart.md): set up your AI office in 20 minutes.
 - [`templates/starter-vault/`](templates/starter-vault/): canonical public Source Memory starter scaffold (private thinking room).
 - [`starter/`](starter/): canonical public AI Office starter scaffold (agent workbench and repository tree).
+- [`starter/.agents/skills/gitmoney-public-operator/`](starter/.agents/skills/gitmoney-public-operator/SKILL.md): thin public operator skill for governing Source Memory, briefs, and GitHub records without private skills.
 - [`templates/`](templates/): copy-paste starter files (AGENTS.md, 00_COCKPIT.md, contracts, receipts).
 - [`examples/fictional-studio-co/`](examples/fictional-studio-co/): end-to-end worked example of an agency using the skeleton.
 - [`schemas/`](schemas/): Draft-07 JSON schemas for contracts, receipts, and decision records.

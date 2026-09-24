@@ -20,6 +20,41 @@ The GitMoney OS Public Framework is an open-source skeleton. It exists to create
 
 The private GitMoney OS, Mothership, Skills, CAC, Audit, Delivery, SaaS, and client implementation systems remain proprietary operating machinery.
 
+## Public Protocol vs. Private Operator
+
+GitMoney OS separates the operating standard from the intelligence used to install and run advanced implementations.
+
+The public framework teaches:
+
+- what the rooms are;
+- how work moves between them;
+- how authority is bounded;
+- how evidence is recorded;
+- how humans approve promotion.
+
+The private system contains:
+
+- diagnosis;
+- advanced orchestration;
+- specialized skill intelligence;
+- client-specific configuration;
+- proprietary scoring and decision logic;
+- implementation and governance machinery.
+
+You do not need private GitMoney skills to use the public standard.
+
+| Public standard | Private machine |
+|---|---|
+| Three-layer protocol | Production operator |
+| Starter Vault | Private Mothership |
+| Public operator skill | Canonical private skills |
+| Generic ICM contracts | Client-specific ICM compilers |
+| Basic promotion protocol | Advanced promotion intelligence |
+| Simple conformance checks | Private diagnostic rubrics |
+| Public schemas | Proprietary runtime/state logic |
+| Validation scripts | Private orchestration |
+| Examples | Client implementation playbooks |
+
 ## What is open source
 
 The open-source public framework encompasses:

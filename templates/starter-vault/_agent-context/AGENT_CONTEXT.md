@@ -30,6 +30,12 @@ The cybernetic loop:
 Capture in Source Memory -> Shape in Workbench -> Promote to GitHub -> Review & Anneal
 ```
 
+## Governing Skill & Framework Independence
+
+- **Governing Operator:** [`gitmoney-public-operator`](../../../starter/.agents/skills/gitmoney-public-operator/SKILL.md).
+- **Public Protocol Dependency Only:** This Starter Vault relies exclusively on public open-source contracts: `gitmoney-public-operator`, the generic ICM execution contract, the generic ICM receipt, and the public promotion protocol.
+- **Zero Private Skill Dependency:** This vault requires no private GitMoney skills, no private operator corpus, no Mothership connection, and no proprietary orchestration or diagnostic machinery to operate.
+
 ## Required Operational Laws
 
 1. **This vault is Source Memory:** User-created notes are private by default.

@@ -28,6 +28,9 @@ Before beginning, ensure you have:
 2. A local terminal with `git` and `node` (v18+) installed.
 3. Your preferred AI coding assistant or workbench (Codex, Antigravity 2, or Claude Code).
 
+> [!NOTE]
+> Private GitMoney skills are not required to adopt this quickstart. The public framework includes [`starter/.agents/skills/gitmoney-public-operator/`](../starter/.agents/skills/gitmoney-public-operator/SKILL.md), allowing any capable agent to operate the skeleton safely.
+
 ## Optional Pre-Step: Start with Source Memory
 
 If you need a private thinking and knowledge layer before creating your GitHub AI Office, begin with the **Canonical Starter Vault**:

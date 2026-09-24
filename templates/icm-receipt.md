@@ -2,6 +2,7 @@
 
 ## Header
 - **Task ID:** [TASK-ID]
+- **Job:** [Brief description of task]
 - **Executor:** [Agent / Developer]
 - **Owner:** [Accountable Human Owner]
 - **Date:** [YYYY-MM-DD]
@@ -9,7 +10,7 @@
 - **Branch:** [Branch Name]
 - **Status:** [DRAFT | VERIFIED | OWNER_APPROVED | PROMOTED | HELD]
 
-## 1. Modifications Executed
+## 1. What changed (Modifications Executed)
 | File | Action | Summary of Change |
 |---|---|---|
 | `path/to/file` | Created / Modified | Brief description of changes |

@@ -46,15 +46,15 @@ Created from `_agent-context/AGENT_BRIEF_TEMPLATE.md`. A brief is valid when it 
 
 ## Stage 3: Workbench Artifact
 
-The agent's output: a draft document, plan, analysis, code-with-blueprint, or asset. It is a draft regardless of quality. Drafts live in the lane the brief names, never directly in `90-promoted-to-github/`.
+The agent output: a draft document, plan, analysis, code-with-blueprint, or asset. It is a draft regardless of quality. Drafts live in the lane the brief names, never directly in `90-promoted-to-github/`.
 
 ## Stage 4: Evidence
 
-Every artifact ships with proof: the output itself, plus anything that shows it works - test output, screenshot, before/after, checklist run. No evidence, no review.
+Every artifact ships with proof: the output itself, plus anything that shows it works, such as test output, screenshot, before/after, or checklist run. No evidence, no review.
 
 ## Stage 5: Owner Review
 
-The owner reviews against `acceptance-rubric.md`. Outcomes: approve, revise (back to Stage 3 with notes), or archive. Approvals and rejections are recorded - on the board and, for significant calls, in `80-decisions/`.
+The owner reviews against `acceptance-rubric.md`. Outcomes: approve, revise (back to Stage 3 with notes), or archive. Approvals and rejections are recorded on the board and, for significant calls, in `80-decisions/`.
 
 ## Stage 6: GitHub Promotion
 
@@ -70,7 +70,11 @@ Only after approval, per `promotion-rules.md`. The agent prepares; the owner exe
 | Ready | Next up; brief is complete and valid |
 | Doing | In progress. **WIP limit: 3.** A fourth job waits |
 | Review | Artifact and evidence delivered; awaiting owner |
-| Blocked | Waiting on a decision, input, or dependency - says which |
+| Blocked | Waiting on a decision, input, or dependency (must specify which) |
 | Done | Approved, and promoted if applicable |
 
 Agents move their own cards and date every move. If Doing is full, finish something.
+
+## Private Machine Boundary
+
+Advanced multi-agent routing engines, automated task compilers, client-specific execution membranes, and production delivery systems belong exclusively to the private GitMoney machine.

@@ -13,7 +13,7 @@ tags:
 
 ## Purpose
 
-Define the rules and workflow for promoting work from Obsidian to the official GitHub record.
+Define the rules and workflow for promoting work from Source Memory to the official GitHub record.
 
 ## Owner
 
@@ -23,35 +23,35 @@ How work leaves private memory and enters the official record. This is the most 
 
 ## Preconditions
 
-A note may be prepared for promotion only when all are true:
+A note may be prepared for promotion only when all conditions are met:
 
-1. `status: ready-to-promote` - it passed the asset test (owner, approval path, evidence, reuse path, lifecycle).
+1. `status: ready-to-promote`: It passed the asset test (owner, approval path, evidence, reuse path, lifecycle).
 2. Its `promotion_target` names a real destination, not `none`.
-3. Its `classification` has been deliberately set to `student-safe` or `public` by the owner. `private` never promotes.
+3. Its `classification` has been deliberately set to `student-safe` or `public` by the owner. Notes marked `private` never promote.
 
 ## Promotion Targets
 
 | Target | Becomes | Format |
 |---|---|---|
-| `github-issue` | A trackable task in the student's organization | Title, summary, why it matters, done-when, evidence field |
-| `repo-doc` | A document in a repo | Clean Markdown, no vault-only syntax |
+| `github-issue` | A trackable task in the organization | Title, summary, why it matters, done-when, evidence field |
+| `repo-doc` | A document in a repository | Clean Markdown, no vault-only syntax |
 | `decision-log` | An official decision record | Decision, context, options considered, evidence, date, owner |
-| `content` | A content asset for publishing | Per the content idea note's spec |
+| `content` | A content asset for publishing | Per the content idea specification |
 | `sop` | An official procedure | Numbered steps another person could run cold |
 | `agent-brief` | A reusable brief in the official record | The brief, generalized, with usage notes |
 
-## The Public-Safety Check
+## The Public Safety Check
 
 Before any artifact is queued, scan it and strip or flag:
 
-- Secrets, credentials, API keys, tokens - including realistic-looking examples.
+- Secrets, credentials, API keys, tokens, including realistic-looking examples.
 - Private file paths, machine names, personal directory structures.
 - Client names, client data, or anything identifying a third party without consent.
-- Internal-only doctrine or notes classified `private` that the artifact quotes.
+- Internal doctrine or notes classified `private` that the artifact quotes.
 - Unsupported claims: revenue promises, tool-superiority claims, legal, security, investment, or acquisition claims.
 - Wikilinks and vault-only syntax that would break outside Obsidian.
 
-Anything flagged goes to the owner with the artifact - never silently removed, never silently shipped.
+Anything flagged goes to the owner with the artifact: never silently removed, never silently shipped.
 
 ## The Hand-Off
 
@@ -62,4 +62,8 @@ Anything flagged goes to the owner with the artifact - never silently removed, n
 
 ## What Never Promotes
 
-Raw inbox captures, doctrine notes, anything failing the asset test, anything classified `private`, and anything whose safety check found unresolved flags. No exceptions for enthusiasm.
+Raw inbox captures, private doctrine notes, anything failing the asset test, anything classified `private`, and anything whose safety check found unresolved flags. No exceptions for enthusiasm.
+
+## Private Machine Boundary
+
+Advanced promotion scoring algorithms, automated cryptographic receipts, multi-repo release orchestration, and production deployment pipelines belong exclusively to the private GitMoney machine.

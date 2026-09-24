@@ -8,6 +8,8 @@ GitMoney OS is not a prompt pack, Notion template, productivity system, GitHub t
 
 The public framework shows the operating skeleton. The paid work diagnoses and installs the private machinery behind it.
 
+You do not need private GitMoney skills to use the public standard. The skeleton is designed to be operated with [`starter/.agents/skills/gitmoney-public-operator/`](starter/.agents/skills/gitmoney-public-operator/SKILL.md) and any capable agent.
+
 ## The expensive problem
 
 AI makes business output faster. It does not automatically make that work owned, approved, findable, transferable, or safe to act on.
