@@ -1,0 +1,15 @@
+SPDX-License-Identifier: Apache-2.0
+
+Copyright 2026 GitMoney OS contributors
+
+The GitMoney OS Public Framework is licensed under the Apache License, Version 2.0.
+
+You may use, copy, modify, and distribute this public framework under the terms of Apache-2.0.
+
+A copy of the Apache License, Version 2.0 is available at:
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+This license applies only to the GitMoney OS Public Framework repository unless another repository explicitly states otherwise.
+
+Private GitMoney OS repositories, Mothership systems, private skills, CAC systems, client delivery systems, audit templates, implementation playbooks, proposal/SOW machinery, client records, and proprietary operating methods are not licensed by this file.
