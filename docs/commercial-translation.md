@@ -17,15 +17,15 @@ tags:
 
 Translate the public framework into the paid commercial ladder without turning the repository into a sales pitch.
 
-GitMoney OS is the open public skeleton. It shows how governed AI-assisted work can become inspectable business infrastructure. The paid work applies that discipline to a specific enterprise.
+GitMoney OS is the open-source Governed AI Work Protocol for building AI Offices. The public framework shows how human and agent work can move from private context to bounded execution to owner-approved institutional record. The paid work diagnoses and installs the enterprise-specific governance, memory, authority, and execution architecture behind a private implementation.
 
 ## Plain-English Job
 
 Map the open-source skeleton to the commercial engagement ladder so buyers understand exactly what is free, what is paid, what each paid tier delivers, and how to engage Hitsuyo Aku.
 
-## Open skeleton: GitMoney OS Public Framework
+## Public protocol: GitMoney OS
 
-GitMoney OS shows how public proof works:
+The GitMoney AI Office operating model shows how public proof works:
 
 - source material needs a memory layer;
 - AI-assisted work needs a bounded workbench;
@@ -36,6 +36,8 @@ GitMoney OS shows how public proof works:
 - private machinery remains protected.
 
 Reuse rights are governed by the published Apache-2.0 license. The license applies solely to this public framework repository and does not extend to private GitMoney OS repositories, Mothership systems, private skills, CAC infrastructure, or client delivery playbooks.
+
+The paid product is not an "AI Office" package. The AI Office is an implementation outcome. Paid work remains diagnosis, architecture, installation, and governance.
 
 ## Paid entry: Identity Forensics Audit
 
