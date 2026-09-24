@@ -1,116 +1,49 @@
 # GitMoney OS Public Framework
 
-### Plain-English GitHub, Interpretable Context Methodology, and The Skills-as-Architecture Law
+**A plain-language pattern for governing AI-assisted business work in GitHub.**
 
-**GitMoney OS** is the open-source framework that turns GitHub into a plain-English, enterprise-grade AI Office for non-technical founders, operators, and forward-deployed engineers.
+This repository is free to read. A public repository can show how the framework is organized; it does not by itself grant permission to copy, adapt, or redistribute the material. Consult a published license for those rights if one is added.
 
-This is not GitHub for software developers.
+GitMoney OS is one implementation path within Hitsuyo Aku's Enterprise Systems Architecture practice. It helps a founder-led team put source material, decisions, staged work, and reviewable changes where the right people can find them. The framework has been developed through Hitsuyo Aku's own operating system and bounded pilot work. Each new organization must validate its own workflows, security controls, permissions, and outcomes.
 
-This is GitHub as **Business Infrastructure** and the **Cryptographic Court of Record** for teams running autonomous AI agents.
+## The architecture it serves
 
----
+1. **Primal Ontological Loop (POL):** state what the business is, what it commits to, and how it learns from its own work.
+2. **Viable System Model (VSM):** identify operating functions, accountable owners, coordination, control, future intelligence, and policy authority.
+3. **Interpretable Context Methodology (ICM):** organize the context, stage contracts, artifacts, and handoffs an agent or person needs for a bounded job.
+4. **Identity Forensics Lab (IFL):** investigate evidence, design interventions, and compare results with the prior state.
 
-## 1. The Core Law: Folder Structure IS Agent Architecture
+**Interpretable Context Methodology is Jake Van Clief's work.** See the [original methodology repository](https://github.com/RinDig/Interpretable-Context-Methodology) and [paper](https://arxiv.org/html/2603.16021v2). Hitsuyo Aku used related files-in-folders logic before formally naming ICM as a component of this integrated architecture. Those earlier practices and this later adoption should not be mistaken for authorship of ICM.
 
-Current industry approaches to AI agents rely on heavy, black-box orchestration frameworks (LangChain, CrewAI, AutoGen). In production, these frameworks fail due to context rot, hidden state drift, and synchronization crashes.
-
-GitMoney OS implements **Interpretable Context Methodology (ICM: arXiv:2603.16021v2)**:
-
-> **You do not manage autonomous agents with complex Python orchestration code. You manage autonomous agents by structuring the filesystem.**
-
-Under the **Skills-as-Architecture Law**, architecture is not taught through syntax lectures; it is enforced through agent skill boundaries and folder structure.
-
-When you configure your repository with disciplined folders and canonical skills, non-technical founders can direct autonomous coding agents that automatically implement enterprise standards (bcrypt password hashing, auth boundaries, database normalization) without writing code.
-
----
-
-## 2. The 5-Layer ICM Context Hierarchy
-
-Every GitMoney OS repository implements the 5-layer context hierarchy:
+## A working repository pattern
 
 ```text
-your-company-ai-office/
-├── AGENTS.md                  # Layer 0: Global Identity, role boundaries, and hard negative constraints
-├── 00_COCKPIT.md              # Layer 0: Human Owner Decision Queue and active operational pulse
-├── 01_research/               # Layer 2: Stage Contract (Discovery inputs, transcripts, evidence)
-├── 02_architecture/           # Layer 2: Stage Contract (Specs, ADRs, data schemas, blueprints)
-├── 03_build/                  # Layer 2: Stage Contract (Implementation deliverables and production code)
-├── .agents/skills/            # Layer 3: Persistent Factory Skills (Security, API design, copywriting)
-├── .agents/rules/             # Layer 3: Persistent Engineering Rules and governance constraints
-└── _generated/                # Layer 4: Working Artifacts, PR drafts, and ephemeral run outputs
+your-ai-office/
+├── AGENTS.md             # Task and behavior guidance
+├── 00_COCKPIT.md         # Owner decisions and current work
+├── 01_research/          # Sources, questions, and evidence
+├── 02_architecture/      # Decisions, interfaces, and plans
+├── 03_build/             # Bounded implementation work
+├── .agents/skills/       # Reusable instructions, where installed
+└── _generated/           # Draft outputs awaiting review
 ```
 
-### Why This Works
-- **Layer 0 (Global Identity):** The agent reads `AGENTS.md` to learn who it is, where it is, and what it is strictly forbidden from doing.
-- **Layer 1 (Workspace Routing):** Routes incoming tasks to the accountable executive seat (CEO, CMO, COO, CTO, CFO).
-- **Layer 2 (Stage Contract):** Scopes the exact inputs, processing rules, and outputs for the current step. A stage that researches does not build.
-- **Layer 3 (Persistent Factory):** Stable domain rules that persist across all runs.
-- **Layer 4 (Working Artifacts):** Per-run dynamic inputs that change with every execution.
+This is an **example of context organization**, not a security perimeter or a universal required folder tree. File placement can help an agent select relevant material. Technical access depends on separately configured repository permissions, tool capabilities, runtime authorization, and data boundaries. A written instruction can say what an agent should do; a separate control must limit what it can actually do.
 
----
+## One bounded change
 
-## 3. Plain-English GitOps Translation Table
+For a consequential task, record:
 
-For non-technical founders, Git commands feel like an intimidating black box. Here is the plain-English translation of GitHub's primitives into business operating controls:
+1. **Source and problem:** what was observed, where it came from, and what remains uncertain.
+2. **Owner and authority:** who can decide, who can act, and which approval applies to this exact change.
+3. **Stage and handoff:** what input is allowed, what output is expected, and who receives it next.
+4. **Implementation and check:** the smallest relevant change, the checks appropriate to the repository, and what those checks actually cover.
+5. **Receipt:** the version, result, exceptions, rollback path, and next decision.
 
-| Developer Term | GitMoney OS Business Control | Why It Matters |
-| :--- | :--- | :--- |
-| **Organization** | **AI Office Building** | The secure perimeter holding all company knowledge and departments. |
-| **Repository** | **Business Vault** | A secure safe dedicated to one category of operational assets. |
-| **Folder** | **ICM Context Scope** | Limits what an agent can read and write, preventing context rot. |
-| **Branch** | **Agent Sandbox** | An isolated scratchpad where an agent works without risking production state. |
-| **Commit** | **Cryptographic Receipt** | An immutable, timestamped record proving exactly what changed and when. |
-| **Pull Request** | **Mandatory Edit Surface** | The review checkpoint where a human owner inspects, edits, and ratifies agent work. |
-| **GitHub Actions** | **Deterministic Safety Gate** | Automated tests, security scans, and policy locks that run before merging. |
-| **CODEOWNERS** | **Executive Chain of Command** | Defines which human or executive seat has final approval over each directory. |
+Git commits and pull requests can make changes inspectable. They do not make a claim true, a deployment safe, or client material publishable on their own. A separate reviewer and owner decision are needed where the work warrants them.
 
----
+## Work with Hitsuyo Aku
 
-## 4. The Three Mutation Invariants
+The **$20,000 Identity Forensics Audit** is the main paid entry to the Enterprise Systems Architecture service. Qualified buyers can [review the Audit and apply directly](https://architect.hitsuyoaku.io/sovereign-brand-os-audit). A separate **$7,500 Architecture Sprint** addresses a narrower immediate architecture question; [ask about its current scope](https://architect.hitsuyoaku.io/contact?tier=v2-diagnose-architecture-sprint). Smaller Diagnostic scopes can be offered where a narrower investigation fits. Sovereign Reconstruction is a contracted build scoped after the Audit, starting at $50,000; ongoing governance is separately contracted.
 
-To prevent autonomous agents from hallucinating or damaging business state, every agent operation in GitMoney OS must satisfy three non-negotiable rules:
-
-1. **Atomic:** The agent performs exactly one bounded task per run.
-2. **Inspectable:** Every change is captured as a human-readable diff in plain text on disk.
-3. **Reversible:** Fast one-action rollback via Git commits if an agent drifts.
-
----
-
-## 5. The Three-Plane Operating System
-
-```text
-+-----------------------------------------------------------------------------------+
-|                        GITMONEY OS 3-PLANE ARCHITECTURE                           |
-+-----------------------------------------------------------------------------------+
-|                                                                                   |
-|  [ Private Memory ]             [ Agent Workbench ]          [ Court of Record ]  |
-|   Obsidian PKM Vault   <----->   AI Office Cockpit   <----->   GitHub Repositories |
-|  Raw capture & doctrine        Autonomous Agent Platforms    Governed Proof Assets|
-|                                                                                   |
-+-----------------------------------------------------------------------------------+
-```
-
-- **Obsidian is Private Memory:** Capture raw ideas, customer notes, and private doctrine. Never leaves local disk without approval.
-- **Agent Platforms are Workbenches:** Codex, Claude Code, Antigravity. Autonomous agents shape raw ideas into structured drafts.
-- **GitHub is the Cryptographic Court of Record:** Approved, evidence-backed assets that have passed the Five-Part Asset Test.
-
----
-
-## 6. Commercial Engagements & Diagnostic Entry
- 
-GitMoney OS is backed by the commercial delivery infrastructure of **Identity Forensics Lab (IFL)** (`IFL-COMM-V2-2026-09-01`):
- 
-- **Founder Dependency Diagnostic ($1,500 / $3,500 / $7,500):** Single Vector ($1,500), Full Executive ($3,500), or 1-Day Sprint ($7,500). Measure your Founder Dependency Bottleneck Rate (FDBR) and inspect what breaks when leadership steps away for 96 hours.
-- **Identity Forensics Audit ($20,000):** Comprehensive forensic audit across VSM Systems 1-5 and System 3* audit channels, agent liability boundaries, and court of record verification.
-- **Sovereign Reconstruction (FROM $50,000 Floor):** Production-hardened enterprise systems transformation, agent governance, and revenue engineering.
-- **Signal & Dependency Governance ($10,000 / month):** Standing monthly cybernetic governance, drift monitoring, and skill updates.
- 
-Apply for a diagnostic: [architect.hitsuyoaku.io/contact?tier=v2-diagnose](https://architect.hitsuyoaku.io/contact?tier=v2-diagnose)
-
----
-
-## 7. Master Thesis & Deep Documentation
-
-Read the full viral manifesto:
-- **Master Thesis:** [The Skills-as-Architecture Law: Why Folder Structure Is Agent Architecture and Why GitHub Is Missing Their Own Trillion-Dollar Enterprise Market](docs/master-thesis.md)
-- **Executive Authority:** [@HitsuyoAkuWeb3](https://github.com/HitsuyoAkuWeb3)
+This framework is the free resource for learning how the architecture organizes work. Reading or adopting it does not by itself establish a financial return or security guarantee.

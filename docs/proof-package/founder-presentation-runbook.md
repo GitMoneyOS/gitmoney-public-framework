@@ -2,8 +2,8 @@
 title: "founder-presentation-runbook"
 type: "vault-memory"
 owner: "Hitsuyo Aku"
-status: "active-internal"
-classification: "internal"
+status: "active-public"
+classification: "public"
 approval_path: "Hitsuyo Aku"
 tags:
   - vault/memory
@@ -73,7 +73,7 @@ This is not for founders looking for another productivity hack. It is for operat
 
 **Navigation**
 
-Start with the proof package, then run the AI Office Audit.
+Start with the proof package, then explore the Identity Forensics Audit if a formal engagement is relevant.
 
 ## Five-Minute Flow
 
@@ -161,9 +161,9 @@ Say:
 
 For a founder:
 
-- Start with an AI Office Audit.
-- Use the audit to map scattered knowledge, access risks, AI workflows, and GitHub readiness.
-- Convert the audit into a Setup Sprint only when the evidence justifies it.
+- Review the public proof package and Exit-Ready Self-Assessment.
+- For a paid engagement, review the $20,000 Identity Forensics Audit as the primary paid entry point, or the separate $7,500 Architecture Sprint for a bounded inquiry.
+- Any Sovereign Reconstruction build (starting at $50,000) is separately scoped only after an audit establishes the required evidence, architecture, and acceptance criteria.
 
 For a collaborator:
 

@@ -27,7 +27,7 @@ Plain-English translation: when someone finishes one of our diagnostics, the pro
 
 | Surface | Signal | Issue Template | Decision It Informs |
 | --- | --- | --- | --- |
-| Exit-Ready Score Self-Assessment | Completed score filed with band and top risk | `score-completed` | Which score bands are common, and which offer each band should route to |
+| Exit-Ready Score Self-Assessment | Completed score filed with band and top risk | `score-completed` | Discussion exercise feedback; real business scores and risks remain in private records. |
 | First Official Asset path | Receipt filed with commit link and time-to-asset | `first-official-asset` | Where founders stall between messy note and governed receipt |
 | Self-Heal Check | Run filed with gap count and chosen control | `self-heal-run` | Which governance gaps are most common in the wild |
 
