@@ -1,0 +1,226 @@
+{
+  "schema_version": "0.1.0",
+  "assessment_scope": "ONE_PROCESS",
+  "assessment_id": "ARG-FSC-FIX-FIRST",
+  "created_date": "2026-09-24",
+  "manifest_status": "CANDIDATE",
+  "evidence_verified": "NO",
+  "production_authorized": "NO",
+  "rule_decisions": {
+    "score_mapping": {
+      "status": "OWNER_CONFIRMED",
+      "rule_id": "COUNT_EVIDENCE_SUPPORTED_CHECKS",
+      "decision_reference": "AR-SCORING-RULING-2026-09-24",
+      "decision_date": "2026-09-24"
+    },
+    "level_2_threshold": {
+      "status": "OWNER_CONFIRMED",
+      "rule_id": "S1_S2_S3_EACH_AT_LEAST_4",
+      "decision_reference": "AR-SCORING-RULING-2026-09-24",
+      "decision_date": "2026-09-24"
+    }
+  },
+  "process": {
+    "name": "Internal project handoff preparation",
+    "owner": "Mira Chen (fictional process owner)",
+    "domain": "Fictional Studio Co. internal operations",
+    "purpose": "Prepare a handoff packet for human review before it enters the project queue.",
+    "start_condition": "A project lead marks a handoff as ready for review.",
+    "finish_condition": "A named coordinator accepts or returns the packet; the AI does not route it.",
+    "inputs": [
+      "Fictional project brief and handoff fields."
+    ],
+    "outputs": [
+      "A draft packet with missing fields called out."
+    ],
+    "dependencies": [
+      "Project lead; receiving coordinator; queue capacity."
+    ],
+    "volume": {
+      "status": "UNKNOWN",
+      "value": "unknown",
+      "unit": "items",
+      "period": "not measured"
+    },
+    "cycle_time": {
+      "status": "UNKNOWN",
+      "value": "unknown",
+      "unit": "minutes",
+      "period": "not measured"
+    },
+    "error_rework_baseline": {
+      "status": "UNKNOWN",
+      "error_rate": "unknown",
+      "rework_rate": "unknown",
+      "period": "not measured"
+    },
+    "desired_outcome": "A consistent internal result with a named person accountable for consequential decisions."
+  },
+  "founder_dependency": {
+    "score": 3,
+    "touchpoints": [
+      {
+        "type": "FINAL_JUDGMENT",
+        "description": "A fictional accountable owner reviews the output.",
+        "evidence_refs": []
+      }
+    ],
+    "interpretation": "Illustrative only; no real founder or operator was assessed."
+  },
+  "readiness_profile": {
+    "S1_OPERATIONS": {
+      "score": 4,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S2_COORDINATION": {
+      "score": 2,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S3_OPERATIONAL_CONTROL": {
+      "score": 4,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S3_STAR_INDEPENDENT_VERIFICATION": {
+      "score": 3,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S4_ENVIRONMENT_ADAPTATION": {
+      "score": 3,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S5_POLICY_AUTHORITY": {
+      "score": 3,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    }
+  },
+  "candidate_decision": {
+    "verdict": "FIX FIRST",
+    "requested_level": 2,
+    "maximum_candidate_level": 1,
+    "primary_bottleneck": "S2_COORDINATION",
+    "blockers": [
+      {
+        "code": "SYSTEM_EVIDENCE_UNSUPPORTED",
+        "description": "S1_OPERATIONS must have a supported score of at least 4.",
+        "owner": "Mira Chen (fictional process owner)",
+        "repair_evidence": "Provide current usable evidence for S1_OPERATIONS and recalculate its five-check score."
+      },
+      {
+        "code": "SYSTEM_EVIDENCE_UNSUPPORTED",
+        "description": "S2_COORDINATION must have a supported score of at least 4.",
+        "owner": "Mira Chen (fictional process owner)",
+        "repair_evidence": "Provide current usable evidence for S2_COORDINATION; document queue ownership and capacity."
+      },
+      {
+        "code": "SYSTEM_EVIDENCE_UNSUPPORTED",
+        "description": "S3_OPERATIONAL_CONTROL must have a supported score of at least 4.",
+        "owner": "Mira Chen (fictional process owner)",
+        "repair_evidence": "Provide current usable evidence for S3_OPERATIONAL_CONTROL and recalculate its five-check score."
+      }
+    ],
+    "reason": "The requested Level 2 exceeds the Level 1 ceiling because S1, S2, and S3 lack usable evidence or do not meet threshold; each unsupported system has effective score zero. S2 is the primary repair focus because handoff ownership and queue capacity are also unresolved. The scoring rules are confirmed; no execution authority is granted."
+  },
+  "action_boundary": {
+    "actions": [
+      {
+        "action": "Prepare an internal draft for the named owner to review.",
+        "boundary": "HUMAN_SUPERVISE",
+        "approval_required": true,
+        "evidence_refs": []
+      }
+    ],
+    "read_permissions": [
+      "Only the fictional process inputs provided for one run."
+    ],
+    "write_permissions": [
+      "Local draft buffer only."
+    ],
+    "forbidden_tools_actions": [
+      "Send or publish output",
+      "Change the system of record",
+      "Spend or commit funds"
+    ],
+    "spend_limit": {
+      "status": "NO_SPEND",
+      "maximum_amount": "0",
+      "currency": "USD",
+      "approval_required": true
+    },
+    "production_limit": {
+      "status": "SANDBOX_ONLY",
+      "allowed_environments": [
+        "LOCAL"
+      ],
+      "maximum_change_scope": "No production or customer-facing changes."
+    },
+    "data_boundary": {
+      "allowed_data": [
+        "Synthetic example inputs only."
+      ],
+      "forbidden_data": [
+        "Real customer, employee, credential, or confidential data."
+      ]
+    },
+    "customer_reputation_limit": "No external communication or customer-visible change.",
+    "strategic_identity_limit": "The accountable person retains all policy, identity, and judgment decisions.",
+    "escalation_path": [
+      {
+        "trigger": "Missing, conflicting, or out-of-scope input.",
+        "owner": "Mira Chen (fictional process owner)",
+        "response": "Stop, preserve the draft, and request human review."
+      }
+    ],
+    "safe_state": "No external action; retain a clearly labeled draft for human review.",
+    "permitted_tools_actions": [
+      "Fictional local drafting interface for the supplied synthetic process inputs; no network access."
+    ]
+  },
+  "authority": {
+    "authority_status": "NOT_GRANTED",
+    "process_owner": "Mira Chen (fictional process owner)",
+    "owner_decision_status": "PENDING",
+    "owner_decision_reference": "PENDING",
+    "separate_execution_authorization_required": "YES"
+  },
+  "source_refs": [],
+  "unknowns": [
+    "Queue capacity, handoff ownership, and recent error/rework baseline are unknown.",
+    "All scenario data is fictional and is not evidence about a real process.",
+    "The framework scoring rules are owner-confirmed; process-specific execution authority remains separate and ungranted."
+  ],
+  "level_gate_evidence": {
+    "telemetry": {
+      "status": "NOT_PROVIDED",
+      "description": "No Level 3 run telemetry is supplied by this Level 1 example.",
+      "evidence_refs": []
+    },
+    "independent_evaluation": {
+      "status": "NOT_PROVIDED",
+      "description": "No Level 3 independent-evaluation evidence is supplied.",
+      "evidence_refs": []
+    },
+    "bounded_live_operation": {
+      "status": "NOT_REQUIRED",
+      "description": "Not required for the Level 1 candidate in this example.",
+      "evidence_refs": []
+    }
+  }
+}

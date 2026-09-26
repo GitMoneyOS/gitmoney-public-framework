@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AuthorityRuntimeState",
+  "description": "Current durable authority state read by an enforcement adapter before every consequential action.",
+  "type": "object",
+  "required": ["schema_version", "grant_id", "grant_version", "principal_id", "authority_epoch", "status", "effective_actions", "spent_amount", "spend_currency", "last_transition_at", "last_revocation_receipt_id"],
+  "properties": {
+    "schema_version": {"type": "string", "enum": ["0.1.0"]},
+    "grant_id": {"type": "string", "pattern": "^AGR-[A-Z0-9-]{1,48}$"},
+    "grant_version": {"type": "integer", "minimum": 1},
+    "principal_id": {"type": "string", "minLength": 1},
+    "authority_epoch": {"type": "integer", "minimum": 0},
+    "status": {"type": "string", "enum": ["ACTIVE", "HOLD", "DOWNGRADED", "FROZEN", "REVOKED", "EXPIRED"]},
+    "effective_actions": {"type": "array", "items": {"type": "string"}},
+    "spent_amount": {"type": "number", "minimum": 0},
+    "spend_currency": {"type": "string", "pattern": "^[A-Z]{3}$"},
+    "last_transition_at": {"type": "string", "format": "date-time"},
+    "last_revocation_receipt_id": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false,
+  "x-gitmoney-schema-version": "0.1.0"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AuthorityRevocationTrigger",
+  "description": "Machine-readable runtime event evaluated against the active grant trigger policy.",
+  "type": "object",
+  "required": ["trigger_id", "grant_id", "principal_id", "run_id", "trigger_type", "triggered_at", "invariant_refs", "evidence_refs", "blocked_action_ids", "in_flight_action_ids"],
+  "properties": {
+    "trigger_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,47}$"},
+    "grant_id": {"type": "string", "pattern": "^AGR-[A-Z0-9-]{1,48}$"},
+    "principal_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "trigger_type": {"type": "string", "enum": ["HARD_INVARIANT_VIOLATION", "UNAUTHORIZED_ACTION_ATTEMPT", "VERIFICATION_FAILURE", "ANOMALY_THRESHOLD", "RISK_THRESHOLD"]},
+    "triggered_at": {"type": "string", "format": "date-time"},
+    "invariant_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+    "evidence_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+    "blocked_action_ids": {"type": "array", "items": {"type": "string"}},
+    "in_flight_action_ids": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false,
+  "x-gitmoney-schema-version": "0.1.0"
+}

@@ -14,7 +14,7 @@ GitMoney OS is the product. Governed AI Work Protocol is the category. The **AI 
 CATEGORY: Governed AI Work Protocol
 PRODUCT: GitMoney OS
 OPERATING MODEL: AI Office
-PUBLIC MODEL: 3 Rooms / 2 Artifacts / 3 Laws
+PUBLIC MODEL: 3 Rooms / 2 Core Artifacts / 4 Laws
 ```
 
 The public framework shows the protocol and operating model. The paid work diagnoses and installs the private machinery behind a specific enterprise implementation.
@@ -62,7 +62,7 @@ GitMoney OS is the public mechanism for addressing what the freeze exposes:
 Exposes hidden context, trapped judgment, and unreviewed automation
        |
        v
-GITMONEY PUBLIC SKELETON (3 Rooms / 2 Artifacts / 3 Laws)
+GITMONEY PUBLIC SKELETON (3 Rooms / 2 Core Artifacts / 4 Laws)
        |
        v
 Bounded wound  -> Architecture Sprint ($7,500)
@@ -129,6 +129,14 @@ It does not mean GitHub alone is a security boundary.
 It does not mean an agent instruction is the same thing as enforced permission.
 
 It does not mean a public framework can diagnose your company without access to your actual records, workflows, owners, exceptions, constraints, and evidence.
+
+## If you are considering more AI authority
+
+If you are asking “Can we automate this?”, “Can I give this agent more authority?”, or “Is this process ready to run autonomously?”, use the [Autonomy Readiness Gate](docs/diagnostics/autonomy-readiness.md) for that one process. The [worksheet](templates/autonomy-readiness-gate.md) and [fictional examples](examples/autonomy-readiness/README.md) show how to record the candidate and its blockers.
+
+If an actor already has a grant and runtime evidence turns hostile, use the [Authority Revocation and Circuit Breaker](docs/diagnostics/authority-revocation.md). It governs whether the actor may continue to execute; promotion review governs whether work becomes official. The reference evaluator is not a provider-level kill switch.
+
+This is an optional route for a specific process, not the starting point for every GitMoney reader. A Gate result is not proof that the process works or permission to grant access. Keep completed process evidence private.
 
 ## How to inspect the architecture and evidence
 

@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "grant_id": "AGR-REPLACE-WITH-OWNER-GRANT-ID",
+  "grant_version": 1,
+  "principal_id": "REPLACE-WITH-EXACT-ACTOR-ID",
+  "process_id": "REPLACE-WITH-EXACT-PROCESS-ID",
+  "status": "ACTIVE",
+  "authority_source": {
+    "owner": "REPLACE-WITH-NAMED-HUMAN-OWNER",
+    "decision_reference": "REPLACE-WITH-RECORDED-DECISION",
+    "source_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "validated_at": "2026-09-26T00:00:00Z"
+  },
+  "issued_at": "2026-09-26T00:00:00Z",
+  "expires_at": "2026-09-27T00:00:00Z",
+  "hard_ceiling": {
+    "allowed_actions": ["REPLACE-WITH-EXACT-ACTION"],
+    "forbidden_actions": [],
+    "human_approval_required_actions": ["REPLACE-WITH-EXACT-ACTION"],
+    "allowed_resources": ["REPLACE-WITH-EXACT-RESOURCE"],
+    "allowed_read_resources": ["REPLACE-WITH-EXACT-RESOURCE"],
+    "allowed_write_resources": [],
+    "allowed_environments": ["LOCAL"],
+    "allowed_data_classes": ["PUBLIC"],
+    "maximum_consequence": "LOW",
+    "maximum_spend_amount": 0,
+    "spend_currency": "USD"
+  },
+  "trigger_policy": {
+    "policy_id": "REPLACE-WITH-VERSIONED-POLICY-ID",
+    "triggers": [
+      {"trigger_type": "HARD_INVARIANT_VIOLATION", "predicate_id": "hard-invariant-failed", "threshold": 1, "window_seconds": 0, "response": "FREEZE"},
+      {"trigger_type": "UNAUTHORIZED_ACTION_ATTEMPT", "predicate_id": "action-outside-grant", "threshold": 1, "window_seconds": 0, "response": "FREEZE"},
+      {"trigger_type": "VERIFICATION_FAILURE", "predicate_id": "required-verification-failed", "threshold": 1, "window_seconds": 0, "response": "FREEZE"},
+      {"trigger_type": "ANOMALY_THRESHOLD", "predicate_id": "REPLACE-WITH-DETERMINISTIC-RULE", "threshold": 1, "window_seconds": 60, "response": "FREEZE"},
+      {"trigger_type": "RISK_THRESHOLD", "predicate_id": "REPLACE-WITH-DETERMINISTIC-RULE", "threshold": 1, "window_seconds": 60, "response": "FREEZE"}
+    ],
+    "default_effect": "FREEZE"
+  },
+  "reauthorization_policy": {
+    "human_decision_required": true,
+    "new_grant_version_required": true,
+    "automatic_restoration_from_trust_allowed": false
+  }
+}

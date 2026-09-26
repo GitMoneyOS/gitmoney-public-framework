@@ -24,7 +24,18 @@
 ## 3. Exceptions & Unresolved Questions
 - [None, or describe any open decisions requiring human owner judgment]
 
-## 4. Next Owner Action
+## 4. Execution Boundary Evidence
+- **Grant ID / Version:** [or `NONE`]
+- **Authority Epoch Before / After:** [values]
+- **Runtime Adapter and Version:** [name/version, or `NOT_BOUND`]
+- **Trigger Observed:** [trigger ID/type, or `NONE`]
+- **Revocation Receipt:** [durable locator and digest, or `NONE`]
+- **Next Consequential Action Denied:** [action ID and adapter evidence, or `NOT_APPLICABLE`]
+- **In-Flight Actions:** [state and evidence; do not imply revocation undid a completed action]
+- **Reauthorization:** [new decision and grant version, or `NOT_REAUTHORIZED`]
+- **Proof Boundary:** [state what this receipt proves and what it does not prove]
+
+## 5. Next Owner Action
 ```text
 RULING: [ APPROVE_AND_MERGE | REQUEST_REVISIONS | HOLD ]
 ROLLBACK: git revert [COMMIT_SHA] -m 1

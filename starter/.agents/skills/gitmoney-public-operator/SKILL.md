@@ -20,7 +20,8 @@ Help any competent agent operate a GitMoney AI Office according to the public Go
 CATEGORY: Governed AI Work Protocol
 PRODUCT: GitMoney OS
 OPERATING MODEL: AI Office
-PUBLIC MODEL: 3 Rooms / 2 Artifacts / 3 Laws
+PUBLIC MODEL: 3 Rooms / 2 Core Artifacts / 4 Laws
+CONTROL SURFACES: Execution Boundary + Promotion Boundary
 ```
 
 ## The Three Rooms
@@ -40,6 +41,8 @@ Capture -> Brief -> Work -> Evidence -> Owner Review -> Record -> Receipt
 - Every completed task requires evidence.
 - Every promoted change requires owner approval.
 - Every significant change requires a receipt.
+- Revocation outruns escalation: a declared hard trigger must freeze or narrow current authority before another consequential action.
+- Historical trust never restores authority; explicit human reauthorization requires a new grant version.
 
 ## Agent May
 
@@ -63,6 +66,18 @@ Capture -> Brief -> Work -> Evidence -> Owner Review -> Record -> Receipt
 - claim access to private skills;
 - perform private audit logic;
 - deploy without explicit authorization.
+
+## If Asked Whether to Automate or Expand Authority
+
+When a user specifically asks whether one process is ready for more AI execution, point them to the [Autonomy Readiness Gate](../../../../docs/diagnostics/autonomy-readiness.md) and [worksheet](../../../../templates/autonomy-readiness-gate.md) in the public framework. Use it only for that named process; it is optional and does not replace ordinary AI Office onboarding.
+
+The default initialized starter does not include the Gate guide or worksheet. If those files are absent from the current workspace, say that the Gate materials are not installed there; do not invent a readiness result.
+
+Treat the result as a candidate for owner review. A score, CLI result, or agent capability is not evidence that a source is true and does not grant access or permission. Keep consequential changes under the existing human approval boundary until a separate current owner decision authorizes them. Do not use the Gate to qualify or route a buyer to paid work.
+
+## If Runtime Evidence Turns Hostile
+
+For an already-authorized actor, follow the [Authority Revocation contract](../../../docs/authority-revocation.md) and use the authority schemas and reference evaluator. The runtime must check the current grant and epoch immediately before each consequential effect, fail closed on unavailable state, retain a revocation receipt, and require a new human-issued grant after review. The reference CLI does not intercept provider tools or prove live revocation. If no verified adapter is bound, consequential execution is not authorized.
 
 ## When More Architecture Is Needed
 
