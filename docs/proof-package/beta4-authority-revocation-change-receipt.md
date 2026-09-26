@@ -50,8 +50,8 @@ Record the local candidate change that adds the Execution Boundary and Authority
 ## Not established
 
 - The reference evaluator does not intercept agent-platform tools, persist authority state, invalidate provider credentials, or atomically bind a decision to an external side effect.
-- RC-05 and RC-06 were not executed. No behavioral conformance result is claimed.
-- No independent human review, owner release ruling, publication, deployment, or live runtime verification is recorded.
+- The post-commit RC-05 conformance and RC-06 isolated-runner checks are recorded in [`RC-05-RC-06-execution-receipt.md`](../../tests/rc-trials/RC-05-RC-06-execution-receipt.md). They do not establish provider-level enforcement.
+- No scoped independent human content-review receipt, owner release ruling, publication, deployment, or live runtime verification is recorded.
 - A receipt digest detects payload changes only when compared with a separately retained trusted digest; it is not a signature or proof that a trigger was correctly classified.
 
 ## Candidate disposition
@@ -60,4 +60,4 @@ Record the local candidate change that adds the Execution Boundary and Authority
 
 ## Next owner action
 
-Review the exact committed candidate scope, assign an independent reviewer, and rule on the release only after the two RC trials and any runtime-adapter claims are dispositioned.
+Assign a reviewer for the required RC-05 content set, name the adopter runtime/provider for RC-06, and make a separate release ruling only after provider-boundary evidence and the remaining usability gap are dispositioned.

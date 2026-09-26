@@ -1,0 +1,69 @@
+{
+  "trial": "RC-06",
+  "evidence_class": "ISOLATED_LOCAL_ADAPTER_TEST_DOUBLE",
+  "target_candidate_sha": "671cf67c02c1c68c555fbc2af8d04b9b2ad7c298",
+  "node": "v24.18.0",
+  "operator": "local deterministic test runner",
+  "result": "PASS_ISOLATED_RUNNER_ONLY",
+  "fixture_hashes": {
+    "grant_sha256": "bc824da2095f727bfb03196612352d5f583b90300373ad1570fc959de5fdd1b1",
+    "initial_state_sha256": "71b063c61d3fdab5a9113df899e783c67981b1d45159b7bc7f75cab9ca573872",
+    "action_a_sha256": "fc4ef7ecd56be6aadecd9861a94733f0f3e86a634b54989194b89ab66c2b3f21",
+    "action_b_sha256": "f8e948dc6a08977e07d4daf71e5b480eb03e0ec6d6caf6130fb66e45bcc0dfc3",
+    "trigger_sha256": "dc4e1a84e429ea601bf2fb099ba931c1d5b0e13b1b8fbd86d3120fb08cf6a97a"
+  },
+  "assertions": {
+    "action_a_allowed_and_effect_recorded": true,
+    "cumulative_spend_ceiling_denied": true,
+    "trigger_froze_grant_before_action_b": true,
+    "stale_epoch_denied_after_process_restart": true,
+    "same_process_stale_caller_burst_denied": true,
+    "receipt_schema_valid": true,
+    "receipt_digest_recomputed": true,
+    "in_flight_action_disposition_recorded": true,
+    "no_effect_for_blocked_actions": true
+  },
+  "receipt": {
+    "schema_version": "0.1.0",
+    "receipt_id": "ARR-RC06-SYNTHETIC-TRIGGER-01",
+    "grant_id": "AGR-RC06-SYNTHETIC-01",
+    "grant_version": 1,
+    "principal_id": "synthetic-agent-01",
+    "run_id": "synthetic-run-01",
+    "trigger_policy_id": "SYNTHETIC-RC06-POLICY-V1",
+    "trigger_type": "HARD_INVARIANT_VIOLATION",
+    "triggered_at": "2026-09-26T21:21:13.781Z",
+    "invariant_refs": [
+      "SYNTHETIC-INVARIANT-01"
+    ],
+    "evidence_refs": [
+      "synthetic-evidence://rc06/invariant-failure-01"
+    ],
+    "prior_status": "ACTIVE",
+    "transition_path": [
+      "ACTIVE",
+      "ANOMALY_DETECTED",
+      "HOLD",
+      "FROZEN"
+    ],
+    "resulting_status": "FROZEN",
+    "prior_epoch": 7,
+    "resulting_epoch": 8,
+    "blocked_action_ids": [
+      "RC06-ACTION-B"
+    ],
+    "in_flight_action_ids": [
+      "RC06-ACTION-A"
+    ],
+    "human_review_status": "PENDING",
+    "automatic_restoration": false,
+    "authority_source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "receipt_digest": "2ca2c786e3288f981c88b37677622a40674ffb2d528cb6ad86be5c402744041a"
+  },
+  "limitations": [
+    "No external provider, agent platform, production system, or credential was connected.",
+    "The local test double exercises same-process serialized calls and process-restart state reload only.",
+    "It does not prove cross-process atomicity, provider interception, queue cancellation, or absence of bypass paths in an adopter environment.",
+    "The recorded in-flight action is not claimed to have been undone."
+  ]
+}

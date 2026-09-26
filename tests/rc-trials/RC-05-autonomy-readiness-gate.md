@@ -2,7 +2,7 @@
 title: "RC-05: Autonomy Readiness Gate Candidate Trial"
 type: "rc-evidence-kit"
 trial_id: "RC-05"
-status: "prepared-unverified"
+status: "partially-executed"
 classification: "public"
 target_version: "0.9.0-beta.4"
 target_tag: "NOT_CREATED"
@@ -15,7 +15,7 @@ target_sha: "UNBOUND_UNTIL_REVIEWED_COMMIT"
 
 Verify that the beta.4 Autonomy Readiness Gate applies its owner-confirmed scoring rules consistently, exposes its evidence limits in plain language, and never turns a candidate score into execution or production authority.
 
-This kit is a test plan. It contains no completed run, reviewer approval, tag, or release evidence.
+This kit defines the candidate trial. Local results are recorded in [the RC-05/RC-06 execution receipt](RC-05-RC-06-execution-receipt.md) and its synthetic evidence files. It contains no independent content-review receipt, tag, or release approval.
 
 ## START_STATE
 
@@ -103,11 +103,12 @@ Store the eventual internal receipt with the exact candidate SHA, test command o
 ## CURRENT_STATE
 
 ```text
-PLAN_STATUS: PREPARED_UNVERIFIED
+PLAN_STATUS: PARTIALLY_EXECUTED
+TARGET_SHA: 671cf67c02c1c68c555fbc2af8d04b9b2ad7c298
 RULE_DECISIONS: OWNER_CONFIRMED (AR-SCORING-RULING-2026-09-24)
-FRESH_CONTEXT_AI_REVIEW: REQUESTED_SEPARATELY
-HUMAN_INDEPENDENT_REVIEW: NOT_YET_RECORDED
+FRESH_CONTEXT_AI_REVIEW: NOT_RECORDED
+HUMAN_INDEPENDENT_REVIEW: NOT_RECORDED_FOR_REQUIRED_ARTIFACT_SET
 COLD_FOUNDER_TEST: NOT_IN_SCOPE; NO_RESULT_CLAIMED
-RC_EVIDENCE: NOT_RUN
+RC_EVIDENCE: LOCAL_CHECKS_PASS; REVIEW_AND_OWNER_RELEASE_GATES_OPEN
 RELEASE: HOLD
 ```

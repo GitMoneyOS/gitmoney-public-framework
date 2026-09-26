@@ -2,7 +2,7 @@
 title: "RC-06-authority-revocation"
 type: "release-candidate-trial"
 owner: "Hitsuyo Aku"
-status: "prepared-unverified"
+status: "partially-executed"
 classification: "public"
 target_spec: "0.9.0-beta.4"
 tags:
@@ -16,7 +16,7 @@ tags:
 
 Verify that the beta.4 reference evaluator freezes an active grant on a declared hard trigger, advances its authority epoch, emits a digest-bound receipt, and denies the next consequential action. Separately establish whether a named runtime adapter enforces the same transition at the actual side-effect boundary.
 
-The reference evaluator result and runtime adapter result are separate evidence. This trial is prepared, not run. It provides no production or provider-level safety claim.
+The reference evaluator result and runtime adapter result are separate evidence. The reference path and an isolated local adapter test double have been run; the actual provider adapter remains untested. Results are in [the RC-05/RC-06 execution receipt](RC-05-RC-06-execution-receipt.md). No production or provider-level safety claim is made.
 
 ## Setup
 
@@ -79,4 +79,4 @@ Attempt to resume with the old grant and a favorable historical trust score. Exp
 
 ## Current disposition
 
-`prepared-unverified`. No trial execution, independent review, runtime adapter proof, or release approval is claimed.
+`PARTIAL_PASS / HOLD`. Reference and isolated local test-double checks pass. No named provider adapter, provider side-effect interception, cross-process adapter atomicity, independent review, or release approval is claimed.
