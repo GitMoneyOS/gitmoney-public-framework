@@ -9,7 +9,9 @@ import {
   validateManifest,
   validateIcmContract,
   validateIcmReceipt,
-  validateRcTrialReceipt
+  validateRcTrialReceipt,
+  validateAutonomyReadinessCandidate,
+  evaluateAutonomyReadinessCandidate
 } from "../scripts/schema-validator.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -281,7 +283,7 @@ required_artifacts:
   execSync(`node "${GITMONEY_CLI}" init "${specMismatchDir}"`, { stdio: "ignore" });
   const specManifestFile = path.join(specMismatchDir, "gitmoney.yaml");
   let specManifestContent = readFileSync(specManifestFile, "utf8");
-  specManifestContent = specManifestContent.replace('installed_spec_version: "0.9.0-beta.3"', 'installed_spec_version: "0.8.0"');
+  specManifestContent = specManifestContent.replace('installed_spec_version: "0.9.0-beta.4"', 'installed_spec_version: "0.8.0"');
   writeFileSync(specManifestFile, specManifestContent, "utf8");
   let specMismatchFailed = false;
   try {
@@ -292,6 +294,106 @@ required_artifacts:
   assert(specMismatchFailed, "INSTALLED_SPEC_VERSION_MISMATCH = FAIL");
 } catch (e) {
   assert(false, `Test 3 encountered exception: ${e.message}`);
+}
+
+// ----------------------------------------------------
+// TEST 3J: Beta.4 Autonomy Readiness Candidate Boundaries
+// ----------------------------------------------------
+console.log("\n--- Test 3J: Beta.4 Autonomy Readiness Candidate Boundaries ---");
+try {
+  const readyFixture = JSON.parse(readFileSync(path.join(REPO_ROOT, "examples/autonomy-readiness/fictional-studio-ready.json"), "utf8"));
+  const assess = candidate => {
+    const validation = validateAutonomyReadinessCandidate(candidate, REPO_ROOT);
+    return validation.valid ? evaluateAutonomyReadinessCandidate(candidate) : { schema_valid: false, validation };
+  };
+  const readyResult = assess(readyFixture);
+  assert(readyResult.maximum_candidate_level === 2, "Supported 4/4/4 S1/S2/S3 case reaches the Level 2 candidate ceiling");
+  assert(
+    readyResult.authority.authority_status === "NOT_GRANTED"
+      && readyResult.authority.evidence_verified === "NO"
+      && readyResult.authority.separate_execution_authorization_required === "YES"
+      && readyResult.authority.production_authorized === "NO",
+    "Level 2 candidacy keeps evidence, execution, authority, and production authorization separate"
+  );
+
+  for (const system of ["S1_OPERATIONS", "S2_COORDINATION", "S3_OPERATIONAL_CONTROL"]) {
+    const candidate = structuredClone(readyFixture);
+    candidate.readiness_profile[system].score = 3;
+    const result = assess(candidate);
+    assert(result.maximum_candidate_level < 2, `${system} at 3 independently blocks Level 2`);
+  }
+
+  for (const [label, mutate, blocker] of [
+    ["permitted tools", x => { x.action_boundary.permitted_tools_actions = []; }, "PERMITTED_TOOLS_NOT_DEFINED"],
+    ["read scope", x => { x.action_boundary.read_permissions = []; }, "READ_SCOPE_NOT_DEFINED"],
+    ["write scope", x => { x.action_boundary.write_permissions = []; }, "WRITE_SCOPE_NOT_DEFINED"],
+    ["allowed data", x => { x.action_boundary.data_boundary.allowed_data = []; }, "ALLOWED_DATA_SCOPE_NOT_DEFINED"],
+    ["forbidden data", x => { x.action_boundary.data_boundary.forbidden_data = []; }, "FORBIDDEN_DATA_SCOPE_NOT_DEFINED"]
+  ]) {
+    const candidate = structuredClone(readyFixture);
+    mutate(candidate);
+    const result = assess(candidate);
+    const blockers = result.level_eligibility?.level_2_provisional?.blockers.map(item => item.code) ?? [];
+    assert(result.maximum_candidate_level < 2 && blockers.includes(blocker), `Empty ${label} scope blocks Level 2 with ${blocker}`);
+  }
+
+  for (const [label, mutate] of [
+    ["UNVERIFIED", check => { check.evidence_status = "UNVERIFIED"; }],
+    ["STALE", check => { check.evidence_refs[0].evidence_state = "STALE"; }],
+    ["CONFLICTED", check => { check.evidence_refs[0].evidence_state = "CONFLICTED"; }],
+    ["absent", check => { check.evidence_refs = []; }]
+  ]) {
+    const candidate = structuredClone(readyFixture);
+    mutate(candidate.readiness_profile.S1_OPERATIONS);
+    const result = assess(candidate);
+    assert(
+      result.lowest_system.effective_score === 0 && !result.system_checks.S1_OPERATIONS.eligible,
+      `${label} evidence has an effective score of zero and blocks eligibility`
+    );
+  }
+
+  for (const [label, mutate, blocker] of [
+    ["omitted permitted tools", x => { delete x.action_boundary.permitted_tools_actions; }, "PERMITTED_TOOLS_NOT_DEFINED"],
+    ["blank permitted tool", x => { x.action_boundary.permitted_tools_actions = ["  "]; }, "PERMITTED_TOOLS_NOT_DEFINED"],
+    ["empty actions", x => { x.action_boundary.actions = []; }, "ACTION_BOUNDARY_NOT_DEFINED"],
+    ["missing forbidden actions", x => { x.action_boundary.forbidden_tools_actions = []; }, "FORBIDDEN_ACTIONS_NOT_DEFINED"],
+    ["missing human approval", x => { x.action_boundary.actions[0].approval_required = false; }, "HUMAN_APPROVAL_BOUNDARY_INCOMPLETE"],
+    ["unknown spend limit", x => { x.action_boundary.spend_limit.status = "UNKNOWN"; }, "SPEND_LIMIT_UNDEFINED"],
+    ["unknown production limit", x => { x.action_boundary.production_limit.status = "UNKNOWN"; }, "PRODUCTION_LIMIT_UNDEFINED_OR_CONFLICTED"],
+    ["missing escalation path", x => { x.action_boundary.escalation_path = []; }, "ESCALATION_PATH_NOT_DEFINED"],
+    ["action scope conflict", x => { x.action_boundary.forbidden_tools_actions = [x.action_boundary.permitted_tools_actions[0]]; }, "ACTION_OR_DATA_SCOPE_CONFLICTED"],
+    ["data scope conflict", x => { x.action_boundary.data_boundary.forbidden_data = [x.action_boundary.data_boundary.allowed_data[0]]; }, "ACTION_OR_DATA_SCOPE_CONFLICTED"]
+  ]) {
+    const candidate = structuredClone(readyFixture);
+    mutate(candidate);
+    const result = assess(candidate);
+    const blockers = result.level_eligibility?.level_2_provisional?.blockers.map(item => item.code) ?? [];
+    assert(result.maximum_candidate_level < 2 && blockers.includes(blocker), `${label} blocks Level 2 with ${blocker}`);
+  }
+
+  const ownerMismatch = structuredClone(readyFixture);
+  ownerMismatch.authority.process_owner = "A different synthetic owner";
+  assert(assess(ownerMismatch).maximum_candidate_level < 1, "Mismatched process and authority owners block candidacy");
+
+  const pendingRule = structuredClone(readyFixture);
+  pendingRule.rule_decisions.score_mapping.decision_reference = "PENDING";
+  assert(assess(pendingRule).maximum_candidate_level < 2, "Pending scoring-rule provenance blocks Level 2 candidacy");
+
+  const hardInvariantMissing = structuredClone(readyFixture);
+  hardInvariantMissing.action_boundary.customer_reputation_limit = "";
+  const hardInvariantResult = assess(hardInvariantMissing);
+  assert(!hardInvariantResult.schema_valid, "Blank customer or identity hard boundaries fail schema validation");
+
+  const noAuthorityFixture = JSON.parse(readFileSync(path.join(REPO_ROOT, "examples/autonomy-readiness/negative/capability-without-authority.json"), "utf8"));
+  const noAuthorityResult = assess(noAuthorityFixture);
+  assert(
+    noAuthorityResult.maximum_candidate_level > 1
+      && noAuthorityResult.authority.authority_status === "NOT_GRANTED"
+      && noAuthorityResult.authority.production_authorized === "NO",
+    "Capability-without-authority fixture may reach candidacy without implying permission"
+  );
+} catch (e) {
+  assert(false, `Test 3J encountered exception: ${e.message}`);
 }
 
 // ----------------------------------------------------

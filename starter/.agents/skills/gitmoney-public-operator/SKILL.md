@@ -69,7 +69,7 @@ Capture -> Brief -> Work -> Evidence -> Owner Review -> Record -> Receipt
 
 ## If Asked Whether to Automate or Expand Authority
 
-When a user specifically asks whether one process is ready for more AI execution, point them to the [Autonomy Readiness Gate](../../../../docs/diagnostics/autonomy-readiness.md) and [worksheet](../../../../templates/autonomy-readiness-gate.md) in the public framework. Use it only for that named process; it is optional and does not replace ordinary AI Office onboarding.
+When a user specifically asks whether one process is ready for more AI execution, treat the [Autonomy Readiness schema](../../../schemas/autonomy-readiness.schema.json) as a candidate-assessment contract only. The framework guide and worksheet are maintained in the full framework repository; this assessment grants no authority and does not replace ordinary AI Office onboarding.
 
 The default initialized starter does not include the Gate guide or worksheet. If those files are absent from the current workspace, say that the Gate materials are not installed there; do not invent a readiness result.
 
