@@ -63,9 +63,6 @@ EXECUTION: CURRENT GRANT -> ACTION CHECK -> ANOMALY -> HOLD / FREEZE -> HUMAN RE
 ```text
 PROMOTION: PRIVATE THOUGHT -> CANDIDATE WORK -> EVIDENCE -> OWNER DECISION -> INSTITUTIONAL RECORD
 ```
-```text
-PRIVATE THOUGHT -> CANDIDATE WORK -> EVIDENCE -> OWNER DECISION -> INSTITUTIONAL RECORD
-```
 
 ---
 
@@ -116,6 +113,7 @@ Read [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-ic
 - [`docs/quickstart.md`](docs/quickstart.md): Step-by-step setup guide for your governed AI office.
 - [`docs/diagnostics/autonomy-readiness.md`](docs/diagnostics/autonomy-readiness.md) and its [worksheet](templates/autonomy-readiness-gate.md): Optional review of one process when considering more AI execution authority. It returns a candidate result, not permission or proof.
 - [`docs/diagnostics/authority-revocation.md`](docs/diagnostics/authority-revocation.md): Execution Boundary contract, machine-readable triggers, frozen state, receipts, and adopter runtime-binding requirements.
+- [`examples/fictional-studio-co/`](examples/fictional-studio-co/README.md): A fictional three-case walkthrough of an allowed local action, a denied action, and an external outcome held as unknown.
 - [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md): Connects founder-held decisions and fragile handoffs to public proof and buyer paths.
 - [`docs/commercial-translation.md`](docs/commercial-translation.md): Explains the public framework and separate paid routes.
 - [`docs/proof-package/release-integrity-beta3.md`](docs/proof-package/release-integrity-beta3.md): Cryptographic release baseline evidence.

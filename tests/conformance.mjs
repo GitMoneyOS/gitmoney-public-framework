@@ -13,6 +13,7 @@ import {
   validateAutonomyReadinessCandidate,
   evaluateAutonomyReadinessCandidate
 } from "../scripts/schema-validator.mjs";
+import { evaluateAuthorityAction, tripAuthorityCircuitBreaker } from "../scripts/authority-control.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -57,6 +58,7 @@ try {
   assert(existsSync(path.join(newProjectDir, "schemas", "gitmoney-manifest.schema.json")), "Downstream schemas/ manifest schema exists");
   assert(existsSync(path.join(newProjectDir, "schemas", "icm-contract.schema.json")), "Downstream schemas/ contract schema exists");
   assert(existsSync(path.join(newProjectDir, "schemas", "icm-receipt.schema.json")), "Downstream schemas/ receipt schema exists");
+  assert(existsSync(path.join(newProjectDir, "templates", "actor-definition.md")), "Downstream actor-definition template exists");
 
   // Add a conformant JSON contract and receipt
   const contractDir = path.join(newProjectDir, "02_architecture", "contracts");
@@ -585,6 +587,64 @@ try {
   assert(failedAsExpected, "Doctor rejects configured secret pattern matches (Private Key)");
 } catch (e) {
   assert(false, `Negative Test 5D encountered error: ${e.message}`);
+}
+
+// ----------------------------------------------------
+// TEST 6: Public Actor and Authority Teaching Path
+// ----------------------------------------------------
+console.log("\n--- Test 6: Public Actor and Authority Teaching Path ---");
+try {
+  const actorTemplate = readFileSync(path.join(REPO_ROOT, "templates", "actor-definition.md"), "utf8");
+  const exampleReadme = readFileSync(path.join(REPO_ROOT, "examples", "fictional-studio-co", "README.md"), "utf8");
+  const deniedReceipt = readFileSync(path.join(REPO_ROOT, "examples", "fictional-studio-co", "receipts", "RECEIPT-002-production-database-migration-DENIED.md"), "utf8");
+  const indeterminateReceipt = readFileSync(path.join(REPO_ROOT, "examples", "fictional-studio-co", "receipts", "RECEIPT-003-client-webhook-dispatch-INDETERMINATE.md"), "utf8");
+  assert(actorTemplate.includes("Decision and Mutation Authority") && actorTemplate.includes("Unavailable Operator Protocol"), "Actor template defines authority and founder-unavailable safe hold");
+  assert(exampleReadme.includes("fictional teaching example"), "Fictional Studio Co. example declares its teaching-only status");
+  assert(deniedReceipt.includes("not evidence of a real production database"), "Denied scenario does not claim a real production observation");
+  assert(indeterminateReceipt.includes("not evidence that a real webhook was sent"), "Indeterminate scenario does not claim an external effect");
+
+  const now = new Date();
+  const issuedAt = new Date(now.getTime() - 10_000).toISOString();
+  const expiresAt = new Date(now.getTime() + 3_600_000).toISOString();
+  const grant = JSON.parse(readFileSync(path.join(REPO_ROOT, "starter", "templates", "authority-grant.json"), "utf8"));
+  const state = JSON.parse(readFileSync(path.join(REPO_ROOT, "starter", "templates", "authority-state.json"), "utf8"));
+  const action = JSON.parse(readFileSync(path.join(REPO_ROOT, "starter", "templates", "authority-action.json"), "utf8"));
+  const trigger = JSON.parse(readFileSync(path.join(REPO_ROOT, "starter", "templates", "authority-trigger.json"), "utf8"));
+
+  Object.assign(grant, { grant_id: "AGR-FSC-001", principal_id: "ACTOR-FSC-001", issued_at: issuedAt, expires_at: expiresAt });
+  Object.assign(grant.hard_ceiling, {
+    allowed_actions: ["DRAFT_SOP"],
+    forbidden_actions: ["MUTATE_PRODUCTION_DB"],
+    human_approval_required_actions: [],
+    allowed_resources: ["03_build/deliverables/onboarding-sop.md"],
+    allowed_read_resources: [],
+    allowed_write_resources: ["03_build/deliverables/onboarding-sop.md"],
+    allowed_environments: ["LOCAL"],
+    allowed_data_classes: ["PUBLIC"],
+    maximum_consequence: "LOW",
+    maximum_spend_amount: 0
+  });
+  Object.assign(state, { grant_id: grant.grant_id, principal_id: grant.principal_id, effective_actions: ["DRAFT_SOP"] });
+  Object.assign(action, {
+    action_id: "ACT-FSC-001",
+    grant_id: grant.grant_id,
+    principal_id: grant.principal_id,
+    action: "DRAFT_SOP",
+    operation: "WRITE",
+    resource: "03_build/deliverables/onboarding-sop.md",
+    requested_at: now.toISOString(),
+    human_approval_reference: undefined
+  });
+
+  const allowed = evaluateAuthorityAction(grant, state, action, now.toISOString());
+  assert(allowed.decision === "ALLOW" && allowed.enforcement_claim === "REFERENCE_EVALUATION_ONLY", "Reference evaluator allows the bounded local action without claiming runtime enforcement");
+  const denied = evaluateAuthorityAction(grant, state, { ...action, action_id: "ACT-FSC-002", action: "MUTATE_PRODUCTION_DB", consequence: "HIGH", requested_spend_amount: 500 }, now.toISOString());
+  assert(denied.decision === "DENY" && denied.reasons.includes("ACTION_FORBIDDEN_BY_HARD_CEILING") && denied.reasons.includes("SPEND_EXCEEDS_HARD_CEILING"), "Reference evaluator denies a forbidden high-consequence action");
+  Object.assign(trigger, { trigger_id: "TRG-FSC-001", grant_id: grant.grant_id, principal_id: grant.principal_id, triggered_at: now.toISOString(), blocked_action_ids: ["ACT-FSC-002"] });
+  const frozen = tripAuthorityCircuitBreaker(grant, state, trigger);
+  assert(frozen.applied && frozen.state.status === "FROZEN" && frozen.state.authority_epoch === state.authority_epoch + 1, "Circuit breaker freezes authority and advances the epoch");
+} catch (e) {
+  assert(false, `Test 6 encountered exception: ${e.message}`);
 }
 
 // ----------------------------------------------------
