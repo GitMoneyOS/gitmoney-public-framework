@@ -102,6 +102,7 @@ Reconstruction installs the private operating architecture:
 | Exploring the concept | START-HERE.md and README.md | None yet |
 | Studying architecture foundations | pol-vsm-icm-ifl-stack.md | Audit if operating wound is costly |
 | Experiencing founder dependency | founder-dependency-map.md | Identity Forensics Audit or Sprint |
+| Considering more AI authority for one process | Autonomy Readiness Gate and worksheet | None automatically; a candidate result does not qualify a buyer or assign an offer |
 | Requiring inspectable evidence | proof-index.md and Proof Package | Identity Forensics Audit |
 | Has one immediate bounded question | ICM templates and guides | Architecture Sprint ($7,500) |
 | Needs private operating installation | private-machine-boundary.md | Audit ($20,000), then Reconstruction ($50,000+) |

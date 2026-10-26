@@ -3,7 +3,19 @@ import { readdirSync, statSync, readFileSync, writeFileSync, copyFileSync, mkdir
 import path from "path";
 import { execSync } from "child_process";
 import { fileURLToPath } from "url";
-import { parseSimpleYaml, validateManifest, validateIcmContract, validateIcmReceipt } from "./schema-validator.mjs";
+import {
+  parseSimpleYaml,
+  validateManifest,
+  validateIcmContract,
+  validateIcmReceipt,
+  validateAutonomyReadinessCandidate,
+  evaluateAutonomyReadinessCandidate,
+  validateAuthorityAction,
+  validateAuthorityGrant,
+  validateAuthorityState,
+  validateAuthorityTrigger
+} from "./schema-validator.mjs";
+import { evaluateAuthorityAction, tripAuthorityCircuitBreaker } from "./authority-control.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -125,8 +137,8 @@ export function runInit(args) {
   // Configure project manifest
   const manifestDest = path.join(targetDir, "gitmoney.yaml");
   const manifestContent = `# GitMoney AI Office Project Manifest
-spec_version: "0.9.0-beta.3"
-installed_spec_version: "0.9.0-beta.3"
+spec_version: "0.9.0-beta.4"
+installed_spec_version: "0.9.0-beta.4"
 owner: "Project Owner"
 profile: "ai-office"
 source_memory: "${withVault ? "vault" : "none"}"
@@ -136,6 +148,13 @@ required_artifacts:
   - "AGENTS.md"
   - "00_COCKPIT.md"
   - ".agents/skills/gitmoney-public-operator/SKILL.md"
+  - "schemas/autonomy-readiness.schema.json"
+  - "schemas/authority-grant.schema.json"
+  - "schemas/authority-state.schema.json"
+  - "schemas/authority-action.schema.json"
+  - "schemas/authority-trigger.schema.json"
+  - "schemas/authority-revocation-receipt.schema.json"
+  - "scripts/authority-control.mjs"
   - "scripts/gitmoney.mjs"
 `;
   writeFileSync(manifestDest, manifestContent, "utf8");
@@ -582,6 +601,147 @@ export function runDoctor(targetDir = process.cwd()) {
   }
 }
 
+export function runReadinessValidate(args, schemaRoot = REPO_ROOT) {
+  const jsonOutput = args.includes("--json");
+  const unsupportedFlags = args.filter(arg => arg.startsWith("--") && arg !== "--json");
+  const positional = args.filter(arg => !arg.startsWith("--"));
+  const inputFile = positional[0];
+
+  if (unsupportedFlags.length > 0 || !inputFile || positional.length !== 1) {
+    const usage = "Usage: node scripts/gitmoney.mjs readiness validate <candidate.json|-> [--json]";
+    const error = unsupportedFlags.length > 0 ? `Unsupported option: ${unsupportedFlags.join(", ")}` : usage;
+    if (jsonOutput) {
+      console.log(JSON.stringify({ schema_valid: false, error }, null, 2));
+    } else {
+      console.error(error);
+      if (error !== usage) console.error(usage);
+    }
+    process.exitCode = 2;
+    return null;
+  }
+
+  const inputPath = inputFile === "-" ? "<stdin>" : path.resolve(process.cwd(), inputFile);
+  let manifest;
+  try {
+    const inputText = inputFile === "-" ? readFileSync(0, "utf8") : readFileSync(inputPath, "utf8");
+    manifest = JSON.parse(inputText);
+  } catch (error) {
+    const result = {
+      schema_valid: false,
+      input_file: inputFile === "-" ? "<stdin>" : path.basename(inputFile),
+      validation_errors: [`Unable to read valid JSON: ${error.message}`]
+    };
+    if (jsonOutput) console.log(JSON.stringify(result, null, 2));
+    else {
+      console.error(`[Readiness Gate] ${result.validation_errors[0]}`);
+    }
+    process.exitCode = 1;
+    return result;
+  }
+
+  let validation;
+  try {
+    validation = validateAutonomyReadinessCandidate(manifest, schemaRoot);
+  } catch (error) {
+    validation = { valid: false, errors: [error.message] };
+  }
+
+  if (!validation.valid) {
+    const result = {
+      schema_valid: false,
+      input_file: inputFile === "-" ? "<stdin>" : path.basename(inputFile),
+      validation_errors: validation.errors
+    };
+    if (jsonOutput) console.log(JSON.stringify(result, null, 2));
+    else {
+      console.error("[Readiness Gate] Candidate manifest failed schema validation:");
+      for (const error of validation.errors) console.error(`  - ${error}`);
+    }
+    process.exitCode = 1;
+    return result;
+  }
+
+  const result = evaluateAutonomyReadinessCandidate(manifest);
+  result.input_file = inputFile === "-" ? "<stdin>" : path.basename(inputFile);
+  if (jsonOutput) {
+    console.log(JSON.stringify(result, null, 2));
+    return result;
+  }
+
+  console.log("[Readiness Gate] Candidate manifest schema: PASS");
+  console.log(`Assessment: ${result.assessment_id} | Process: ${result.process_name}`);
+  console.log(`Lowest system: ${result.lowest_system.system} (effective ${result.lowest_system.effective_score}/5; supplied ${result.lowest_system.supplied_score}/5; evidence ${result.lowest_system.evidence_status})`);
+  console.log(`Maximum candidate level: ${result.maximum_candidate_level}`);
+  if (result.provisional_maximum_candidate_level !== result.maximum_candidate_level) {
+    console.log(`Provisional maximum under draft rules: ${result.provisional_maximum_candidate_level}`);
+  }
+  console.log(`Candidate verdict: ${result.candidate_verdict}`);
+  console.log(`Authority: ${result.authority.authority_status}; production authorized: ${result.authority.production_authorized}`);
+  if (result.blockers.length > 0) {
+    console.log("Blockers:");
+    for (const blocker of result.blockers) console.log(`  - [${blocker.code}] ${blocker.description}`);
+  }
+  if (result.unresolved_policy_decisions.length > 0) {
+    console.log("Unresolved owner policy decisions:");
+    for (const decision of result.unresolved_policy_decisions) console.log(`  - [${decision.code}] ${decision.description}`);
+  }
+  return result;
+}
+
+function readAuthorityJson(file) {
+  return JSON.parse(readFileSync(path.resolve(process.cwd(), file), "utf8"));
+}
+
+export function runAuthorityCommand(args, schemaRoot = REPO_ROOT) {
+  const subcommand = args[0];
+  const files = args.slice(1);
+  if (!(["evaluate", "trip"].includes(subcommand)) || files.length !== 3 || files.some(file => file.startsWith("--"))) {
+    console.error("Usage: node scripts/gitmoney.mjs authority evaluate <grant.json> <state.json> <action.json>");
+    console.error("       node scripts/gitmoney.mjs authority trip <grant.json> <state.json> <trigger.json>");
+    process.exitCode = 2;
+    return null;
+  }
+
+  try {
+    const [grant, state, request] = files.map(readAuthorityJson);
+    if (subcommand === "evaluate") {
+      const validationErrors = [
+        ...validateAuthorityGrant(grant, schemaRoot).errors.map(error => `grant: ${error}`),
+        ...validateAuthorityState(state, schemaRoot).errors.map(error => `state: ${error}`),
+        ...validateAuthorityAction(request, schemaRoot).errors.map(error => `action: ${error}`)
+      ];
+      if (validationErrors.length) {
+        console.log(JSON.stringify({ decision: "DENY", reasons: ["INVALID_AUTHORITY_INPUT", ...validationErrors] }, null, 2));
+        process.exitCode = 1;
+        return null;
+      }
+      const result = evaluateAuthorityAction(grant, state, request, new Date().toISOString(), schemaRoot);
+      console.log(JSON.stringify(result, null, 2));
+      if (result.decision !== "ALLOW") process.exitCode = 3;
+      return result;
+    }
+
+    const validationErrors = [
+      ...validateAuthorityGrant(grant, schemaRoot).errors.map(error => `grant: ${error}`),
+      ...validateAuthorityState(state, schemaRoot).errors.map(error => `state: ${error}`),
+      ...validateAuthorityTrigger(request, schemaRoot).errors.map(error => `trigger: ${error}`)
+    ];
+    if (validationErrors.length) {
+      console.log(JSON.stringify({ applied: false, errors: validationErrors }, null, 2));
+      process.exitCode = 1;
+      return null;
+    }
+    const result = tripAuthorityCircuitBreaker(grant, state, request, schemaRoot);
+    console.log(JSON.stringify(result, null, 2));
+    if (!result.applied) process.exitCode = 1;
+    return result;
+  } catch (error) {
+    console.log(JSON.stringify({ decision: "DENY", applied: false, errors: [`Unable to read valid JSON input: ${error.message}`] }, null, 2));
+    process.exitCode = 1;
+    return null;
+  }
+}
+
 // ----------------------------------------------------
 // CLI Dispatcher
 // ----------------------------------------------------
@@ -595,6 +755,9 @@ if (!command || command === "--help" || command === "-h") {
   console.log("  init <dir> [--with-vault] [--force]  Initialize a self-contained AI Office in <dir>");
   console.log("  init --here [--with-vault] [--force] Initialize an AI Office in the current directory");
   console.log("  doctor [dir]                         Audit repository architecture, boundaries, and health");
+  console.log("  readiness validate <candidate.json|-> [--json]  Validate and evaluate a candidate manifest");
+  console.log("  authority evaluate <grant> <state> <action>  Evaluate one action against current authority");
+  console.log("  authority trip <grant> <state> <trigger>       Produce frozen next state and revocation receipt");
   process.exit(0);
 }
 
@@ -603,6 +766,14 @@ if (command === "init") {
 } else if (command === "doctor") {
   const target = args[1] ? path.resolve(process.cwd(), args[1]) : process.cwd();
   runDoctor(target);
+} else if (command === "readiness") {
+  if (args[1] !== "validate") {
+    console.error("Usage: node scripts/gitmoney.mjs readiness validate <candidate.json|-> [--json]");
+    process.exit(2);
+  }
+  runReadinessValidate(args.slice(2));
+} else if (command === "authority") {
+  runAuthorityCommand(args.slice(1));
 } else {
   console.error(`Unknown command: ${command}`);
   console.error("Run `node scripts/gitmoney.mjs --help` for available options.");

@@ -2,6 +2,18 @@
 
 All notable GitMoney changes for this repo will be tracked here.
 
+## 0.9.0-beta.4 - LOCAL PATCH CANDIDATE (amended 2026-09-26)
+
+### Beta-Line Patch Candidate: Autonomy Readiness Gate
+- **Autonomy Readiness Gate:** Added a one-process guide and worksheet, a schema-backed candidate manifest and CLI evaluation, fictional examples, and contextual routes through the public framework and starter operator.
+- **Authority boundary:** Results are candidate guidance only. They do not verify evidence, certify safety, grant tool access, or authorize production actions.
+- **Owner scoring decisions:** Confirmed both rules in `docs/diagnostics/autonomy-readiness-scoring-ruling.md`: one point per current evidence-supported check, and S1/S2/S3 each at least `4` plus explicit authority and action limits for a Level 2 candidate.
+- **Scope enforcement:** Level 2 and higher candidates now require nonblank permitted-tool, read, write, allowed-data, and forbidden-data scopes; contradictory permitted/forbidden entries block. The positive verdict is now `OWNER REVIEW REQUIRED`.
+- **Review and release state:** Fresh-context review returned `HOLD` findings on scope enforcement, verdict language, and stale fixture claims. The local candidate now addresses those findings, and a final fresh-context recheck is pending. Beta.4-specific RC evidence remains unrun. No cold-founder usability test is included and no usability result is claimed. This candidate is unreleased; beta.3 remains the active public release.
+- **Execution Boundary and Authority Revocation:** Added versioned grant/runtime-state/action/trigger/receipt contracts and a deterministic reference evaluator. A declared trigger produces a frozen next state, increments the authority epoch, and denies subsequent stale or consequential actions. The CLI does not intercept external tools or establish provider-level revocation; RC-06 and adapter evidence remain pending.
+- **Promotion and Execution separation:** The public model now states that promotion controls whether a result becomes official and execution controls whether an actor may continue acting. The three rooms remain unchanged; the law set adds `Revocation outruns escalation`.
+- **Version promotion:** Local candidate version advanced from `0.9.0-beta.3` to `0.9.0-beta.4` at the owner's direction to package this as a beta-line patch update.
+
 ## 0.9.0-beta.3 - 2026-09-24
 
 ### Beta.3 Release: Pre-RC Gap Closure, Windows Portability & Governed AI Work Protocol

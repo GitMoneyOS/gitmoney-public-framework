@@ -1,0 +1,210 @@
+{
+  "schema_version": "0.1.0",
+  "assessment_scope": "ONE_PROCESS",
+  "assessment_id": "ARG-FSC-HUMAN-CONTROLLED",
+  "created_date": "2026-09-24",
+  "manifest_status": "CANDIDATE",
+  "evidence_verified": "NO",
+  "production_authorized": "NO",
+  "rule_decisions": {
+    "score_mapping": {
+      "status": "OWNER_CONFIRMED",
+      "rule_id": "COUNT_EVIDENCE_SUPPORTED_CHECKS",
+      "decision_reference": "AR-SCORING-RULING-2026-09-24",
+      "decision_date": "2026-09-24"
+    },
+    "level_2_threshold": {
+      "status": "OWNER_CONFIRMED",
+      "rule_id": "S1_S2_S3_EACH_AT_LEAST_4",
+      "decision_reference": "AR-SCORING-RULING-2026-09-24",
+      "decision_date": "2026-09-24"
+    }
+  },
+  "process": {
+    "name": "Fictional expense exception review",
+    "owner": "Mira Chen (fictional process owner)",
+    "domain": "Fictional Studio Co. internal operations",
+    "purpose": "Review exceptional expense submissions and decide whether to return them for more information.",
+    "start_condition": "A person identifies an expense as an exception.",
+    "finish_condition": "A person records the decision and communicates it through the approved channel.",
+    "inputs": [
+      "Synthetic exception description only."
+    ],
+    "outputs": [
+      "A person-made decision and an audit note."
+    ],
+    "dependencies": [
+      "Human reviewer; existing financial approval process."
+    ],
+    "volume": {
+      "status": "UNKNOWN",
+      "value": "unknown",
+      "unit": "items",
+      "period": "not measured"
+    },
+    "cycle_time": {
+      "status": "UNKNOWN",
+      "value": "unknown",
+      "unit": "minutes",
+      "period": "not measured"
+    },
+    "error_rework_baseline": {
+      "status": "UNKNOWN",
+      "error_rate": "unknown",
+      "rework_rate": "unknown",
+      "period": "not measured"
+    },
+    "desired_outcome": "A consistent internal result with a named person accountable for consequential decisions."
+  },
+  "founder_dependency": {
+    "score": 4,
+    "touchpoints": [
+      {
+        "type": "FINAL_JUDGMENT",
+        "description": "A fictional accountable owner reviews the output.",
+        "evidence_refs": []
+      }
+    ],
+    "interpretation": "Illustrative only; no real founder or operator was assessed."
+  },
+  "readiness_profile": {
+    "S1_OPERATIONS": {
+      "score": 0,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S2_COORDINATION": {
+      "score": 0,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S3_OPERATIONAL_CONTROL": {
+      "score": 0,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S3_STAR_INDEPENDENT_VERIFICATION": {
+      "score": 0,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S4_ENVIRONMENT_ADAPTATION": {
+      "score": 0,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S5_POLICY_AUTHORITY": {
+      "score": 0,
+      "evidence_status": "UNVERIFIED",
+      "evidence_refs": [],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    }
+  },
+  "candidate_decision": {
+    "verdict": "HUMAN CONTROLLED",
+    "requested_level": 0,
+    "maximum_candidate_level": 1,
+    "primary_bottleneck": "AUTHORITY_BOUNDARY",
+    "blockers": [],
+    "reason": "People perform the review and decision. AI may be used only for private explanatory drafts after separate human review; it may not approve, deny, change records, or communicate."
+  },
+  "action_boundary": {
+    "actions": [
+      {
+        "action": "Review the exception and decide whether it meets policy.",
+        "boundary": "HUMAN_CONTROL",
+        "approval_required": true,
+        "evidence_refs": []
+      },
+      {
+        "action": "Draft a private explanation for the human reviewer.",
+        "boundary": "HUMAN_SUPERVISE",
+        "approval_required": true,
+        "evidence_refs": []
+      }
+    ],
+    "read_permissions": [
+      "Only the fictional process inputs provided for one run."
+    ],
+    "write_permissions": [],
+    "forbidden_tools_actions": [
+      "Approve or deny an expense",
+      "Edit payment or accounting records",
+      "Send a decision to an employee",
+      "Spend or commit funds"
+    ],
+    "spend_limit": {
+      "status": "NO_SPEND",
+      "maximum_amount": "0",
+      "currency": "USD",
+      "approval_required": true
+    },
+    "production_limit": {
+      "status": "NONE",
+      "allowed_environments": [],
+      "maximum_change_scope": "No system write or external action."
+    },
+    "data_boundary": {
+      "allowed_data": [
+        "Synthetic example inputs only."
+      ],
+      "forbidden_data": [
+        "Real customer, employee, credential, or confidential data."
+      ]
+    },
+    "customer_reputation_limit": "No external communication or customer-visible change.",
+    "strategic_identity_limit": "The accountable person retains all policy, identity, and judgment decisions.",
+    "escalation_path": [
+      {
+        "trigger": "Missing, conflicting, or out-of-scope input.",
+        "owner": "Mira Chen (fictional process owner)",
+        "response": "Stop, preserve the draft, and request human review."
+      }
+    ],
+    "safe_state": "A person continues the entire decision and execution workflow.",
+    "permitted_tools_actions": [
+      "Fictional local drafting interface for the supplied synthetic process inputs; no network access."
+    ]
+  },
+  "authority": {
+    "authority_status": "NOT_GRANTED",
+    "process_owner": "Mira Chen (fictional process owner)",
+    "owner_decision_status": "PENDING",
+    "owner_decision_reference": "PENDING",
+    "separate_execution_authorization_required": "YES"
+  },
+  "source_refs": [],
+  "unknowns": [
+    "This is a fictional scenario, not financial or control advice.",
+    "The workflow and authority remain human-controlled; no AI state change is proposed.",
+    "The framework scoring rules are owner-confirmed; process-specific execution authority remains separate and ungranted."
+  ],
+  "level_gate_evidence": {
+    "telemetry": {
+      "status": "NOT_PROVIDED",
+      "description": "No Level 3 run telemetry is supplied by this Level 1 example.",
+      "evidence_refs": []
+    },
+    "independent_evaluation": {
+      "status": "NOT_PROVIDED",
+      "description": "No Level 3 independent-evaluation evidence is supplied.",
+      "evidence_refs": []
+    },
+    "bounded_live_operation": {
+      "status": "NOT_REQUIRED",
+      "description": "Not required for the Level 1 candidate in this example.",
+      "evidence_refs": []
+    }
+  }
+}

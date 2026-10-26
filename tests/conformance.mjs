@@ -9,8 +9,11 @@ import {
   validateManifest,
   validateIcmContract,
   validateIcmReceipt,
-  validateRcTrialReceipt
+  validateRcTrialReceipt,
+  validateAutonomyReadinessCandidate,
+  evaluateAutonomyReadinessCandidate
 } from "../scripts/schema-validator.mjs";
+import { evaluateAuthorityAction, tripAuthorityCircuitBreaker } from "../scripts/authority-control.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -55,6 +58,7 @@ try {
   assert(existsSync(path.join(newProjectDir, "schemas", "gitmoney-manifest.schema.json")), "Downstream schemas/ manifest schema exists");
   assert(existsSync(path.join(newProjectDir, "schemas", "icm-contract.schema.json")), "Downstream schemas/ contract schema exists");
   assert(existsSync(path.join(newProjectDir, "schemas", "icm-receipt.schema.json")), "Downstream schemas/ receipt schema exists");
+  assert(existsSync(path.join(newProjectDir, "templates", "actor-definition.md")), "Downstream actor-definition template exists");
 
   // Add a conformant JSON contract and receipt
   const contractDir = path.join(newProjectDir, "02_architecture", "contracts");
@@ -281,7 +285,7 @@ required_artifacts:
   execSync(`node "${GITMONEY_CLI}" init "${specMismatchDir}"`, { stdio: "ignore" });
   const specManifestFile = path.join(specMismatchDir, "gitmoney.yaml");
   let specManifestContent = readFileSync(specManifestFile, "utf8");
-  specManifestContent = specManifestContent.replace('installed_spec_version: "0.9.0-beta.3"', 'installed_spec_version: "0.8.0"');
+  specManifestContent = specManifestContent.replace('installed_spec_version: "0.9.0-beta.4"', 'installed_spec_version: "0.8.0"');
   writeFileSync(specManifestFile, specManifestContent, "utf8");
   let specMismatchFailed = false;
   try {
@@ -292,6 +296,106 @@ required_artifacts:
   assert(specMismatchFailed, "INSTALLED_SPEC_VERSION_MISMATCH = FAIL");
 } catch (e) {
   assert(false, `Test 3 encountered exception: ${e.message}`);
+}
+
+// ----------------------------------------------------
+// TEST 3J: Beta.4 Autonomy Readiness Candidate Boundaries
+// ----------------------------------------------------
+console.log("\n--- Test 3J: Beta.4 Autonomy Readiness Candidate Boundaries ---");
+try {
+  const readyFixture = JSON.parse(readFileSync(path.join(REPO_ROOT, "examples/autonomy-readiness/fictional-studio-ready.json"), "utf8"));
+  const assess = candidate => {
+    const validation = validateAutonomyReadinessCandidate(candidate, REPO_ROOT);
+    return validation.valid ? evaluateAutonomyReadinessCandidate(candidate) : { schema_valid: false, validation };
+  };
+  const readyResult = assess(readyFixture);
+  assert(readyResult.maximum_candidate_level === 2, "Supported 4/4/4 S1/S2/S3 case reaches the Level 2 candidate ceiling");
+  assert(
+    readyResult.authority.authority_status === "NOT_GRANTED"
+      && readyResult.authority.evidence_verified === "NO"
+      && readyResult.authority.separate_execution_authorization_required === "YES"
+      && readyResult.authority.production_authorized === "NO",
+    "Level 2 candidacy keeps evidence, execution, authority, and production authorization separate"
+  );
+
+  for (const system of ["S1_OPERATIONS", "S2_COORDINATION", "S3_OPERATIONAL_CONTROL"]) {
+    const candidate = structuredClone(readyFixture);
+    candidate.readiness_profile[system].score = 3;
+    const result = assess(candidate);
+    assert(result.maximum_candidate_level < 2, `${system} at 3 independently blocks Level 2`);
+  }
+
+  for (const [label, mutate, blocker] of [
+    ["permitted tools", x => { x.action_boundary.permitted_tools_actions = []; }, "PERMITTED_TOOLS_NOT_DEFINED"],
+    ["read scope", x => { x.action_boundary.read_permissions = []; }, "READ_SCOPE_NOT_DEFINED"],
+    ["write scope", x => { x.action_boundary.write_permissions = []; }, "WRITE_SCOPE_NOT_DEFINED"],
+    ["allowed data", x => { x.action_boundary.data_boundary.allowed_data = []; }, "ALLOWED_DATA_SCOPE_NOT_DEFINED"],
+    ["forbidden data", x => { x.action_boundary.data_boundary.forbidden_data = []; }, "FORBIDDEN_DATA_SCOPE_NOT_DEFINED"]
+  ]) {
+    const candidate = structuredClone(readyFixture);
+    mutate(candidate);
+    const result = assess(candidate);
+    const blockers = result.level_eligibility?.level_2_provisional?.blockers.map(item => item.code) ?? [];
+    assert(result.maximum_candidate_level < 2 && blockers.includes(blocker), `Empty ${label} scope blocks Level 2 with ${blocker}`);
+  }
+
+  for (const [label, mutate] of [
+    ["UNVERIFIED", check => { check.evidence_status = "UNVERIFIED"; }],
+    ["STALE", check => { check.evidence_refs[0].evidence_state = "STALE"; }],
+    ["CONFLICTED", check => { check.evidence_refs[0].evidence_state = "CONFLICTED"; }],
+    ["absent", check => { check.evidence_refs = []; }]
+  ]) {
+    const candidate = structuredClone(readyFixture);
+    mutate(candidate.readiness_profile.S1_OPERATIONS);
+    const result = assess(candidate);
+    assert(
+      result.lowest_system.effective_score === 0 && !result.system_checks.S1_OPERATIONS.eligible,
+      `${label} evidence has an effective score of zero and blocks eligibility`
+    );
+  }
+
+  for (const [label, mutate, blocker] of [
+    ["omitted permitted tools", x => { delete x.action_boundary.permitted_tools_actions; }, "PERMITTED_TOOLS_NOT_DEFINED"],
+    ["blank permitted tool", x => { x.action_boundary.permitted_tools_actions = ["  "]; }, "PERMITTED_TOOLS_NOT_DEFINED"],
+    ["empty actions", x => { x.action_boundary.actions = []; }, "ACTION_BOUNDARY_NOT_DEFINED"],
+    ["missing forbidden actions", x => { x.action_boundary.forbidden_tools_actions = []; }, "FORBIDDEN_ACTIONS_NOT_DEFINED"],
+    ["missing human approval", x => { x.action_boundary.actions[0].approval_required = false; }, "HUMAN_APPROVAL_BOUNDARY_INCOMPLETE"],
+    ["unknown spend limit", x => { x.action_boundary.spend_limit.status = "UNKNOWN"; }, "SPEND_LIMIT_UNDEFINED"],
+    ["unknown production limit", x => { x.action_boundary.production_limit.status = "UNKNOWN"; }, "PRODUCTION_LIMIT_UNDEFINED_OR_CONFLICTED"],
+    ["missing escalation path", x => { x.action_boundary.escalation_path = []; }, "ESCALATION_PATH_NOT_DEFINED"],
+    ["action scope conflict", x => { x.action_boundary.forbidden_tools_actions = [x.action_boundary.permitted_tools_actions[0]]; }, "ACTION_OR_DATA_SCOPE_CONFLICTED"],
+    ["data scope conflict", x => { x.action_boundary.data_boundary.forbidden_data = [x.action_boundary.data_boundary.allowed_data[0]]; }, "ACTION_OR_DATA_SCOPE_CONFLICTED"]
+  ]) {
+    const candidate = structuredClone(readyFixture);
+    mutate(candidate);
+    const result = assess(candidate);
+    const blockers = result.level_eligibility?.level_2_provisional?.blockers.map(item => item.code) ?? [];
+    assert(result.maximum_candidate_level < 2 && blockers.includes(blocker), `${label} blocks Level 2 with ${blocker}`);
+  }
+
+  const ownerMismatch = structuredClone(readyFixture);
+  ownerMismatch.authority.process_owner = "A different synthetic owner";
+  assert(assess(ownerMismatch).maximum_candidate_level < 1, "Mismatched process and authority owners block candidacy");
+
+  const pendingRule = structuredClone(readyFixture);
+  pendingRule.rule_decisions.score_mapping.decision_reference = "PENDING";
+  assert(assess(pendingRule).maximum_candidate_level < 2, "Pending scoring-rule provenance blocks Level 2 candidacy");
+
+  const hardInvariantMissing = structuredClone(readyFixture);
+  hardInvariantMissing.action_boundary.customer_reputation_limit = "";
+  const hardInvariantResult = assess(hardInvariantMissing);
+  assert(!hardInvariantResult.schema_valid, "Blank customer or identity hard boundaries fail schema validation");
+
+  const noAuthorityFixture = JSON.parse(readFileSync(path.join(REPO_ROOT, "examples/autonomy-readiness/negative/capability-without-authority.json"), "utf8"));
+  const noAuthorityResult = assess(noAuthorityFixture);
+  assert(
+    noAuthorityResult.maximum_candidate_level > 1
+      && noAuthorityResult.authority.authority_status === "NOT_GRANTED"
+      && noAuthorityResult.authority.production_authorized === "NO",
+    "Capability-without-authority fixture may reach candidacy without implying permission"
+  );
+} catch (e) {
+  assert(false, `Test 3J encountered exception: ${e.message}`);
 }
 
 // ----------------------------------------------------
@@ -483,6 +587,64 @@ try {
   assert(failedAsExpected, "Doctor rejects configured secret pattern matches (Private Key)");
 } catch (e) {
   assert(false, `Negative Test 5D encountered error: ${e.message}`);
+}
+
+// ----------------------------------------------------
+// TEST 6: Public Actor and Authority Teaching Path
+// ----------------------------------------------------
+console.log("\n--- Test 6: Public Actor and Authority Teaching Path ---");
+try {
+  const actorTemplate = readFileSync(path.join(REPO_ROOT, "templates", "actor-definition.md"), "utf8");
+  const exampleReadme = readFileSync(path.join(REPO_ROOT, "examples", "fictional-studio-co", "README.md"), "utf8");
+  const deniedReceipt = readFileSync(path.join(REPO_ROOT, "examples", "fictional-studio-co", "receipts", "RECEIPT-002-production-database-migration-DENIED.md"), "utf8");
+  const indeterminateReceipt = readFileSync(path.join(REPO_ROOT, "examples", "fictional-studio-co", "receipts", "RECEIPT-003-client-webhook-dispatch-INDETERMINATE.md"), "utf8");
+  assert(actorTemplate.includes("Decision and Mutation Authority") && actorTemplate.includes("Unavailable Operator Protocol"), "Actor template defines authority and founder-unavailable safe hold");
+  assert(exampleReadme.includes("fictional teaching example"), "Fictional Studio Co. example declares its teaching-only status");
+  assert(deniedReceipt.includes("not evidence of a real production database"), "Denied scenario does not claim a real production observation");
+  assert(indeterminateReceipt.includes("not evidence that a real webhook was sent"), "Indeterminate scenario does not claim an external effect");
+
+  const now = new Date();
+  const issuedAt = new Date(now.getTime() - 10_000).toISOString();
+  const expiresAt = new Date(now.getTime() + 3_600_000).toISOString();
+  const grant = JSON.parse(readFileSync(path.join(REPO_ROOT, "starter", "templates", "authority-grant.json"), "utf8"));
+  const state = JSON.parse(readFileSync(path.join(REPO_ROOT, "starter", "templates", "authority-state.json"), "utf8"));
+  const action = JSON.parse(readFileSync(path.join(REPO_ROOT, "starter", "templates", "authority-action.json"), "utf8"));
+  const trigger = JSON.parse(readFileSync(path.join(REPO_ROOT, "starter", "templates", "authority-trigger.json"), "utf8"));
+
+  Object.assign(grant, { grant_id: "AGR-FSC-001", principal_id: "ACTOR-FSC-001", issued_at: issuedAt, expires_at: expiresAt });
+  Object.assign(grant.hard_ceiling, {
+    allowed_actions: ["DRAFT_SOP"],
+    forbidden_actions: ["MUTATE_PRODUCTION_DB"],
+    human_approval_required_actions: [],
+    allowed_resources: ["03_build/deliverables/onboarding-sop.md"],
+    allowed_read_resources: [],
+    allowed_write_resources: ["03_build/deliverables/onboarding-sop.md"],
+    allowed_environments: ["LOCAL"],
+    allowed_data_classes: ["PUBLIC"],
+    maximum_consequence: "LOW",
+    maximum_spend_amount: 0
+  });
+  Object.assign(state, { grant_id: grant.grant_id, principal_id: grant.principal_id, effective_actions: ["DRAFT_SOP"] });
+  Object.assign(action, {
+    action_id: "ACT-FSC-001",
+    grant_id: grant.grant_id,
+    principal_id: grant.principal_id,
+    action: "DRAFT_SOP",
+    operation: "WRITE",
+    resource: "03_build/deliverables/onboarding-sop.md",
+    requested_at: now.toISOString(),
+    human_approval_reference: undefined
+  });
+
+  const allowed = evaluateAuthorityAction(grant, state, action, now.toISOString());
+  assert(allowed.decision === "ALLOW" && allowed.enforcement_claim === "REFERENCE_EVALUATION_ONLY", "Reference evaluator allows the bounded local action without claiming runtime enforcement");
+  const denied = evaluateAuthorityAction(grant, state, { ...action, action_id: "ACT-FSC-002", action: "MUTATE_PRODUCTION_DB", consequence: "HIGH", requested_spend_amount: 500 }, now.toISOString());
+  assert(denied.decision === "DENY" && denied.reasons.includes("ACTION_FORBIDDEN_BY_HARD_CEILING") && denied.reasons.includes("SPEND_EXCEEDS_HARD_CEILING"), "Reference evaluator denies a forbidden high-consequence action");
+  Object.assign(trigger, { trigger_id: "TRG-FSC-001", grant_id: grant.grant_id, principal_id: grant.principal_id, triggered_at: now.toISOString(), blocked_action_ids: ["ACT-FSC-002"] });
+  const frozen = tripAuthorityCircuitBreaker(grant, state, trigger);
+  assert(frozen.applied && frozen.state.status === "FROZEN" && frozen.state.authority_epoch === state.authority_epoch + 1, "Circuit breaker freezes authority and advances the epoch");
+} catch (e) {
+  assert(false, `Test 6 encountered exception: ${e.message}`);
 }
 
 // ----------------------------------------------------

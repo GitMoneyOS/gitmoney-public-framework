@@ -1,0 +1,238 @@
+{
+  "schema_version": "0.1.0",
+  "assessment_scope": "ONE_PROCESS",
+  "assessment_id": "ARG-NEG-SCORE-RANGE",
+  "created_date": "2026-09-24",
+  "manifest_status": "CANDIDATE",
+  "evidence_verified": "NO",
+  "production_authorized": "NO",
+  "rule_decisions": {
+    "score_mapping": {
+      "status": "OWNER_CONFIRMED",
+      "rule_id": "COUNT_EVIDENCE_SUPPORTED_CHECKS",
+      "decision_reference": "AR-SCORING-RULING-2026-09-24",
+      "decision_date": "2026-09-24"
+    },
+    "level_2_threshold": {
+      "status": "OWNER_CONFIRMED",
+      "rule_id": "S1_S2_S3_EACH_AT_LEAST_4",
+      "decision_reference": "AR-SCORING-RULING-2026-09-24",
+      "decision_date": "2026-09-24"
+    }
+  },
+  "process": {
+    "name": "Internal weekly project-summary drafting",
+    "owner": "Mira Chen (fictional process owner)",
+    "domain": "Fictional Studio Co. internal operations",
+    "purpose": "Prepare a first draft of an internal weekly project summary.",
+    "start_condition": "The owner supplies a bounded set of fictional project notes.",
+    "finish_condition": "A labeled draft is returned to the owner; the owner edits and manually shares it.",
+    "inputs": [
+      "Fictional project notes supplied for the run."
+    ],
+    "outputs": [
+      "A draft summary marked for owner review."
+    ],
+    "dependencies": [
+      "Named owner review; local draft buffer."
+    ],
+    "volume": {
+      "status": "UNKNOWN",
+      "value": "unknown",
+      "unit": "items",
+      "period": "not measured"
+    },
+    "cycle_time": {
+      "status": "UNKNOWN",
+      "value": "unknown",
+      "unit": "minutes",
+      "period": "not measured"
+    },
+    "error_rework_baseline": {
+      "status": "UNKNOWN",
+      "error_rate": "unknown",
+      "rework_rate": "unknown",
+      "period": "not measured"
+    },
+    "desired_outcome": "A consistent internal result with a named person accountable for consequential decisions."
+  },
+  "founder_dependency": {
+    "score": 2,
+    "touchpoints": [
+      {
+        "type": "FINAL_JUDGMENT",
+        "description": "A fictional accountable owner reviews the output.",
+        "evidence_refs": []
+      }
+    ],
+    "interpretation": "Illustrative only; no real founder or operator was assessed."
+  },
+  "readiness_profile": {
+    "S1_OPERATIONS": {
+      "score": 6,
+      "evidence_status": "SUPPORTED",
+      "evidence_refs": [
+        {
+          "evidence_id": "SYNTHETIC-S1_OPERATIONS-01",
+          "source_id": "FICTIONAL_STUDIO_EXAMPLE_ONLY",
+          "locator": "fictional-example://S1_OPERATIONS/01",
+          "observed_date": "2026-09-23",
+          "evidence_state": "OBSERVED"
+        }
+      ],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S2_COORDINATION": {
+      "score": 4,
+      "evidence_status": "SUPPORTED",
+      "evidence_refs": [
+        {
+          "evidence_id": "SYNTHETIC-S2_COORDINATION-01",
+          "source_id": "FICTIONAL_STUDIO_EXAMPLE_ONLY",
+          "locator": "fictional-example://S2_COORDINATION/01",
+          "observed_date": "2026-09-23",
+          "evidence_state": "OBSERVED"
+        }
+      ],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S3_OPERATIONAL_CONTROL": {
+      "score": 4,
+      "evidence_status": "SUPPORTED",
+      "evidence_refs": [
+        {
+          "evidence_id": "SYNTHETIC-S3_OPERATIONAL_CONTROL-01",
+          "source_id": "FICTIONAL_STUDIO_EXAMPLE_ONLY",
+          "locator": "fictional-example://S3_OPERATIONAL_CONTROL/01",
+          "observed_date": "2026-09-23",
+          "evidence_state": "OBSERVED"
+        }
+      ],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S3_STAR_INDEPENDENT_VERIFICATION": {
+      "score": 4,
+      "evidence_status": "SUPPORTED",
+      "evidence_refs": [
+        {
+          "evidence_id": "SYNTHETIC-S3_STAR_INDEPENDENT_VERIFICATION-01",
+          "source_id": "FICTIONAL_STUDIO_EXAMPLE_ONLY",
+          "locator": "fictional-example://S3_STAR_INDEPENDENT_VERIFICATION/01",
+          "observed_date": "2026-09-23",
+          "evidence_state": "OBSERVED"
+        }
+      ],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S4_ENVIRONMENT_ADAPTATION": {
+      "score": 4,
+      "evidence_status": "SUPPORTED",
+      "evidence_refs": [
+        {
+          "evidence_id": "SYNTHETIC-S4_ENVIRONMENT_ADAPTATION-01",
+          "source_id": "FICTIONAL_STUDIO_EXAMPLE_ONLY",
+          "locator": "fictional-example://S4_ENVIRONMENT_ADAPTATION/01",
+          "observed_date": "2026-09-23",
+          "evidence_state": "OBSERVED"
+        }
+      ],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    },
+    "S5_POLICY_AUTHORITY": {
+      "score": 4,
+      "evidence_status": "SUPPORTED",
+      "evidence_refs": [
+        {
+          "evidence_id": "SYNTHETIC-S5_POLICY_AUTHORITY-01",
+          "source_id": "FICTIONAL_STUDIO_EXAMPLE_ONLY",
+          "locator": "fictional-example://S5_POLICY_AUTHORITY/01",
+          "observed_date": "2026-09-23",
+          "evidence_state": "OBSERVED"
+        }
+      ],
+      "bottleneck": "Fictional scenario field; not a real diagnosis.",
+      "remediation": "Recheck against current evidence before using on a real process."
+    }
+  },
+  "candidate_decision": {
+    "verdict": "HUMAN CONTROLLED",
+    "requested_level": 1,
+    "maximum_candidate_level": 1,
+    "primary_bottleneck": "NONE_IDENTIFIED",
+    "blockers": [],
+    "reason": "Ready for Level 1 drafting only: a person reviews, edits, and manually shares every result. The scores are illustrative and do not authorize a higher level."
+  },
+  "action_boundary": {
+    "actions": [
+      {
+        "action": "Prepare an internal draft for the named owner to review.",
+        "boundary": "HUMAN_SUPERVISE",
+        "approval_required": true,
+        "evidence_refs": []
+      }
+    ],
+    "read_permissions": [
+      "Only the fictional process inputs provided for one run."
+    ],
+    "write_permissions": [
+      "Local draft buffer only."
+    ],
+    "forbidden_tools_actions": [
+      "Send or publish output",
+      "Change the system of record",
+      "Spend or commit funds"
+    ],
+    "spend_limit": {
+      "status": "NO_SPEND",
+      "maximum_amount": "0",
+      "currency": "USD",
+      "approval_required": true
+    },
+    "production_limit": {
+      "status": "SANDBOX_ONLY",
+      "allowed_environments": [
+        "LOCAL"
+      ],
+      "maximum_change_scope": "No production or customer-facing changes."
+    },
+    "data_boundary": {
+      "allowed_data": [
+        "Synthetic example inputs only."
+      ],
+      "forbidden_data": [
+        "Real customer, employee, credential, or confidential data."
+      ]
+    },
+    "customer_reputation_limit": "No external communication or customer-visible change.",
+    "strategic_identity_limit": "The accountable person retains all policy, identity, and judgment decisions.",
+    "escalation_path": [
+      {
+        "trigger": "Missing, conflicting, or out-of-scope input.",
+        "owner": "Mira Chen (fictional process owner)",
+        "response": "Stop, preserve the draft, and request human review."
+      }
+    ],
+    "safe_state": "No external action; retain a clearly labeled draft for human review.",
+    "permitted_tools_actions": [
+      "Fictional local drafting interface for the supplied synthetic process inputs; no network access."
+    ]
+  },
+  "authority": {
+    "authority_status": "NOT_GRANTED",
+    "process_owner": "Mira Chen (fictional process owner)",
+    "owner_decision_status": "PENDING",
+    "owner_decision_reference": "PENDING",
+    "separate_execution_authorization_required": "YES"
+  },
+  "source_refs": [],
+  "unknowns": [
+    "READY means ready to consider human-controlled Level 1 drafting in this fictional scenario.",
+    "Scores and cited synthetic locators illustrate input shape; the evaluator does not verify their truth.",
+    "The scoring rules are owner-confirmed; higher-level candidacy still depends on supported evidence and action limits. No execution authority is granted."
+  ]
+}

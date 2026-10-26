@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AuthorityGrant",
+  "description": "A human-issued, bounded, versioned grant. It is not proof that a runtime enforces the grant.",
+  "type": "object",
+  "required": ["schema_version", "grant_id", "grant_version", "principal_id", "process_id", "status", "authority_source", "issued_at", "expires_at", "hard_ceiling", "trigger_policy", "reauthorization_policy"],
+  "properties": {
+    "schema_version": {"type": "string", "enum": ["0.1.0"]},
+    "grant_id": {"type": "string", "pattern": "^AGR-[A-Z0-9-]{1,48}$"},
+    "grant_version": {"type": "integer", "minimum": 1},
+    "principal_id": {"type": "string", "minLength": 1},
+    "process_id": {"type": "string", "minLength": 1},
+    "status": {"type": "string", "enum": ["ACTIVE", "EXPIRED", "REVOKED"]},
+    "authority_source": {
+      "type": "object",
+      "required": ["owner", "decision_reference", "source_hash", "validated_at"],
+      "properties": {
+        "owner": {"type": "string", "minLength": 1},
+        "decision_reference": {"type": "string", "minLength": 1},
+        "source_hash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+        "validated_at": {"type": "string", "format": "date-time"}
+      },
+      "additionalProperties": false
+    },
+    "issued_at": {"type": "string", "format": "date-time"},
+    "expires_at": {"type": "string", "format": "date-time"},
+    "hard_ceiling": {
+      "type": "object",
+      "required": ["allowed_actions", "forbidden_actions", "human_approval_required_actions", "allowed_resources", "allowed_read_resources", "allowed_write_resources", "allowed_environments", "allowed_data_classes", "maximum_consequence", "maximum_spend_amount", "spend_currency"],
+      "properties": {
+        "allowed_actions": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+        "forbidden_actions": {"type": "array", "items": {"type": "string"}},
+        "human_approval_required_actions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "allowed_resources": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "allowed_read_resources": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "allowed_write_resources": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "allowed_environments": {"type": "array", "items": {"type": "string", "enum": ["LOCAL", "TEST", "STAGING", "PRODUCTION"]}},
+        "allowed_data_classes": {"type": "array", "items": {"type": "string", "enum": ["PUBLIC", "INTERNAL", "CONFIDENTIAL", "RESTRICTED"]}},
+        "maximum_consequence": {"type": "string", "enum": ["LOW", "MEDIUM", "HIGH"]},
+        "maximum_spend_amount": {"type": "number", "minimum": 0},
+        "spend_currency": {"type": "string", "pattern": "^[A-Z]{3}$"}
+      },
+      "additionalProperties": false
+    },
+    "trigger_policy": {
+      "type": "object",
+      "required": ["policy_id", "triggers", "default_effect"],
+      "properties": {
+        "policy_id": {"type": "string", "minLength": 1},
+        "triggers": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["trigger_type", "predicate_id", "threshold", "window_seconds", "response"],
+            "properties": {
+              "trigger_type": {"type": "string", "enum": ["HARD_INVARIANT_VIOLATION", "UNAUTHORIZED_ACTION_ATTEMPT", "VERIFICATION_FAILURE", "ANOMALY_THRESHOLD", "RISK_THRESHOLD"]},
+              "predicate_id": {"type": "string", "minLength": 1},
+              "threshold": {"type": "number", "minimum": 1},
+              "window_seconds": {"type": "integer", "minimum": 0},
+              "response": {"type": "string", "enum": ["FREEZE"]}
+            },
+            "additionalProperties": false
+          }
+        },
+        "default_effect": {"type": "string", "enum": ["FREEZE"]}
+      },
+      "additionalProperties": false
+    },
+    "reauthorization_policy": {
+      "type": "object",
+      "required": ["human_decision_required", "new_grant_version_required", "automatic_restoration_from_trust_allowed"],
+      "properties": {
+        "human_decision_required": {"type": "boolean", "enum": [true]},
+        "new_grant_version_required": {"type": "boolean", "enum": [true]},
+        "automatic_restoration_from_trust_allowed": {"type": "boolean", "enum": [false]}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "x-gitmoney-schema-version": "0.1.0"
+}

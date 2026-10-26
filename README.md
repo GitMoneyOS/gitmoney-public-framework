@@ -10,8 +10,8 @@ GitMoney OS is not an AI operating system, a prompt pack, a Notion template, an 
 CATEGORY: Governed AI Work Protocol
 PRODUCT: GitMoney OS
 OPERATING MODEL: AI Office
-PUBLIC MODEL: 3 Rooms / 2 Artifacts / 3 Laws
-CONTROL SURFACE: Promotion Boundary
+PUBLIC MODEL: 3 Rooms / 2 Core Artifacts / 4 Laws
+CONTROL SURFACES: Execution Boundary + Promotion Boundary
 ```
 
 > **AI agents already have capabilities. Businesses still need a chain of command.**  
@@ -19,9 +19,9 @@ CONTROL SURFACE: Promotion Boundary
 
 ---
 
-## The Transmissible Standard: 3 Rooms / 2 Artifacts / 3 Laws
+## The Transmissible Standard: 3 Rooms / 2 Core Artifacts / 4 Laws
 
-GitMoney OS compresses enterprise agent governance into three undeniable primitives:
+GitMoney OS compresses enterprise agent governance into a small set of understandable primitives:
 
 ### Three Rooms
 - **Source Memory (`templates/starter-vault/`):** Private thinking room. Rough notes, unverified drafts, and founder doctrine. Private by default.
@@ -32,10 +32,13 @@ GitMoney OS compresses enterprise agent governance into three undeniable primiti
 - **Contract before work:** [`templates/icm-execution-contract.md`](templates/icm-execution-contract.md) defines scope, owner, allowed inputs, and non-goals before execution begins.
 - **Receipt after work:** [`templates/icm-receipt.md`](templates/icm-receipt.md) records what changed, passed verification gates, remaining exceptions, and owner sign-off after execution completes.
 
-### Three Laws
+Authority grants, runtime state, and revocation receipts are supporting control records. They do not replace the core execution contract or work receipt.
+
+### Four Laws
 1. **Capability != Authority:** Possession of tool access does not equal permission to execute.
 2. **Context != Canon:** Background information provided to an agent does not equal binding company truth.
 3. **Completion != Proof:** Reporting a task complete does not prove an enterprise state transition occurred.
+4. **Revocation outruns escalation:** A machine-detected invariant failure or declared risk trigger must be able to freeze authority before another consequential action executes.
 
 ---
 
@@ -49,11 +52,16 @@ GitMoney OS does not compete with adjacent infrastructure. It sits beneath polic
 - **GitHub Spec Kit & Kiro** answer: *What should be built and how should work progress?*
 - **GitHub Agentic Workflows & OpenAI SDK** answer: *How does the agent execute?*
 - **Microsoft Entra Agent ID & Okta** answer: *Who is the agent and what can it access?*
-- **GitMoney OS answers:** *When does AI-assisted work become official company truth?*
+- **GitMoney OS answers:** *Who may act now, what happens when execution evidence turns hostile, and when may work become official company truth?*
 
-GitMoney OS is designed around the **Promotion Boundary**:
+GitMoney OS governs both the **Execution Boundary** and the **Promotion Boundary**:
+
 ```text
-PRIVATE THOUGHT -> CANDIDATE WORK -> EVIDENCE -> OWNER DECISION -> INSTITUTIONAL RECORD
+EXECUTION: CURRENT GRANT -> ACTION CHECK -> ANOMALY -> HOLD / FREEZE -> HUMAN REAUTHORIZATION
+```
+
+```text
+PROMOTION: PRIVATE THOUGHT -> CANDIDATE WORK -> EVIDENCE -> OWNER DECISION -> INSTITUTIONAL RECORD
 ```
 
 ---
@@ -103,15 +111,20 @@ Read [`docs/architecture/pol-vsm-icm-ifl-stack.md`](docs/architecture/pol-vsm-ic
 
 - [`START-HERE.md`](START-HERE.md): Founder orientation and the 96-Hour Founder Freeze Test.
 - [`docs/quickstart.md`](docs/quickstart.md): Step-by-step setup guide for your governed AI office.
-- [`docs/proof-package/release-integrity-beta3.md`](docs/proof-package/release-integrity-beta2.md): Cryptographic release baseline evidence.
+- [`docs/diagnostics/autonomy-readiness.md`](docs/diagnostics/autonomy-readiness.md) and its [worksheet](templates/autonomy-readiness-gate.md): Optional review of one process when considering more AI execution authority. It returns a candidate result, not permission or proof.
+- [`docs/diagnostics/authority-revocation.md`](docs/diagnostics/authority-revocation.md): Execution Boundary contract, machine-readable triggers, frozen state, receipts, and adopter runtime-binding requirements.
+- [`examples/fictional-studio-co/`](examples/fictional-studio-co/README.md): A fictional three-case walkthrough of an allowed local action, a denied action, and an external outcome held as unknown.
+- [`docs/buyer-paths/founder-dependency-map.md`](docs/buyer-paths/founder-dependency-map.md): Connects founder-held decisions and fragile handoffs to public proof and buyer paths.
+- [`docs/commercial-translation.md`](docs/commercial-translation.md): Explains the public framework and separate paid routes.
+- [`docs/proof-package/release-integrity-beta3.md`](docs/proof-package/release-integrity-beta3.md): Cryptographic release baseline evidence.
 - [`docs/compatibility-policy.md`](docs/compatibility-policy.md): Pre-1.0 compatibility law and version contracts.
 - [`docs/open-source-boundary.md`](docs/open-source-boundary.md): What is open source, what is not, and why.
 - [`docs/private-machine-boundary.md`](docs/private-machine-boundary.md): Proprietary machine boundaries.
 - [`templates/starter-vault/`](templates/starter-vault/): Canonical public Source Memory starter scaffold.
 - [`starter/`](starter/): Canonical public AI Office starter scaffold.
 - [`starter/.agents/skills/gitmoney-public-operator/`](starter/.agents/skills/gitmoney-public-operator/SKILL.md): Thin public operator skill.
-- [`schemas/`](schemas/): Draft-07 JSON schemas for contracts, receipts, and RC trials.
-- [`scripts/`](scripts/): Public CLI validation tools for doctor, security, and conformance.
+- [`schemas/`](schemas/): Draft-07 JSON schemas for contracts, receipts, authority grants, runtime state, actions, triggers, and RC trials.
+- [`scripts/`](scripts/): Public CLI validation and reference authority-evaluation tools for doctor, security, and conformance.
 
 ---
 
@@ -144,6 +157,7 @@ OPERATING_MODEL: AI Office
 LAYER: Public Standard Layer
 OWNER: Hitsuyo Aku
 STATE: Active public framework (v0.9.0-beta.3)
+LOCAL PATCH CANDIDATE: v0.9.0-beta.4 (unreleased; owner review and RC closure remain pending)
 PRIMARY_PAID_ENTRY: Identity Forensics Audit ($20,000)
 BOUNDED_PAID_DIAGNOSTIC: Architecture Sprint ($7,500)
 PAID_BUILD: Sovereign Reconstruction (FROM $50,000)

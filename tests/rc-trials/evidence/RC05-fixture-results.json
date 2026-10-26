@@ -1,0 +1,221 @@
+{
+  "trial": "RC-05",
+  "target_candidate_sha": "671cf67c02c1c68c555fbc2af8d04b9b2ad7c298",
+  "node": "v24.18.0",
+  "results": [
+    {
+      "file": "examples/autonomy-readiness/fictional-studio-fix-first.json",
+      "fixture_sha256": "1d3321eadef5091da57c9eabca6a7b981194697f1eba0d0350e11592a947d240",
+      "schema_valid": true,
+      "validation_errors": [],
+      "maximum_candidate_level": 1,
+      "candidate_verdict": "FIX FIRST",
+      "blockers": [
+        "SYSTEM_EVIDENCE_UNSUPPORTED",
+        "SYSTEM_EVIDENCE_UNSUPPORTED",
+        "SYSTEM_EVIDENCE_UNSUPPORTED"
+      ],
+      "authority": {
+        "authority_status": "NOT_GRANTED",
+        "evidence_verified": "NO",
+        "production_authorized": "NO",
+        "separate_execution_authorization_required": "YES"
+      }
+    },
+    {
+      "file": "examples/autonomy-readiness/fictional-studio-human-controlled.json",
+      "fixture_sha256": "d2c19c5e03ffe0ac2226fc3e5e1734743378e6bb4e8457c3078b7c82a3cc822d",
+      "schema_valid": true,
+      "validation_errors": [],
+      "maximum_candidate_level": 1,
+      "candidate_verdict": "HUMAN CONTROLLED",
+      "blockers": [],
+      "authority": {
+        "authority_status": "NOT_GRANTED",
+        "evidence_verified": "NO",
+        "production_authorized": "NO",
+        "separate_execution_authorization_required": "YES"
+      }
+    },
+    {
+      "file": "examples/autonomy-readiness/fictional-studio-ready.json",
+      "fixture_sha256": "8c21cd5637df7b61b369d53d5d6945837dae342d62ca4eaa1c9e4860ef6abcb8",
+      "schema_valid": true,
+      "validation_errors": [],
+      "maximum_candidate_level": 2,
+      "candidate_verdict": "HUMAN CONTROLLED",
+      "blockers": [],
+      "authority": {
+        "authority_status": "NOT_GRANTED",
+        "evidence_verified": "NO",
+        "production_authorized": "NO",
+        "separate_execution_authorization_required": "YES"
+      }
+    },
+    {
+      "file": "examples/autonomy-readiness/negative/agent-claims-verified-evidence.json",
+      "fixture_sha256": "5c0935391c575dcb5e3ab415a3e32ff1442fbf2be7ee39b2986d6f75982689db",
+      "schema_valid": false,
+      "validation_errors": [
+        "autonomy-readiness.evidence_verified: value \"YES\" not in enum: [\"NO\"]"
+      ],
+      "maximum_candidate_level": null,
+      "candidate_verdict": null,
+      "blockers": [],
+      "authority": null
+    },
+    {
+      "file": "examples/autonomy-readiness/negative/capability-without-authority.json",
+      "fixture_sha256": "121bd4a7ad63c129e66e321d0ee881a10fbe2cb03bbf5d20e8daeb0954ca4bdf",
+      "schema_valid": true,
+      "validation_errors": [],
+      "maximum_candidate_level": 3,
+      "candidate_verdict": "OWNER REVIEW REQUIRED",
+      "blockers": [],
+      "authority": {
+        "authority_status": "NOT_GRANTED",
+        "evidence_verified": "NO",
+        "production_authorized": "NO",
+        "separate_execution_authorization_required": "YES"
+      }
+    },
+    {
+      "file": "examples/autonomy-readiness/negative/level4-without-bounded-live-evidence.json",
+      "fixture_sha256": "54261ddc7503fc9f7ba99a7ac96a1d67c64c4ce9aaa49655da2ca49fa565abec",
+      "schema_valid": true,
+      "validation_errors": [],
+      "maximum_candidate_level": 3,
+      "candidate_verdict": "FIX FIRST",
+      "blockers": [
+        "BOUNDED_LIVE_OPERATION_EVIDENCE_UNSUPPORTED",
+        "LEVEL_4_OWNER_DECISION_REQUIRED"
+      ],
+      "authority": {
+        "authority_status": "NOT_GRANTED",
+        "evidence_verified": "NO",
+        "production_authorized": "NO",
+        "separate_execution_authorization_required": "YES"
+      }
+    },
+    {
+      "file": "examples/autonomy-readiness/negative/missing-escalation-path.json",
+      "fixture_sha256": "3b53834af22b74843653842c161c61e2acc7b297367a02ad122d5056e4f0a2b0",
+      "schema_valid": true,
+      "validation_errors": [],
+      "maximum_candidate_level": 1,
+      "candidate_verdict": "FIX FIRST",
+      "blockers": [
+        "ESCALATION_PATH_NOT_DEFINED"
+      ],
+      "authority": {
+        "authority_status": "NOT_GRANTED",
+        "evidence_verified": "NO",
+        "production_authorized": "NO",
+        "separate_execution_authorization_required": "YES"
+      }
+    },
+    {
+      "file": "examples/autonomy-readiness/negative/missing-escalation-safe-state.json",
+      "fixture_sha256": "a8b279e4c4c9a6d103b33c721d316ad264d2a43b45548677959c2e630a8448ec",
+      "schema_valid": false,
+      "validation_errors": [
+        "autonomy-readiness.action_boundary.safe_state: missing required field",
+        "autonomy-readiness.action_boundary.safe_state: string length 0 is less than minLength 1"
+      ],
+      "maximum_candidate_level": null,
+      "candidate_verdict": null,
+      "blockers": [],
+      "authority": null
+    },
+    {
+      "file": "examples/autonomy-readiness/negative/missing-process-owner.json",
+      "fixture_sha256": "13f4c503c160ca769d58a54466dec2572dc6b54a68bcf4c22af047b03743d4ba",
+      "schema_valid": false,
+      "validation_errors": [
+        "autonomy-readiness.process.owner: missing required field",
+        "autonomy-readiness.process.owner: string length 0 is less than minLength 1"
+      ],
+      "maximum_candidate_level": null,
+      "candidate_verdict": null,
+      "blockers": [],
+      "authority": null
+    },
+    {
+      "file": "examples/autonomy-readiness/negative/no-forbidden-action.json",
+      "fixture_sha256": "8654e09faf97fa191cc9bf658c6fd811d463cc729ba75a63c98ea74e297a3552",
+      "schema_valid": true,
+      "validation_errors": [],
+      "maximum_candidate_level": 0,
+      "candidate_verdict": "FIX FIRST",
+      "blockers": [
+        "FORBIDDEN_ACTIONS_NOT_DEFINED"
+      ],
+      "authority": {
+        "authority_status": "NOT_GRANTED",
+        "evidence_verified": "NO",
+        "production_authorized": "NO",
+        "separate_execution_authorization_required": "YES"
+      }
+    },
+    {
+      "file": "examples/autonomy-readiness/negative/production-authorization-attempt.json",
+      "fixture_sha256": "dff129e6d3dd840996bdb4812f5665824cd870730d258023153c98bdaad8fcf0",
+      "schema_valid": false,
+      "validation_errors": [
+        "autonomy-readiness.production_authorized: value \"YES\" not in enum: [\"NO\"]"
+      ],
+      "maximum_candidate_level": null,
+      "candidate_verdict": null,
+      "blockers": [],
+      "authority": null
+    },
+    {
+      "file": "examples/autonomy-readiness/negative/s3star-below-threshold-for-level3.json",
+      "fixture_sha256": "7dd9b428de8678d3bfb1094394f884d73204d76a267de9e7be5a96b79ed13232",
+      "schema_valid": true,
+      "validation_errors": [],
+      "maximum_candidate_level": 2,
+      "candidate_verdict": "FIX FIRST",
+      "blockers": [
+        "SYSTEM_THRESHOLD_NOT_MET"
+      ],
+      "authority": {
+        "authority_status": "NOT_GRANTED",
+        "evidence_verified": "NO",
+        "production_authorized": "NO",
+        "separate_execution_authorization_required": "YES"
+      }
+    },
+    {
+      "file": "examples/autonomy-readiness/negative/score-out-of-range.json",
+      "fixture_sha256": "f2debf60cc604155370eea949d39d73678b8d0e6f95a22dba30ec0fdc1592f59",
+      "schema_valid": false,
+      "validation_errors": [
+        "autonomy-readiness.readiness_profile.S1_OPERATIONS.score: value 6 not in enum: [0, 1, 2, 3, 4, 5]"
+      ],
+      "maximum_candidate_level": null,
+      "candidate_verdict": null,
+      "blockers": [],
+      "authority": null
+    },
+    {
+      "file": "examples/autonomy-readiness/negative/supported-score-without-evidence.json",
+      "fixture_sha256": "3fb2d1daa8c9303b5c1e500294c0aa7f0debf3defb83d19f35cd1805167fb706",
+      "schema_valid": true,
+      "validation_errors": [],
+      "maximum_candidate_level": 1,
+      "candidate_verdict": "FIX FIRST",
+      "blockers": [
+        "SYSTEM_EVIDENCE_UNSUPPORTED",
+        "SYSTEM_EVIDENCE_UNSUPPORTED",
+        "SYSTEM_EVIDENCE_UNSUPPORTED"
+      ],
+      "authority": {
+        "authority_status": "NOT_GRANTED",
+        "evidence_verified": "NO",
+        "production_authorized": "NO",
+        "separate_execution_authorization_required": "YES"
+      }
+    }
+  ]
+}

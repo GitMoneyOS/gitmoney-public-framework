@@ -35,13 +35,18 @@ Before beginning, ensure you have:
 
 An AI Office is a governed operating environment where humans and AI agents can work together without confusing context, capability, authority, evidence, and company truth.
 
-## The Mental Model: 3 Rooms / 2 Artifacts / 3 Laws
+## The Mental Model: 3 Rooms / 2 Core Artifacts / 4 Laws
 
 Before running commands, understand the operating model:
 
 - **3 Rooms:** Source Memory (thinking) -> Agent Workbench (working) -> Official Record (what the company is willing to call true).
-- **2 Artifacts:** Contract before consequential work; Receipt after consequential work.
-- **3 Laws:** Capability != Authority; Context != Canon; Completion != Proof.
+- **2 Core Artifacts:** Contract before consequential work; Receipt after consequential work.
+- **4 Laws:** Capability != Authority; Context != Canon; Completion != Proof; revocation outruns escalation.
+- **Two boundaries:** The Execution Boundary decides whether an actor may take the next consequential action. The Promotion Boundary decides whether its result may become official.
+
+> **Considering more AI authority for a process?** The [Autonomy Readiness Gate](diagnostics/autonomy-readiness.md) is an optional one-process review for that decision. It records evidence, limits, and a candidate level; it does not grant access or replace the general AI Office setup below. Keep real process evidence in private records.
+
+For an already-authorized actor, use the [Authority Revocation and Circuit Breaker contract](diagnostics/authority-revocation.md) to define machine-readable triggers, fail-closed runtime checks, receipt requirements, and explicit human reauthorization. A schema or reference CLI result does not prove your runtime adapter intercepts actions.
 
 ## Two Canonical Adoption Paths
 

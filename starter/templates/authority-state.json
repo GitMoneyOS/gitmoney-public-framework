@@ -1,0 +1,13 @@
+{
+  "schema_version": "0.1.0",
+  "grant_id": "AGR-REPLACE-WITH-OWNER-GRANT-ID",
+  "grant_version": 1,
+  "principal_id": "REPLACE-WITH-EXACT-ACTOR-ID",
+  "authority_epoch": 1,
+  "status": "ACTIVE",
+  "effective_actions": ["REPLACE-WITH-EXACT-ACTION"],
+  "spent_amount": 0,
+  "spend_currency": "USD",
+  "last_transition_at": "2026-09-26T00:00:00Z",
+  "last_revocation_receipt_id": "NONE"
+}

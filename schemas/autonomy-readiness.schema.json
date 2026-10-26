@@ -1,0 +1,434 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AutonomyReadinessCandidateManifest",
+  "description": "Validates the structure of a proposed autonomy-readiness result for one process. Passing validation does not verify evidence, grant authority, or authorize execution.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "assessment_scope",
+    "assessment_id",
+    "created_date",
+    "manifest_status",
+    "evidence_verified",
+    "production_authorized",
+    "rule_decisions",
+    "process",
+    "founder_dependency",
+    "readiness_profile",
+    "candidate_decision",
+    "action_boundary",
+    "authority",
+    "source_refs",
+    "unknowns"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": ["0.1.0"]
+    },
+    "assessment_scope": {
+      "type": "string",
+      "enum": ["ONE_PROCESS"]
+    },
+    "assessment_id": {
+      "type": "string",
+      "pattern": "^ARG-[A-Z0-9-]{1,40}$"
+    },
+    "created_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "manifest_status": {
+      "type": "string",
+      "enum": ["CANDIDATE"]
+    },
+    "evidence_verified": {
+      "type": "string",
+      "enum": ["NO"]
+    },
+    "production_authorized": {
+      "type": "string",
+      "enum": ["NO"]
+    },
+    "rule_decisions": {
+      "type": "object",
+      "description": "Separate owner decisions for the draft scoring rules. These decisions do not grant execution authority.",
+      "required": ["score_mapping", "level_2_threshold"],
+      "properties": {
+        "score_mapping": {"$ref": "#/definitions/rule_decision"},
+        "level_2_threshold": {"$ref": "#/definitions/rule_decision"}
+      },
+      "additionalProperties": false
+    },
+    "process": {
+      "type": "object",
+      "required": [
+        "name",
+        "owner",
+        "domain",
+        "purpose",
+        "start_condition",
+        "finish_condition",
+        "inputs",
+        "outputs",
+        "dependencies",
+        "volume",
+        "cycle_time",
+        "error_rework_baseline",
+        "desired_outcome"
+      ],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "owner": {"type": "string", "minLength": 1},
+        "domain": {"type": "string", "minLength": 1},
+        "purpose": {"type": "string", "minLength": 1},
+        "start_condition": {"type": "string", "minLength": 1},
+        "finish_condition": {"type": "string", "minLength": 1},
+        "inputs": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1}
+        },
+        "outputs": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1}
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1}
+        },
+        "volume": {
+          "type": "object",
+          "required": ["status", "value", "unit", "period"],
+          "properties": {
+            "status": {"type": "string", "enum": ["OBSERVED", "PARTIAL", "UNKNOWN"]},
+            "value": {"type": "string", "minLength": 1},
+            "unit": {"type": "string", "minLength": 1},
+            "period": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        },
+        "cycle_time": {
+          "type": "object",
+          "required": ["status", "value", "unit", "period"],
+          "properties": {
+            "status": {"type": "string", "enum": ["OBSERVED", "PARTIAL", "UNKNOWN"]},
+            "value": {"type": "string", "minLength": 1},
+            "unit": {"type": "string", "minLength": 1},
+            "period": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        },
+        "error_rework_baseline": {
+          "type": "object",
+          "required": ["status", "error_rate", "rework_rate", "period"],
+          "properties": {
+            "status": {"type": "string", "enum": ["OBSERVED", "PARTIAL", "UNKNOWN"]},
+            "error_rate": {"type": "string", "minLength": 1},
+            "rework_rate": {"type": "string", "minLength": 1},
+            "period": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        },
+        "desired_outcome": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "founder_dependency": {
+      "type": "object",
+      "required": ["score", "touchpoints", "interpretation"],
+      "properties": {
+        "score": {"type": "integer", "enum": [0, 1, 2, 3, 4, 5]},
+        "touchpoints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "description", "evidence_refs"],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "CONTEXT",
+                  "QUALITY_OR_TASTE",
+                  "EXCEPTIONS",
+                  "ROUTING_OR_PRIORITIZATION",
+                  "RELATIONSHIP_REGULATION",
+                  "FINAL_JUDGMENT"
+                ]
+              },
+              "description": {"type": "string", "minLength": 1},
+              "evidence_refs": {
+                "type": "array",
+                "items": {"$ref": "#/definitions/evidence_reference"}
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "interpretation": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "readiness_profile": {
+      "type": "object",
+      "required": [
+        "S1_OPERATIONS",
+        "S2_COORDINATION",
+        "S3_OPERATIONAL_CONTROL",
+        "S3_STAR_INDEPENDENT_VERIFICATION",
+        "S4_ENVIRONMENT_ADAPTATION",
+        "S5_POLICY_AUTHORITY"
+      ],
+      "properties": {
+        "S1_OPERATIONS": {"$ref": "#/definitions/system_assessment"},
+        "S2_COORDINATION": {"$ref": "#/definitions/system_assessment"},
+        "S3_OPERATIONAL_CONTROL": {"$ref": "#/definitions/system_assessment"},
+        "S3_STAR_INDEPENDENT_VERIFICATION": {"$ref": "#/definitions/system_assessment"},
+        "S4_ENVIRONMENT_ADAPTATION": {"$ref": "#/definitions/system_assessment"},
+        "S5_POLICY_AUTHORITY": {"$ref": "#/definitions/system_assessment"}
+      },
+      "additionalProperties": false
+    },
+    "level_gate_evidence": {
+      "type": "object",
+      "description": "Explicit evidence for controls that must be present in addition to numeric system thresholds at Levels 3 and 4.",
+      "required": ["telemetry", "independent_evaluation", "bounded_live_operation"],
+      "properties": {
+        "telemetry": {"$ref": "#/definitions/evidence_gate"},
+        "independent_evaluation": {"$ref": "#/definitions/evidence_gate"},
+        "bounded_live_operation": {"$ref": "#/definitions/evidence_gate"}
+      },
+      "additionalProperties": false
+    },
+    "candidate_decision": {
+      "type": "object",
+      "required": [
+        "verdict",
+        "requested_level",
+        "maximum_candidate_level",
+        "primary_bottleneck",
+        "blockers",
+        "reason"
+      ],
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": [
+            "HUMAN CONTROLLED",
+            "FIX FIRST",
+            "OWNER REVIEW REQUIRED"
+          ]
+        },
+        "requested_level": {"type": "integer", "enum": [0, 1, 2, 3, 4]},
+        "maximum_candidate_level": {"type": "integer", "enum": [0, 1, 2, 3, 4]},
+        "primary_bottleneck": {
+          "type": "string",
+          "enum": [
+            "S1_OPERATIONS",
+            "S2_COORDINATION",
+            "S3_OPERATIONAL_CONTROL",
+            "S3_STAR_INDEPENDENT_VERIFICATION",
+            "S4_ENVIRONMENT_ADAPTATION",
+            "S5_POLICY_AUTHORITY",
+            "PROCESS_DEFINITION",
+            "AUTHORITY_BOUNDARY",
+            "NONE_IDENTIFIED"
+          ]
+        },
+        "blockers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["code", "description", "owner", "repair_evidence"],
+            "properties": {
+              "code": {"type": "string", "pattern": "^[A-Z0-9_]+$"},
+              "description": {"type": "string", "minLength": 1},
+              "owner": {"type": "string", "minLength": 1},
+              "repair_evidence": {"type": "string", "minLength": 1}
+            },
+            "additionalProperties": false
+          }
+        },
+        "reason": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "action_boundary": {
+      "type": "object",
+      "required": [
+        "actions",
+        "read_permissions",
+        "write_permissions",
+        "forbidden_tools_actions",
+        "spend_limit",
+        "production_limit",
+        "data_boundary",
+        "customer_reputation_limit",
+        "strategic_identity_limit",
+        "escalation_path",
+        "safe_state"
+      ],
+      "properties": {
+        "actions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["action", "boundary", "approval_required", "evidence_refs"],
+            "properties": {
+              "action": {"type": "string", "minLength": 1},
+              "boundary": {
+                "type": "string",
+                "enum": ["AUTOMATE", "AGENT_CONTROL", "HUMAN_SUPERVISE", "HUMAN_CONTROL", "FORBIDDEN"]
+              },
+              "approval_required": {"type": "boolean"},
+              "evidence_refs": {
+                "type": "array",
+                "items": {"$ref": "#/definitions/evidence_reference"}
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "read_permissions": {"type": "array", "items": {"type": "string"}},
+        "write_permissions": {"type": "array", "items": {"type": "string"}},
+        "permitted_tools_actions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "forbidden_tools_actions": {"type": "array", "items": {"type": "string"}},
+        "spend_limit": {
+          "type": "object",
+          "required": ["status", "maximum_amount", "currency", "approval_required"],
+          "properties": {
+            "status": {"type": "string", "enum": ["DEFINED", "NO_SPEND", "UNKNOWN"]},
+            "maximum_amount": {"type": "string", "minLength": 1},
+            "currency": {"type": "string", "pattern": "^[A-Z]{3}$"},
+            "approval_required": {"type": "boolean"}
+          },
+          "additionalProperties": false
+        },
+        "production_limit": {
+          "type": "object",
+          "required": ["status", "allowed_environments", "maximum_change_scope"],
+          "properties": {
+            "status": {"type": "string", "enum": ["NONE", "READ_ONLY", "SANDBOX_ONLY", "BOUNDED", "UNKNOWN"]},
+            "allowed_environments": {
+              "type": "array",
+              "items": {"type": "string", "enum": ["LOCAL", "TEST", "STAGING", "PRODUCTION"]}
+            },
+            "maximum_change_scope": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        },
+        "data_boundary": {
+          "type": "object",
+          "required": ["allowed_data", "forbidden_data"],
+          "properties": {
+            "allowed_data": {"type": "array", "items": {"type": "string"}},
+            "forbidden_data": {"type": "array", "items": {"type": "string"}}
+          },
+          "additionalProperties": false
+        },
+        "customer_reputation_limit": {"type": "string", "minLength": 1},
+        "strategic_identity_limit": {"type": "string", "minLength": 1},
+        "escalation_path": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["trigger", "owner", "response"],
+            "properties": {
+              "trigger": {"type": "string", "minLength": 1},
+              "owner": {"type": "string", "minLength": 1},
+              "response": {"type": "string", "minLength": 1}
+            },
+            "additionalProperties": false
+          }
+        },
+        "safe_state": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "authority": {
+      "type": "object",
+      "description": "Records owner review of the candidate. It never grants runtime or production authority.",
+      "required": [
+        "authority_status",
+        "process_owner",
+        "owner_decision_status",
+        "owner_decision_reference",
+        "separate_execution_authorization_required"
+      ],
+      "properties": {
+        "authority_status": {"type": "string", "enum": ["NOT_GRANTED"]},
+        "process_owner": {"type": "string", "minLength": 1},
+        "owner_decision_status": {"type": "string", "enum": ["PENDING", "ACCEPTED", "REJECTED"]},
+        "owner_decision_reference": {"type": "string", "minLength": 1},
+        "decision_date": {"type": "string", "format": "date"},
+        "separate_execution_authorization_required": {"type": "string", "enum": ["YES"]}
+      },
+      "additionalProperties": false
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/evidence_reference"}
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "rule_decision": {
+      "type": "object",
+      "required": ["status", "rule_id", "decision_reference"],
+      "properties": {
+        "status": {"type": "string", "enum": ["PENDING_OWNER_CONFIRMATION", "OWNER_CONFIRMED", "REJECTED"]},
+        "rule_id": {"type": "string", "enum": ["COUNT_EVIDENCE_SUPPORTED_CHECKS", "S1_S2_S3_EACH_AT_LEAST_4"]},
+        "decision_reference": {"type": "string", "minLength": 1},
+        "decision_date": {"type": "string", "format": "date"}
+      },
+      "additionalProperties": false
+    },
+    "evidence_gate": {
+      "type": "object",
+      "required": ["status", "description", "evidence_refs"],
+      "properties": {
+        "status": {"type": "string", "enum": ["SUPPORTED", "UNVERIFIED", "STALE", "CONFLICTED", "NOT_PROVIDED", "NOT_REQUIRED"]},
+        "description": {"type": "string", "minLength": 1},
+        "evidence_refs": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/evidence_reference"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence_reference": {
+      "type": "object",
+      "required": ["evidence_id", "source_id", "locator", "observed_date", "evidence_state"],
+      "properties": {
+        "evidence_id": {"type": "string", "pattern": "^[A-Z0-9][A-Z0-9._-]*$"},
+        "source_id": {"type": "string", "minLength": 1},
+        "locator": {"type": "string", "minLength": 1},
+        "observed_date": {"type": "string", "format": "date"},
+        "evidence_state": {
+          "type": "string",
+          "enum": ["OBSERVED", "OWNER_CONFIRMED", "SUPPORTED_INTERPRETATION", "HYPOTHESIS", "UNVERIFIED", "STALE", "CONFLICTED"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "system_assessment": {
+      "type": "object",
+      "required": ["score", "evidence_status", "evidence_refs", "bottleneck", "remediation"],
+      "properties": {
+        "score": {"type": "integer", "enum": [0, 1, 2, 3, 4, 5]},
+        "evidence_status": {"type": "string", "enum": ["SUPPORTED", "UNVERIFIED", "STALE", "CONFLICTED"]},
+        "evidence_refs": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/evidence_reference"}
+        },
+        "bottleneck": {"type": "string", "minLength": 1},
+        "remediation": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    }
+  },
+  "x-gitmoney-schema-version": "0.1.0"
+}
